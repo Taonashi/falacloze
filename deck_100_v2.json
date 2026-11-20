@@ -1,0 +1,6132 @@
+[
+  {
+    "id": "pt_eu",
+    "order": 1,
+    "original_rank": 5,
+    "lemma": "eu",
+    "pos": "PRON",
+    "en_gloss": "I",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "eu"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ quero café agora.",
+        "answer": "Eu",
+        "form_tag": "base",
+        "accepted": [
+          "eu"
+        ],
+        "plausible_wrong": [
+          "Você"
+        ],
+        "distractors": [
+          "Ele",
+          "Ela"
+        ],
+        "en_sentence": "I want coffee now.",
+        "hint_en": "I"
+      },
+      {
+        "pt_cloze": "___ sou um homem forte.",
+        "answer": "Eu",
+        "form_tag": "base",
+        "accepted": [
+          "eu"
+        ],
+        "plausible_wrong": [
+          "Ele"
+        ],
+        "distractors": [
+          "Você",
+          "Ela"
+        ],
+        "en_sentence": "I am a strong man.",
+        "hint_en": "I"
+      },
+      {
+        "pt_cloze": "___ tenho um plano simples.",
+        "answer": "Eu",
+        "form_tag": "base",
+        "accepted": [
+          "eu"
+        ],
+        "plausible_wrong": [
+          "Você"
+        ],
+        "distractors": [
+          "Ele",
+          "Não"
+        ],
+        "en_sentence": "I have a simple plan.",
+        "hint_en": "I"
+      }
+    ]
+  },
+  {
+    "id": "pt_voce",
+    "order": 2,
+    "original_rank": 4,
+    "lemma": "você",
+    "pos": "PRON",
+    "en_gloss": "you (singular)",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "você",
+      "vocês"
+    ],
+    "grammar_note_en": "você takes 3rd-person singular verb forms in PT-BR",
+    "examples": [
+      {
+        "pt_cloze": "___ quer café agora?",
+        "answer": "Você",
+        "form_tag": "base",
+        "accepted": [
+          "você"
+        ],
+        "plausible_wrong": [
+          "Eu"
+        ],
+        "distractors": [
+          "Eu",
+          "Aqui"
+        ],
+        "en_sentence": "Do you want coffee now?",
+        "hint_en": "you (sg)"
+      },
+      {
+        "pt_cloze": "___ é uma mulher especial.",
+        "answer": "Você",
+        "form_tag": "base",
+        "accepted": [
+          "você"
+        ],
+        "plausible_wrong": [
+          "Ela"
+        ],
+        "distractors": [
+          "Eu",
+          "Hoje"
+        ],
+        "en_sentence": "You are a special woman.",
+        "hint_en": "you (sg)"
+      },
+      {
+        "pt_cloze": "___ tem um telefone aqui?",
+        "answer": "Você",
+        "form_tag": "base",
+        "accepted": [
+          "você"
+        ],
+        "plausible_wrong": [
+          "Ele"
+        ],
+        "distractors": [
+          "Eu",
+          "Tudo"
+        ],
+        "en_sentence": "Do you have a phone here?",
+        "hint_en": "you (sg)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ele",
+    "order": 3,
+    "original_rank": 14,
+    "lemma": "ele",
+    "pos": "PRON",
+    "en_gloss": "he",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "ele",
+      "eles"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ é um homem forte.",
+        "answer": "Ele",
+        "form_tag": "base",
+        "accepted": [
+          "ele"
+        ],
+        "plausible_wrong": [
+          "Você"
+        ],
+        "distractors": [
+          "Eu",
+          "Ela"
+        ],
+        "en_sentence": "He is a strong man.",
+        "hint_en": "he"
+      },
+      {
+        "pt_cloze": "___ tem um carro perfeito.",
+        "answer": "Ele",
+        "form_tag": "base",
+        "accepted": [
+          "ele"
+        ],
+        "plausible_wrong": [
+          "João"
+        ],
+        "distractors": [
+          "Eu",
+          "Agora"
+        ],
+        "en_sentence": "He has a perfect car.",
+        "hint_en": "he"
+      },
+      {
+        "pt_cloze": "___ é um menino normal.",
+        "answer": "Ele",
+        "form_tag": "base",
+        "accepted": [
+          "ele"
+        ],
+        "plausible_wrong": [
+          "Você"
+        ],
+        "distractors": [
+          "Eu",
+          "Ela"
+        ],
+        "en_sentence": "He is a normal boy.",
+        "hint_en": "he"
+      }
+    ]
+  },
+  {
+    "id": "pt_ela",
+    "order": 4,
+    "original_rank": 27,
+    "lemma": "ela",
+    "pos": "PRON",
+    "en_gloss": "she",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "ela",
+      "elas"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ é uma mulher bonita.",
+        "answer": "Ela",
+        "form_tag": "base",
+        "accepted": [
+          "ela"
+        ],
+        "plausible_wrong": [
+          "Maria"
+        ],
+        "distractors": [
+          "Eu",
+          "Ele"
+        ],
+        "en_sentence": "She is a beautiful woman.",
+        "hint_en": "she"
+      },
+      {
+        "pt_cloze": "___ é uma menina especial.",
+        "answer": "Ela",
+        "form_tag": "base",
+        "accepted": [
+          "ela"
+        ],
+        "plausible_wrong": [
+          "Ana"
+        ],
+        "distractors": [
+          "Eu",
+          "Ele"
+        ],
+        "en_sentence": "She is a special girl.",
+        "hint_en": "she"
+      },
+      {
+        "pt_cloze": "___ quer uma foto agora.",
+        "answer": "Ela",
+        "form_tag": "base",
+        "accepted": [
+          "ela"
+        ],
+        "plausible_wrong": [
+          "Você"
+        ],
+        "distractors": [
+          "Eu",
+          "Hoje"
+        ],
+        "en_sentence": "She wants a photo now.",
+        "hint_en": "she"
+      }
+    ]
+  },
+  {
+    "id": "pt_a_gente",
+    "order": 5,
+    "original_rank": 268,
+    "lemma": "a gente",
+    "pos": "PRON",
+    "en_gloss": "we (spoken PT-BR)",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "a gente"
+    ],
+    "grammar_note_en": "a gente means 'we' in spoken PT-BR and takes 3rd-person singular verbs",
+    "examples": [
+      {
+        "pt_cloze": "___ é família.",
+        "answer": "A gente",
+        "form_tag": "base",
+        "accepted": [
+          "a gente"
+        ],
+        "plausible_wrong": [
+          "Nós"
+        ],
+        "distractors": [
+          "Eu sou",
+          "Um plano"
+        ],
+        "en_sentence": "We are family.",
+        "hint_en": "we (spoken)"
+      },
+      {
+        "pt_cloze": "___ quer café agora.",
+        "answer": "A gente",
+        "form_tag": "base",
+        "accepted": [
+          "a gente"
+        ],
+        "plausible_wrong": [
+          "Nós"
+        ],
+        "distractors": [
+          "Eu quero",
+          "Muito hoje"
+        ],
+        "en_sentence": "We want coffee now.",
+        "hint_en": "we (spoken)"
+      },
+      {
+        "pt_cloze": "___ vai comer hoje.",
+        "answer": "A gente",
+        "form_tag": "base",
+        "accepted": [
+          "a gente"
+        ],
+        "plausible_wrong": [
+          "Nós"
+        ],
+        "distractors": [
+          "Eu vou",
+          "Tudo aqui"
+        ],
+        "en_sentence": "We are going to eat today.",
+        "hint_en": "we (spoken)"
+      }
+    ]
+  },
+  {
+    "id": "pt_nao",
+    "order": 6,
+    "original_rank": 2,
+    "lemma": "não",
+    "pos": "ADV",
+    "en_gloss": "no / not",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "não"
+    ],
+    "grammar_note_en": "não goes directly before the verb",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ quero café agora.",
+        "answer": "não",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "muito",
+          "tudo"
+        ],
+        "en_sentence": "I do not want coffee now.",
+        "hint_en": "not"
+      },
+      {
+        "pt_cloze": "Ele ___ é um problema.",
+        "answer": "não",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "agora",
+          "hoje"
+        ],
+        "en_sentence": "He is not a problem.",
+        "hint_en": "not"
+      },
+      {
+        "pt_cloze": "Ela ___ vai falar hoje.",
+        "answer": "não",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "muito"
+        ],
+        "en_sentence": "She is not going to speak today.",
+        "hint_en": "not"
+      }
+    ]
+  },
+  {
+    "id": "pt_ser",
+    "order": 7,
+    "original_rank": 50,
+    "lemma": "ser",
+    "pos": "VERB",
+    "en_gloss": "to be (permanent / identity)",
+    "cluster_id": "ser_estar",
+    "false_friend": false,
+    "forms": [
+      "sou",
+      "é",
+      "são",
+      "somos",
+      "ser"
+    ],
+    "grammar_note_en": "ser is used for identity, origin, and permanent traits",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ um homem forte.",
+        "answer": "sou",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "estou",
+          "é"
+        ],
+        "distractors": [
+          "vou",
+          "tenho"
+        ],
+        "en_sentence": "I am a strong man.",
+        "hint_en": "to be (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ uma mulher bonita.",
+        "answer": "é",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "está",
+          "sou"
+        ],
+        "distractors": [
+          "vai",
+          "faz"
+        ],
+        "en_sentence": "She is a beautiful woman.",
+        "hint_en": "to be (3rd sg)"
+      },
+      {
+        "pt_cloze": "Tudo vai ___ perfeito hoje.",
+        "answer": "ser",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [
+          "estar"
+        ],
+        "distractors": [
+          "ver",
+          "ter"
+        ],
+        "en_sentence": "Everything is going to be perfect today.",
+        "hint_en": "to be (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ter",
+    "order": 8,
+    "original_rank": 29,
+    "lemma": "ter",
+    "pos": "VERB",
+    "en_gloss": "to have (possess)",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "tenho",
+      "tem",
+      "têm",
+      "temos",
+      "ter"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ um carro local.",
+        "answer": "tenho",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "tem"
+        ],
+        "distractors": [
+          "quero",
+          "faço"
+        ],
+        "en_sentence": "I have a local car.",
+        "hint_en": "to have (1st sg)"
+      },
+      {
+        "pt_cloze": "Ana ___ uma família especial.",
+        "answer": "tem",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "tenho"
+        ],
+        "distractors": [
+          "vai",
+          "faz"
+        ],
+        "en_sentence": "Ana has a special family.",
+        "hint_en": "to have (3rd sg)"
+      },
+      {
+        "pt_cloze": "Ele quer ___ um apartamento.",
+        "answer": "ter",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ser",
+          "falar"
+        ],
+        "en_sentence": "He wants to have an apartment.",
+        "hint_en": "to have (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_querer",
+    "order": 9,
+    "original_rank": 53,
+    "lemma": "querer",
+    "pos": "VERB",
+    "en_gloss": "to want",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "quero",
+      "quer",
+      "querem",
+      "queremos",
+      "querer"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ café agora.",
+        "answer": "quero",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "quer"
+        ],
+        "distractors": [
+          "tenho",
+          "faço"
+        ],
+        "en_sentence": "I want coffee now.",
+        "hint_en": "to want (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ ver um filme.",
+        "answer": "quer",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "quero"
+        ],
+        "distractors": [
+          "tem",
+          "faz"
+        ],
+        "en_sentence": "She wants to see a movie.",
+        "hint_en": "to want (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você vai ___ um café?",
+        "answer": "querer",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comer",
+          "falar"
+        ],
+        "en_sentence": "Are you going to want a coffee?",
+        "hint_en": "to want (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_fazer",
+    "order": 10,
+    "original_rank": 48,
+    "lemma": "fazer",
+    "pos": "VERB",
+    "en_gloss": "to do / to make",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "faço",
+      "faz",
+      "fazem",
+      "fazemos",
+      "fazer"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ café agora.",
+        "answer": "faço",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "faz"
+        ],
+        "distractors": [
+          "falo",
+          "vejo"
+        ],
+        "en_sentence": "I am making coffee now.",
+        "hint_en": "to make (1st sg)"
+      },
+      {
+        "pt_cloze": "João ___ um vídeo popular.",
+        "answer": "faz",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "faço"
+        ],
+        "distractors": [
+          "vai",
+          "fala"
+        ],
+        "en_sentence": "João makes a popular video.",
+        "hint_en": "to make (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente vai ___ tudo.",
+        "answer": "fazer",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comer",
+          "falar"
+        ],
+        "en_sentence": "We are going to do everything.",
+        "hint_en": "to do (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ir",
+    "order": 11,
+    "original_rank": 32,
+    "lemma": "ir",
+    "pos": "VERB",
+    "en_gloss": "to go",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "vou",
+      "vai",
+      "vão",
+      "vamos",
+      "ir"
+    ],
+    "grammar_note_en": "ir + infinitive forms the near future ('going to')",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ comer agora.",
+        "answer": "vou",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "vai"
+        ],
+        "distractors": [
+          "sou",
+          "faço"
+        ],
+        "en_sentence": "I am going to eat now.",
+        "hint_en": "to go (1st sg)"
+      },
+      {
+        "pt_cloze": "Maria ___ falar hoje.",
+        "answer": "vai",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "vou"
+        ],
+        "distractors": [
+          "faz",
+          "tem"
+        ],
+        "en_sentence": "Maria is going to speak today.",
+        "hint_en": "to go (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu preciso ___ agora.",
+        "answer": "ir",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ser",
+          "ter"
+        ],
+        "en_sentence": "I need to go now.",
+        "hint_en": "to go (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_falar",
+    "order": 12,
+    "original_rank": 146,
+    "lemma": "falar",
+    "pos": "VERB",
+    "en_gloss": "to speak / to talk",
+    "cluster_id": "falar_dizer_contar",
+    "false_friend": false,
+    "forms": [
+      "falo",
+      "fala",
+      "falam",
+      "falamos",
+      "falar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ tudo hoje.",
+        "answer": "falo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "fala"
+        ],
+        "distractors": [
+          "como",
+          "vou"
+        ],
+        "en_sentence": "I am saying everything today.",
+        "hint_en": "to speak (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele ___ muito aqui.",
+        "answer": "fala",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "falo"
+        ],
+        "distractors": [
+          "faz",
+          "tem"
+        ],
+        "en_sentence": "He talks a lot here.",
+        "hint_en": "to talk (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você precisa ___ agora.",
+        "answer": "falar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ser",
+          "ter"
+        ],
+        "en_sentence": "You need to speak now.",
+        "hint_en": "to speak (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ver",
+    "order": 13,
+    "original_rank": 96,
+    "lemma": "ver",
+    "pos": "VERB",
+    "en_gloss": "to see",
+    "cluster_id": "ver_olhar_assistir_vir",
+    "false_friend": false,
+    "forms": [
+      "vejo",
+      "vê",
+      "veem",
+      "vemos",
+      "ver"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ um carro aqui.",
+        "answer": "vejo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "vê"
+        ],
+        "distractors": [
+          "vou",
+          "falo"
+        ],
+        "en_sentence": "I see a car here.",
+        "hint_en": "to see (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ uma foto bonita.",
+        "answer": "vê",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "vejo"
+        ],
+        "distractors": [
+          "é",
+          "vai"
+        ],
+        "en_sentence": "She sees a beautiful photo.",
+        "hint_en": "to see (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente quer ___ Maria.",
+        "answer": "ver",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ser",
+          "ir"
+        ],
+        "en_sentence": "We want to see Maria.",
+        "hint_en": "to see (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_precisar",
+    "order": 14,
+    "original_rank": 145,
+    "lemma": "precisar",
+    "pos": "VERB",
+    "en_gloss": "to need",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "preciso",
+      "precisa",
+      "precisam",
+      "precisamos",
+      "precisar"
+    ],
+    "grammar_note_en": "precisar + infinitive (no preposition); precisar + de before nouns",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ comer agora.",
+        "answer": "preciso",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "precisa"
+        ],
+        "distractors": [
+          "faço",
+          "tenho"
+        ],
+        "en_sentence": "I need to eat now.",
+        "hint_en": "to need (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele ___ falar hoje.",
+        "answer": "precisa",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "preciso"
+        ],
+        "distractors": [
+          "fala",
+          "faz"
+        ],
+        "en_sentence": "He needs to speak today.",
+        "hint_en": "to need (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você vai ___ ir hoje.",
+        "answer": "precisar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "falar",
+          "comer"
+        ],
+        "en_sentence": "You are going to need to go today.",
+        "hint_en": "to need (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_comer",
+    "order": 15,
+    "original_rank": 359,
+    "lemma": "comer",
+    "pos": "VERB",
+    "en_gloss": "to eat",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "como",
+      "come",
+      "comem",
+      "comemos",
+      "comer"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ muito hoje.",
+        "answer": "como",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "come"
+        ],
+        "distractors": [
+          "sou",
+          "vou"
+        ],
+        "en_sentence": "I am eating a lot today.",
+        "hint_en": "to eat (1st sg)"
+      },
+      {
+        "pt_cloze": "João ___ muito aqui.",
+        "answer": "come",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "como"
+        ],
+        "distractors": [
+          "é",
+          "vai"
+        ],
+        "en_sentence": "João eats a lot here.",
+        "hint_en": "to eat (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente quer ___ agora.",
+        "answer": "comer",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ser",
+          "ter"
+        ],
+        "en_sentence": "We want to eat now.",
+        "hint_en": "to eat (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_aqui",
+    "order": 16,
+    "original_rank": 24,
+    "lemma": "aqui",
+    "pos": "ADV",
+    "en_gloss": "here",
+    "cluster_id": "aqui_la_ai_ali",
+    "false_friend": false,
+    "forms": [
+      "aqui"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu quero comer ___.",
+        "answer": "aqui",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "eu",
+          "não"
+        ],
+        "en_sentence": "I want to eat here.",
+        "hint_en": "here"
+      },
+      {
+        "pt_cloze": "Tudo é simples ___.",
+        "answer": "aqui",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ele",
+          "ela"
+        ],
+        "en_sentence": "Everything is simple here.",
+        "hint_en": "here"
+      },
+      {
+        "pt_cloze": "Ana vai falar ___.",
+        "answer": "aqui",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "tudo",
+          "você"
+        ],
+        "en_sentence": "Ana is going to speak here.",
+        "hint_en": "here"
+      }
+    ]
+  },
+  {
+    "id": "pt_agora",
+    "order": 17,
+    "original_rank": 42,
+    "lemma": "agora",
+    "pos": "ADV",
+    "en_gloss": "now",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "agora"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu preciso ir ___.",
+        "answer": "agora",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "hoje"
+        ],
+        "distractors": [
+          "não",
+          "tudo"
+        ],
+        "en_sentence": "I need to go now.",
+        "hint_en": "now"
+      },
+      {
+        "pt_cloze": "Ela quer café ___.",
+        "answer": "agora",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "você",
+          "ele"
+        ],
+        "en_sentence": "She wants coffee now.",
+        "hint_en": "now"
+      },
+      {
+        "pt_cloze": "___ tudo é diferente.",
+        "answer": "Agora",
+        "form_tag": "base",
+        "accepted": [
+          "agora"
+        ],
+        "plausible_wrong": [
+          "Hoje"
+        ],
+        "distractors": [
+          "Não",
+          "Muito"
+        ],
+        "en_sentence": "Now everything is different.",
+        "hint_en": "now"
+      }
+    ]
+  },
+  {
+    "id": "pt_hoje",
+    "order": 18,
+    "original_rank": 175,
+    "lemma": "hoje",
+    "pos": "ADV",
+    "en_gloss": "today",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "hoje"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ é um momento especial.",
+        "answer": "Hoje",
+        "form_tag": "base",
+        "accepted": [
+          "hoje"
+        ],
+        "plausible_wrong": [
+          "Agora"
+        ],
+        "distractors": [
+          "Muito",
+          "Não"
+        ],
+        "en_sentence": "Today is a special moment.",
+        "hint_en": "today"
+      },
+      {
+        "pt_cloze": "Eu não vou falar ___.",
+        "answer": "hoje",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "agora"
+        ],
+        "distractors": [
+          "eu",
+          "tudo"
+        ],
+        "en_sentence": "I am not going to speak today.",
+        "hint_en": "today"
+      },
+      {
+        "pt_cloze": "A gente faz tudo ___.",
+        "answer": "hoje",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "agora"
+        ],
+        "distractors": [
+          "não",
+          "ela"
+        ],
+        "en_sentence": "We are doing everything today.",
+        "hint_en": "today"
+      }
+    ]
+  },
+  {
+    "id": "pt_muito",
+    "order": 19,
+    "original_rank": 34,
+    "lemma": "muito",
+    "pos": "ADV",
+    "en_gloss": "very / a lot / much",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "muito",
+      "muita",
+      "muitos",
+      "muitas"
+    ],
+    "grammar_note_en": "muito is invariant before adjectives/verbs, but agrees in gender/number before nouns",
+    "examples": [
+      {
+        "pt_cloze": "Tudo é ___ importante.",
+        "answer": "muito",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "tudo",
+          "hoje"
+        ],
+        "en_sentence": "Everything is very important.",
+        "hint_en": "very"
+      },
+      {
+        "pt_cloze": "João é um homem ___ forte.",
+        "answer": "muito",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "agora"
+        ],
+        "en_sentence": "João is a very strong man.",
+        "hint_en": "very"
+      },
+      {
+        "pt_cloze": "Maria fala ___ aqui.",
+        "answer": "muito",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "não",
+          "tudo"
+        ],
+        "en_sentence": "Maria talks a lot here.",
+        "hint_en": "a lot"
+      }
+    ]
+  },
+  {
+    "id": "pt_tudo",
+    "order": 20,
+    "original_rank": 39,
+    "lemma": "tudo",
+    "pos": "PRON",
+    "en_gloss": "everything / all",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "tudo"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ é possível hoje.",
+        "answer": "Tudo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "Muito",
+          "Agora"
+        ],
+        "en_sentence": "Everything is possible today.",
+        "hint_en": "everything"
+      },
+      {
+        "pt_cloze": "Eu vejo ___ aqui.",
+        "answer": "tudo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "muito",
+          "não"
+        ],
+        "en_sentence": "I see everything here.",
+        "hint_en": "everything"
+      },
+      {
+        "pt_cloze": "Você precisa fazer ___ agora.",
+        "answer": "tudo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "hoje"
+        ],
+        "en_sentence": "You need to do everything now.",
+        "hint_en": "everything"
+      }
+    ]
+  },
+  {
+    "id": "pt_o",
+    "order": 21,
+    "original_rank": 17,
+    "lemma": "o",
+    "pos": "DET",
+    "en_gloss": "the",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "o",
+      "a",
+      "os",
+      "as"
+    ],
+    "grammar_note_en": "o (masc sg), a (fem sg), os (masc pl), as (fem pl)",
+    "examples": [
+      {
+        "pt_cloze": "___ hotel é muito especial.",
+        "answer": "O",
+        "form_tag": "masc_sg",
+        "accepted": [
+          "o"
+        ],
+        "plausible_wrong": [
+          "Um"
+        ],
+        "distractors": [
+          "A",
+          "Eu"
+        ],
+        "en_sentence": "The hotel is very special.",
+        "hint_en": "the (masc sg)"
+      },
+      {
+        "pt_cloze": "___ música é muito popular.",
+        "answer": "A",
+        "form_tag": "fem_sg",
+        "accepted": [
+          "a"
+        ],
+        "plausible_wrong": [
+          "Uma"
+        ],
+        "distractors": [
+          "O",
+          "Eu"
+        ],
+        "en_sentence": "The song is very popular.",
+        "hint_en": "the (fem sg)"
+      },
+      {
+        "pt_cloze": "Eu quero ver ___ filme.",
+        "answer": "o",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "um"
+        ],
+        "distractors": [
+          "a",
+          "não"
+        ],
+        "en_sentence": "I want to see the movie.",
+        "hint_en": "the (masc sg)"
+      }
+    ]
+  },
+  {
+    "id": "pt_de",
+    "order": 22,
+    "original_rank": 3,
+    "lemma": "de",
+    "pos": "ADP",
+    "en_gloss": "of / from",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "de",
+      "do",
+      "da",
+      "dos",
+      "das"
+    ],
+    "grammar_note_en": "de + o = do, de + a = da; precisar takes 'de' before nouns",
+    "examples": [
+      {
+        "pt_cloze": "Eu preciso ___ café agora.",
+        "answer": "de",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "um"
+        ],
+        "distractors": [
+          "o",
+          "a"
+        ],
+        "en_sentence": "I need coffee now.",
+        "hint_en": "of (after precisar)"
+      },
+      {
+        "pt_cloze": "A gente precisa ___ um plano.",
+        "answer": "de",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "o",
+          "não"
+        ],
+        "en_sentence": "We need a plan.",
+        "hint_en": "of (after precisar)"
+      },
+      {
+        "pt_cloze": "João é ___ Brasil.",
+        "answer": "do",
+        "form_tag": "contraction",
+        "accepted": [],
+        "plausible_wrong": [
+          "de"
+        ],
+        "distractors": [
+          "da",
+          "o"
+        ],
+        "en_sentence": "João is from Brazil.",
+        "hint_en": "from the (de + o)"
+      }
+    ]
+  },
+  {
+    "id": "pt_em",
+    "order": 23,
+    "original_rank": 16,
+    "lemma": "em",
+    "pos": "ADP",
+    "en_gloss": "in / on / at",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "em",
+      "no",
+      "na",
+      "nos",
+      "nas"
+    ],
+    "grammar_note_en": "no = em + o (in/at the, masc); na = em + a (in/at the, fem)",
+    "examples": [
+      {
+        "pt_cloze": "A gente come ___ restaurante hoje.",
+        "answer": "no",
+        "form_tag": "contraction",
+        "accepted": [],
+        "plausible_wrong": [
+          "em",
+          "na"
+        ],
+        "distractors": [
+          "do",
+          "da"
+        ],
+        "en_sentence": "We are eating at the restaurant today.",
+        "hint_en": "at the (em + o)"
+      },
+      {
+        "pt_cloze": "Eu vejo Ana ___ foto.",
+        "answer": "na",
+        "form_tag": "contraction",
+        "accepted": [],
+        "plausible_wrong": [
+          "em",
+          "no"
+        ],
+        "distractors": [
+          "da",
+          "do"
+        ],
+        "en_sentence": "I see Ana in the photo.",
+        "hint_en": "in the (em + a)"
+      },
+      {
+        "pt_cloze": "Ele vai comer ___ um hotel.",
+        "answer": "em",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "no"
+        ],
+        "distractors": [
+          "de",
+          "do"
+        ],
+        "en_sentence": "He is going to eat at a hotel.",
+        "hint_en": "at / in"
+      }
+    ]
+  },
+  {
+    "id": "pt_estar",
+    "order": 24,
+    "original_rank": 9,
+    "lemma": "estar",
+    "pos": "VERB",
+    "en_gloss": "to be (state / location)",
+    "cluster_id": "ser_estar",
+    "false_friend": false,
+    "forms": [
+      "estou",
+      "está",
+      "estão",
+      "estamos",
+      "estar",
+      "tô",
+      "tá"
+    ],
+    "grammar_note_en": "estar is used for location and temporary states (often shortened to tô/tá in speech)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ no hotel agora.",
+        "answer": "estou",
+        "form_tag": "1st_sg",
+        "accepted": [
+          "tô"
+        ],
+        "plausible_wrong": [
+          "sou"
+        ],
+        "distractors": [
+          "vou",
+          "tenho"
+        ],
+        "en_sentence": "I am at the hotel now.",
+        "hint_en": "to be [location] (1st sg)"
+      },
+      {
+        "pt_cloze": "Maria ___ no hospital hoje.",
+        "answer": "está",
+        "form_tag": "3rd_sg",
+        "accepted": [
+          "tá"
+        ],
+        "plausible_wrong": [
+          "é"
+        ],
+        "distractors": [
+          "vai",
+          "tem"
+        ],
+        "en_sentence": "Maria is at the hospital today.",
+        "hint_en": "to be [location] (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu quero ___ aqui hoje.",
+        "answer": "estar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [
+          "ser"
+        ],
+        "distractors": [
+          "ter",
+          "fazer"
+        ],
+        "en_sentence": "I want to be here today.",
+        "hint_en": "to be [location] (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_para",
+    "order": 25,
+    "original_rank": 7,
+    "lemma": "para",
+    "pos": "ADP",
+    "en_gloss": "for / to (destination or recipient)",
+    "cluster_id": "para_por",
+    "false_friend": false,
+    "forms": [
+      "para",
+      "pra"
+    ],
+    "grammar_note_en": "Often pronounced 'pra' in everyday spoken PT-BR",
+    "examples": [
+      {
+        "pt_cloze": "O café é ___ você.",
+        "answer": "para",
+        "form_tag": "base",
+        "accepted": [
+          "pra"
+        ],
+        "plausible_wrong": [
+          "de"
+        ],
+        "distractors": [
+          "em",
+          "no"
+        ],
+        "en_sentence": "The coffee is for you.",
+        "hint_en": "for"
+      },
+      {
+        "pt_cloze": "Eu vou ___ o Brasil hoje.",
+        "answer": "para",
+        "form_tag": "base",
+        "accepted": [
+          "pra"
+        ],
+        "plausible_wrong": [
+          "em"
+        ],
+        "distractors": [
+          "de",
+          "na"
+        ],
+        "en_sentence": "I am going to Brazil today.",
+        "hint_en": "to (destination)"
+      },
+      {
+        "pt_cloze": "A gente faz tudo ___ Ana.",
+        "answer": "para",
+        "form_tag": "base",
+        "accepted": [
+          "pra"
+        ],
+        "plausible_wrong": [
+          "de"
+        ],
+        "distractors": [
+          "em",
+          "no"
+        ],
+        "en_sentence": "We do everything for Ana.",
+        "hint_en": "for"
+      }
+    ]
+  },
+  {
+    "id": "pt_com",
+    "order": 26,
+    "original_rank": 11,
+    "lemma": "com",
+    "pos": "ADP",
+    "en_gloss": "with",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "com",
+      "comigo",
+      "contigo"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu vou falar ___ Maria.",
+        "answer": "com",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "para"
+        ],
+        "distractors": [
+          "em",
+          "no"
+        ],
+        "en_sentence": "I am going to talk with Maria.",
+        "hint_en": "with"
+      },
+      {
+        "pt_cloze": "Ele está ___ a família.",
+        "answer": "com",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "em"
+        ],
+        "distractors": [
+          "de",
+          "para"
+        ],
+        "en_sentence": "He is with the family.",
+        "hint_en": "with"
+      },
+      {
+        "pt_cloze": "A gente come ___ João hoje.",
+        "answer": "com",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "para"
+        ],
+        "distractors": [
+          "de",
+          "em"
+        ],
+        "en_sentence": "We are eating with João today.",
+        "hint_en": "with"
+      }
+    ]
+  },
+  {
+    "id": "pt_que",
+    "order": 27,
+    "original_rank": 1,
+    "lemma": "que",
+    "pos": "CONJ",
+    "en_gloss": "that / what",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "que",
+      "quê"
+    ],
+    "grammar_note_en": "Use 'o que' at the start of questions for 'what'",
+    "examples": [
+      {
+        "pt_cloze": "O ___ você quer comer?",
+        "answer": "que",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "com",
+          "não"
+        ],
+        "en_sentence": "What do you want to eat?",
+        "hint_en": "what (o que)"
+      },
+      {
+        "pt_cloze": "O ___ ele faz agora?",
+        "answer": "que",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "de",
+          "em"
+        ],
+        "en_sentence": "What is he doing now?",
+        "hint_en": "what (o que)"
+      },
+      {
+        "pt_cloze": "Ela fala ___ tudo está perfeito.",
+        "answer": "que",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "com",
+          "para"
+        ],
+        "en_sentence": "She says that everything is perfect.",
+        "hint_en": "that"
+      }
+    ]
+  },
+  {
+    "id": "pt_bem",
+    "order": 28,
+    "original_rank": 18,
+    "lemma": "bem",
+    "pos": "ADV",
+    "en_gloss": "well / fine",
+    "cluster_id": "bom_mau",
+    "false_friend": false,
+    "forms": [
+      "bem"
+    ],
+    "grammar_note_en": "Use 'bem' with estar (estou bem = I am fine) and verbs",
+    "examples": [
+      {
+        "pt_cloze": "Eu estou muito ___ hoje.",
+        "answer": "bem",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "bom"
+        ],
+        "distractors": [
+          "não",
+          "com"
+        ],
+        "en_sentence": "I am very well today.",
+        "hint_en": "well / fine"
+      },
+      {
+        "pt_cloze": "Tudo está ___ aqui.",
+        "answer": "bem",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "bom"
+        ],
+        "distractors": [
+          "em",
+          "que"
+        ],
+        "en_sentence": "Everything is fine here.",
+        "hint_en": "fine"
+      },
+      {
+        "pt_cloze": "Você está ___ agora?",
+        "answer": "bem",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "bom"
+        ],
+        "distractors": [
+          "com",
+          "para"
+        ],
+        "en_sentence": "Are you okay now?",
+        "hint_en": "well / okay"
+      }
+    ]
+  },
+  {
+    "id": "pt_mas",
+    "order": 29,
+    "original_rank": 19,
+    "lemma": "mas",
+    "pos": "CONJ",
+    "en_gloss": "but",
+    "cluster_id": "mas_mais",
+    "false_friend": false,
+    "forms": [
+      "mas"
+    ],
+    "grammar_note_en": "Do not confuse 'mas' (but) with 'mais' (more)",
+    "examples": [
+      {
+        "pt_cloze": "Eu quero ir ___ não vou.",
+        "answer": "mas",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mais"
+        ],
+        "distractors": [
+          "com",
+          "para"
+        ],
+        "en_sentence": "I want to go but I am not going.",
+        "hint_en": "but"
+      },
+      {
+        "pt_cloze": "Ele fala muito ___ não vai.",
+        "answer": "mas",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mais"
+        ],
+        "distractors": [
+          "que",
+          "bem"
+        ],
+        "en_sentence": "He talks a lot but does not go.",
+        "hint_en": "but"
+      },
+      {
+        "pt_cloze": "O plano é simples ___ perfeito.",
+        "answer": "mas",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mais"
+        ],
+        "distractors": [
+          "em",
+          "de"
+        ],
+        "en_sentence": "The plan is simple but perfect.",
+        "hint_en": "but"
+      }
+    ]
+  },
+  {
+    "id": "pt_e",
+    "order": 30,
+    "original_rank": 10,
+    "lemma": "e",
+    "pos": "CONJ",
+    "en_gloss": "and",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "e"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Ana ___ João estão no hotel.",
+        "answer": "e",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "o",
+          "de"
+        ],
+        "en_sentence": "Ana and João are at the hotel.",
+        "hint_en": "and"
+      },
+      {
+        "pt_cloze": "Eu quero café ___ música agora.",
+        "answer": "e",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "em",
+          "que"
+        ],
+        "en_sentence": "I want coffee and music now.",
+        "hint_en": "and"
+      },
+      {
+        "pt_cloze": "O restaurante é simples ___ perfeito.",
+        "answer": "e",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "a",
+          "de"
+        ],
+        "en_sentence": "The restaurant is simple and perfect.",
+        "hint_en": "and"
+      }
+    ]
+  },
+  {
+    "id": "pt_um",
+    "order": 31,
+    "original_rank": 6,
+    "lemma": "um",
+    "pos": "DET",
+    "en_gloss": "a / an / one",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "um",
+      "uma",
+      "uns",
+      "umas"
+    ],
+    "grammar_note_en": "um (masc sg), uma (fem sg)",
+    "examples": [
+      {
+        "pt_cloze": "Eu tenho ___ problema real.",
+        "answer": "um",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "o"
+        ],
+        "distractors": [
+          "uma",
+          "em"
+        ],
+        "en_sentence": "I have a real problem.",
+        "hint_en": "a (masc)"
+      },
+      {
+        "pt_cloze": "Ela tem ___ ideia perfeita.",
+        "answer": "uma",
+        "form_tag": "fem_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "a"
+        ],
+        "distractors": [
+          "um",
+          "com"
+        ],
+        "en_sentence": "She has a perfect idea.",
+        "hint_en": "a (fem)"
+      },
+      {
+        "pt_cloze": "A gente precisa de ___ minuto.",
+        "answer": "um",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "uma",
+          "no"
+        ],
+        "en_sentence": "We need a minute.",
+        "hint_en": "a / one (masc)"
+      }
+    ]
+  },
+  {
+    "id": "pt_meu",
+    "order": 32,
+    "original_rank": 30,
+    "lemma": "meu",
+    "pos": "DET",
+    "en_gloss": "my",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "meu",
+      "minha",
+      "meus",
+      "minhas"
+    ],
+    "grammar_note_en": "Agrees with the noun: meu carro (masc), minha família (fem)",
+    "examples": [
+      {
+        "pt_cloze": "___ carro está aqui agora.",
+        "answer": "Meu",
+        "form_tag": "masc_sg",
+        "accepted": [
+          "meu"
+        ],
+        "plausible_wrong": [
+          "Minha"
+        ],
+        "distractors": [
+          "Eu",
+          "Bem"
+        ],
+        "en_sentence": "My car is here now.",
+        "hint_en": "my (masc)"
+      },
+      {
+        "pt_cloze": "___ família está no Brasil.",
+        "answer": "Minha",
+        "form_tag": "fem_sg",
+        "accepted": [
+          "minha"
+        ],
+        "plausible_wrong": [
+          "Meu"
+        ],
+        "distractors": [
+          "Muito",
+          "Agora"
+        ],
+        "en_sentence": "My family is in Brazil.",
+        "hint_en": "my (fem)"
+      },
+      {
+        "pt_cloze": "Você vê ___ telefone aqui?",
+        "answer": "meu",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "minha"
+        ],
+        "distractors": [
+          "minha",
+          "com"
+        ],
+        "en_sentence": "Do you see my phone here?",
+        "hint_en": "my (masc)"
+      }
+    ]
+  },
+  {
+    "id": "pt_seu",
+    "order": 33,
+    "original_rank": 31,
+    "lemma": "seu",
+    "pos": "DET",
+    "en_gloss": "your",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "seu",
+      "sua",
+      "seus",
+      "suas"
+    ],
+    "grammar_note_en": "Agrees with the noun: seu plano (masc), sua foto (fem)",
+    "examples": [
+      {
+        "pt_cloze": "___ plano é muito simples.",
+        "answer": "Seu",
+        "form_tag": "masc_sg",
+        "accepted": [
+          "seu"
+        ],
+        "plausible_wrong": [
+          "Sua"
+        ],
+        "distractors": [
+          "Sua",
+          "Não"
+        ],
+        "en_sentence": "Your plan is very simple.",
+        "hint_en": "your (masc)"
+      },
+      {
+        "pt_cloze": "___ foto está perfeita.",
+        "answer": "Sua",
+        "form_tag": "fem_sg",
+        "accepted": [
+          "sua"
+        ],
+        "plausible_wrong": [
+          "Seu"
+        ],
+        "distractors": [
+          "Seu",
+          "Hoje"
+        ],
+        "en_sentence": "Your photo is perfect.",
+        "hint_en": "your (fem)"
+      },
+      {
+        "pt_cloze": "Eu preciso do ___ telefone.",
+        "answer": "seu",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "sua"
+        ],
+        "distractors": [
+          "sua",
+          "bem"
+        ],
+        "en_sentence": "I need your phone.",
+        "hint_en": "your (masc)"
+      }
+    ]
+  },
+  {
+    "id": "pt_isso",
+    "order": 34,
+    "original_rank": 15,
+    "lemma": "isso",
+    "pos": "PRON",
+    "en_gloss": "this / that (neutral)",
+    "cluster_id": "isso_aquilo",
+    "false_friend": false,
+    "forms": [
+      "isso",
+      "disso",
+      "nisso"
+    ],
+    "grammar_note_en": "In spoken PT-BR, 'isso' covers both 'this' and 'that' for abstract ideas",
+    "examples": [
+      {
+        "pt_cloze": "___ é muito importante.",
+        "answer": "Isso",
+        "form_tag": "base",
+        "accepted": [
+          "isso"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Aqui",
+          "Para"
+        ],
+        "en_sentence": "That is very important.",
+        "hint_en": "this / that"
+      },
+      {
+        "pt_cloze": "Eu não quero fazer ___.",
+        "answer": "isso",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "hoje"
+        ],
+        "en_sentence": "I do not want to do that.",
+        "hint_en": "that"
+      },
+      {
+        "pt_cloze": "A gente precisa falar ___.",
+        "answer": "disso",
+        "form_tag": "contraction",
+        "accepted": [],
+        "plausible_wrong": [
+          "isso"
+        ],
+        "distractors": [
+          "nisso",
+          "muito"
+        ],
+        "en_sentence": "We need to talk about that.",
+        "hint_en": "about that (de + isso)"
+      }
+    ]
+  },
+  {
+    "id": "pt_casa",
+    "order": 35,
+    "original_rank": 95,
+    "lemma": "casa",
+    "pos": "NOUN",
+    "en_gloss": "house / home",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "casa",
+      "casas"
+    ],
+    "grammar_note_en": "'em casa' = at home (no article); 'na casa' = in the house",
+    "examples": [
+      {
+        "pt_cloze": "Eu estou em ___ agora.",
+        "answer": "casa",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "hoje"
+        ],
+        "en_sentence": "I am at home now.",
+        "hint_en": "home"
+      },
+      {
+        "pt_cloze": "Minha ___ é muito simples.",
+        "answer": "casa",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "carro",
+          "plano"
+        ],
+        "en_sentence": "My house is very simple.",
+        "hint_en": "house"
+      },
+      {
+        "pt_cloze": "Ele vai para ___ hoje.",
+        "answer": "casa",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "agora"
+        ],
+        "en_sentence": "He is going home today.",
+        "hint_en": "home"
+      }
+    ]
+  },
+  {
+    "id": "pt_tempo",
+    "order": 36,
+    "original_rank": 89,
+    "lemma": "tempo",
+    "pos": "NOUN",
+    "en_gloss": "time / weather",
+    "cluster_id": "tempo_hora_vez",
+    "false_friend": false,
+    "forms": [
+      "tempo",
+      "tempos"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu não tenho ___ agora.",
+        "answer": "tempo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "muito"
+        ],
+        "en_sentence": "I do not have time now.",
+        "hint_en": "time"
+      },
+      {
+        "pt_cloze": "O ___ está perfeito hoje.",
+        "answer": "tempo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "foto"
+        ],
+        "en_sentence": "The weather is perfect today.",
+        "hint_en": "weather"
+      },
+      {
+        "pt_cloze": "A gente precisa de ___.",
+        "answer": "tempo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "aqui",
+          "bem"
+        ],
+        "en_sentence": "We need time.",
+        "hint_en": "time"
+      }
+    ]
+  },
+  {
+    "id": "pt_poder",
+    "order": 37,
+    "original_rank": 43,
+    "lemma": "poder",
+    "pos": "VERB",
+    "en_gloss": "can / to be able to",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "posso",
+      "pode",
+      "podem",
+      "podemos",
+      "poder"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ falar com você?",
+        "answer": "posso",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "pode"
+        ],
+        "distractors": [
+          "faço",
+          "tenho"
+        ],
+        "en_sentence": "Can I talk with you?",
+        "hint_en": "can (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele não ___ ir hoje.",
+        "answer": "pode",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "posso"
+        ],
+        "distractors": [
+          "faz",
+          "tem"
+        ],
+        "en_sentence": "He cannot go today.",
+        "hint_en": "can (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu vou ___ comer em casa.",
+        "answer": "poder",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "fazer",
+          "falar"
+        ],
+        "en_sentence": "I will be able to eat at home.",
+        "hint_en": "to be able to (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_saber",
+    "order": 38,
+    "original_rank": 47,
+    "lemma": "saber",
+    "pos": "VERB",
+    "en_gloss": "to know (facts / skills)",
+    "cluster_id": "saber_conhecer",
+    "false_friend": false,
+    "forms": [
+      "sei",
+      "sabe",
+      "sabem",
+      "sabemos",
+      "saber"
+    ],
+    "grammar_note_en": "Use 'saber' for facts and skills (not people or places)",
+    "examples": [
+      {
+        "pt_cloze": "Eu não ___ fazer isso.",
+        "answer": "sei",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "sabe"
+        ],
+        "distractors": [
+          "sou",
+          "vou"
+        ],
+        "en_sentence": "I do not know how to do that.",
+        "hint_en": "to know (1st sg)"
+      },
+      {
+        "pt_cloze": "Você ___ o plano hoje?",
+        "answer": "sabe",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "sei"
+        ],
+        "distractors": [
+          "vai",
+          "está"
+        ],
+        "en_sentence": "Do you know the plan today?",
+        "hint_en": "to know (3rd sg)"
+      },
+      {
+        "pt_cloze": "Ela precisa ___ de tudo.",
+        "answer": "saber",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comer",
+          "ir"
+        ],
+        "en_sentence": "She needs to know about everything.",
+        "hint_en": "to know (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_coisa",
+    "order": 39,
+    "original_rank": 80,
+    "lemma": "coisa",
+    "pos": "NOUN",
+    "en_gloss": "thing",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "coisa",
+      "coisas"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Isso é uma ___ importante.",
+        "answer": "coisa",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "tempo",
+          "carro"
+        ],
+        "en_sentence": "That is an important thing.",
+        "hint_en": "thing"
+      },
+      {
+        "pt_cloze": "Eu tenho uma ___ para você.",
+        "answer": "coisa",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "plano",
+          "tempo"
+        ],
+        "en_sentence": "I have a thing for you.",
+        "hint_en": "thing"
+      },
+      {
+        "pt_cloze": "A gente faz muitas ___ hoje.",
+        "answer": "coisas",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "coisa"
+        ],
+        "distractors": [
+          "tempo",
+          "casa"
+        ],
+        "en_sentence": "We are doing many things today.",
+        "hint_en": "things (pl)"
+      }
+    ]
+  },
+  {
+    "id": "pt_dar",
+    "order": 40,
+    "original_rank": 168,
+    "lemma": "dar",
+    "pos": "VERB",
+    "en_gloss": "to give / to hand over",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "dou",
+      "dá",
+      "dão",
+      "damos",
+      "dar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ o café para você.",
+        "answer": "dou",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "dá"
+        ],
+        "distractors": [
+          "vou",
+          "sou"
+        ],
+        "en_sentence": "I give the coffee to you.",
+        "hint_en": "to give (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ a foto para Maria.",
+        "answer": "dá",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "dou"
+        ],
+        "distractors": [
+          "vai",
+          "está"
+        ],
+        "en_sentence": "She hands the photo to Maria.",
+        "hint_en": "to give (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ seu telefone?",
+        "answer": "dar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ir",
+          "ser"
+        ],
+        "en_sentence": "Can you give your phone?",
+        "hint_en": "to give (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ficar",
+    "order": 41,
+    "original_rank": 141,
+    "lemma": "ficar",
+    "pos": "VERB",
+    "en_gloss": "to stay / to remain",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "fico",
+      "fica",
+      "ficam",
+      "ficamos",
+      "ficar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ em casa hoje.",
+        "answer": "fico",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "fica"
+        ],
+        "distractors": [
+          "faço",
+          "sei"
+        ],
+        "en_sentence": "I am staying at home today.",
+        "hint_en": "to stay (1st sg)"
+      },
+      {
+        "pt_cloze": "João ___ no hotel agora.",
+        "answer": "fica",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "fico"
+        ],
+        "distractors": [
+          "faz",
+          "sabe"
+        ],
+        "en_sentence": "João is staying at the hotel now.",
+        "hint_en": "to stay (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente pode ___ aqui?",
+        "answer": "ficar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dar",
+          "ter"
+        ],
+        "en_sentence": "Can we stay here?",
+        "hint_en": "to stay (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_la",
+    "order": 42,
+    "original_rank": 64,
+    "lemma": "lá",
+    "pos": "ADV",
+    "en_gloss": "there (far)",
+    "cluster_id": "aqui_la_ai_ali",
+    "false_friend": false,
+    "forms": [
+      "lá"
+    ],
+    "grammar_note_en": "lá refers to a place far from both speaker and listener",
+    "examples": [
+      {
+        "pt_cloze": "Eu vou comer ___ hoje.",
+        "answer": "lá",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "aqui"
+        ],
+        "distractors": [
+          "não",
+          "em"
+        ],
+        "en_sentence": "I am going to eat there today.",
+        "hint_en": "there (far)"
+      },
+      {
+        "pt_cloze": "Minha família está ___.",
+        "answer": "lá",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "eu",
+          "de"
+        ],
+        "en_sentence": "My family is over there.",
+        "hint_en": "there (far)"
+      },
+      {
+        "pt_cloze": "O restaurante fica ___ no Brasil.",
+        "answer": "lá",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "com",
+          "que"
+        ],
+        "en_sentence": "The restaurant is over there in Brazil.",
+        "hint_en": "there (far)"
+      }
+    ]
+  },
+  {
+    "id": "pt_dia",
+    "order": 43,
+    "original_rank": 115,
+    "lemma": "dia",
+    "pos": "NOUN",
+    "en_gloss": "day",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "dia",
+      "dias"
+    ],
+    "grammar_note_en": "dia is masculine despite ending in -a (um dia, o dia)",
+    "examples": [
+      {
+        "pt_cloze": "Hoje é um ___ especial.",
+        "answer": "dia",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "coisa"
+        ],
+        "en_sentence": "Today is a special day.",
+        "hint_en": "day"
+      },
+      {
+        "pt_cloze": "O ___ está muito perfeito.",
+        "answer": "dia",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "foto"
+        ],
+        "en_sentence": "The day is very perfect.",
+        "hint_en": "day"
+      },
+      {
+        "pt_cloze": "Eu fico lá muitos ___.",
+        "answer": "dias",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "dia"
+        ],
+        "distractors": [
+          "casa",
+          "coisa"
+        ],
+        "en_sentence": "I am staying there for many days.",
+        "hint_en": "days (pl)"
+      }
+    ]
+  },
+  {
+    "id": "pt_bom",
+    "order": 44,
+    "original_rank": 70,
+    "lemma": "bom",
+    "pos": "ADJ",
+    "en_gloss": "good",
+    "cluster_id": "bom_mau",
+    "false_friend": false,
+    "forms": [
+      "bom",
+      "boa",
+      "bons",
+      "boas"
+    ],
+    "grammar_note_en": "Use 'bom/boa' with nouns (um bom dia), 'bem' with verbs (estou bem)",
+    "examples": [
+      {
+        "pt_cloze": "O café está muito ___.",
+        "answer": "bom",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "bem"
+        ],
+        "distractors": [
+          "boa",
+          "com"
+        ],
+        "en_sentence": "The coffee is very good.",
+        "hint_en": "good (masc)"
+      },
+      {
+        "pt_cloze": "Isso é uma ___ ideia.",
+        "answer": "boa",
+        "form_tag": "fem_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "bom"
+        ],
+        "distractors": [
+          "bom",
+          "bem"
+        ],
+        "en_sentence": "That is a good idea.",
+        "hint_en": "good (fem)"
+      },
+      {
+        "pt_cloze": "João é um ___ homem.",
+        "answer": "bom",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "bem"
+        ],
+        "distractors": [
+          "boa",
+          "não"
+        ],
+        "en_sentence": "João is a good man.",
+        "hint_en": "good (masc)"
+      }
+    ]
+  },
+  {
+    "id": "pt_mais",
+    "order": 45,
+    "original_rank": 28,
+    "lemma": "mais",
+    "pos": "ADV",
+    "en_gloss": "more",
+    "cluster_id": "mas_mais",
+    "false_friend": false,
+    "forms": [
+      "mais"
+    ],
+    "grammar_note_en": "Do not confuse 'mais' (more) with 'mas' (but)",
+    "examples": [
+      {
+        "pt_cloze": "Eu quero ___ café agora.",
+        "answer": "mais",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mas"
+        ],
+        "distractors": [
+          "bem",
+          "com"
+        ],
+        "en_sentence": "I want more coffee now.",
+        "hint_en": "more"
+      },
+      {
+        "pt_cloze": "A gente precisa de ___ tempo.",
+        "answer": "mais",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mas"
+        ],
+        "distractors": [
+          "bem",
+          "hoje"
+        ],
+        "en_sentence": "We need more time.",
+        "hint_en": "more"
+      },
+      {
+        "pt_cloze": "Isso é ___ importante hoje.",
+        "answer": "mais",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mas"
+        ],
+        "distractors": [
+          "lá",
+          "não"
+        ],
+        "en_sentence": "That is more important today.",
+        "hint_en": "more"
+      }
+    ]
+  },
+  {
+    "id": "pt_tambem",
+    "order": 46,
+    "original_rank": 106,
+    "lemma": "também",
+    "pos": "ADV",
+    "en_gloss": "also / too",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "também"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ quero café agora.",
+        "answer": "também",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "muito",
+          "agora"
+        ],
+        "en_sentence": "I also want coffee now.",
+        "hint_en": "also / too"
+      },
+      {
+        "pt_cloze": "Maria vai para lá ___.",
+        "answer": "também",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "muito",
+          "não"
+        ],
+        "en_sentence": "Maria is going there too.",
+        "hint_en": "too"
+      },
+      {
+        "pt_cloze": "Ele ___ está em casa.",
+        "answer": "também",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "tudo",
+          "tempo"
+        ],
+        "en_sentence": "He is also at home.",
+        "hint_en": "also"
+      }
+    ]
+  },
+  {
+    "id": "pt_so",
+    "order": 47,
+    "original_rank": 40,
+    "lemma": "só",
+    "pos": "ADV",
+    "en_gloss": "only / just",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "só"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ quero um café.",
+        "answer": "só",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "lá",
+          "em"
+        ],
+        "en_sentence": "I just want a coffee.",
+        "hint_en": "just / only"
+      },
+      {
+        "pt_cloze": "A gente tem ___ um minuto.",
+        "answer": "só",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "de",
+          "lá"
+        ],
+        "en_sentence": "We only have one minute.",
+        "hint_en": "only"
+      },
+      {
+        "pt_cloze": "Ele ___ fica em casa.",
+        "answer": "só",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "no",
+          "com"
+        ],
+        "en_sentence": "He only stays at home.",
+        "hint_en": "only"
+      }
+    ]
+  },
+  {
+    "id": "pt_ja",
+    "order": 48,
+    "original_rank": 57,
+    "lemma": "já",
+    "pos": "ADV",
+    "en_gloss": "already / right away",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "já"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ estou em casa.",
+        "answer": "já",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "lá",
+          "em"
+        ],
+        "en_sentence": "I am already at home.",
+        "hint_en": "already"
+      },
+      {
+        "pt_cloze": "Ela ___ sabe de tudo.",
+        "answer": "já",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "com",
+          "de"
+        ],
+        "en_sentence": "She already knows everything.",
+        "hint_en": "already"
+      },
+      {
+        "pt_cloze": "Você ___ vai para lá?",
+        "answer": "já",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "no",
+          "do"
+        ],
+        "en_sentence": "Are you already going there?",
+        "hint_en": "already"
+      }
+    ]
+  },
+  {
+    "id": "pt_como",
+    "order": 49,
+    "original_rank": 20,
+    "lemma": "como",
+    "pos": "ADV",
+    "en_gloss": "how / like",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "como"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ você está hoje?",
+        "answer": "Como",
+        "form_tag": "base",
+        "accepted": [
+          "como"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Tudo",
+          "Para"
+        ],
+        "en_sentence": "How are you today?",
+        "hint_en": "how"
+      },
+      {
+        "pt_cloze": "___ a gente faz isso?",
+        "answer": "Como",
+        "form_tag": "base",
+        "accepted": [
+          "como"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Aqui",
+          "Muito"
+        ],
+        "en_sentence": "How do we do that?",
+        "hint_en": "how"
+      },
+      {
+        "pt_cloze": "___ está sua família?",
+        "answer": "Como",
+        "form_tag": "base",
+        "accepted": [
+          "como"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Hoje",
+          "Casa"
+        ],
+        "en_sentence": "How is your family?",
+        "hint_en": "how"
+      }
+    ]
+  },
+  {
+    "id": "pt_onde",
+    "order": 50,
+    "original_rank": 63,
+    "lemma": "onde",
+    "pos": "ADV",
+    "en_gloss": "where",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "onde"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ você está agora?",
+        "answer": "Onde",
+        "form_tag": "base",
+        "accepted": [
+          "onde"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Hoje",
+          "Tudo"
+        ],
+        "en_sentence": "Where are you now?",
+        "hint_en": "where"
+      },
+      {
+        "pt_cloze": "___ fica o restaurante?",
+        "answer": "Onde",
+        "form_tag": "base",
+        "accepted": [
+          "onde"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Muito",
+          "Agora"
+        ],
+        "en_sentence": "Where is the restaurant?",
+        "hint_en": "where"
+      },
+      {
+        "pt_cloze": "Eu sei ___ ele está.",
+        "answer": "onde",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "hoje",
+          "casa"
+        ],
+        "en_sentence": "I know where he is.",
+        "hint_en": "where"
+      }
+    ]
+  },
+  {
+    "id": "pt_quando",
+    "order": 51,
+    "original_rank": 49,
+    "lemma": "quando",
+    "pos": "ADV",
+    "en_gloss": "when",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "quando"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ você vai para casa?",
+        "answer": "Quando",
+        "form_tag": "base",
+        "accepted": [
+          "quando"
+        ],
+        "plausible_wrong": [
+          "Onde"
+        ],
+        "distractors": [
+          "Tudo",
+          "Muito"
+        ],
+        "en_sentence": "When are you going home?",
+        "hint_en": "when"
+      },
+      {
+        "pt_cloze": "___ ele vai falar comigo?",
+        "answer": "Quando",
+        "form_tag": "base",
+        "accepted": [
+          "quando"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Hoje",
+          "Agora"
+        ],
+        "en_sentence": "When is he going to talk with me?",
+        "hint_en": "when"
+      },
+      {
+        "pt_cloze": "Eu não sei ___ vou.",
+        "answer": "quando",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "muito",
+          "agora"
+        ],
+        "en_sentence": "I do not know when I am going.",
+        "hint_en": "when"
+      }
+    ]
+  },
+  {
+    "id": "pt_quem",
+    "order": 52,
+    "original_rank": 59,
+    "lemma": "quem",
+    "pos": "PRON",
+    "en_gloss": "who",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "quem"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "___ é a mulher bonita?",
+        "answer": "Quem",
+        "form_tag": "base",
+        "accepted": [
+          "quem"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Onde",
+          "Como"
+        ],
+        "en_sentence": "Who is the beautiful woman?",
+        "hint_en": "who"
+      },
+      {
+        "pt_cloze": "___ quer mais café agora?",
+        "answer": "Quem",
+        "form_tag": "base",
+        "accepted": [
+          "quem"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Quando",
+          "Hoje"
+        ],
+        "en_sentence": "Who wants more coffee now?",
+        "hint_en": "who"
+      },
+      {
+        "pt_cloze": "Com ___ você quer falar?",
+        "answer": "quem",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "onde",
+          "como"
+        ],
+        "en_sentence": "Who do you want to talk with?",
+        "hint_en": "whom / who"
+      }
+    ]
+  },
+  {
+    "id": "pt_porque",
+    "order": 53,
+    "original_rank": 77,
+    "lemma": "porque",
+    "pos": "CONJ",
+    "en_gloss": "because",
+    "cluster_id": "porque_por_que",
+    "false_friend": false,
+    "forms": [
+      "porque"
+    ],
+    "grammar_note_en": "'porque' (one word) means 'because' in answers and explanations",
+    "examples": [
+      {
+        "pt_cloze": "Eu fico ___ estou bem aqui.",
+        "answer": "porque",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "por que"
+        ],
+        "distractors": [
+          "quando",
+          "também"
+        ],
+        "en_sentence": "I am staying because I am fine here.",
+        "hint_en": "because"
+      },
+      {
+        "pt_cloze": "Ela come ___ tem tempo.",
+        "answer": "porque",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "por que"
+        ],
+        "distractors": [
+          "onde",
+          "como"
+        ],
+        "en_sentence": "She eats because she has time.",
+        "hint_en": "because"
+      },
+      {
+        "pt_cloze": "Não vou ___ preciso ficar.",
+        "answer": "porque",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "por que"
+        ],
+        "distractors": [
+          "quem",
+          "tudo"
+        ],
+        "en_sentence": "I am not going because I need to stay.",
+        "hint_en": "because"
+      }
+    ]
+  },
+  {
+    "id": "pt_por",
+    "order": 54,
+    "original_rank": 13,
+    "lemma": "por",
+    "pos": "ADP",
+    "en_gloss": "by / for / through",
+    "cluster_id": "para_por",
+    "false_friend": false,
+    "forms": [
+      "por",
+      "pelo",
+      "pela",
+      "pelos",
+      "pelas"
+    ],
+    "grammar_note_en": "por + o = pelo, por + a = pela; used for routes, exchanges, and 'por aqui'",
+    "examples": [
+      {
+        "pt_cloze": "Ele está ___ aqui hoje.",
+        "answer": "por",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "para"
+        ],
+        "distractors": [
+          "com",
+          "bem"
+        ],
+        "en_sentence": "He is around here today.",
+        "hint_en": "around / by"
+      },
+      {
+        "pt_cloze": "Eu faço isso ___ você.",
+        "answer": "por",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "em",
+          "no"
+        ],
+        "en_sentence": "I do this for your sake.",
+        "hint_en": "for (for the sake of)"
+      },
+      {
+        "pt_cloze": "A gente fala ___ telefone.",
+        "answer": "por",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "no"
+        ],
+        "distractors": [
+          "com",
+          "mas"
+        ],
+        "en_sentence": "We talk by phone.",
+        "hint_en": "by (means)"
+      }
+    ]
+  },
+  {
+    "id": "pt_nada",
+    "order": 55,
+    "original_rank": 61,
+    "lemma": "nada",
+    "pos": "PRON",
+    "en_gloss": "nothing",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "nada"
+    ],
+    "grammar_note_en": "PT-BR uses double negatives: 'não quero nada' (I don't want anything)",
+    "examples": [
+      {
+        "pt_cloze": "Eu não quero ___ agora.",
+        "answer": "nada",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "onde",
+          "como"
+        ],
+        "en_sentence": "I do not want anything now.",
+        "hint_en": "nothing / anything"
+      },
+      {
+        "pt_cloze": "Ele não sabe ___ disso.",
+        "answer": "nada",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "hoje"
+        ],
+        "en_sentence": "He knows nothing about that.",
+        "hint_en": "nothing"
+      },
+      {
+        "pt_cloze": "___ está perfeito hoje.",
+        "answer": "Nada",
+        "form_tag": "base",
+        "accepted": [
+          "nada"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Onde",
+          "Como"
+        ],
+        "en_sentence": "Nothing is perfect today.",
+        "hint_en": "nothing"
+      }
+    ]
+  },
+  {
+    "id": "pt_pegar",
+    "order": 56,
+    "original_rank": 291,
+    "lemma": "pegar",
+    "pos": "VERB",
+    "en_gloss": "to grab / to pick up / to take",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "pego",
+      "pega",
+      "pegam",
+      "pegamos",
+      "pegar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ meu carro agora.",
+        "answer": "pego",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "pega"
+        ],
+        "distractors": [
+          "fico",
+          "falo"
+        ],
+        "en_sentence": "I am grabbing my car now.",
+        "hint_en": "to grab / take (1st sg)"
+      },
+      {
+        "pt_cloze": "Ana ___ o café aqui.",
+        "answer": "pega",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "pego"
+        ],
+        "distractors": [
+          "fica",
+          "fala"
+        ],
+        "en_sentence": "Ana picks up the coffee here.",
+        "hint_en": "to pick up (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ meu telefone?",
+        "answer": "pegar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "ficar",
+          "falar"
+        ],
+        "en_sentence": "Can you grab my phone?",
+        "hint_en": "to grab (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_gostar",
+    "order": 57,
+    "original_rank": 284,
+    "lemma": "gostar",
+    "pos": "VERB",
+    "en_gloss": "to like",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "gosto",
+      "gosta",
+      "gostam",
+      "gostamos",
+      "gostar"
+    ],
+    "grammar_note_en": "gostar always takes 'de' before its object (gostar de + noun/verb)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ muito de café.",
+        "answer": "gosto",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "gosta"
+        ],
+        "distractors": [
+          "faço",
+          "tenho"
+        ],
+        "en_sentence": "I really like coffee.",
+        "hint_en": "to like (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ da música local.",
+        "answer": "gosta",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "gosto"
+        ],
+        "distractors": [
+          "faz",
+          "tem"
+        ],
+        "en_sentence": "She likes the local music.",
+        "hint_en": "to like (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você vai ___ do filme.",
+        "answer": "gostar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comer",
+          "ficar"
+        ],
+        "en_sentence": "You are going to like the movie.",
+        "hint_en": "to like (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_dizer",
+    "order": 58,
+    "original_rank": 75,
+    "lemma": "dizer",
+    "pos": "VERB",
+    "en_gloss": "to say / to tell",
+    "cluster_id": "falar_dizer_contar",
+    "false_friend": false,
+    "forms": [
+      "digo",
+      "diz",
+      "dizem",
+      "dizemos",
+      "dizer"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ tudo para você.",
+        "answer": "digo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "diz"
+        ],
+        "distractors": [
+          "fico",
+          "pego"
+        ],
+        "en_sentence": "I tell everything to you.",
+        "hint_en": "to say / tell (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele não ___ nada hoje.",
+        "answer": "diz",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "digo"
+        ],
+        "distractors": [
+          "vai",
+          "tem"
+        ],
+        "en_sentence": "He is not saying anything today.",
+        "hint_en": "to say (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu preciso ___ uma coisa.",
+        "answer": "dizer",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comer",
+          "ficar"
+        ],
+        "en_sentence": "I need to say something.",
+        "hint_en": "to say (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_cara",
+    "order": 59,
+    "original_rank": 86,
+    "lemma": "cara",
+    "pos": "NOUN",
+    "en_gloss": "guy / dude / face",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "cara",
+      "caras"
+    ],
+    "grammar_note_en": "'o cara' (masc) = the guy/dude; 'a cara' (fem) = the face",
+    "examples": [
+      {
+        "pt_cloze": "O ___ está no restaurante.",
+        "answer": "cara",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "coisa"
+        ],
+        "en_sentence": "The guy is at the restaurant.",
+        "hint_en": "guy / dude"
+      },
+      {
+        "pt_cloze": "João é um ___ bom.",
+        "answer": "cara",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "tempo"
+        ],
+        "en_sentence": "João is a good guy.",
+        "hint_en": "guy"
+      },
+      {
+        "pt_cloze": "Quem é o ___ lá?",
+        "answer": "cara",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "nada"
+        ],
+        "en_sentence": "Who is the guy over there?",
+        "hint_en": "guy"
+      }
+    ]
+  },
+  {
+    "id": "pt_noite",
+    "order": 60,
+    "original_rank": 110,
+    "lemma": "noite",
+    "pos": "NOUN",
+    "en_gloss": "night / evening",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "noite",
+      "noites"
+    ],
+    "grammar_note_en": "'de noite' or 'à noite' = at night",
+    "examples": [
+      {
+        "pt_cloze": "A ___ está perfeita hoje.",
+        "answer": "noite",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "tempo"
+        ],
+        "en_sentence": "The night is perfect today.",
+        "hint_en": "night"
+      },
+      {
+        "pt_cloze": "Eu fico em casa de ___.",
+        "answer": "noite",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "nada"
+        ],
+        "en_sentence": "I stay at home at night.",
+        "hint_en": "night"
+      },
+      {
+        "pt_cloze": "A gente come lá de ___.",
+        "answer": "noite",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "cara",
+          "coisa"
+        ],
+        "en_sentence": "We eat there at night.",
+        "hint_en": "night"
+      }
+    ]
+  },
+  {
+    "id": "pt_trabalho",
+    "order": 61,
+    "original_rank": 164,
+    "lemma": "trabalho",
+    "pos": "NOUN",
+    "en_gloss": "work / job",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "trabalho",
+      "trabalhos"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu estou no ___ agora.",
+        "answer": "trabalho",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "noite",
+          "casa"
+        ],
+        "en_sentence": "I am at work now.",
+        "hint_en": "work"
+      },
+      {
+        "pt_cloze": "Ele gosta muito do ___.",
+        "answer": "trabalho",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "noite"
+        ],
+        "en_sentence": "He really likes the job.",
+        "hint_en": "job / work"
+      },
+      {
+        "pt_cloze": "Eu tenho muito ___ hoje.",
+        "answer": "trabalho",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "noite",
+          "cara"
+        ],
+        "en_sentence": "I have a lot of work today.",
+        "hint_en": "work"
+      }
+    ]
+  },
+  {
+    "id": "pt_dinheiro",
+    "order": 62,
+    "original_rank": 182,
+    "lemma": "dinheiro",
+    "pos": "NOUN",
+    "en_gloss": "money",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "dinheiro"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu não tenho ___ agora.",
+        "answer": "dinheiro",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "noite",
+          "cara"
+        ],
+        "en_sentence": "I do not have money now.",
+        "hint_en": "money"
+      },
+      {
+        "pt_cloze": "A gente precisa de ___.",
+        "answer": "dinheiro",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "noite",
+          "quando"
+        ],
+        "en_sentence": "We need money.",
+        "hint_en": "money"
+      },
+      {
+        "pt_cloze": "Onde está o meu ___?",
+        "answer": "dinheiro",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "noite"
+        ],
+        "en_sentence": "Where is my money?",
+        "hint_en": "money"
+      }
+    ]
+  },
+  {
+    "id": "pt_amigo",
+    "order": 63,
+    "original_rank": 225,
+    "lemma": "amigo",
+    "pos": "NOUN",
+    "en_gloss": "friend",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "amigo",
+      "amiga",
+      "amigos",
+      "amigas"
+    ],
+    "grammar_note_en": "amigo (male friend), amiga (female friend)",
+    "examples": [
+      {
+        "pt_cloze": "João é meu ___.",
+        "answer": "amigo",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "amiga"
+        ],
+        "distractors": [
+          "amiga",
+          "noite"
+        ],
+        "en_sentence": "João is my friend.",
+        "hint_en": "friend (masc)"
+      },
+      {
+        "pt_cloze": "Ana é uma boa ___.",
+        "answer": "amiga",
+        "form_tag": "fem_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "amigo"
+        ],
+        "distractors": [
+          "amigo",
+          "tempo"
+        ],
+        "en_sentence": "Ana is a good friend.",
+        "hint_en": "friend (fem)"
+      },
+      {
+        "pt_cloze": "Eu vou falar com meu ___.",
+        "answer": "amigo",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "amiga",
+          "casa"
+        ],
+        "en_sentence": "I am going to talk with my friend.",
+        "hint_en": "friend (masc)"
+      }
+    ]
+  },
+  {
+    "id": "pt_vir",
+    "order": 64,
+    "original_rank": 247,
+    "lemma": "vir",
+    "pos": "VERB",
+    "en_gloss": "to come",
+    "cluster_id": "ver_olhar_assistir_vir",
+    "false_friend": false,
+    "forms": [
+      "venho",
+      "vem",
+      "vêm",
+      "vimos",
+      "vir"
+    ],
+    "grammar_note_en": "Do not confuse 'vir' (to come) with 'ver' (to see)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ aqui com João.",
+        "answer": "venho",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "vem"
+        ],
+        "distractors": [
+          "vejo",
+          "faço"
+        ],
+        "en_sentence": "I come here with João.",
+        "hint_en": "to come (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele ___ para casa hoje.",
+        "answer": "vem",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "venho"
+        ],
+        "distractors": [
+          "vê",
+          "tem"
+        ],
+        "en_sentence": "He is coming home today.",
+        "hint_en": "to come (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ agora?",
+        "answer": "vir",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [
+          "ver"
+        ],
+        "distractors": [
+          "ser",
+          "dar"
+        ],
+        "en_sentence": "Can you come now?",
+        "hint_en": "to come (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_achar",
+    "order": 65,
+    "original_rank": 79,
+    "lemma": "achar",
+    "pos": "VERB",
+    "en_gloss": "to think (opinion) / to find",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "acho",
+      "acha",
+      "acham",
+      "achamos",
+      "achar"
+    ],
+    "grammar_note_en": "'Eu acho que...' is the everyday PT-BR way to say 'I think that...'",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ que isso é bom.",
+        "answer": "acho",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "acha"
+        ],
+        "distractors": [
+          "faço",
+          "pego"
+        ],
+        "en_sentence": "I think that is good.",
+        "hint_en": "to think (1st sg)"
+      },
+      {
+        "pt_cloze": "O que você ___ disso?",
+        "answer": "acha",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "acho"
+        ],
+        "distractors": [
+          "fica",
+          "pega"
+        ],
+        "en_sentence": "What do you think of that?",
+        "hint_en": "to think (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu preciso ___ meu telefone.",
+        "answer": "achar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comer",
+          "ficar"
+        ],
+        "en_sentence": "I need to find my phone.",
+        "hint_en": "to find (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_sair",
+    "order": 66,
+    "original_rank": 212,
+    "lemma": "sair",
+    "pos": "VERB",
+    "en_gloss": "to leave / to go out",
+    "cluster_id": "levar_trazer_sair_deixar",
+    "false_friend": false,
+    "forms": [
+      "saio",
+      "sai",
+      "saem",
+      "saímos",
+      "sair"
+    ],
+    "grammar_note_en": "Use 'sair de' for leaving a place (sair de casa = leave home)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ de casa agora.",
+        "answer": "saio",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "sai"
+        ],
+        "distractors": [
+          "fico",
+          "digo"
+        ],
+        "en_sentence": "I am leaving home now.",
+        "hint_en": "to leave (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ do trabalho hoje.",
+        "answer": "sai",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "saio"
+        ],
+        "distractors": [
+          "dá",
+          "vê"
+        ],
+        "en_sentence": "She is leaving work today.",
+        "hint_en": "to leave (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente vai ___ de noite.",
+        "answer": "sair",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dar",
+          "ter"
+        ],
+        "en_sentence": "We are going to go out at night.",
+        "hint_en": "to go out (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_hora",
+    "order": 67,
+    "original_rank": 203,
+    "lemma": "hora",
+    "pos": "NOUN",
+    "en_gloss": "hour / time (of day)",
+    "cluster_id": "tempo_hora_vez",
+    "false_friend": false,
+    "forms": [
+      "hora",
+      "horas"
+    ],
+    "grammar_note_en": "'Que horas são?' = What time is it? 'na hora' = on time / right away",
+    "examples": [
+      {
+        "pt_cloze": "Agora é a ___ de sair.",
+        "answer": "hora",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "tempo"
+        ],
+        "distractors": [
+          "casa",
+          "noite"
+        ],
+        "en_sentence": "Now is the time to leave.",
+        "hint_en": "time / hour"
+      },
+      {
+        "pt_cloze": "Eu fico lá uma ___.",
+        "answer": "hora",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "cara"
+        ],
+        "en_sentence": "I am staying there for one hour.",
+        "hint_en": "hour"
+      },
+      {
+        "pt_cloze": "Que ___ são agora?",
+        "answer": "horas",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "hora"
+        ],
+        "distractors": [
+          "dias",
+          "casas"
+        ],
+        "en_sentence": "What time is it now?",
+        "hint_en": "hours / time (pl)"
+      }
+    ]
+  },
+  {
+    "id": "pt_legal",
+    "order": 68,
+    "original_rank": 297,
+    "lemma": "legal",
+    "pos": "ADJ",
+    "en_gloss": "cool / nice",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "legal",
+      "legais"
+    ],
+    "grammar_note_en": "Very common in spoken PT-BR for 'cool / nice' (same form for masc and fem)",
+    "examples": [
+      {
+        "pt_cloze": "O cara é muito ___.",
+        "answer": "legal",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "onde"
+        ],
+        "en_sentence": "The guy is very cool.",
+        "hint_en": "cool / nice"
+      },
+      {
+        "pt_cloze": "Que ideia ___ você tem!",
+        "answer": "legal",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "por"
+        ],
+        "en_sentence": "What a cool idea you have!",
+        "hint_en": "cool / nice"
+      },
+      {
+        "pt_cloze": "O filme é bem ___.",
+        "answer": "legal",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "tempo",
+          "noite"
+        ],
+        "en_sentence": "The movie is really cool.",
+        "hint_en": "cool / nice"
+      }
+    ]
+  },
+  {
+    "id": "pt_sempre",
+    "order": 69,
+    "original_rank": 134,
+    "lemma": "sempre",
+    "pos": "ADV",
+    "en_gloss": "always",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "sempre"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ faço café aqui.",
+        "answer": "sempre",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "porque",
+          "dinheiro"
+        ],
+        "en_sentence": "I always make coffee here.",
+        "hint_en": "always"
+      },
+      {
+        "pt_cloze": "Ela ___ vem com João.",
+        "answer": "sempre",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "quando",
+          "trabalho"
+        ],
+        "en_sentence": "She always comes with João.",
+        "hint_en": "always"
+      },
+      {
+        "pt_cloze": "A gente ___ fica bem lá.",
+        "answer": "sempre",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "onde",
+          "amigo"
+        ],
+        "en_sentence": "We are always fine there.",
+        "hint_en": "always"
+      }
+    ]
+  },
+  {
+    "id": "pt_nunca",
+    "order": 70,
+    "original_rank": 87,
+    "lemma": "nunca",
+    "pos": "ADV",
+    "en_gloss": "never",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "nunca"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ vou para lá.",
+        "answer": "nunca",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "onde",
+          "como"
+        ],
+        "en_sentence": "I never go there.",
+        "hint_en": "never"
+      },
+      {
+        "pt_cloze": "Ele ___ tem tempo hoje.",
+        "answer": "nunca",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "noite"
+        ],
+        "en_sentence": "He never has time today.",
+        "hint_en": "never"
+      },
+      {
+        "pt_cloze": "Maria ___ fala de trabalho.",
+        "answer": "nunca",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "quem",
+          "hora"
+        ],
+        "en_sentence": "Maria never talks about work.",
+        "hint_en": "never"
+      }
+    ]
+  },
+  {
+    "id": "pt_ainda",
+    "order": 71,
+    "original_rank": 107,
+    "lemma": "ainda",
+    "pos": "ADV",
+    "en_gloss": "still / yet",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "ainda"
+    ],
+    "grammar_note_en": "'ainda não' = not yet",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ estou no trabalho.",
+        "answer": "ainda",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "onde",
+          "quem"
+        ],
+        "en_sentence": "I am still at work.",
+        "hint_en": "still"
+      },
+      {
+        "pt_cloze": "Ela ___ não sabe disso.",
+        "answer": "ainda",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "como",
+          "nada"
+        ],
+        "en_sentence": "She does not know that yet.",
+        "hint_en": "yet (ainda não)"
+      },
+      {
+        "pt_cloze": "Você ___ quer comer aqui?",
+        "answer": "ainda",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "onde",
+          "cara"
+        ],
+        "en_sentence": "Do you still want to eat here?",
+        "hint_en": "still"
+      }
+    ]
+  },
+  {
+    "id": "pt_depois",
+    "order": 72,
+    "original_rank": 152,
+    "lemma": "depois",
+    "pos": "ADV",
+    "en_gloss": "after / later",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "depois"
+    ],
+    "grammar_note_en": "Use 'depois de' before a noun or infinitive",
+    "examples": [
+      {
+        "pt_cloze": "A gente fala ___ do trabalho.",
+        "answer": "depois",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "porque",
+          "sempre"
+        ],
+        "en_sentence": "We will talk after work.",
+        "hint_en": "after"
+      },
+      {
+        "pt_cloze": "Eu vou comer ___.",
+        "answer": "depois",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "quem",
+          "nada"
+        ],
+        "en_sentence": "I am going to eat later.",
+        "hint_en": "later"
+      },
+      {
+        "pt_cloze": "___ a gente vê o filme.",
+        "answer": "Depois",
+        "form_tag": "base",
+        "accepted": [
+          "depois"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Onde",
+          "Quem"
+        ],
+        "en_sentence": "Later we watch the movie.",
+        "hint_en": "later"
+      }
+    ]
+  },
+  {
+    "id": "pt_por_que",
+    "order": 73,
+    "original_rank": 77,
+    "lemma": "por que",
+    "pos": "ADV",
+    "en_gloss": "why",
+    "cluster_id": "porque_por_que",
+    "false_friend": false,
+    "forms": [
+      "por que"
+    ],
+    "grammar_note_en": "'por que' (two words) is used to ask 'why?' in questions",
+    "examples": [
+      {
+        "pt_cloze": "___ você não vem hoje?",
+        "answer": "Por que",
+        "form_tag": "base",
+        "accepted": [
+          "por que"
+        ],
+        "plausible_wrong": [
+          "Porque"
+        ],
+        "distractors": [
+          "A gente",
+          "De noite"
+        ],
+        "en_sentence": "Why are you not coming today?",
+        "hint_en": "why (question)"
+      },
+      {
+        "pt_cloze": "___ ele está em casa?",
+        "answer": "Por que",
+        "form_tag": "base",
+        "accepted": [
+          "por que"
+        ],
+        "plausible_wrong": [
+          "Porque"
+        ],
+        "distractors": [
+          "A gente",
+          "Por aqui"
+        ],
+        "en_sentence": "Why is he at home?",
+        "hint_en": "why (question)"
+      },
+      {
+        "pt_cloze": "___ a gente precisa sair?",
+        "answer": "Por que",
+        "form_tag": "base",
+        "accepted": [
+          "por que"
+        ],
+        "plausible_wrong": [
+          "Porque"
+        ],
+        "distractors": [
+          "De noite",
+          "Um dia"
+        ],
+        "en_sentence": "Why do we need to leave?",
+        "hint_en": "why (question)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ai",
+    "order": 74,
+    "original_rank": 144,
+    "lemma": "aí",
+    "pos": "ADV",
+    "en_gloss": "there (near you) / then",
+    "cluster_id": "aqui_la_ai_ali",
+    "false_friend": false,
+    "forms": [
+      "aí"
+    ],
+    "grammar_note_en": "aí refers to a place near the listener, or 'then' in spoken stories",
+    "examples": [
+      {
+        "pt_cloze": "Você está ___ agora?",
+        "answer": "aí",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "lá"
+        ],
+        "distractors": [
+          "de",
+          "em"
+        ],
+        "en_sentence": "Are you there right now?",
+        "hint_en": "there (near you)"
+      },
+      {
+        "pt_cloze": "O meu carro está ___?",
+        "answer": "aí",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "lá"
+        ],
+        "distractors": [
+          "no",
+          "do"
+        ],
+        "en_sentence": "Is my car there?",
+        "hint_en": "there (near you)"
+      },
+      {
+        "pt_cloze": "Fica ___ com seu amigo.",
+        "answer": "aí",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "em",
+          "por"
+        ],
+        "en_sentence": "Stay there with your friend.",
+        "hint_en": "there (near you)"
+      }
+    ]
+  },
+  {
+    "id": "pt_conhecer",
+    "order": 75,
+    "original_rank": 391,
+    "lemma": "conhecer",
+    "pos": "VERB",
+    "en_gloss": "to know (person / place) / to meet",
+    "cluster_id": "saber_conhecer",
+    "false_friend": false,
+    "forms": [
+      "conheço",
+      "conhece",
+      "conhecem",
+      "conhecemos",
+      "conhecer"
+    ],
+    "grammar_note_en": "Use 'conhecer' for people, places, and things (not facts)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ bem o Brasil.",
+        "answer": "conheço",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "sei"
+        ],
+        "distractors": [
+          "preciso",
+          "trabalho"
+        ],
+        "en_sentence": "I know Brazil well.",
+        "hint_en": "to know [place] (1st sg)"
+      },
+      {
+        "pt_cloze": "Você ___ o meu amigo?",
+        "answer": "conhece",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "sabe"
+        ],
+        "distractors": [
+          "precisa",
+          "gosta"
+        ],
+        "en_sentence": "Do you know my friend?",
+        "hint_en": "to know [person] (3rd sg)"
+      },
+      {
+        "pt_cloze": "Ela quer ___ sua família.",
+        "answer": "conhecer",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [
+          "saber"
+        ],
+        "distractors": [
+          "precisar",
+          "comer"
+        ],
+        "en_sentence": "She wants to meet your family.",
+        "hint_en": "to meet (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_mal",
+    "order": 76,
+    "original_rank": 286,
+    "lemma": "mal",
+    "pos": "ADV",
+    "en_gloss": "badly / unwell",
+    "cluster_id": "bom_mau",
+    "false_friend": false,
+    "forms": [
+      "mal"
+    ],
+    "grammar_note_en": "'mal' is the opposite of 'bem' (estou mal = I feel unwell)",
+    "examples": [
+      {
+        "pt_cloze": "Eu estou muito ___ hoje.",
+        "answer": "mal",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mau"
+        ],
+        "distractors": [
+          "com",
+          "por"
+        ],
+        "en_sentence": "I feel very unwell today.",
+        "hint_en": "unwell / badly"
+      },
+      {
+        "pt_cloze": "Ele fala muito ___ disso.",
+        "answer": "mal",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mau"
+        ],
+        "distractors": [
+          "por",
+          "sem"
+        ],
+        "en_sentence": "He speaks very badly of that.",
+        "hint_en": "badly"
+      },
+      {
+        "pt_cloze": "Ana está ___ no hospital.",
+        "answer": "mal",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "mau"
+        ],
+        "distractors": [
+          "com",
+          "que"
+        ],
+        "en_sentence": "Ana is doing badly at the hospital.",
+        "hint_en": "badly / unwell"
+      }
+    ]
+  },
+  {
+    "id": "pt_pedir",
+    "order": 77,
+    "original_rank": 465,
+    "lemma": "pedir",
+    "pos": "VERB",
+    "en_gloss": "to ask for / to order",
+    "cluster_id": "perguntar_pedir",
+    "false_friend": false,
+    "forms": [
+      "peço",
+      "pede",
+      "pedem",
+      "pedimos",
+      "pedir"
+    ],
+    "grammar_note_en": "Use 'pedir' to request/order something (not to ask a question)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ um café agora.",
+        "answer": "peço",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "pede"
+        ],
+        "distractors": [
+          "fico",
+          "digo"
+        ],
+        "en_sentence": "I am ordering a coffee now.",
+        "hint_en": "to order (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele sempre ___ mais tempo.",
+        "answer": "pede",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "peço"
+        ],
+        "distractors": [
+          "fica",
+          "sabe"
+        ],
+        "en_sentence": "He always asks for more time.",
+        "hint_en": "to ask for (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente vai ___ café.",
+        "answer": "pedir",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "sair",
+          "ficar"
+        ],
+        "en_sentence": "We are going to order coffee.",
+        "hint_en": "to order (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_morar",
+    "order": 78,
+    "original_rank": 850,
+    "lemma": "morar",
+    "pos": "VERB",
+    "en_gloss": "to live / to reside",
+    "cluster_id": "morar_viver",
+    "false_friend": false,
+    "forms": [
+      "moro",
+      "mora",
+      "moram",
+      "moramos",
+      "morar"
+    ],
+    "grammar_note_en": "Use 'morar em' for where someone resides",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ no Brasil agora.",
+        "answer": "moro",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "mora"
+        ],
+        "distractors": [
+          "pego",
+          "digo"
+        ],
+        "en_sentence": "I live in Brazil now.",
+        "hint_en": "to live [reside] (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ em um apartamento.",
+        "answer": "mora",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "moro"
+        ],
+        "distractors": [
+          "pega",
+          "sabe"
+        ],
+        "en_sentence": "She lives in an apartment.",
+        "hint_en": "to live [reside] (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você quer ___ aqui?",
+        "answer": "morar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "pedir",
+          "dar"
+        ],
+        "en_sentence": "Do you want to live here?",
+        "hint_en": "to live [reside] (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_agua",
+    "order": 79,
+    "original_rank": 374,
+    "lemma": "água",
+    "pos": "NOUN",
+    "en_gloss": "water",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "água",
+      "águas"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu quero ___ agora.",
+        "answer": "água",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "cara",
+          "hora"
+        ],
+        "en_sentence": "I want water now.",
+        "hint_en": "water"
+      },
+      {
+        "pt_cloze": "A gente precisa de ___.",
+        "answer": "água",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "casa",
+          "noite"
+        ],
+        "en_sentence": "We need water.",
+        "hint_en": "water"
+      },
+      {
+        "pt_cloze": "Você pode pedir ___?",
+        "answer": "água",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "cara"
+        ],
+        "en_sentence": "Can you order water?",
+        "hint_en": "water"
+      }
+    ]
+  },
+  {
+    "id": "pt_comida",
+    "order": 80,
+    "original_rank": 447,
+    "lemma": "comida",
+    "pos": "NOUN",
+    "en_gloss": "food",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "comida",
+      "comidas"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "A ___ está muito boa.",
+        "answer": "comida",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "tempo"
+        ],
+        "en_sentence": "The food is very good.",
+        "hint_en": "food"
+      },
+      {
+        "pt_cloze": "Eu gosto da ___ local.",
+        "answer": "comida",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "amigo",
+          "tempo"
+        ],
+        "en_sentence": "I like the local food.",
+        "hint_en": "food"
+      },
+      {
+        "pt_cloze": "A gente precisa pedir ___.",
+        "answer": "comida",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "noite",
+          "sempre"
+        ],
+        "en_sentence": "We need to order food.",
+        "hint_en": "food"
+      }
+    ]
+  },
+  {
+    "id": "pt_olhar",
+    "order": 81,
+    "original_rank": 244,
+    "lemma": "olhar",
+    "pos": "VERB",
+    "en_gloss": "to look / to look at",
+    "cluster_id": "ver_olhar_assistir_vir",
+    "false_friend": false,
+    "forms": [
+      "olho",
+      "olha",
+      "olham",
+      "olhamos",
+      "olhar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ a foto agora.",
+        "answer": "olho",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "olha"
+        ],
+        "distractors": [
+          "fico",
+          "moro"
+        ],
+        "en_sentence": "I am looking at the photo now.",
+        "hint_en": "to look (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele ___ para a casa.",
+        "answer": "olha",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "olho"
+        ],
+        "distractors": [
+          "mora",
+          "sabe"
+        ],
+        "en_sentence": "He looks at the house.",
+        "hint_en": "to look (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ isso aqui?",
+        "answer": "olhar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "morar",
+          "sair"
+        ],
+        "en_sentence": "Can you look at this here?",
+        "hint_en": "to look (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_deixar",
+    "order": 82,
+    "original_rank": 253,
+    "lemma": "deixar",
+    "pos": "VERB",
+    "en_gloss": "to leave (something) / to let",
+    "cluster_id": "levar_trazer_sair_deixar",
+    "false_friend": false,
+    "forms": [
+      "deixo",
+      "deixa",
+      "deixam",
+      "deixamos",
+      "deixar"
+    ],
+    "grammar_note_en": "Use 'deixar' when leaving an object behind (not 'sair')",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ o carro aqui.",
+        "answer": "deixo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "deixa"
+        ],
+        "distractors": [
+          "moro",
+          "fico"
+        ],
+        "en_sentence": "I leave the car here.",
+        "hint_en": "to leave [object] (1st sg)"
+      },
+      {
+        "pt_cloze": "Maria ___ o telefone lá.",
+        "answer": "deixa",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "deixo"
+        ],
+        "distractors": [
+          "mora",
+          "fica"
+        ],
+        "en_sentence": "Maria leaves the phone there.",
+        "hint_en": "to leave [object] (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ isso aí?",
+        "answer": "deixar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "morar",
+          "sair"
+        ],
+        "en_sentence": "Can you leave that there?",
+        "hint_en": "to leave [object] (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_voltar",
+    "order": 83,
+    "original_rank": 236,
+    "lemma": "voltar",
+    "pos": "VERB",
+    "en_gloss": "to return / to come back",
+    "cluster_id": "voltar_devolver",
+    "false_friend": false,
+    "forms": [
+      "volto",
+      "volta",
+      "voltam",
+      "voltamos",
+      "voltar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ para casa agora.",
+        "answer": "volto",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "volta"
+        ],
+        "distractors": [
+          "pego",
+          "olho"
+        ],
+        "en_sentence": "I am going back home now.",
+        "hint_en": "to return (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele ___ do trabalho hoje.",
+        "answer": "volta",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "volto"
+        ],
+        "distractors": [
+          "pega",
+          "deixa"
+        ],
+        "en_sentence": "He is coming back from work today.",
+        "hint_en": "to return (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente vai ___ depois.",
+        "answer": "voltar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "olhar",
+          "pedir"
+        ],
+        "en_sentence": "We are going to come back later.",
+        "hint_en": "to come back (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_vez",
+    "order": 84,
+    "original_rank": 135,
+    "lemma": "vez",
+    "pos": "NOUN",
+    "en_gloss": "time / occasion / turn",
+    "cluster_id": "tempo_hora_vez",
+    "false_friend": false,
+    "forms": [
+      "vez",
+      "vezes"
+    ],
+    "grammar_note_en": "'uma vez' = once; 'muitas vezes' = many times / often",
+    "examples": [
+      {
+        "pt_cloze": "Eu vou lá uma ___.",
+        "answer": "vez",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "tempo"
+        ],
+        "distractors": [
+          "dia",
+          "por"
+        ],
+        "en_sentence": "I go there one time.",
+        "hint_en": "time (occasion)"
+      },
+      {
+        "pt_cloze": "Agora é a sua ___.",
+        "answer": "vez",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "dia",
+          "mal"
+        ],
+        "en_sentence": "Now it is your turn.",
+        "hint_en": "turn"
+      },
+      {
+        "pt_cloze": "Ele vem aqui muitas ___.",
+        "answer": "vezes",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "vez"
+        ],
+        "distractors": [
+          "horas",
+          "dias"
+        ],
+        "en_sentence": "He comes here many times.",
+        "hint_en": "times (pl)"
+      }
+    ]
+  },
+  {
+    "id": "pt_trabalhar",
+    "order": 85,
+    "original_rank": 405,
+    "lemma": "trabalhar",
+    "pos": "VERB",
+    "en_gloss": "to work",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "trabalho",
+      "trabalha",
+      "trabalham",
+      "trabalhamos",
+      "trabalhar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ em casa hoje.",
+        "answer": "trabalho",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "trabalha"
+        ],
+        "distractors": [
+          "conheço",
+          "preciso"
+        ],
+        "en_sentence": "I am working at home today.",
+        "hint_en": "to work (1st sg)"
+      },
+      {
+        "pt_cloze": "João ___ no hospital local.",
+        "answer": "trabalha",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "trabalho"
+        ],
+        "distractors": [
+          "conhece",
+          "precisa"
+        ],
+        "en_sentence": "João works at the local hospital.",
+        "hint_en": "to work (3rd sg)"
+      },
+      {
+        "pt_cloze": "Ela precisa ___ de noite.",
+        "answer": "trabalhar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "conhecer",
+          "deixar"
+        ],
+        "en_sentence": "She needs to work at night.",
+        "hint_en": "to work (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_comprar",
+    "order": 86,
+    "original_rank": 546,
+    "lemma": "comprar",
+    "pos": "VERB",
+    "en_gloss": "to buy",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "compro",
+      "compra",
+      "compram",
+      "compramos",
+      "comprar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ comida aqui sempre.",
+        "answer": "compro",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "compra"
+        ],
+        "distractors": [
+          "volto",
+          "deixo"
+        ],
+        "en_sentence": "I always buy food here.",
+        "hint_en": "to buy (1st sg)"
+      },
+      {
+        "pt_cloze": "Ana ___ água no restaurante.",
+        "answer": "compra",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "compro"
+        ],
+        "distractors": [
+          "volta",
+          "mora"
+        ],
+        "en_sentence": "Ana buys water at the restaurant.",
+        "hint_en": "to buy (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente quer ___ um carro.",
+        "answer": "comprar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "voltar",
+          "morar"
+        ],
+        "en_sentence": "We want to buy a car.",
+        "hint_en": "to buy (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_beber",
+    "order": 87,
+    "original_rank": 674,
+    "lemma": "beber",
+    "pos": "VERB",
+    "en_gloss": "to drink",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "bebo",
+      "bebe",
+      "bebem",
+      "bebemos",
+      "beber"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ muita água hoje.",
+        "answer": "bebo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "bebe"
+        ],
+        "distractors": [
+          "fico",
+          "moro"
+        ],
+        "en_sentence": "I am drinking a lot of water today.",
+        "hint_en": "to drink (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele não ___ café de noite.",
+        "answer": "bebe",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "bebo"
+        ],
+        "distractors": [
+          "fica",
+          "mora"
+        ],
+        "en_sentence": "He does not drink coffee at night.",
+        "hint_en": "to drink (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você quer ___ água agora?",
+        "answer": "beber",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "sair",
+          "morar"
+        ],
+        "en_sentence": "Do you want to drink water now?",
+        "hint_en": "to drink (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_dormir",
+    "order": 88,
+    "original_rank": 417,
+    "lemma": "dormir",
+    "pos": "VERB",
+    "en_gloss": "to sleep",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "durmo",
+      "dorme",
+      "dormem",
+      "dormimos",
+      "dormir"
+    ],
+    "grammar_note_en": "Note the stem change in 1st person singular: eu durmo",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ muito bem aqui.",
+        "answer": "durmo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "dormo",
+          "dorme"
+        ],
+        "distractors": [
+          "volto",
+          "pego"
+        ],
+        "en_sentence": "I sleep very well here.",
+        "hint_en": "to sleep (1st sg)"
+      },
+      {
+        "pt_cloze": "O menino ___ em casa.",
+        "answer": "dorme",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "durmo"
+        ],
+        "distractors": [
+          "volta",
+          "bebe"
+        ],
+        "en_sentence": "The boy sleeps at home.",
+        "hint_en": "to sleep (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu preciso ___ agora.",
+        "answer": "dormir",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "beber",
+          "dar"
+        ],
+        "en_sentence": "I need to sleep now.",
+        "hint_en": "to sleep (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_amanha",
+    "order": 89,
+    "original_rank": 302,
+    "lemma": "amanhã",
+    "pos": "ADV",
+    "en_gloss": "tomorrow",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "amanhã"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu vou trabalhar ___.",
+        "answer": "amanhã",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comida",
+          "sempre"
+        ],
+        "en_sentence": "I am going to work tomorrow.",
+        "hint_en": "tomorrow"
+      },
+      {
+        "pt_cloze": "___ a gente sai de casa.",
+        "answer": "Amanhã",
+        "form_tag": "base",
+        "accepted": [
+          "amanhã"
+        ],
+        "plausible_wrong": [],
+        "distractors": [
+          "Comida",
+          "Sempre"
+        ],
+        "en_sentence": "Tomorrow we leave the house.",
+        "hint_en": "tomorrow"
+      },
+      {
+        "pt_cloze": "Ele volta do hotel ___.",
+        "answer": "amanhã",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "amigo",
+          "nada"
+        ],
+        "en_sentence": "He is coming back from the hotel tomorrow.",
+        "hint_en": "tomorrow"
+      }
+    ]
+  },
+  {
+    "id": "pt_cidade",
+    "order": 90,
+    "original_rank": 293,
+    "lemma": "cidade",
+    "pos": "NOUN",
+    "en_gloss": "city",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "cidade",
+      "cidades"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "A ___ é muito bonita.",
+        "answer": "cidade",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "amigo",
+          "tempo"
+        ],
+        "en_sentence": "The city is very beautiful.",
+        "hint_en": "city"
+      },
+      {
+        "pt_cloze": "Eu moro na ___ agora.",
+        "answer": "cidade",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "comida",
+          "noite"
+        ],
+        "en_sentence": "I live in the city now.",
+        "hint_en": "city"
+      },
+      {
+        "pt_cloze": "Você conhece bem a ___?",
+        "answer": "cidade",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "hora",
+          "vez"
+        ],
+        "en_sentence": "Do you know the city well?",
+        "hint_en": "city"
+      }
+    ]
+  },
+  {
+    "id": "pt_novo",
+    "order": 91,
+    "original_rank": 170,
+    "lemma": "novo",
+    "pos": "ADJ",
+    "en_gloss": "new / young",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "novo",
+      "nova",
+      "novos",
+      "novas"
+    ],
+    "grammar_note_en": "'de novo' = again",
+    "examples": [
+      {
+        "pt_cloze": "Eu tenho um carro ___.",
+        "answer": "novo",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "nova"
+        ],
+        "distractors": [
+          "nova",
+          "casa"
+        ],
+        "en_sentence": "I have a new car.",
+        "hint_en": "new (masc)"
+      },
+      {
+        "pt_cloze": "Ela mora em uma casa ___.",
+        "answer": "nova",
+        "form_tag": "fem_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "novo"
+        ],
+        "distractors": [
+          "novo",
+          "dia"
+        ],
+        "en_sentence": "She lives in a new house.",
+        "hint_en": "new (fem)"
+      },
+      {
+        "pt_cloze": "João tem um trabalho ___.",
+        "answer": "novo",
+        "form_tag": "masc_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "nova"
+        ],
+        "distractors": [
+          "nova",
+          "hora"
+        ],
+        "en_sentence": "João has a new job.",
+        "hint_en": "new (masc)"
+      }
+    ]
+  },
+  {
+    "id": "pt_grande",
+    "order": 92,
+    "original_rank": 184,
+    "lemma": "grande",
+    "pos": "ADJ",
+    "en_gloss": "big / large / great",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "grande",
+      "grandes"
+    ],
+    "grammar_note_en": "Same form for masculine and feminine singular",
+    "examples": [
+      {
+        "pt_cloze": "A cidade é muito ___.",
+        "answer": "grande",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "sempre",
+          "comida"
+        ],
+        "en_sentence": "The city is very big.",
+        "hint_en": "big / large"
+      },
+      {
+        "pt_cloze": "Eu tenho uma família ___.",
+        "answer": "grande",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "quando",
+          "amanhã"
+        ],
+        "en_sentence": "I have a big family.",
+        "hint_en": "big"
+      },
+      {
+        "pt_cloze": "O apartamento não é ___.",
+        "answer": "grande",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "nunca",
+          "depois"
+        ],
+        "en_sentence": "The apartment is not big.",
+        "hint_en": "big"
+      }
+    ]
+  },
+  {
+    "id": "pt_perguntar",
+    "order": 93,
+    "original_rank": 495,
+    "lemma": "perguntar",
+    "pos": "VERB",
+    "en_gloss": "to ask (a question)",
+    "cluster_id": "perguntar_pedir",
+    "false_friend": false,
+    "forms": [
+      "pergunto",
+      "pergunta",
+      "perguntam",
+      "perguntamos",
+      "perguntar"
+    ],
+    "grammar_note_en": "Use 'perguntar' to ask a question (not 'pedir')",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ isso para Ana.",
+        "answer": "pergunto",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "peço"
+        ],
+        "distractors": [
+          "trabalho",
+          "conheço"
+        ],
+        "en_sentence": "I ask Ana about that.",
+        "hint_en": "to ask [question] (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele sempre ___ por você.",
+        "answer": "pergunta",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "pede"
+        ],
+        "distractors": [
+          "trabalha",
+          "conhece"
+        ],
+        "en_sentence": "He always asks about you.",
+        "hint_en": "to ask [question] (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu quero ___ uma coisa.",
+        "answer": "perguntar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [
+          "pedir"
+        ],
+        "distractors": [
+          "trabalhar",
+          "morar"
+        ],
+        "en_sentence": "I want to ask something.",
+        "hint_en": "to ask [question] (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_viver",
+    "order": 94,
+    "original_rank": 442,
+    "lemma": "viver",
+    "pos": "VERB",
+    "en_gloss": "to live (be alive / experience)",
+    "cluster_id": "morar_viver",
+    "false_friend": false,
+    "forms": [
+      "vivo",
+      "vive",
+      "vivem",
+      "vivemos",
+      "viver"
+    ],
+    "grammar_note_en": "viver = to live/experience life (whereas morar = to reside at an address)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ muito bem hoje.",
+        "answer": "vivo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "moro"
+        ],
+        "distractors": [
+          "pego",
+          "olho"
+        ],
+        "en_sentence": "I live very well today.",
+        "hint_en": "to live [life] (1st sg)"
+      },
+      {
+        "pt_cloze": "Ela ___ para a família.",
+        "answer": "vive",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "mora"
+        ],
+        "distractors": [
+          "pega",
+          "bebe"
+        ],
+        "en_sentence": "She lives for her family.",
+        "hint_en": "to live [life] (3rd sg)"
+      },
+      {
+        "pt_cloze": "A gente quer ___ bem.",
+        "answer": "viver",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "beber",
+          "dar"
+        ],
+        "en_sentence": "We want to live well.",
+        "hint_en": "to live [life] (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_aquilo",
+    "order": 95,
+    "original_rank": 409,
+    "lemma": "aquilo",
+    "pos": "PRON",
+    "en_gloss": "that (far away)",
+    "cluster_id": "isso_aquilo",
+    "false_friend": false,
+    "forms": [
+      "aquilo",
+      "daquilo",
+      "naquilo"
+    ],
+    "grammar_note_en": "aquilo refers to an abstract or unidentified thing far from both speakers",
+    "examples": [
+      {
+        "pt_cloze": "O que é ___ lá?",
+        "answer": "aquilo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "isso"
+        ],
+        "distractors": [
+          "sempre",
+          "depois"
+        ],
+        "en_sentence": "What is that over there?",
+        "hint_en": "that (far)"
+      },
+      {
+        "pt_cloze": "Eu não quero ver ___.",
+        "answer": "aquilo",
+        "form_tag": "base",
+        "accepted": [],
+        "plausible_wrong": [
+          "isso"
+        ],
+        "distractors": [
+          "amanhã",
+          "nunca"
+        ],
+        "en_sentence": "I do not want to see that.",
+        "hint_en": "that (far)"
+      },
+      {
+        "pt_cloze": "___ não é normal.",
+        "answer": "Aquilo",
+        "form_tag": "base",
+        "accepted": [
+          "aquilo"
+        ],
+        "plausible_wrong": [
+          "Isso"
+        ],
+        "distractors": [
+          "Sempre",
+          "Depois"
+        ],
+        "en_sentence": "That over there is not normal.",
+        "hint_en": "that (far)"
+      }
+    ]
+  },
+  {
+    "id": "pt_pais",
+    "order": 96,
+    "original_rank": 421,
+    "lemma": "pais",
+    "pos": "NOUN",
+    "en_gloss": "parents",
+    "cluster_id": null,
+    "false_friend": true,
+    "forms": [
+      "pais"
+    ],
+    "grammar_note_en": "False friend: 'pais' (no accent) = parents; 'país' (with accent) = country",
+    "examples": [
+      {
+        "pt_cloze": "Meus ___ moram no Brasil.",
+        "answer": "pais",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "país"
+        ],
+        "distractors": [
+          "dias",
+          "vez"
+        ],
+        "en_sentence": "My parents live in Brazil.",
+        "hint_en": "parents (NOT country!)"
+      },
+      {
+        "pt_cloze": "Eu vou falar com meus ___.",
+        "answer": "pais",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "país"
+        ],
+        "distractors": [
+          "casa",
+          "hora"
+        ],
+        "en_sentence": "I am going to talk with my parents.",
+        "hint_en": "parents (NOT country!)"
+      },
+      {
+        "pt_cloze": "Seus ___ estão na cidade?",
+        "answer": "pais",
+        "form_tag": "pl",
+        "accepted": [],
+        "plausible_wrong": [
+          "país"
+        ],
+        "distractors": [
+          "novo",
+          "mal"
+        ],
+        "en_sentence": "Are your parents in the city?",
+        "hint_en": "parents (NOT country!)"
+      }
+    ]
+  },
+  {
+    "id": "pt_assistir",
+    "order": 97,
+    "original_rank": 759,
+    "lemma": "assistir",
+    "pos": "VERB",
+    "en_gloss": "to watch",
+    "cluster_id": "ver_olhar_assistir_vir",
+    "false_friend": true,
+    "forms": [
+      "assisto",
+      "assiste",
+      "assistem",
+      "assistimos",
+      "assistir"
+    ],
+    "grammar_note_en": "False friend: 'assistir' means 'to watch' (not to assist/help)",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ o filme hoje.",
+        "answer": "assisto",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "assiste"
+        ],
+        "distractors": [
+          "conheço",
+          "preciso"
+        ],
+        "en_sentence": "I am watching the movie today.",
+        "hint_en": "to watch (1st sg) (NOT assist!)"
+      },
+      {
+        "pt_cloze": "Ela ___ vídeo de noite.",
+        "answer": "assiste",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "assisto"
+        ],
+        "distractors": [
+          "conhece",
+          "trabalha"
+        ],
+        "en_sentence": "She watches video at night.",
+        "hint_en": "to watch (3rd sg) (NOT assist!)"
+      },
+      {
+        "pt_cloze": "A gente vai ___ um filme.",
+        "answer": "assistir",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "trabalhar",
+          "dormir"
+        ],
+        "en_sentence": "We are going to watch a movie.",
+        "hint_en": "to watch (inf) (NOT assist!)"
+      }
+    ]
+  },
+  {
+    "id": "pt_levar",
+    "order": 98,
+    "original_rank": 333,
+    "lemma": "levar",
+    "pos": "VERB",
+    "en_gloss": "to take / to carry",
+    "cluster_id": "levar_trazer_sair_deixar",
+    "false_friend": false,
+    "forms": [
+      "levo",
+      "leva",
+      "levam",
+      "levamos",
+      "levar"
+    ],
+    "grammar_note_en": "Use 'levar' for taking someone/something away from here",
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ meu carro amanhã.",
+        "answer": "levo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "leva"
+        ],
+        "distractors": [
+          "moro",
+          "bebo"
+        ],
+        "en_sentence": "I am taking my car tomorrow.",
+        "hint_en": "to take / carry (1st sg)"
+      },
+      {
+        "pt_cloze": "João ___ comida para casa.",
+        "answer": "leva",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "levo"
+        ],
+        "distractors": [
+          "mora",
+          "fica"
+        ],
+        "en_sentence": "João takes food home.",
+        "hint_en": "to take / carry (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ água lá?",
+        "answer": "levar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "morar",
+          "ficar"
+        ],
+        "en_sentence": "Can you take water over there?",
+        "hint_en": "to take / carry (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_contar",
+    "order": 99,
+    "original_rank": 351,
+    "lemma": "contar",
+    "pos": "VERB",
+    "en_gloss": "to tell (a story/news) / to count",
+    "cluster_id": "falar_dizer_contar",
+    "false_friend": false,
+    "forms": [
+      "conto",
+      "conta",
+      "contam",
+      "contamos",
+      "contar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ tudo para você.",
+        "answer": "conto",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "conta"
+        ],
+        "distractors": [
+          "compro",
+          "volto"
+        ],
+        "en_sentence": "I tell you everything.",
+        "hint_en": "to tell (1st sg)"
+      },
+      {
+        "pt_cloze": "Ana sempre ___ o plano.",
+        "answer": "conta",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "conto"
+        ],
+        "distractors": [
+          "compra",
+          "volta"
+        ],
+        "en_sentence": "Ana always tells the plan.",
+        "hint_en": "to tell (3rd sg)"
+      },
+      {
+        "pt_cloze": "Eu preciso ___ uma coisa.",
+        "answer": "contar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "voltar",
+          "morar"
+        ],
+        "en_sentence": "I need to tell you something.",
+        "hint_en": "to tell (inf)"
+      }
+    ]
+  },
+  {
+    "id": "pt_ajudar",
+    "order": 100,
+    "original_rank": 254,
+    "lemma": "ajudar",
+    "pos": "VERB",
+    "en_gloss": "to help",
+    "cluster_id": null,
+    "false_friend": false,
+    "forms": [
+      "ajudo",
+      "ajuda",
+      "ajudam",
+      "ajudamos",
+      "ajudar"
+    ],
+    "grammar_note_en": null,
+    "examples": [
+      {
+        "pt_cloze": "Eu ___ minha família sempre.",
+        "answer": "ajudo",
+        "form_tag": "1st_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "ajuda"
+        ],
+        "distractors": [
+          "volto",
+          "compro"
+        ],
+        "en_sentence": "I always help my family.",
+        "hint_en": "to help (1st sg)"
+      },
+      {
+        "pt_cloze": "Ele ___ o amigo hoje.",
+        "answer": "ajuda",
+        "form_tag": "3rd_sg",
+        "accepted": [],
+        "plausible_wrong": [
+          "ajudo"
+        ],
+        "distractors": [
+          "volta",
+          "dorme"
+        ],
+        "en_sentence": "He helps his friend today.",
+        "hint_en": "to help (3rd sg)"
+      },
+      {
+        "pt_cloze": "Você pode ___ a gente?",
+        "answer": "ajudar",
+        "form_tag": "inf",
+        "accepted": [],
+        "plausible_wrong": [],
+        "distractors": [
+          "voltar",
+          "dormir"
+        ],
+        "en_sentence": "Can you help us?",
+        "hint_en": "to help (inf)"
+      }
+    ]
+  }
+]

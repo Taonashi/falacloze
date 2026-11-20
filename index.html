@@ -1,0 +1,3943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content" />
+  <meta name="theme-color" content="#F8FAFC" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>FalaCloze v2.1 — Spoken PT-BR SRS</title>
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --surface-alt: #F1F5F9;
+      --border: #E2E8F0;
+      --border-strong: #CBD5E1;
+      --ink: #0F172A;
+      --muted: #64748B;
+      --primary: #059669;
+      --primary-dark: #047857;
+      --primary-soft: #ECFDF5;
+      --primary-border: #A7F3D0;
+      --amber: #D97706;
+      --amber-soft: #FFFBEB;
+      --amber-border: #FDE68A;
+      --red: #DC2626;
+      --red-soft: #FEF2F2;
+      --red-border: #FECACA;
+      --indigo: #4F46E5;
+      --indigo-soft: #EEF2FF;
+      --indigo-border: #C7D2FE;
+      --radius-sm: 10px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+      --font: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font);
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+      touch-action: manipulation;
+    }
+
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* App Shell — relies natively on interactive-widget=resizes-content + 100dvh */
+    #app-shell {
+      width: 100%;
+      max-width: 600px;
+      height: 100dvh;
+      max-height: 100dvh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .view {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .scroll-body {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 16px;
+      min-height: 0;
+    }
+
+    .scroll-body::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Top Header */
+    .top-bar {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px 16px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);
+    }
+
+    .brand-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-ver {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid var(--primary-border);
+      padding: 1px 6px;
+      border-radius: 6px;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    .bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 9px 13px;
+      transition: background-color 0.12s ease, border-color 0.12s ease, transform 0.08s ease;
+      user-select: none;
+    }
+
+    .btn:active:not(:disabled) {
+      transform: scale(0.97);
+    }
+
+    .btn-neutral {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--ink);
+      box-shadow: var(--shadow-xs);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      border: 1px solid var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.22);
+    }
+
+    .btn-primary-soft {
+      background: var(--primary-soft);
+      border: 1px solid var(--primary-border);
+      color: var(--primary-dark);
+    }
+
+    .btn-indigo-soft {
+      background: var(--indigo-soft);
+      border: 1px solid var(--indigo-border);
+      color: var(--indigo);
+    }
+
+    .btn-amber-soft {
+      background: var(--amber-soft);
+      border: 1px solid var(--amber-border);
+      color: var(--amber);
+    }
+
+    .btn-red-soft {
+      background: var(--red-soft);
+      border: 1px solid var(--red-border);
+      color: var(--red);
+    }
+
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      border-radius: var(--radius-sm);
+    }
+
+    .btn-lg {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: var(--radius-md);
+    }
+
+    .btn-sm {
+      padding: 6px 10px;
+      font-size: 12px;
+      border-radius: 8px;
+    }
+
+    /* Strictly guard :hover inside @media (hover: hover) to prevent sticky Android tap states */
+    @media (hover: hover) {
+      .btn-neutral:hover:not(:disabled) { background: var(--surface-alt); border-color: var(--border-strong); }
+      .btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
+      .btn-primary-soft:hover:not(:disabled) { background: #D1FAE5; }
+      .btn-indigo-soft:hover:not(:disabled) { background: #E0E7FF; }
+      .btn-red-soft:hover:not(:disabled) { background: #FEE2E2; }
+      .stat-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+      .chip:hover { background: var(--surface-alt); }
+      .blind-opt:hover:not(:disabled) { border-color: var(--primary); background: var(--primary-soft); }
+      .drop-zone:hover { border-color: var(--primary); background: var(--primary-soft); }
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .row-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    /* Home Stat Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 8px;
+      text-align: center;
+      box-shadow: var(--shadow-xs);
+      transition: border-color 0.12s ease, transform 0.1s ease;
+    }
+
+    .stat-card:active {
+      transform: scale(0.97);
+    }
+
+    .stat-num {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .stat-learning .stat-num { color: var(--indigo); }
+    .stat-mastered .stat-num { color: var(--primary); }
+
+    /* Chips & Pills */
+    .chips-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .chips-scroll {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .chips-scroll::-webkit-scrollbar { display: none; }
+
+    .chip {
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .chip.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--surface-alt);
+      color: var(--muted);
+    }
+
+    .badge-primary { background: var(--primary-soft); color: var(--primary-dark); }
+    .badge-indigo { background: var(--indigo-soft); color: var(--indigo); }
+    .badge-amber { background: var(--amber-soft); color: var(--amber); border: 1px solid var(--amber-border); }
+    .badge-red { background: var(--red-soft); color: var(--red); border: 1px solid var(--red-border); }
+
+    /* Setup / Drop Zone (First Run) */
+    .drop-zone {
+      border: 2px dashed var(--border-strong);
+      border-radius: var(--radius-md);
+      padding: 24px 16px;
+      text-align: center;
+      background: var(--bg);
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .drop-zone.dragover {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+    }
+
+    /* Progress Bar */
+    .progress-track {
+      width: 100%;
+      height: 5px;
+      background: var(--surface-alt);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+
+    /* Switch */
+    .switch {
+      width: 44px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--border-strong);
+      position: relative;
+      transition: background-color 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .switch.on {
+      background: var(--primary);
+    }
+
+    .switch-knob {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      transition: transform 0.15s ease;
+    }
+
+    .switch.on .switch-knob {
+      transform: translateX(20px);
+    }
+
+    /* Study Area */
+    .study-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 14px 16px;
+      overflow-y: auto;
+      min-height: 0;
+    }
+
+    .study-center::-webkit-scrollbar { display: none; }
+
+    .cloze-sentence {
+      font-size: 24px;
+      line-height: 1.45;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      margin: 8px 0;
+      cursor: text;
+    }
+
+    .cloze-gap {
+      display: inline-block;
+      border-bottom: 2.5px solid var(--primary);
+      padding: 0 6px 1px;
+      margin: 0 3px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--primary-dark);
+      background: var(--primary-soft);
+      border-radius: 6px 6px 0 0;
+      cursor: pointer;
+      vertical-align: baseline;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .cloze-gap.empty {
+      color: #94A3B8;
+      background: transparent;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+    }
+
+    .cloze-gap.amber {
+      border-bottom-color: var(--amber);
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .cloze-gap.wrong {
+      border-bottom-color: var(--red);
+      color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .cloze-revealed {
+      display: inline-block;
+      padding: 0 6px;
+      border-radius: 6px;
+      font-weight: 700;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+    }
+
+    .cloze-revealed.amber {
+      background: var(--amber-soft);
+      color: var(--amber);
+    }
+
+    .cloze-revealed.wrong {
+      background: var(--red-soft);
+      color: var(--red);
+    }
+
+    .en-line {
+      font-size: 15px;
+      font-weight: 500;
+      color: #334155;
+      margin: 0;
+    }
+
+    .hint-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .hint-tag {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--indigo);
+      background: var(--indigo-soft);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    /* Notice / Feedback Boxes */
+    .notice {
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .notice-ok { background: var(--primary-soft); border: 1px solid var(--primary-border); color: var(--primary-dark); }
+    .notice-amber { background: var(--amber-soft); border: 1px solid var(--amber-border); color: #92400E; }
+    .notice-red { background: var(--red-soft); border: 1px solid var(--red-border); color: #991B1B; }
+    .notice-indigo { background: var(--indigo-soft); border: 1px solid var(--indigo-border); color: #3730A3; }
+
+    /* Docked Bottom Input Bar */
+    .study-dock {
+      flex-shrink: 0;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .input-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .text-input {
+      flex: 1;
+      min-width: 0;
+      height: 44px;
+      padding: 0 14px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border-strong);
+      background: var(--bg);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.12s ease, background-color 0.12s ease;
+    }
+
+    .text-input:focus {
+      border-color: var(--primary);
+      background: var(--surface);
+    }
+
+    .dock-subrow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    /* Blind Audio */
+    .blind-play-btn {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      margin: 8px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(5, 150, 105, 0.28);
+    }
+
+    .blind-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .blind-opt {
+      padding: 13px 8px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border);
+      background: var(--bg);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      text-align: center;
+      word-break: break-word;
+    }
+
+    .blind-opt.opt-correct {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+    }
+
+    .blind-opt.opt-wrong {
+      border-color: var(--red);
+      background: var(--red-soft);
+      color: var(--red);
+    }
+
+    .blind-opt.opt-dim {
+      opacity: 0.45;
+    }
+
+    /* Vocabulary List */
+    .vocab-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .vocab-head {
+      width: 100%;
+      padding: 13px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      text-align: left;
+    }
+
+    .vocab-body {
+      padding: 0 14px 14px;
+      border-top: 1px solid var(--surface-alt);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .vocab-ex-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 9px 10px;
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      border: 1px solid var(--border);
+    }
+
+    .vocab-ex-pt {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .vocab-ex-en {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* Settings */
+    .setting-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .num-input {
+      width: 72px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+      background: var(--bg);
+    }
+
+    .voice-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      font-size: 13px;
+    }
+
+    .voice-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+      flex: 1;
+      cursor: pointer;
+    }
+
+    .voice-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-10px);
+      z-index: 999;
+      background: var(--ink);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 9px 14px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.25);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      max-width: 90vw;
+      text-align: center;
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .muted-xs {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app-shell">
+
+    <!-- ==================== VIEW 1: HOME ==================== -->
+    <section id="view-home" class="view">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-logo">F</div>
+          <div>
+            <div class="brand-title">FalaCloze <span class="brand-ver">v2.1</span></div>
+            <div id="home-pack-status" class="brand-sub">Checking local packs...</div>
+          </div>
+        </div>
+        <div class="bar-actions">
+          <button id="btn-nav-vocab" type="button" class="btn btn-neutral btn-sm" aria-label="Vocabulary">
+            Vocab
+          </button>
+          <button id="btn-nav-settings" type="button" class="btn btn-neutral btn-icon" aria-label="Settings" title="Settings">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="scroll-body">
+        <div class="stack">
+
+          <!-- Backup Reminder Banner -->
+          <div id="backup-reminder" class="notice notice-amber hidden row-between">
+            <span>Backup recommended — save your progress.</span>
+            <button id="btn-quick-backup" type="button" class="btn btn-amber-soft btn-sm">Backup</button>
+          </div>
+
+          <!-- First-Run Empty Deck Setup Card -->
+          <div id="home-setup-card" class="card stack hidden">
+            <div>
+              <h2 style="margin:0 0 6px; font-size:18px;">Load Your PT-BR Deck</h2>
+              <p class="muted-xs" style="margin:0;">
+                FalaCloze keeps app code and vocabulary 100% separate. Load your <strong>deck_100_v2.json</strong> (or any pack) once — it is cached locally for offline use.
+              </p>
+            </div>
+
+            <div id="home-drop-zone" class="drop-zone stack">
+              <div style="font-size:28px;">📦</div>
+              <label class="btn btn-primary btn-lg" style="cursor:pointer;">
+                Load Deck JSON (e.g. deck_100_v2.json)
+                <input id="input-home-deck" type="file" accept=".json,application/json" class="hidden" />
+              </label>
+              <div class="muted-xs">Or drag and drop a .json pack file here</div>
+            </div>
+
+            <div class="row-between" style="padding-top:4px;">
+              <span class="muted-xs">Want to preview the UI first?</span>
+              <button id="btn-load-demo" type="button" class="btn btn-neutral btn-sm">Load 5-card Demo</button>
+            </div>
+          </div>
+
+          <!-- Demo Active Banner -->
+          <div id="home-demo-banner" class="notice notice-indigo hidden row-between">
+            <span>Previewing removable 5-card Demo deck.</span>
+            <div style="display:flex; gap:6px;">
+              <label class="btn btn-primary-soft btn-sm" style="cursor:pointer;">
+                Load Real Deck
+                <input id="input-replace-demo" type="file" accept=".json,application/json" class="hidden" />
+              </label>
+              <button id="btn-remove-demo" type="button" class="btn btn-neutral btn-sm">Remove</button>
+            </div>
+          </div>
+
+          <!-- Active Dashboard (Shown when >=1 card is loaded) -->
+          <div id="home-dashboard" class="stack hidden">
+            <!-- Clickable Stat Cards -->
+            <div class="stats-grid">
+              <button id="stat-btn-to-learn" type="button" class="stat-card">
+                <div id="stat-val-to-learn" class="stat-num">0</div>
+                <div class="stat-label">To Learn</div>
+              </button>
+              <button id="stat-btn-learning" type="button" class="stat-card stat-learning">
+                <div id="stat-val-learning" class="stat-num">0</div>
+                <div class="stat-label">Learning</div>
+              </button>
+              <button id="stat-btn-mastered" type="button" class="stat-card stat-mastered">
+                <div id="stat-val-mastered" class="stat-num">0</div>
+                <div class="stat-label">Mastered</div>
+              </button>
+            </div>
+
+            <!-- Main Session Card -->
+            <div class="card stack">
+              <div class="row-between">
+                <span id="home-due-info" class="muted-xs" style="font-weight:600; color:var(--ink);">0 due · 15 new left</span>
+                <span id="home-forms-drip-info" class="badge badge-indigo hidden"></span>
+              </div>
+
+              <button id="btn-start-session" type="button" class="btn btn-primary btn-lg">
+                <span id="btn-start-text">Start 20 Cards</span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </button>
+
+              <!-- Session Length Selector -->
+              <div class="row-between">
+                <span class="muted-xs" style="font-weight:600;">Session length</span>
+                <div id="home-length-chips" class="chips-row">
+                  <button type="button" class="chip" data-len="10">10</button>
+                  <button type="button" class="chip" data-len="20">20</button>
+                  <button type="button" class="chip" data-len="30">30</button>
+                  <button type="button" class="chip" data-len="all">All Due</button>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <!-- Walk Mode Toggle -->
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Walk Mode (No Typing)</div>
+                  <div class="muted-xs">Tap to reveal &amp; self-grade on the move</div>
+                </div>
+                <button id="toggle-walk" type="button" class="switch" role="switch" aria-checked="false" aria-label="Toggle Walk Mode">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="row-between" style="gap:10px;">
+              <button id="btn-home-vocab" type="button" class="btn btn-neutral" style="flex:1;">
+                Browse Studied Vocab
+              </button>
+              <label class="btn btn-neutral" style="flex:1; cursor:pointer;">
+                + Add Pack JSON
+                <input id="input-home-add-pack" type="file" accept=".json,application/json" class="hidden" />
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </section>
+
+    <!-- ==================== VIEW 2: STUDY SESSION ==================== -->
+    <section id="view-study" class="view hidden">
+      <header class="top-bar">
+        <div class="bar-actions">
+          <button id="btn-study-home" type="button" class="btn btn-neutral btn-icon" aria-label="Home" title="Home">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button id="btn-study-undo" type="button" class="btn btn-neutral btn-sm" disabled title="Undo last answer">
+            ← Undo
+          </button>
+        </div>
+
+        <div style="text-align:center; min-width:0;">
+          <div id="study-header-title" style="font-size:13px; font-weight:700;">Study</div>
+          <div id="study-header-progress" class="muted-xs" style="font-size:11px;">0 / 20</div>
+        </div>
+
+        <div class="bar-actions">
+          <button id="btn-study-speak" type="button" class="btn btn-neutral btn-icon" aria-label="Speak PT-BR" title="Speak PT-BR (Ctrl+Space)">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+          <button id="btn-study-finish" type="button" class="btn btn-primary-soft btn-sm hidden">Finish</button>
+        </div>
+      </header>
+
+      <div class="progress-track">
+        <div id="study-progress-fill" class="progress-fill"></div>
+      </div>
+
+      <main class="study-center">
+        <!-- Active Cloze Card -->
+        <div id="study-card-panel" class="card stack">
+          <div class="row-between">
+            <div class="chips-row" style="gap:6px;">
+              <span id="sc-rank" class="badge">#1</span>
+              <span id="sc-pos" class="badge badge-primary">VERB</span>
+              <span id="sc-slot" class="badge badge-indigo hidden"></span>
+              <span id="sc-leech" class="badge badge-red hidden">Leech</span>
+              <!-- False friend badge strictly populated ONLY when revealed === true -->
+              <span id="sc-ff-badge" class="badge badge-amber hidden"></span>
+            </div>
+            <button id="btn-grammar-peek" type="button" class="btn btn-neutral btn-sm hidden" title="Peek grammar note">?</button>
+          </div>
+
+          <!-- English Context + Spoiler-Free Hint -->
+          <div>
+            <p id="sc-en-sentence" class="en-line"></p>
+            <div class="hint-row">
+              <span class="muted-xs" style="font-size:11px; font-weight:700; text-transform:uppercase;">Hint</span>
+              <span id="sc-hint-en" class="hint-tag"></span>
+            </div>
+          </div>
+
+          <!-- Cloze Sentence Container (Populated exclusively by shared renderExample()) -->
+          <div id="sc-pt-container" class="cloze-sentence"></div>
+
+          <!-- Revealed Notes (Cleared & hidden before submit — zero DOM spoilers) -->
+          <div id="sc-ff-note" class="notice notice-amber hidden"></div>
+          <div id="sc-grammar-note" class="notice notice-indigo hidden"></div>
+
+          <!-- Result Feedback + Action Chips -->
+          <div id="sc-feedback-wrap" class="stack hidden" style="gap:8px;">
+            <div id="sc-feedback" class="notice"></div>
+            <div id="sc-post-actions" class="chips-row">
+              <button id="btn-override-again" type="button" class="btn btn-red-soft btn-sm hidden">No, I was wrong (Again)</button>
+              <button id="btn-fast-known" type="button" class="btn btn-primary-soft btn-sm hidden">⚡ Already know? (21d)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blind Audio Final Round Panel (Unlogged, 3 Real-Word Choices) -->
+        <div id="blind-panel" class="card stack hidden">
+          <div class="row-between">
+            <span id="blind-progress-badge" class="badge badge-indigo">Blind Audio · 1/5</span>
+            <button id="btn-blind-skip" type="button" class="btn btn-neutral btn-sm">Skip</button>
+          </div>
+          <p class="muted-xs" style="margin:0;">Unlogged ear check from this session. Listen and tap the word you heard.</p>
+
+          <button id="btn-blind-play" type="button" class="blind-play-btn" aria-label="Replay Audio">
+            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+
+          <div id="blind-options" class="blind-grid"></div>
+
+          <div id="blind-revealed-box" class="hidden" style="padding:12px; border-radius:12px; background:var(--bg); border:1px solid var(--border);">
+            <div id="blind-pt-revealed" style="font-size:17px; font-weight:600; line-height:1.4;"></div>
+            <div id="blind-en-revealed" class="muted-xs" style="margin-top:4px;"></div>
+          </div>
+        </div>
+
+        <!-- Session Complete Panel -->
+        <div id="done-panel" class="card stack hidden" style="text-align:center;">
+          <div style="width:52px; height:52px; border-radius:16px; background:var(--primary-soft); color:var(--primary); font-size:26px; font-weight:800; margin:0 auto; display:flex; align-items:center; justify-content:center;">✓</div>
+          <div>
+            <h2 id="done-heading" style="margin:0; font-size:20px;">Session Complete!</h2>
+            <p id="done-sub" class="muted-xs" style="margin:4px 0 0;">Great consistency.</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card" style="pointer-events:none;">
+              <div id="done-reviewed" class="stat-num">0</div>
+              <div class="stat-label">Reviewed</div>
+            </div>
+            <div class="stat-card stat-mastered" style="pointer-events:none;">
+              <div id="done-clean" class="stat-num">0%</div>
+              <div class="stat-label">Clean</div>
+            </div>
+            <div class="stat-card stat-learning" style="pointer-events:none;">
+              <div id="done-blind" class="stat-num">—</div>
+              <div class="stat-label">Blind Audio</div>
+            </div>
+          </div>
+          <button id="btn-done-home" type="button" class="btn btn-primary btn-lg">Back to Home</button>
+        </div>
+      </main>
+
+      <!-- Docked Bottom Controls -->
+      <footer id="study-dock" class="study-dock">
+        <!-- Typing Mode Dock -->
+        <div id="dock-typing">
+          <div class="input-row">
+            <input id="cloze-input" type="text" class="text-input"
+              placeholder="Type missing PT-BR word..."
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+              enterkeyhint="done" />
+            <button id="btn-check" type="button" class="btn btn-primary" style="height:44px; min-width:82px;">Check</button>
+          </div>
+          <div id="dock-action-subrow" class="dock-subrow">
+            <div style="display:flex; gap:6px;">
+              <button id="btn-hint" type="button" class="btn btn-neutral btn-sm">Hint +1</button>
+              <button id="btn-dont-know" type="button" class="btn btn-red-soft btn-sm">Don't know</button>
+            </div>
+            <button id="btn-known" type="button" class="btn btn-neutral btn-sm">Known (21d)</button>
+          </div>
+        </div>
+
+        <!-- Walk Mode Dock -->
+        <div id="dock-walk" class="hidden">
+          <button id="btn-walk-reveal" type="button" class="btn btn-primary btn-lg">Tap to Reveal</button>
+          <div id="walk-grade-btns" class="hidden" style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <button id="btn-walk-again" type="button" class="btn btn-red-soft btn-lg">Again</button>
+            <button id="btn-walk-good" type="button" class="btn btn-primary btn-lg">Good</button>
+          </div>
+        </div>
+
+        <!-- Blind Audio Dock -->
+        <div id="dock-blind" class="hidden">
+          <button id="btn-blind-next" type="button" class="btn btn-primary btn-lg" disabled>Next Audio →</button>
+        </div>
+      </footer>
+    </section>
+
+    <!-- ==================== VIEW 3: VOCABULARY ==================== -->
+    <section id="view-vocab" class="view hidden">
+      <header class="top-bar">
+        <button id="btn-vocab-back" type="button" class="btn btn-neutral btn-icon" aria-label="Back">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div style="font-size:15px; font-weight:700;">Vocabulary</div>
+        <span id="vocab-count" class="badge">0</span>
+      </header>
+
+      <div style="padding:10px 16px; background:var(--surface); border-bottom:1px solid var(--border);" class="stack">
+        <input id="vocab-search" type="search" class="text-input" style="height:38px; font-size:14px;" placeholder="Search PT-BR or English..." />
+        <div id="vocab-tabs" class="chips-scroll">
+          <button type="button" class="chip" data-bucket="studied">Studied</button>
+          <button type="button" class="chip" data-bucket="learning">Learning</button>
+          <button type="button" class="chip" data-bucket="mastered">Mastered</button>
+          <button type="button" class="chip" data-bucket="leeches">Leeches</button>
+          <button type="button" class="chip" data-bucket="to_learn">To Learn</button>
+          <button type="button" class="chip" data-bucket="all">All</button>
+        </div>
+      </div>
+
+      <main id="vocab-list" class="scroll-body stack"></main>
+    </section>
+
+    <!-- ==================== VIEW 4: SETTINGS & DATA ==================== -->
+    <section id="view-settings" class="view hidden">
+      <header class="top-bar">
+        <button id="btn-settings-back" type="button" class="btn btn-neutral btn-icon" aria-label="Back">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div style="font-size:15px; font-weight:700;">Settings &amp; Data</div>
+        <div style="width:36px;"></div>
+      </header>
+
+      <main class="scroll-body">
+        <div class="stack">
+
+          <!-- FSRS-6 & Caps -->
+          <div class="card stack">
+            <h3 class="section-title">FSRS-6 &amp; Daily Limits</h3>
+            <div class="setting-row">
+              <div>
+                <div style="font-size:14px; font-weight:600;">New Lemmas / Day</div>
+                <div class="muted-xs">Resets at 4:00 AM local time</div>
+              </div>
+              <input id="set-new-lemmas" type="number" min="1" max="100" class="num-input" />
+            </div>
+            <div class="setting-row">
+              <div>
+                <div style="font-size:14px; font-weight:600;">New Form Cards / Day</div>
+                <div class="muted-xs">Drip-in cap for newly unlocked forms</div>
+              </div>
+              <input id="set-new-forms" type="number" min="1" max="30" class="num-input" />
+            </div>
+            <div class="setting-row">
+              <div>
+                <div style="font-size:14px; font-weight:600;">Desired Retention</div>
+                <div class="muted-xs">Cold-start default: 0.85</div>
+              </div>
+              <span id="set-retention-lbl" class="badge badge-primary">0.85</span>
+            </div>
+            <input id="set-retention" type="range" min="0.80" max="0.92" step="0.01" style="width:100%; accent-color:var(--primary);" />
+          </div>
+
+          <!-- Tense Unlocks -->
+          <div class="card stack">
+            <h3 class="section-title">Grammar Tense Unlocks</h3>
+            <p class="muted-xs" style="margin:0;">Examples in locked tenses stay hidden until you enable them here.</p>
+            <div id="settings-tenses-list" class="stack" style="gap:10px;"></div>
+          </div>
+
+          <!-- Multi-Voice PT-BR TTS -->
+          <div class="card stack">
+            <h3 class="section-title">PT-BR Audio &amp; Multi-Voice TTS</h3>
+            <div class="setting-row">
+              <span style="font-size:14px; font-weight:600;">Auto-play after answer</span>
+              <button id="toggle-autoplay" type="button" class="switch" role="switch" aria-checked="true">
+                <span class="switch-knob"></span>
+              </button>
+            </div>
+            <div class="setting-row">
+              <div>
+                <div style="font-size:14px; font-weight:600;">Rotate checked voices</div>
+                <div class="muted-xs">Randomize per card &amp; switch on Replay</div>
+              </div>
+              <button id="toggle-rotate-voices" type="button" class="switch" role="switch" aria-checked="true">
+                <span class="switch-knob"></span>
+              </button>
+            </div>
+            <div id="tts-missing-banner" class="notice notice-amber hidden">
+              No Brazilian Portuguese (pt-BR) voice detected on this device. Install Google Speech Services Portuguese (Brazil) voice data in Android TTS settings.
+            </div>
+            <div id="settings-voices-list" class="stack" style="gap:8px;"></div>
+          </div>
+
+          <!-- Packs & Progress Sync -->
+          <div class="card stack">
+            <h3 class="section-title">Packs &amp; Backup Sync</h3>
+            <div id="settings-packs-summary" class="muted-xs"></div>
+
+            <div class="row-between" style="gap:8px;">
+              <label class="btn btn-primary-soft" style="flex:1; cursor:pointer;">
+                Import Pack (.json)
+                <input id="input-settings-pack" type="file" accept=".json,application/json" class="hidden" />
+              </label>
+              <button id="btn-export-backup" type="button" class="btn btn-neutral" style="flex:1;">
+                Save Backup
+              </button>
+            </div>
+
+            <label class="btn btn-indigo-soft" style="width:100%; cursor:pointer;">
+              Merge Progress Backup (.json)
+              <input id="input-merge-progress" type="file" accept=".json,application/json" class="hidden" />
+            </label>
+
+            <div class="divider"></div>
+
+            <div class="row-between" style="gap:8px;">
+              <button id="btn-reset-progress" type="button" class="btn btn-red-soft btn-sm" style="flex:1;">Reset Progress</button>
+              <button id="btn-clear-packs" type="button" class="btn btn-neutral btn-sm" style="flex:1;">Clear Cached Packs</button>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </section>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+  </div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ==========================================================================
+     1. CONSTANTS, STORAGE KEYS & TINY REMOVABLE 5-CARD DEMO (PREVIEW ONLY)
+     ========================================================================== */
+  const SCHEMA_VERSION = 2;
+  const KEY_PACKS = 'falacloze_v2_1:packs';
+  const KEY_STATE = 'falacloze_v2_1:state';
+
+  // Strictly minimal 5-card preview deck used ONLY if user clicks "Load 5-card Demo"
+  const DEMO_PACK = {
+    packId: '__demo_5__',
+    version: '1.0.0',
+    minSchema: 2,
+    requires: [],
+    isDemo: true,
+    cards: [
+      {
+        id: 'pt_querer', order: 1, lemma: 'querer', pos: 'VERB', en_gloss: 'to want',
+        forms: ['quero', 'quer', 'queremos', 'querem', 'querer'],
+        examples: [
+          { exId: 'pt_querer.e1', pt_cloze: 'Eu ___ café agora.', answer: 'quero', form_tag: '1st_sg', accepted: [], plausible_wrong: ['preciso'], distractors: ['faço', 'tenho'], en_sentence: 'I want coffee now.', hint_en: 'to want (1st sg)' },
+          { exId: 'pt_querer.e2', pt_cloze: 'Ela ___ ver um filme.', answer: 'quer', form_tag: '3rd_sg', accepted: [], plausible_wrong: [], distractors: ['tem', 'vai'], en_sentence: 'She wants to see a movie.', hint_en: 'to want (3rd sg)' },
+          { exId: 'pt_querer.e3', pt_cloze: 'Você vai ___ café?', answer: 'querer', form_tag: 'inf', accepted: [], plausible_wrong: [], distractors: ['fazer', 'comer'], en_sentence: 'Are you going to want coffee?', hint_en: 'to want (inf)' }
+        ]
+      },
+      {
+        id: 'pt_fazer', order: 2, lemma: 'fazer', pos: 'VERB', en_gloss: 'to do / to make',
+        forms: ['faço', 'faz', 'fazemos', 'fazem', 'fazer'],
+        examples: [
+          { exId: 'pt_fazer.e1', pt_cloze: 'Eu ___ café agora.', answer: 'faço', form_tag: '1st_sg', accepted: [], plausible_wrong: [], distractors: ['quero', 'tenho'], en_sentence: 'I am making coffee now.', hint_en: 'to make (1st sg)' },
+          { exId: 'pt_fazer.e2', pt_cloze: 'Ele ___ tudo aqui.', answer: 'faz', form_tag: '3rd_sg', accepted: [], plausible_wrong: [], distractors: ['quer', 'vai'], en_sentence: 'He does everything here.', hint_en: 'to do (3rd sg)' },
+          { exId: 'pt_fazer.e3', pt_cloze: 'A gente vai ___ tudo.', answer: 'fazer', form_tag: 'inf', accepted: [], plausible_wrong: [], distractors: ['querer', 'falar'], en_sentence: 'We are going to do everything.', hint_en: 'to do (inf)' }
+        ]
+      },
+      {
+        id: 'pt_de', order: 3, lemma: 'de', pos: 'ADP', en_gloss: 'of / from',
+        forms: ['de', 'do', 'da', 'dos', 'das'],
+        grammar_note_en: 'precisar always takes "de" before nouns; de + o = do.',
+        examples: [
+          { exId: 'pt_de.e1', pt_cloze: 'Eu preciso ___ café agora.', answer: 'de', form_tag: 'base', accepted: [], plausible_wrong: ['um'], distractors: ['em', 'no'], en_sentence: 'I need coffee now.', hint_en: 'of (after precisar)' },
+          { exId: 'pt_de.e2', pt_cloze: 'João é ___ Brasil.', answer: 'do', form_tag: 'contraction', accepted: [], plausible_wrong: ['de'], distractors: ['da', 'no'], en_sentence: 'João is from Brazil.', hint_en: 'from the (de + o)' }
+        ]
+      },
+      {
+        id: 'pt_assistir', order: 4, lemma: 'assistir', pos: 'VERB', en_gloss: 'to watch',
+        false_friend: true,
+        forms: ['assisto', 'assiste', 'assistimos', 'assistem', 'assistir'],
+        grammar_note_en: 'False friend: assistir means "to watch", not "to assist".',
+        examples: [
+          { exId: 'pt_assistir.e1', pt_cloze: 'Eu ___ o filme hoje.', answer: 'assisto', form_tag: '1st_sg', accepted: [], plausible_wrong: [], distractors: ['quero', 'preciso'], en_sentence: 'I am watching the movie today.', hint_en: 'to watch (1st sg) (NOT assist!)' },
+          { exId: 'pt_assistir.e2', pt_cloze: 'Ela ___ o vídeo aqui.', answer: 'assiste', form_tag: '3rd_sg', accepted: [], plausible_wrong: [], distractors: ['quer', 'faz'], en_sentence: 'She watches the video here.', hint_en: 'to watch (3rd sg) (NOT assist!)' }
+        ]
+      },
+      {
+        id: 'pt_voce', order: 5, lemma: 'você', pos: 'PRON', en_gloss: 'you (singular)',
+        forms: ['você', 'vocês'],
+        grammar_note_en: 'você takes 3rd-person singular verb endings in PT-BR.',
+        examples: [
+          { exId: 'pt_voce.e1', pt_cloze: '___ quer café agora?', answer: 'Você', form_tag: 'base', accepted: ['você'], plausible_wrong: ['Eu'], distractors: ['Eu', 'Ele'], en_sentence: 'Do you want coffee now?', hint_en: 'you (sg)' }
+        ]
+      }
+    ]
+  };
+
+  // Critical PT-BR homophone groups banned as Blind Audio distractors for each other
+  const HOMOPHONE_GROUPS = [
+    ['mas', 'mais'],
+    ['mal', 'mau'],
+    ['porque', 'por que', 'porquê', 'por quê'],
+    ['sem', 'cem'],
+    ['a', 'há', 'à'],
+    ['onde', 'aonde']
+  ];
+
+  // Critical diacritic-distinct PT-BR pairs seeded into collision map regardless of pack size
+  const SEED_COLLISION_PAIRS = [
+    ['e', 'é'],
+    ['esta', 'está'],
+    ['da', 'dá'],
+    ['pais', 'país'],
+    ['pode', 'pôde'],
+    ['por', 'pôr'],
+    ['no', 'nó'],
+    ['avo', 'avó', 'avô'],
+    ['tem', 'têm'],
+    ['vem', 'vêm']
+  ];
+
+  const FALLBACK_DISTRACTOR_POOL = [
+    'eu', 'você', 'ele', 'ela', 'não', 'aqui', 'agora', 'hoje', 'muito', 'tudo',
+    'casa', 'tempo', 'dia', 'noite', 'coisa', 'cara', 'bem', 'bom', 'com', 'para',
+    'por', 'em', 'de', 'que', 'onde', 'quando', 'como', 'quem', 'nada', 'sempre',
+    'nunca', 'ainda', 'depois', 'também', 'novo', 'grande', 'legal', 'água', 'comida',
+    'quero', 'faço', 'tenho', 'posso', 'fico', 'pego', 'falo', 'vejo', 'vou', 'sei',
+    'quer', 'faz', 'tem', 'pode', 'fica', 'pega', 'fala', 'vê', 'vai', 'sabe',
+    'querer', 'fazer', 'ter', 'poder', 'ficar', 'pegar', 'falar', 'ver', 'sair', 'vir'
+  ];
+
+  /* ==========================================================================
+     2. EXACT FSRS-6 ENGINE
+     ========================================================================== */
+  const FSRS6_W = [
+    0.212, 1.2931, 2.3065, 8.2956, 6.4133, 0.8334, 3.0194,
+    0.001, 1.8722, 0.1666, 0.796, 1.4835, 0.0614, 0.2629,
+    1.6483, 0.6014, 1.8729, 0.5425, 0.0912, 0.0658, 0.1542
+  ];
+
+  function fnv1aHash(str) {
+    let h = 2166136261;
+    for (let i = 0; i < str.length; i++) {
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return (h >>> 0) / 4294967296;
+  }
+
+  const FSRS6 = {
+    learningStepsMin: [1, 10],
+    relearningStepsMin: [10],
+    leechThreshold: 5,
+
+    retrievability(elapsedDays, stability) {
+      if (stability <= 0) return 0;
+      const decay = -FSRS6_W[20];
+      const factor = Math.pow(0.9, -1 / FSRS6_W[20]) - 1;
+      return Math.pow(1 + (factor * elapsedDays) / stability, decay);
+    },
+
+    nextInterval(stability, desiredRetention, seedKey) {
+      const decay = -FSRS6_W[20];
+      const factor = Math.pow(0.9, -1 / FSRS6_W[20]) - 1;
+      let ivl = (stability / factor) * (Math.pow(desiredRetention, 1 / decay) - 1);
+      ivl = Math.max(1, Math.min(36500, Math.round(ivl)));
+      if (ivl >= 3) {
+        const fuzz = Math.max(1, Math.round(ivl * 0.05));
+        const r = fnv1aHash(seedKey);
+        const offset = Math.floor(r * (2 * fuzz + 1)) - fuzz;
+        ivl = Math.max(2, ivl + offset);
+      }
+      return ivl;
+    },
+
+    initStability(grade) {
+      return Math.max(0.1, FSRS6_W[grade - 1]);
+    },
+
+    initDifficulty(grade) {
+      const d = FSRS6_W[4] - Math.exp(FSRS6_W[5] * (grade - 1)) + 1;
+      return Math.min(10, Math.max(1, d));
+    },
+
+    nextDifficulty(d, grade) {
+      const d0 = this.initDifficulty(4);
+      const delta = -FSRS6_W[6] * (grade - 3);
+      const nextD = d + delta * ((10 - d) / 9);
+      const meanRev = FSRS6_W[7] * d0 + (1 - FSRS6_W[7]) * nextD;
+      return Math.min(10, Math.max(1, meanRev));
+    },
+
+    sameDayStability(s, grade) {
+      const safeS = Math.max(0.1, s);
+      const mult = Math.exp(FSRS6_W[17] * (grade - 3 + FSRS6_W[18])) * Math.pow(safeS, -FSRS6_W[19]);
+      const nextS = safeS * mult;
+      return grade >= 3 ? Math.max(safeS, nextS) : Math.max(0.1, nextS);
+    },
+
+    nextRecallStability(d, s, r, grade) {
+      const hardPenalty = grade === 2 ? FSRS6_W[15] : 1;
+      const easyBonus = grade === 4 ? FSRS6_W[16] : 1;
+      const inc = Math.exp(FSRS6_W[8]) *
+        (11 - d) *
+        Math.pow(Math.max(0.1, s), -FSRS6_W[9]) *
+        (Math.exp(FSRS6_W[10] * (1 - r)) - 1) *
+        hardPenalty * easyBonus;
+      return Math.max(0.1, s * (1 + inc));
+    },
+
+    nextForgetStability(d, s, r) {
+      const newS = FSRS6_W[11] *
+        Math.pow(d, -FSRS6_W[12]) *
+        (Math.pow(s + 1, FSRS6_W[13]) - 1) *
+        Math.exp(FSRS6_W[14] * (1 - r));
+      return Math.max(0.1, Math.min(s, newS));
+    },
+
+    schedule(cardKey, prevState, grade, desiredRetention = 0.85, nowMs = Date.now()) {
+      const cs = prevState ? deepClone(prevState) : createBlankCardRecord();
+      const prevMs = cs.last_review || nowMs;
+      const elapsedDays = Math.max(0, (nowMs - prevMs) / 86400000);
+      const isSameDay = elapsedDays < 1 && cs.reps > 0;
+
+      cs.reps = (cs.reps || 0) + 1;
+      cs.last_review = nowMs;
+      cs.updatedAt = nowMs;
+      if (!cs.firstIntroducedAt) cs.firstIntroducedAt = nowMs;
+
+      const seedKey = `${cardKey}:${cs.reps}`;
+
+      if (cs.state === 'new') {
+        cs.stability = this.initStability(grade);
+        cs.difficulty = this.initDifficulty(grade);
+        if (grade === 1) {
+          cs.state = 'learning';
+          cs.step = 0;
+          cs.lapses = (cs.lapses || 0) + 1;
+          cs.due = nowMs + this.learningStepsMin[0] * 60000;
+        } else {
+          cs.state = 'learning';
+          cs.step = 1;
+          cs.due = nowMs + this.learningStepsMin[1] * 60000;
+        }
+      } else if (cs.state === 'learning' || cs.state === 'relearning') {
+        cs.stability = this.sameDayStability(cs.stability || 0.5, grade);
+        cs.difficulty = this.nextDifficulty(cs.difficulty || 5, grade);
+        const steps = cs.state === 'learning' ? this.learningStepsMin : this.relearningStepsMin;
+        if (grade === 1) {
+          cs.step = 0;
+          cs.due = nowMs + steps[0] * 60000;
+        } else {
+          cs.step = (cs.step || 0) + 1;
+          if (cs.step >= steps.length) {
+            cs.state = 'review';
+            const ivl = this.nextInterval(cs.stability, desiredRetention, seedKey);
+            cs.interval = ivl;
+            cs.due = nowMs + ivl * 86400000;
+          } else {
+            cs.due = nowMs + steps[cs.step] * 60000;
+          }
+        }
+      } else if (cs.state === 'review') {
+        const r = this.retrievability(elapsedDays, cs.stability);
+        cs.difficulty = this.nextDifficulty(cs.difficulty, grade);
+        if (grade === 1) {
+          cs.lapses = (cs.lapses || 0) + 1;
+          cs.stability = this.nextForgetStability(cs.difficulty, cs.stability, r);
+          cs.state = 'relearning';
+          cs.step = 0;
+          cs.due = nowMs + this.relearningStepsMin[0] * 60000;
+        } else {
+          cs.stability = isSameDay
+            ? this.sameDayStability(cs.stability, grade)
+            : this.nextRecallStability(cs.difficulty, cs.stability, r, grade);
+          const ivl = this.nextInterval(cs.stability, desiredRetention, seedKey);
+          cs.interval = ivl;
+          cs.due = nowMs + ivl * 86400000;
+        }
+      }
+
+      if ((cs.lapses || 0) >= this.leechThreshold) {
+        cs.leech = true;
+      }
+      return cs;
+    }
+  };
+
+  /* ==========================================================================
+     3. CORE HELPERS & DATA STORES
+     ========================================================================== */
+  const el = id => document.getElementById(id);
+  const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+  function getStudyDayKey(nowMs = Date.now()) {
+    // 4:00 AM local day rollover
+    const d = new Date(nowMs - 4 * 3600 * 1000);
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  }
+
+  function normalizeText(str) {
+    return String(str || '')
+      .trim()
+      .toLowerCase()
+      .replace(/[’‘`]/g, "'")
+      .replace(/\s+/g, ' ');
+  }
+
+  function foldDiacritics(str) {
+    return normalizeText(str).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function slugify(str) {
+    return foldDiacritics(str).replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+  }
+
+  function parseCardKey(cardKey) {
+    const idx = cardKey.indexOf('#');
+    if (idx === -1) return { lemmaId: cardKey, slot: null };
+    return { lemmaId: cardKey.slice(0, idx), slot: cardKey.slice(idx + 1) };
+  }
+
+  function createBlankCardRecord() {
+    return {
+      state: 'new',
+      stability: 0,
+      difficulty: 0,
+      due: 0,
+      interval: 0,
+      reps: 0,
+      lapses: 0,
+      step: 0,
+      leech: false,
+      last_review: 0,
+      updatedAt: 0,
+      firstIntroducedAt: 0,
+      lastExampleId: null
+    };
+  }
+
+  // Decoupled Pack Store (cached in falacloze_v2_1:packs)
+  let packStore = {
+    schemaVersion: SCHEMA_VERSION,
+    packsMeta: {}, // packId -> version
+    isDemoActive: false,
+    cardsById: {}  // lemmaId -> normalized card object
+  };
+
+  // Lazy User Progress State (cached in falacloze_v2_1:state)
+  let userState = {
+    schemaVersion: SCHEMA_VERSION,
+    rev: 0,
+    cards: {},      // LAZY: only touched cardKeys (lemmaId or lemmaId#slot) live here!
+    formStats: {},  // lemmaId -> { [slot]: { ok, fail } }
+    settings: {
+      desiredRetention: 0.85,
+      dailyNewLemmaCap: 15,
+      dailyNewFormCap: 4,
+      sessionLength: 20,
+      walkMode: false,
+      autoPlay: true,
+      rotateVoices: true,
+      enabledVoices: [], // [{ voiceURI, name }]
+      unlockedTenses: ['present']
+    },
+    daily: {
+      day: getStudyDayKey(),
+      newLemmas: 0,
+      newForms: 0,
+      clustersToday: [],
+      reviewedLemmasToday: [],
+      shownSentencesToday: []
+    },
+    lastBackupAt: 0
+  };
+
+  // Derived indexes rebuilt whenever packStore changes
+  let sortedCards = [];
+  let knownWordSet = new Set();
+  let foldedCollisionMap = new Map();
+  let availableTenses = new Set(['present']);
+
+  /* ==========================================================================
+     4. PACK NORMALIZATION, MERGING & PERSISTENCE
+     ========================================================================== */
+  function normalizeCard(raw) {
+    const id = raw.id ? String(raw.id) : `pt_${slugify(raw.lemma || 'unknown')}`;
+    const lemma = String(raw.lemma || '').trim();
+    const formsSet = new Set((raw.forms || []).map(f => normalizeText(f)).filter(Boolean));
+    if (lemma) formsSet.add(normalizeText(lemma));
+
+    const examples = (raw.examples || []).map((ex, idx) => {
+      const exId = ex.exId || ex.id || `${id}.e${idx + 1}`;
+      let tense = ex.tense ? String(ex.tense) : '';
+      let person = ex.person ? String(ex.person) : '';
+      if (!tense || !person) {
+        const ft = String(ex.form_tag || 'base');
+        if (ft.includes('.')) {
+          const parts = ft.split('.');
+          tense = tense || parts[0];
+          person = person || parts.slice(1).join('.');
+        } else {
+          tense = tense || 'present';
+          person = person || ft;
+        }
+      }
+      const slot = `${tense}.${person}`;
+      const answer = String(ex.answer || '').trim();
+      if (answer) formsSet.add(normalizeText(answer));
+      const accepted = Array.isArray(ex.accepted) ? ex.accepted.map(a => String(a).trim()).filter(Boolean) : [];
+      accepted.forEach(a => formsSet.add(normalizeText(a)));
+
+      // Spoiler-free hint normalization: extract (NOT ...!) out of clean_hint_en
+      const rawHint = String(ex.hint_en || '');
+      let falseFriendNote = ex.false_friend_note ? String(ex.false_friend_note) : null;
+      let cleanHint = rawHint;
+      const notMatch = rawHint.match(/\s*\((NOT\s+[^)]+)\)/i);
+      if (notMatch) {
+        if (!falseFriendNote) falseFriendNote = notMatch[1].trim();
+        cleanHint = rawHint.replace(notMatch[0], '').trim();
+      }
+
+      return {
+        exId,
+        contentRev: Number(ex.contentRev || 1),
+        retired: Boolean(ex.retired),
+        pt_cloze: String(ex.pt_cloze || ''),
+        answer,
+        tense,
+        person,
+        slot,
+        accepted,
+        plausible_wrong: Array.isArray(ex.plausible_wrong) ? ex.plausible_wrong.map(String) : [],
+        distractors: Array.isArray(ex.distractors) ? ex.distractors.map(String) : [],
+        en_sentence: String(ex.en_sentence || ''),
+        hint_en: rawHint,
+        clean_hint_en: cleanHint,
+        false_friend_note: falseFriendNote,
+        requires: Array.isArray(ex.requires) ? ex.requires.map(String) : [],
+        subjects: Array.isArray(ex.subjects) ? ex.subjects.map(String) : null
+      };
+    }).filter(ex => ex.pt_cloze.includes('___') && ex.answer);
+
+    return {
+      id,
+      order: Number(raw.order || 9999),
+      original_rank: raw.original_rank != null ? Number(raw.original_rank) : null,
+      lemma,
+      pos: String(raw.pos || 'WORD').toUpperCase(),
+      en_gloss: String(raw.en_gloss || ''),
+      cluster_id: raw.cluster_id || null,
+      false_friend: Boolean(raw.false_friend),
+      forms: Array.from(formsSet),
+      grammar_note_en: raw.grammar_note_en ? String(raw.grammar_note_en) : null,
+      examples
+    };
+  }
+
+  function mergePackObject(rawData, sourceLabel = 'imported_pack') {
+    let wrapper;
+    if (Array.isArray(rawData)) {
+      wrapper = {
+        packId: sourceLabel,
+        version: '1.0.0',
+        minSchema: 2,
+        requires: [],
+        cards: rawData
+      };
+    } else if (rawData && typeof rawData === 'object' && Array.isArray(rawData.cards)) {
+      wrapper = rawData;
+    } else {
+      return { ok: false, error: 'Invalid JSON: expected a card array or { cards: [...] } pack.' };
+    }
+
+    if (wrapper.minSchema && Number(wrapper.minSchema) > SCHEMA_VERSION) {
+      return { ok: false, error: `Pack requires schema v${wrapper.minSchema}, app supports v${SCHEMA_VERSION}.` };
+    }
+
+    // If importing a real pack while demo is active, clear the demo pack cleanly
+    if (!wrapper.isDemo && packStore.isDemoActive) {
+      packStore.cardsById = {};
+      packStore.packsMeta = {};
+      packStore.isDemoActive = false;
+    }
+
+    let addedCards = 0;
+    let appendedExamples = 0;
+
+    for (const rawCard of wrapper.cards) {
+      if (!rawCard || !rawCard.lemma || !Array.isArray(rawCard.examples) || rawCard.examples.length === 0) {
+        continue;
+      }
+      const norm = normalizeCard(rawCard);
+      if (norm.examples.length === 0) continue;
+
+      const existing = packStore.cardsById[norm.id];
+      if (!existing) {
+        packStore.cardsById[norm.id] = norm;
+        addedCards++;
+      } else {
+        // Non-destructive merge: union forms, keep existing examples by exId, append new examples
+        const formsUnion = new Set([...existing.forms, ...norm.forms]);
+        existing.forms = Array.from(formsUnion);
+        if (!existing.grammar_note_en && norm.grammar_note_en) existing.grammar_note_en = norm.grammar_note_en;
+        if (norm.false_friend) existing.false_friend = true;
+
+        const exMap = new Map(existing.examples.map(e => [e.exId, e]));
+        for (const incEx of norm.examples) {
+          const prevEx = exMap.get(incEx.exId);
+          if (!prevEx) {
+            existing.examples.push(incEx);
+            exMap.set(incEx.exId, incEx);
+            appendedExamples++;
+          } else if (incEx.contentRev > (prevEx.contentRev || 1)) {
+            Object.assign(prevEx, incEx);
+          } else if (incEx.retired && !prevEx.retired) {
+            prevEx.retired = true;
+          }
+        }
+      }
+    }
+
+    packStore.packsMeta[wrapper.packId || sourceLabel] = wrapper.version || '1.0.0';
+    packStore.isDemoActive = Boolean(wrapper.isDemo);
+
+    rebuildDeckIndexes();
+    savePacks();
+    return { ok: true, addedCards, appendedExamples, totalCards: sortedCards.length };
+  }
+
+  function rebuildDeckIndexes() {
+    sortedCards = Object.values(packStore.cardsById).sort((a, b) => (a.order - b.order) || a.lemma.localeCompare(b.lemma));
+    knownWordSet = new Set();
+    foldedCollisionMap = new Map();
+    availableTenses = new Set(['present']);
+
+    const registerSurface = word => {
+      const n = normalizeText(word);
+      if (!n) return;
+      knownWordSet.add(n);
+      const folded = foldDiacritics(n);
+      if (!foldedCollisionMap.has(folded)) foldedCollisionMap.set(folded, new Set());
+      foldedCollisionMap.get(folded).add(n);
+    };
+
+    SEED_COLLISION_PAIRS.forEach(group => group.forEach(registerSurface));
+
+    for (const card of sortedCards) {
+      registerSurface(card.lemma);
+      (card.forms || []).forEach(registerSurface);
+      for (const ex of card.examples) {
+        availableTenses.add(ex.tense || 'present');
+        registerSurface(ex.answer);
+        (ex.accepted || []).forEach(registerSurface);
+      }
+    }
+  }
+
+  function savePacks() {
+    try {
+      localStorage.setItem(KEY_PACKS, JSON.stringify(packStore));
+    } catch (e) {
+      showToast('Storage quota exceeded while saving packs.');
+    }
+  }
+
+  function saveState() {
+    try {
+      userState.rev = (userState.rev || 0) + 1;
+      localStorage.setItem(KEY_STATE, JSON.stringify(userState));
+    } catch (e) {
+      showToast('Storage full! Please save a backup immediately.');
+    }
+  }
+
+  function ensureDailyRollover() {
+    const today = getStudyDayKey();
+    if (!userState.daily || userState.daily.day !== today) {
+      userState.daily = {
+        day: today,
+        newLemmas: 0,
+        newForms: 0,
+        clustersToday: [],
+        reviewedLemmasToday: [],
+        shownSentencesToday: []
+      };
+    }
+  }
+
+  function loadFromLocalStorage() {
+    try {
+      const rawPacks = localStorage.getItem(KEY_PACKS);
+      if (rawPacks) {
+        const parsed = JSON.parse(rawPacks);
+        if (parsed && parsed.cardsById) {
+          packStore = parsed;
+          // Re-normalize defensively in case of cached upgrades
+          Object.keys(packStore.cardsById).forEach(id => {
+            packStore.cardsById[id] = normalizeCard(packStore.cardsById[id]);
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('Pack load warning:', e);
+    }
+
+    try {
+      const rawState = localStorage.getItem(KEY_STATE);
+      if (rawState) {
+        const parsed = JSON.parse(rawState);
+        if (parsed.schemaVersion && parsed.schemaVersion > SCHEMA_VERSION) {
+          showToast('Newer progress schema detected; refusing to overwrite.');
+          return;
+        }
+        userState = {
+          ...userState,
+          ...parsed,
+          settings: { ...userState.settings, ...(parsed.settings || {}) },
+          daily: { ...userState.daily, ...(parsed.daily || {}) },
+          cards: parsed.cards || {},
+          formStats: parsed.formStats || {}
+        };
+      }
+    } catch (e) {
+      console.warn('State load warning:', e);
+    }
+
+    if (!userState.settings.unlockedTenses.includes('present')) {
+      userState.settings.unlockedTenses.unshift('present');
+    }
+    ensureDailyRollover();
+    rebuildDeckIndexes();
+
+    if (navigator.storage && navigator.storage.persist) {
+      navigator.storage.persist().catch(() => {});
+    }
+  }
+
+  async function autoFetchHostedPacks() {
+    if (location.protocol !== 'http:' && location.protocol !== 'https:') return;
+    try {
+      const manRes = await fetch('./manifest.json', { cache: 'no-cache' });
+      if (manRes.ok) {
+        const manifest = await manRes.json();
+        const files = Array.isArray(manifest) ? manifest : (manifest.packs || []);
+        let changed = false;
+        for (const item of files) {
+          const url = typeof item === 'string' ? item : item.url;
+          if (!url) continue;
+          try {
+            const pRes = await fetch(url, { cache: 'no-cache' });
+            if (pRes.ok) {
+              const pData = await pRes.json();
+              const res = mergePackObject(pData, url);
+              if (res.ok && (res.addedCards > 0 || res.appendedExamples > 0)) changed = true;
+            }
+          } catch (_) {}
+        }
+        if (changed) {
+          renderHome();
+          showToast(`Synced packs (${sortedCards.length} words ready)`);
+        }
+        return;
+      }
+    } catch (_) {}
+
+    // Fallback to ./deck_100_v2.json
+    try {
+      const res = await fetch('./deck_100_v2.json', { cache: 'no-cache' });
+      if (res.ok) {
+        const data = await res.json();
+        const merged = mergePackObject(data, 'deck_100_v2');
+        if (merged.ok && (merged.addedCards > 0 || merged.appendedExamples > 0)) {
+          renderHome();
+          showToast(`Loaded ${sortedCards.length} words from deck_100_v2.json`);
+        }
+      }
+    } catch (_) {}
+  }
+
+  // Multi-tab / PWA sync safety
+  window.addEventListener('storage', e => {
+    if (e.key === KEY_STATE && e.newValue) {
+      try {
+        const inc = JSON.parse(e.newValue);
+        if ((inc.rev || 0) > (userState.rev || 0)) {
+          loadFromLocalStorage();
+          if (currentView === 'home') renderHome();
+        }
+      } catch (_) {}
+    }
+  });
+
+  /* ==========================================================================
+     5. ELIGIBILITY, FORM DRIP-IN & QUEUE SELECTION
+     ========================================================================== */
+  function isExampleEligible(card, ex) {
+    if (ex.retired) return false;
+    if (!userState.settings.unlockedTenses.includes(ex.tense)) return false;
+    for (const reqId of (ex.requires || [])) {
+      if (reqId !== card.id && !userState.cards[reqId]) return false;
+    }
+    return true;
+  }
+
+  function getEligibleExamples(card, slotFilter = null) {
+    return card.examples.filter(ex => {
+      if (!isExampleEligible(card, ex)) return false;
+      if (slotFilter && ex.slot !== slotFilter) return false;
+      return true;
+    });
+  }
+
+  function getSlotStat(lemmaId, slot) {
+    const byLemma = userState.formStats[lemmaId];
+    return (byLemma && byLemma[slot]) ? byLemma[slot] : { ok: 0, fail: 0 };
+  }
+
+  function isClusterBlockedForNewLemma(card, nowMs = Date.now()) {
+    if (!card.cluster_id) return false;
+    if (userState.daily.clustersToday.includes(card.cluster_id)) return true;
+
+    const earlier = sortedCards.filter(o => o.cluster_id === card.cluster_id && o.order < card.order);
+    for (const prev of earlier) {
+      const rec = userState.cards[prev.id];
+      if (!rec) return true;
+      const daysSince = rec.firstIntroducedAt ? (nowMs - rec.firstIntroducedAt) / 86400000 : 0;
+      if ((rec.stability || 0) < 5 && daysSince < 14) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function isSiblingBuried(lemmaId) {
+    return userState.daily.reviewedLemmasToday.includes(lemmaId);
+  }
+
+  // Find newly unlocked form candidates on already-established lemmas (S >= 7d)
+  function getDripInFormCandidates() {
+    const candidates = [];
+    for (const card of sortedCards) {
+      const baseRec = userState.cards[card.id];
+      if (!baseRec || (baseRec.stability || 0) < 7) continue;
+      if (isSiblingBuried(card.id)) continue;
+
+      const eligible = getEligibleExamples(card);
+      const seenSlots = new Set();
+      for (const ex of eligible) {
+        if (seenSlots.has(ex.slot)) continue;
+        seenSlots.add(ex.slot);
+        // Only drip in slots unlocked via non-present tense OR explicit requires (e.g. pt_nos)
+        const isExpansionSlot = ex.tense !== 'present' || (ex.requires && ex.requires.length > 0);
+        if (!isExpansionSlot) continue;
+
+        const formKey = `${card.id}#${ex.slot}`;
+        const st = getSlotStat(card.id, ex.slot);
+        if (!userState.cards[formKey] && st.ok === 0 && st.fail === 0) {
+          candidates.push({ cardKey: formKey, card, slot: ex.slot });
+        }
+      }
+    }
+    return candidates;
+  }
+
+  function pickExampleForStudyItem(card, slotFilter, cardKey) {
+    const pool = getEligibleExamples(card, slotFilter);
+    if (pool.length === 0) return null;
+    if (pool.length === 1) return pool[0];
+
+    const rec = userState.cards[cardKey];
+    const lastExId = rec ? rec.lastExampleId : null;
+    const shownToday = new Set(userState.daily.shownSentencesToday || []);
+
+    let best = null;
+    let bestScore = -Infinity;
+
+    for (const ex of pool) {
+      const fullNorm = normalizeText(ex.pt_cloze.replace('___', ex.answer));
+      const st = getSlotStat(card.id, ex.slot);
+      let score = (st.fail * 2.5 - st.ok) + Math.random() * 0.35;
+      if (ex.exId === lastExId) score -= 50;
+      if (shownToday.has(fullNorm)) score -= 25;
+      if (score > bestScore) {
+        bestScore = score;
+        best = ex;
+      }
+    }
+    return best || pool[0];
+  }
+
+  function getLemmaMasteryByTense(card) {
+    const baseRec = userState.cards[card.id];
+    const eligible = getEligibleExamples(card);
+    const byTense = new Map();
+
+    for (const ex of eligible) {
+      if (!byTense.has(ex.tense)) byTense.set(ex.tense, new Set());
+      byTense.get(ex.tense).add(ex.slot);
+    }
+
+    const result = [];
+    for (const [tense, slotsSet] of byTense.entries()) {
+      const slots = Array.from(slotsSet);
+      if (tense === 'present') {
+        const baseS = baseRec ? (baseRec.stability || 0) : 0;
+        const pct = baseRec ? Math.min(100, Math.round((baseS / 14) * 100)) : 0;
+        result.push({ tense, pct, mastered: Boolean(baseRec && baseRec.state === 'review' && baseS >= 14) });
+      } else {
+        let masteredSlots = 0;
+        let sumPct = 0;
+        for (const sl of slots) {
+          const fc = userState.cards[`${card.id}#${sl}`];
+          const s = fc ? (fc.stability || 0) : 0;
+          if (fc && fc.state === 'review' && s >= 14) masteredSlots++;
+          sumPct += fc ? Math.min(100, Math.round((s / 14) * 100)) : 0;
+        }
+        const pct = slots.length ? Math.round(sumPct / slots.length) : 0;
+        result.push({ tense, pct, mastered: masteredSlots === slots.length && slots.length > 0, detail: `${masteredSlots}/${slots.length}` });
+      }
+    }
+    return result;
+  }
+
+  function getLemmaBucket(card) {
+    const rec = userState.cards[card.id];
+    if (!rec) return 'to_learn';
+    if (rec.state === 'review' && (rec.stability || 0) >= 14) return 'mastered';
+    return 'learning';
+  }
+
+  /* ==========================================================================
+     6. STRICT ANSWER VALIDATION PIPELINE (IME-SAFE, NO NLP)
+     ========================================================================== */
+  function damerauLevenshtein(a, b) {
+    const m = a.length, n = b.length;
+    if (m === 0) return n;
+    if (n === 0) return m;
+    const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+    for (let i = 0; i <= m; i++) dp[i][0] = i;
+    for (let j = 0; j <= n; j++) dp[0][j] = j;
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+        if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+          dp[i][j] = Math.min(dp[i][j], dp[i - 2][j - 2] + 1);
+        }
+      }
+    }
+    return dp[m][n];
+  }
+
+  function classifyAnswer(rawInput, card, ex) {
+    const normInput = normalizeText(rawInput);
+    if (!normInput) return { kind: 'empty' };
+
+    const acceptTargets = [ex.answer, ...(ex.accepted || [])];
+    const acceptNormSet = new Set(acceptTargets.map(normalizeText));
+
+    // 1. Exact Match
+    for (const target of acceptTargets) {
+      if (normInput === normalizeText(target)) {
+        return { kind: 'exact', matched: target };
+      }
+    }
+
+    // 2. Safe Diacritic Fold (ONLY if zero collision in foldedCollisionMap)
+    const foldedInput = foldDiacritics(normInput);
+    const collisions = foldedCollisionMap.get(foldedInput);
+    const hasCollision = collisions && collisions.size > 1;
+    if (!hasCollision) {
+      for (const target of acceptTargets) {
+        if (foldedInput === foldDiacritics(target)) {
+          return { kind: 'diacritic', matched: target };
+        }
+      }
+    }
+
+    // 3. Known Form of Same Lemma (not in this example's valid accept set)
+    if ((card.forms || []).includes(normInput) && !acceptNormSet.has(normInput)) {
+      return { kind: 'wrong_form', expected: ex.answer };
+    }
+
+    // 4. Plausible Wrong (free retry, zero penalty)
+    const plausibleNorm = (ex.plausible_wrong || []).map(normalizeText);
+    if (plausibleNorm.includes(normInput)) {
+      return { kind: 'plausible_wrong', expected: ex.answer };
+    }
+
+    // 5. Guarded Damerau-Levenshtein Typo (distance === 1)
+    if (!knownWordSet.has(normInput)) {
+      for (const target of acceptTargets) {
+        const foldedTarget = foldDiacritics(target);
+        if (
+          foldedTarget.length >= 5 &&
+          foldedInput.length >= 4 &&
+          foldedInput[0] === foldedTarget[0] &&
+          foldedInput[foldedInput.length - 1] === foldedTarget[foldedTarget.length - 1] &&
+          damerauLevenshtein(foldedInput, foldedTarget) === 1
+        ) {
+          return { kind: 'typo', matched: target };
+        }
+      }
+    }
+
+    return { kind: 'mismatch', expected: ex.answer };
+  }
+
+  /* ==========================================================================
+     7. SHARED EXAMPLE RENDERER (ZERO DIVERGENCE, SAFE DOM NODES ONLY)
+     ========================================================================== */
+  function makeUnderscoreMask(answer) {
+    return Array.from(answer).map(ch => (ch === ' ' ? '  ' : '_')).join('');
+  }
+
+  function applySubjectOverride(ptCloze, subjectOverride) {
+    if (!subjectOverride) return ptCloze;
+    return ptCloze.replace(/\{S\}/g, subjectOverride);
+  }
+
+  function renderExample(container, example, opts = {}) {
+    const {
+      revealed = false,
+      liveText = '',
+      gapState = '',
+      onGapTap = null,
+      subjectOverride = null
+    } = opts;
+
+    container.textContent = '';
+    const sentenceText = applySubjectOverride(example.pt_cloze, subjectOverride);
+    const parts = sentenceText.split('___');
+    container.appendChild(document.createTextNode(parts[0] || ''));
+
+    if (parts.length > 1) {
+      if (revealed) {
+        const strong = document.createElement('strong');
+        strong.className = `cloze-revealed ${gapState}`.trim();
+        strong.textContent = example.answer;
+        container.appendChild(strong);
+      } else {
+        const gap = document.createElement('span');
+        const hasText = liveText.length > 0;
+        gap.className = `cloze-gap ${hasText ? '' : 'empty'} ${gapState}`.trim();
+        gap.setAttribute('role', 'button');
+        gap.setAttribute('tabindex', '0');
+        gap.style.minWidth = `${Math.max(4, example.answer.length + 1)}ch`;
+        gap.textContent = hasText ? liveText : makeUnderscoreMask(example.answer);
+        if (onGapTap) {
+          gap.addEventListener('click', e => {
+            e.stopPropagation();
+            onGapTap();
+          });
+        }
+        container.appendChild(gap);
+      }
+      container.appendChild(document.createTextNode(parts.slice(1).join('___')));
+    }
+  }
+
+  /* ==========================================================================
+     8. MULTI-VOICE PT-BR TTS
+     ========================================================================== */
+  let ptVoices = [];
+  let lastSpokenVoiceURI = '';
+
+  function refreshVoices() {
+    if (!('speechSynthesis' in window)) return;
+    const all = window.speechSynthesis.getVoices();
+    ptVoices = all.filter(v => v.lang && v.lang.toLowerCase().replace('_', '-').startsWith('pt-br'));
+    if (ptVoices.length === 0) {
+      ptVoices = all.filter(v => v.lang && v.lang.toLowerCase().startsWith('pt'));
+    }
+    // Seed default enabled voices if empty
+    if (ptVoices.length > 0 && userState.settings.enabledVoices.length === 0) {
+      userState.settings.enabledVoices = ptVoices.map(v => ({ voiceURI: v.voiceURI, name: v.name }));
+    }
+    if (currentView === 'settings') renderVoicesSettings();
+  }
+
+  if ('speechSynthesis' in window) {
+    refreshVoices();
+    window.speechSynthesis.onvoiceschanged = refreshVoices;
+  }
+
+  function getEnabledVoiceObjects() {
+    if (ptVoices.length === 0) return [];
+    const saved = userState.settings.enabledVoices || [];
+    const matched = ptVoices.filter(v => saved.some(s => s.voiceURI === v.voiceURI || s.name === v.name));
+    return matched.length > 0 ? matched : ptVoices;
+  }
+
+  function pickVoice(forceDifferent = false, explicitVoice = null) {
+    if (explicitVoice) return explicitVoice;
+    const pool = getEnabledVoiceObjects();
+    if (pool.length === 0) return null;
+    if (!userState.settings.rotateVoices && !forceDifferent) return pool[0];
+    if (pool.length === 1) return pool[0];
+
+    const filtered = pool.filter(v => v.voiceURI !== lastSpokenVoiceURI);
+    const chosen = (filtered.length > 0 ? filtered : pool)[Math.floor(Math.random() * (filtered.length || pool.length))];
+    lastSpokenVoiceURI = chosen.voiceURI;
+    return chosen;
+  }
+
+  function speakPT(text, forceDifferent = false, explicitVoice = null) {
+    if (!('speechSynthesis' in window) || !text) return;
+    try {
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        window.speechSynthesis.cancel();
+      }
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'pt-BR';
+      utter.rate = 0.96;
+      const v = pickVoice(forceDifferent, explicitVoice);
+      if (v) utter.voice = v;
+      utter.onerror = () => {};
+      window.speechSynthesis.speak(utter);
+    } catch (_) {}
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && 'speechSynthesis' in window && (window.speechSynthesis.speaking || window.speechSynthesis.pending)) {
+      window.speechSynthesis.cancel();
+    }
+    if (document.hidden && session.timerStartMs) {
+      session.timerAccumMs += Date.now() - session.timerStartMs;
+      session.timerStartMs = 0;
+    } else if (!document.hidden && currentView === 'study' && session.activeItem && !session.revealed && session.firstKeystrokeMs === null) {
+      session.timerStartMs = Date.now();
+    }
+  });
+
+  /* ==========================================================================
+     9. SESSION STATE, SNAPSHOT UNDO & PURE COMMIT ENGINE
+     ========================================================================== */
+  let currentView = 'home';
+  let currentVocabBucket = 'studied';
+
+  let session = {
+    mode: 'study', // 'study' | 'verb_drill' | 'blind'
+    drillQueue: [],
+    targetCount: 20,
+    reviewedCount: 0,
+    cleanCount: 0,
+    activeItem: null, // { cardKey, card, ex, slot, isNewFormDrip, subjectOverride }
+    revealed: false,
+    needsCorrection: false,
+    hadFormError: false,
+    usedHint: false,
+    hintChars: 0,
+    walkRevealed: false,
+    isComposing: false,
+    requeueList: [], // [{ cardKey, waitSteps }]
+    sessionLog: new Map(), // cardKey -> { card, ex, lapsed, wasNew }
+    undoStack: [],
+    lastPreSnapshot: null,
+    // Reaction timer
+    timerStartMs: 0,
+    timerAccumMs: 0,
+    firstKeystrokeMs: null,
+    // Blind Audio
+    blindQueue: [],
+    blindIdx: 0,
+    blindCorrect: 0,
+    blindAnswered: false
+  };
+
+  function capturePreSnapshot() {
+    if (!session.activeItem) return null;
+    const { cardKey, card, ex } = session.activeItem;
+    return {
+      cardKey,
+      lemmaId: card.id,
+      exId: ex.exId,
+      slot: ex.slot,
+      priorCardRec: userState.cards[cardKey] ? deepClone(userState.cards[cardKey]) : null,
+      priorFormStats: userState.formStats[card.id] ? deepClone(userState.formStats[card.id]) : null,
+      priorDaily: deepClone(userState.daily),
+      priorRequeue: deepClone(session.requeueList),
+      priorReviewedCount: session.reviewedCount,
+      priorCleanCount: session.cleanCount,
+      priorSessionLogEntry: session.sessionLog.has(cardKey) ? deepClone(session.sessionLog.get(cardKey)) : null
+    };
+  }
+
+  // Pure-ish review commit driven from pre-answer snapshot (used by normal grading AND "I was wrong")
+  function commitReview(snapshot, grade, nowMs = Date.now()) {
+    if (session.mode === 'verb_drill') {
+      session.reviewedCount += 1;
+      if (grade >= 3) session.cleanCount += 1;
+      return;
+    }
+
+    const { cardKey, lemmaId, exId, slot, priorCardRec } = snapshot;
+    const card = packStore.cardsById[lemmaId];
+    if (!card) return;
+
+    const { slot: keySlot } = parseCardKey(cardKey);
+    const isNewCard = !priorCardRec;
+
+    if (isNewCard) {
+      if (keySlot) {
+        userState.daily.newForms += 1;
+      } else {
+        userState.daily.newLemmas += 1;
+        if (card.cluster_id && !userState.daily.clustersToday.includes(card.cluster_id)) {
+          userState.daily.clustersToday.push(card.cluster_id);
+        }
+      }
+    }
+
+    if (!userState.daily.reviewedLemmasToday.includes(lemmaId)) {
+      userState.daily.reviewedLemmasToday.push(lemmaId);
+    }
+
+    const ex = card.examples.find(e => e.exId === exId);
+    if (ex) {
+      const fullNorm = normalizeText(ex.pt_cloze.replace('___', ex.answer));
+      if (!userState.daily.shownSentencesToday.includes(fullNorm)) {
+        userState.daily.shownSentencesToday.push(fullNorm);
+      }
+    }
+
+    // Update FSRS-6 record lazily
+    const nextRec = FSRS6.schedule(cardKey, priorCardRec, grade, userState.settings.desiredRetention, nowMs);
+    nextRec.lastExampleId = exId;
+    userState.cards[cardKey] = nextRec;
+
+    // Update per-slot stats (keyed by tense.person)
+    if (!userState.formStats[lemmaId]) userState.formStats[lemmaId] = {};
+    if (!userState.formStats[lemmaId][slot]) userState.formStats[lemmaId][slot] = { ok: 0, fail: 0 };
+    if (grade >= 3) {
+      userState.formStats[lemmaId][slot].ok += 1;
+    } else {
+      userState.formStats[lemmaId][slot].fail += 1;
+      // Lazy splitting: spawn real FSRS form card if slot lapses >= 2 times
+      if (!keySlot && userState.formStats[lemmaId][slot].fail >= 2) {
+        const spawnedKey = `${lemmaId}#${slot}`;
+        if (!userState.cards[spawnedKey]) {
+          userState.cards[spawnedKey] = createBlankCardRecord();
+          userState.cards[spawnedKey].updatedAt = nowMs;
+        }
+      }
+    }
+
+    session.reviewedCount += 1;
+    if (grade >= 3) {
+      session.cleanCount += 1;
+    } else {
+      if (!session.requeueList.some(r => r.cardKey === cardKey)) {
+        session.requeueList.push({ cardKey, waitSteps: 3 + Math.floor(Math.random() * 2) });
+      }
+    }
+
+    const prevLog = session.sessionLog.get(cardKey);
+    session.sessionLog.set(cardKey, {
+      card,
+      ex,
+      lapsed: (prevLog ? prevLog.lapsed : false) || grade === 1,
+      wasNew: (prevLog ? prevLog.wasNew : false) || isNewCard
+    });
+
+    session.lastPreSnapshot = snapshot;
+    session.undoStack.push(snapshot);
+    if (session.undoStack.length > 20) session.undoStack.shift();
+
+    saveState();
+    updateUndoButton();
+  }
+
+  function restoreFromSnapshot(snap, bumpUpdatedAt = true) {
+    if (!snap) return;
+    const nowMs = Date.now();
+    if (snap.priorCardRec) {
+      const restored = deepClone(snap.priorCardRec);
+      if (bumpUpdatedAt) restored.updatedAt = nowMs;
+      userState.cards[snap.cardKey] = restored;
+    } else {
+      delete userState.cards[snap.cardKey];
+    }
+
+    if (snap.priorFormStats) {
+      userState.formStats[snap.lemmaId] = deepClone(snap.priorFormStats);
+    } else {
+      delete userState.formStats[snap.lemmaId];
+    }
+
+    userState.daily = deepClone(snap.priorDaily);
+    session.requeueList = deepClone(snap.priorRequeue);
+    session.reviewedCount = snap.priorReviewedCount;
+    session.cleanCount = snap.priorCleanCount;
+
+    if (snap.priorSessionLogEntry) {
+      session.sessionLog.set(snap.cardKey, deepClone(snap.priorSessionLogEntry));
+    } else {
+      session.sessionLog.delete(snap.cardKey);
+    }
+
+    saveState();
+  }
+
+  function handleUndo() {
+    if (session.undoStack.length === 0 || session.mode !== 'study') return;
+    const snap = session.undoStack.pop();
+    session.lastPreSnapshot = null;
+    restoreFromSnapshot(snap, true);
+
+    const card = packStore.cardsById[snap.lemmaId];
+    const ex = card && card.examples.find(e => e.exId === snap.exId);
+    if (card && ex) {
+      const { slot } = parseCardKey(snap.cardKey);
+      mountStudyItem({ cardKey: snap.cardKey, card, ex, slot, subjectOverride: null });
+    }
+    updateUndoButton();
+    showToast('Undid last answer');
+  }
+
+  function handleOverrideWrong() {
+    if (!session.lastPreSnapshot || !session.activeItem || session.mode !== 'study') return;
+    const snap = session.lastPreSnapshot;
+    if (session.undoStack.length > 0 && session.undoStack[session.undoStack.length - 1] === snap) {
+      session.undoStack.pop();
+    }
+    restoreFromSnapshot(snap, false);
+    commitReview(snap, 1, Date.now());
+
+    const { ex } = session.activeItem;
+    renderExample(el('sc-pt-container'), ex, { revealed: true, gapState: 'wrong' });
+    showCardFeedback(`Overridden to Again. Answer: ${ex.answer}`, 'notice-red');
+    el('btn-override-again').classList.add('hidden');
+    el('btn-fast-known').classList.add('hidden');
+    showToast('Logged as Again');
+  }
+
+  function updateUndoButton() {
+    el('btn-study-undo').disabled = session.mode !== 'study' || session.undoStack.length === 0;
+  }
+
+  /* ==========================================================================
+     10. NEXT CARD SCHEDULER
+     ========================================================================== */
+  function pickNextStudyItem() {
+    if (session.mode === 'verb_drill') {
+      return session.drillQueue.shift() || null;
+    }
+    if (session.reviewedCount >= session.targetCount) return null;
+
+    const now = Date.now();
+
+    // 0. Same-session lapsed requeue
+    const rqIdx = session.requeueList.findIndex(r => r.waitSteps <= 0);
+    if (rqIdx !== -1) {
+      const [rq] = session.requeueList.splice(rqIdx, 1);
+      const { lemmaId, slot } = parseCardKey(rq.cardKey);
+      const card = packStore.cardsById[lemmaId];
+      if (card) {
+        const ex = pickExampleForStudyItem(card, slot, rq.cardKey);
+        if (ex) return { cardKey: rq.cardKey, card, ex, slot };
+      }
+    }
+
+    // Collect existing due learning/relearning & review cards (respecting sibling burying)
+    const dueLearn = [];
+    const dueReview = [];
+    const soonLearn = [];
+
+    for (const [cardKey, rec] of Object.entries(userState.cards)) {
+      const { lemmaId, slot } = parseCardKey(cardKey);
+      const card = packStore.cardsById[lemmaId];
+      if (!card) continue; // Preserve unknown cards from other devices silently
+      if (getEligibleExamples(card, slot).length === 0) continue;
+
+      // Spawned blank form cards waiting for first learning rep
+      if (rec.state === 'new' && slot) {
+        if (!isSiblingBuried(lemmaId) && userState.daily.newForms < userState.settings.dailyNewFormCap) {
+          dueLearn.push({ cardKey, card, slot, due: 0 });
+        }
+        continue;
+      }
+
+      if (rec.state === 'learning' || rec.state === 'relearning') {
+        if (rec.due <= now) dueLearn.push({ cardKey, card, slot, due: rec.due });
+        else if (rec.due <= now + 15 * 60000) soonLearn.push({ cardKey, card, slot, due: rec.due });
+      } else if (rec.state === 'review' && rec.due <= now) {
+        if (!isSiblingBuried(lemmaId)) {
+          dueReview.push({ cardKey, card, slot, due: rec.due });
+        }
+      }
+    }
+
+    dueLearn.sort((a, b) => a.due - b.due);
+    if (dueLearn.length > 0) {
+      const pick = dueLearn[0];
+      const ex = pickExampleForStudyItem(pick.card, pick.slot, pick.cardKey);
+      if (ex) return { cardKey: pick.cardKey, card: pick.card, ex, slot: pick.slot };
+    }
+
+    dueReview.sort((a, b) => a.due - b.due);
+    if (dueReview.length > 0) {
+      const pick = dueReview[0];
+      const ex = pickExampleForStudyItem(pick.card, pick.slot, pick.cardKey);
+      if (ex) return { cardKey: pick.cardKey, card: pick.card, ex, slot: pick.slot };
+    }
+
+    // 3. Drip-in newly unlocked form cards (separate daily cap)
+    if (userState.daily.newForms < userState.settings.dailyNewFormCap) {
+      const dripCandidates = getDripInFormCandidates();
+      if (dripCandidates.length > 0) {
+        const pick = dripCandidates[0];
+        const ex = pickExampleForStudyItem(pick.card, pick.slot, pick.cardKey);
+        if (ex) return { cardKey: pick.cardKey, card: pick.card, ex, slot: pick.slot };
+      }
+    }
+
+    // 4. New Base Lemma (cluster-gated & daily-capped)
+    if (userState.daily.newLemmas < userState.settings.dailyNewLemmaCap) {
+      for (const card of sortedCards) {
+        if (userState.cards[card.id]) continue;
+        if (isClusterBlockedForNewLemma(card, now)) continue;
+        const ex = pickExampleForStudyItem(card, null, card.id);
+        if (ex) return { cardKey: card.id, card, ex, slot: null };
+      }
+    }
+
+    // 5. Remaining requeued lapses
+    if (session.requeueList.length > 0) {
+      const rq = session.requeueList.shift();
+      const { lemmaId, slot } = parseCardKey(rq.cardKey);
+      const card = packStore.cardsById[lemmaId];
+      if (card) {
+        const ex = pickExampleForStudyItem(card, slot, rq.cardKey);
+        if (ex) return { cardKey: rq.cardKey, card, ex, slot };
+      }
+    }
+
+    // 6. Soon-due learning cards within 15m
+    soonLearn.sort((a, b) => a.due - b.due);
+    if (soonLearn.length > 0) {
+      const pick = soonLearn[0];
+      const ex = pickExampleForStudyItem(pick.card, pick.slot, pick.cardKey);
+      if (ex) return { cardKey: pick.cardKey, card: pick.card, ex, slot: pick.slot };
+    }
+
+    return null;
+  }
+
+  /* ==========================================================================
+     11. NAVIGATION & ANDROID BACK-SWIPE GUARD
+     ========================================================================== */
+  function showToast(msg) {
+    const t = el('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => t.classList.remove('show'), 2500);
+  }
+
+  function navigateTo(view, pushHistory = true) {
+    currentView = view;
+    ['home', 'study', 'vocab', 'settings'].forEach(v => {
+      el(`view-${v}`).classList.toggle('hidden', v !== view);
+    });
+    if (pushHistory && view !== 'home') {
+      history.pushState({ view }, '', `#${view}`);
+    }
+    if (view === 'home') {
+      if ('speechSynthesis' in window && (window.speechSynthesis.speaking || window.speechSynthesis.pending)) {
+        window.speechSynthesis.cancel();
+      }
+      renderHome();
+    } else if (view === 'vocab') {
+      renderVocabList();
+    } else if (view === 'settings') {
+      renderSettings();
+    }
+  }
+
+  function openVocab({ bucket = 'studied' } = {}) {
+    currentVocabBucket = bucket;
+    el('vocab-search').value = '';
+    navigateTo('vocab');
+  }
+
+  window.addEventListener('popstate', () => {
+    if (currentView !== 'home') {
+      navigateTo('home', false);
+    }
+  });
+
+  /* ==========================================================================
+     12. HOME RENDERING
+     ========================================================================== */
+  function renderHome() {
+    ensureDailyRollover();
+    const total = sortedCards.length;
+
+    el('home-setup-card').classList.toggle('hidden', total > 0);
+    el('home-dashboard').classList.toggle('hidden', total === 0);
+    el('home-demo-banner').classList.toggle('hidden', !(total > 0 && packStore.isDemoActive));
+
+    if (total === 0) {
+      el('home-pack-status').textContent = 'No deck loaded yet';
+      el('backup-reminder').classList.add('hidden');
+      return;
+    }
+
+    const packNames = Object.keys(packStore.packsMeta);
+    el('home-pack-status').textContent = `${total} words · ${packNames.length} pack${packNames.length === 1 ? '' : 's'}`;
+
+    let toLearn = 0, learning = 0, mastered = 0, dueNow = 0;
+    const now = Date.now();
+
+    for (const card of sortedCards) {
+      const b = getLemmaBucket(card);
+      if (b === 'to_learn') toLearn++;
+      else if (b === 'learning') learning++;
+      else mastered++;
+    }
+
+    for (const [cardKey, rec] of Object.entries(userState.cards)) {
+      const { lemmaId } = parseCardKey(cardKey);
+      if (!packStore.cardsById[lemmaId]) continue;
+      if ((rec.state === 'learning' || rec.state === 'relearning') && rec.due <= now + 15 * 60000) dueNow++;
+      else if (rec.state === 'review' && rec.due <= now && !isSiblingBuried(lemmaId)) dueNow++;
+    }
+
+    const remNew = Math.max(0, userState.settings.dailyNewLemmaCap - userState.daily.newLemmas);
+    const dripAvail = Math.min(
+      Math.max(0, userState.settings.dailyNewFormCap - userState.daily.newForms),
+      getDripInFormCandidates().length
+    );
+
+    el('stat-val-to-learn').textContent = String(toLearn);
+    el('stat-val-learning').textContent = String(learning);
+    el('stat-val-mastered').textContent = String(mastered);
+    el('home-due-info').textContent = `${dueNow} due · ${remNew} new left today`;
+
+    if (dripAvail > 0) {
+      el('home-forms-drip-info').textContent = `+${dripAvail} forms ready`;
+      el('home-forms-drip-info').classList.remove('hidden');
+    } else {
+      el('home-forms-drip-info').classList.add('hidden');
+    }
+
+    const len = userState.settings.sessionLength;
+    el('btn-start-text').textContent = len === 'all' ? 'Start All Due' : `Start ${len} Cards`;
+
+    el('home-length-chips').querySelectorAll('.chip').forEach(btn => {
+      btn.classList.toggle('active', String(btn.dataset.len) === String(len));
+    });
+
+    const walk = userState.settings.walkMode;
+    el('toggle-walk').classList.toggle('on', walk);
+    el('toggle-walk').setAttribute('aria-checked', String(walk));
+
+    // Backup reminder if user has studied >= 10 words and hasn't backed up in 7 days
+    const studiedCount = Object.keys(userState.cards).length;
+    const daysSinceBackup = userState.lastBackupAt ? (now - userState.lastBackupAt) / 86400000 : 999;
+    el('backup-reminder').classList.toggle('hidden', !(studiedCount >= 10 && daysSinceBackup >= 7));
+  }
+
+  /* ==========================================================================
+     13. STUDY SESSION UI & INTERACTIONS
+     ========================================================================== */
+  function startStudySession() {
+    ensureDailyRollover();
+    if (sortedCards.length === 0) return;
+
+    session.mode = 'study';
+    session.targetCount = userState.settings.sessionLength === 'all' ? 999 : Number(userState.settings.sessionLength) || 20;
+    session.reviewedCount = 0;
+    session.cleanCount = 0;
+    session.requeueList = [];
+    session.sessionLog.clear();
+    session.undoStack = [];
+    session.lastPreSnapshot = null;
+    session.blindQueue = [];
+
+    el('study-header-title').textContent = 'Study Session';
+    navigateTo('study');
+    advanceStudy();
+  }
+
+  function startVerbDrill(card) {
+    const eligible = getEligibleExamples(card);
+    if (eligible.length === 0) {
+      showToast('No unlocked examples for this verb.');
+      return;
+    }
+
+    // Build honest contrasting drill queue prioritized by weakest slot; only use {S} subjects if explicitly authored
+    const queue = [];
+    const sortedEx = [...eligible].sort((a, b) => {
+      const sa = getSlotStat(card.id, a.slot);
+      const sb = getSlotStat(card.id, b.slot);
+      return (sb.fail - sb.ok) - (sa.fail - sa.ok);
+    });
+
+    for (const ex of sortedEx) {
+      if (Array.isArray(ex.subjects) && ex.subjects.length > 0 && ex.pt_cloze.includes('{S}')) {
+        for (const subj of ex.subjects) {
+          queue.push({ cardKey: card.id, card, ex, slot: ex.slot, subjectOverride: subj });
+        }
+      } else {
+        queue.push({ cardKey: card.id, card, ex, slot: ex.slot, subjectOverride: null });
+      }
+    }
+
+    session.mode = 'verb_drill';
+    session.drillQueue = queue;
+    session.targetCount = queue.length;
+    session.reviewedCount = 0;
+    session.cleanCount = 0;
+    session.requeueList = [];
+    session.sessionLog.clear();
+    session.undoStack = [];
+    session.blindQueue = [];
+
+    el('study-header-title').textContent = `Verb Drill · ${card.lemma}`;
+    navigateTo('study');
+    advanceStudy();
+  }
+
+  function advanceStudy() {
+    session.requeueList.forEach(r => { r.waitSteps -= 1; });
+    const next = pickNextStudyItem();
+    if (!next) {
+      if (session.mode === 'study' && session.sessionLog.size > 0) {
+        startBlindAudioFinale();
+      } else {
+        showDonePanel();
+      }
+      return;
+    }
+    mountStudyItem(next);
+  }
+
+  function focusClozeInput() {
+    if (session.mode === 'study' && userState.settings.walkMode) return;
+    const inp = el('cloze-input');
+    inp.focus();
+  }
+
+  function mountStudyItem(item) {
+    session.activeItem = item;
+    session.revealed = false;
+    session.needsCorrection = false;
+    session.hadFormError = false;
+    session.usedHint = false;
+    session.hintChars = 0;
+    session.walkRevealed = false;
+    session.timerStartMs = Date.now();
+    session.timerAccumMs = 0;
+    session.firstKeystrokeMs = null;
+
+    const { cardKey, card, ex, subjectOverride } = item;
+    const rec = userState.cards[cardKey];
+
+    el('study-card-panel').classList.remove('hidden');
+    el('blind-panel').classList.add('hidden');
+    el('done-panel').classList.add('hidden');
+    el('dock-blind').classList.add('hidden');
+
+    // Fresh card badges (ZERO pre-answer false friend spoilers!)
+    el('sc-rank').textContent = `#${card.order}`;
+    el('sc-pos').textContent = card.pos;
+    if (ex.slot !== 'present.base') {
+      el('sc-slot').textContent = ex.tense === 'present' ? ex.person : ex.slot;
+      el('sc-slot').classList.remove('hidden');
+    } else {
+      el('sc-slot').classList.add('hidden');
+    }
+    el('sc-leech').classList.toggle('hidden', !(rec && rec.leech));
+
+    // Strictly EMPTY and HIDE spoiler elements before answer submission
+    el('sc-ff-badge').textContent = '';
+    el('sc-ff-badge').classList.add('hidden');
+    el('sc-ff-note').textContent = '';
+    el('sc-ff-note').classList.add('hidden');
+    el('sc-grammar-note').textContent = '';
+    el('sc-grammar-note').classList.add('hidden');
+    el('btn-grammar-peek').classList.toggle('hidden', !card.grammar_note_en);
+
+    // English sentence & clean spoiler-free hint
+    el('sc-en-sentence').textContent = ex.en_sentence;
+    el('sc-hint-en').textContent = ex.clean_hint_en || card.en_gloss;
+
+    // Render Cloze sentence via shared renderExample() with tap-to-focus
+    renderExample(el('sc-pt-container'), ex, {
+      revealed: false,
+      liveText: '',
+      onGapTap: focusClozeInput,
+      subjectOverride
+    });
+
+    // Clear feedback & post-action chips
+    el('sc-feedback-wrap').classList.add('hidden');
+    el('sc-feedback').textContent = '';
+    el('btn-override-again').classList.add('hidden');
+    el('btn-fast-known').classList.add('hidden');
+
+    // Reset Known button cleanly so it NEVER sticks green on Android
+    const knownBtn = el('btn-known');
+    knownBtn.className = 'btn btn-neutral btn-sm';
+    knownBtn.textContent = 'Known (21d)';
+    knownBtn.classList.toggle('hidden', session.mode === 'verb_drill');
+    knownBtn.blur();
+
+    updateStudyHeader();
+    updateUndoButton();
+
+    const isWalk = session.mode === 'study' && userState.settings.walkMode;
+    el('dock-typing').classList.toggle('hidden', isWalk);
+    el('dock-walk').classList.toggle('hidden', !isWalk);
+
+    if (isWalk) {
+      el('btn-walk-reveal').classList.remove('hidden');
+      el('walk-grade-btns').classList.add('hidden');
+    } else {
+      const inp = el('cloze-input');
+      inp.value = '';
+      inp.placeholder = 'Type missing PT-BR word...';
+      el('btn-check').textContent = 'Check';
+      inp.focus();
+    }
+  }
+
+  function updateStudyHeader() {
+    const goal = session.targetCount === 999 ? Math.max(1, session.reviewedCount + 1) : session.targetCount;
+    el('study-header-progress').textContent = session.targetCount === 999
+      ? `${session.reviewedCount} done`
+      : `${session.reviewedCount} / ${goal}`;
+    const pct = Math.min(100, Math.round((session.reviewedCount / goal) * 100));
+    el('study-progress-fill').style.width = `${pct}%`;
+
+    const showFinish = session.mode === 'study' && session.reviewedCount >= 3;
+    el('btn-study-finish').classList.toggle('hidden', !showFinish);
+  }
+
+  function showCardFeedback(text, cls) {
+    el('sc-feedback-wrap').classList.remove('hidden');
+    const fb = el('sc-feedback');
+    fb.className = `notice ${cls}`;
+    fb.textContent = text;
+  }
+
+  function revealPostAnswerNotes(card, ex) {
+    if (card.false_friend || ex.false_friend_note) {
+      el('sc-ff-badge').textContent = '⚠️ False Friend';
+      el('sc-ff-badge').classList.remove('hidden');
+      const noteText = ex.false_friend_note
+        ? `False friend: ${ex.false_friend_note} ("${card.lemma}" = ${card.en_gloss})`
+        : `False friend: "${card.lemma}" = ${card.en_gloss}`;
+      el('sc-ff-note').textContent = noteText;
+      el('sc-ff-note').classList.remove('hidden');
+    }
+    if (card.grammar_note_en) {
+      el('sc-grammar-note').textContent = card.grammar_note_en;
+      el('sc-grammar-note').classList.remove('hidden');
+    }
+  }
+
+  function handleTypingSubmit() {
+    if (session.isComposing || !session.activeItem) return;
+    const { cardKey, card, ex, subjectOverride } = session.activeItem;
+    const inp = el('cloze-input');
+
+    if (session.revealed) {
+      advanceStudy();
+      return;
+    }
+
+    const res = classifyAnswer(inp.value, card, ex);
+    if (res.kind === 'empty') {
+      inp.focus();
+      return;
+    }
+
+    const fullSentence = applySubjectOverride(ex.pt_cloze, subjectOverride).replace('___', ex.answer);
+    const wasNewCard = !userState.cards[cardKey];
+    const reactionMs = session.firstKeystrokeMs !== null ? session.firstKeystrokeMs : 9999;
+
+    // Forced correction flow (card already logged as Again)
+    if (session.needsCorrection) {
+      if (res.kind === 'exact' || res.kind === 'diacritic' || res.kind === 'typo') {
+        renderExample(el('sc-pt-container'), ex, { revealed: true, gapState: '', subjectOverride });
+        showCardFeedback(`Corrected: ${ex.answer}`, 'notice-ok');
+        session.needsCorrection = false;
+        session.revealed = true;
+        el('btn-check').textContent = 'Next →';
+        inp.value = '';
+        if (userState.settings.autoPlay) speakPT(fullSentence);
+      } else {
+        showCardFeedback(`Type "${ex.answer}" to continue.`, 'notice-red');
+        inp.value = '';
+        renderExample(el('sc-pt-container'), ex, { revealed: false, liveText: '', onGapTap: focusClozeInput, subjectOverride });
+      }
+      return;
+    }
+
+    // Plausible wrong -> FREE retry, zero penalty
+    if (res.kind === 'plausible_wrong') {
+      showCardFeedback('Makes sense in context, try the target word!', 'notice-indigo');
+      if (card.grammar_note_en) {
+        el('sc-grammar-note').textContent = card.grammar_note_en;
+        el('sc-grammar-note').classList.remove('hidden');
+      }
+      inp.value = '';
+      renderExample(el('sc-pt-container'), ex, { revealed: false, liveText: '', onGapTap: focusClozeInput, subjectOverride });
+      return;
+    }
+
+    // Wrong form of same lemma -> 1 retry before reveal; marks hadFormError so final log is Again(1)
+    if (res.kind === 'wrong_form' && !session.hadFormError) {
+      session.hadFormError = true;
+      showCardFeedback('Right word — check the form/person and try once more!', 'notice-amber');
+      if (card.grammar_note_en) {
+        el('sc-grammar-note').textContent = card.grammar_note_en;
+        el('sc-grammar-note').classList.remove('hidden');
+      }
+      inp.value = '';
+      renderExample(el('sc-pt-container'), ex, { revealed: false, liveText: '', onGapTap: focusClozeInput, subjectOverride });
+      return;
+    }
+
+    // Exact / Safe Diacritic / Guarded Typo
+    if (res.kind === 'exact' || res.kind === 'diacritic' || res.kind === 'typo') {
+      const snap = capturePreSnapshot();
+      const grade = (session.usedHint || session.hadFormError) ? 1 : 3;
+      commitReview(snap, grade);
+
+      const gapStyle = (res.kind === 'exact' && grade === 3) ? '' : 'amber';
+      renderExample(el('sc-pt-container'), ex, { revealed: true, gapState: gapStyle, subjectOverride });
+      revealPostAnswerNotes(card, ex);
+
+      if (session.hadFormError) {
+        showCardFeedback(`Almost — form practiced: "${res.matched}" (scheduled as Again to reinforce this form).`, 'notice-amber');
+      } else if (session.usedHint) {
+        showCardFeedback(`Answer: ${res.matched} (hint used → Again).`, 'notice-amber');
+      } else if (res.kind === 'diacritic') {
+        showCardFeedback(`Accepted — watch the accent: ${res.matched}`, 'notice-amber');
+      } else if (res.kind === 'typo') {
+        showCardFeedback(`Minor typo accepted: ${res.matched}`, 'notice-amber');
+      } else {
+        showCardFeedback(`Correct! ${card.lemma} — ${card.en_gloss}`, 'notice-ok');
+      }
+
+      if (session.mode === 'study' && grade === 3) {
+        el('btn-override-again').classList.remove('hidden');
+        if (wasNewCard && reactionMs < 2500) {
+          el('btn-fast-known').classList.remove('hidden');
+        }
+      }
+
+      session.revealed = true;
+      el('btn-check').textContent = 'Next →';
+      inp.value = '';
+      if (userState.settings.autoPlay) speakPT(fullSentence);
+      updateStudyHeader();
+      return;
+    }
+
+    // Mismatch -> Again (1), reveal answer + notes, force re-type
+    const snap = capturePreSnapshot();
+    commitReview(snap, 1);
+    renderExample(el('sc-pt-container'), ex, { revealed: true, gapState: 'wrong', subjectOverride });
+    revealPostAnswerNotes(card, ex);
+    showCardFeedback(`Answer: ${ex.answer} — type it once below to continue.`, 'notice-red');
+    session.needsCorrection = true;
+    inp.value = '';
+    inp.placeholder = `Type "${ex.answer}"...`;
+    if (userState.settings.autoPlay) speakPT(fullSentence);
+    updateStudyHeader();
+  }
+
+  function handleHint() {
+    if (!session.activeItem || session.revealed) return;
+    const { ex, subjectOverride } = session.activeItem;
+    session.usedHint = true;
+    session.hintChars = Math.min(ex.answer.length, session.hintChars + 1);
+    if (ex.answer[session.hintChars - 1] === ' ' && session.hintChars < ex.answer.length) {
+      session.hintChars += 1;
+    }
+    const revealed = ex.answer.slice(0, session.hintChars);
+    el('cloze-input').value = revealed;
+    renderExample(el('sc-pt-container'), ex, {
+      revealed: false,
+      liveText: revealed,
+      gapState: 'amber',
+      onGapTap: focusClozeInput,
+      subjectOverride
+    });
+  }
+
+  function handleDontKnow() {
+    if (!session.activeItem || session.revealed) return;
+    const { card, ex, subjectOverride } = session.activeItem;
+    if (!session.needsCorrection) {
+      const snap = capturePreSnapshot();
+      commitReview(snap, 1);
+    }
+    renderExample(el('sc-pt-container'), ex, { revealed: true, gapState: 'wrong', subjectOverride });
+    revealPostAnswerNotes(card, ex);
+    showCardFeedback(`Answer: ${ex.answer} — type it once below to continue.`, 'notice-red');
+    session.needsCorrection = true;
+    el('cloze-input').value = '';
+    el('cloze-input').placeholder = `Type "${ex.answer}"...`;
+    if (userState.settings.autoPlay) {
+      speakPT(applySubjectOverride(ex.pt_cloze, subjectOverride).replace('___', ex.answer));
+    }
+    updateStudyHeader();
+  }
+
+  function seedCardAsKnown() {
+    if (!session.activeItem || session.mode !== 'study') return;
+    const { cardKey, card, ex } = session.activeItem;
+    const now = Date.now();
+    const rec = userState.cards[cardKey] ? deepClone(userState.cards[cardKey]) : createBlankCardRecord();
+    rec.state = 'review';
+    rec.stability = 21;
+    rec.difficulty = 4.5;
+    rec.interval = 21;
+    rec.due = now + 21 * 86400000;
+    rec.last_review = now;
+    rec.updatedAt = now;
+    rec.lastExampleId = ex.exId;
+    if (!rec.firstIntroducedAt) rec.firstIntroducedAt = now;
+    userState.cards[cardKey] = rec;
+    if (!userState.daily.reviewedLemmasToday.includes(card.id)) {
+      userState.daily.reviewedLemmasToday.push(card.id);
+    }
+    saveState();
+    showToast(`"${card.lemma}" seeded as Known (21d)`);
+    advanceStudy();
+  }
+
+  /* ==========================================================================
+     14. BLIND AUDIO FINALE (UNLOGGED, STRICTLY FROM THIS SESSION)
+     ========================================================================== */
+  function areHomophones(a, b) {
+    const na = normalizeText(a), nb = normalizeText(b);
+    return HOMOPHONE_GROUPS.some(g => g.includes(na) && g.includes(nb));
+  }
+
+  function matchCaseTo(word, template) {
+    if (!word || !template) return word;
+    const first = template[0];
+    const isUpper = first === first.toUpperCase() && first !== first.toLowerCase();
+    return isUpper ? word[0].toUpperCase() + word.slice(1) : word.toLowerCase();
+  }
+
+  function pickBlindDistractors(ex) {
+    const targetNorm = normalizeText(ex.answer);
+    const targetTokens = targetNorm.split(' ').length;
+    const banned = new Set([targetNorm, ...(ex.accepted || []).map(normalizeText)]);
+    const chosen = [];
+    const seenFolded = new Set([foldDiacritics(targetNorm)]);
+
+    const tryAdd = candidate => {
+      const nc = normalizeText(candidate);
+      if (!nc || banned.has(nc)) return false;
+      if (nc.split(' ').length !== targetTokens) return false;
+      if (areHomophones(nc, targetNorm)) return false;
+      const fc = foldDiacritics(nc);
+      if (seenFolded.has(fc)) return false;
+      seenFolded.add(fc);
+      chosen.push(matchCaseTo(candidate, ex.answer));
+      return true;
+    };
+
+    // 1. Prefer authored distractors
+    for (const d of (ex.distractors || [])) {
+      if (chosen.length >= 2) break;
+      tryAdd(d);
+    }
+
+    // 2. Fallback: real words from loaded deck + function word pool sorted by normalized length/edit similarity
+    if (chosen.length < 2) {
+      const pool = new Set(FALLBACK_DISTRACTOR_POOL);
+      sortedCards.forEach(c => {
+        pool.add(c.lemma);
+        (c.forms || []).forEach(f => pool.add(f));
+      });
+      const ranked = Array.from(pool)
+        .filter(w => w.split(' ').length === targetTokens)
+        .map(w => {
+          const nw = normalizeText(w);
+          const maxLen = Math.max(nw.length, targetNorm.length, 1);
+          const normDist = damerauLevenshtein(foldDiacritics(nw), foldDiacritics(targetNorm)) / maxLen;
+          return { w, score: Math.abs(normDist - 0.45) + Math.random() * 0.25 };
+        })
+        .sort((a, b) => a.score - b.score);
+
+      for (const item of ranked) {
+        if (chosen.length >= 2) break;
+        tryAdd(item.w);
+      }
+    }
+
+    return chosen;
+  }
+
+  function startBlindAudioFinale() {
+    const entries = Array.from(session.sessionLog.values());
+    const prioritized = [
+      ...entries.filter(e => e.lapsed).sort(() => Math.random() - 0.5),
+      ...entries.filter(e => !e.lapsed && e.wasNew).sort(() => Math.random() - 0.5),
+      ...entries.filter(e => !e.lapsed && !e.wasNew).sort(() => Math.random() - 0.5)
+    ].slice(0, 5);
+
+    const usable = prioritized
+      .map(item => ({ ...item, distractors: pickBlindDistractors(item.ex) }))
+      .filter(item => item.distractors.length === 2);
+
+    if (usable.length === 0) {
+      showDonePanel();
+      return;
+    }
+
+    session.mode = 'blind';
+    session.blindQueue = usable;
+    session.blindIdx = 0;
+    session.blindCorrect = 0;
+
+    el('study-header-title').textContent = 'Blind Audio Finale';
+    el('study-card-panel').classList.add('hidden');
+    el('done-panel').classList.add('hidden');
+    el('dock-typing').classList.add('hidden');
+    el('dock-walk').classList.add('hidden');
+    el('btn-study-finish').classList.add('hidden');
+    el('blind-panel').classList.remove('hidden');
+    el('dock-blind').classList.remove('hidden');
+    updateUndoButton();
+
+    renderBlindStep();
+  }
+
+  function renderBlindStep() {
+    const item = session.blindQueue[session.blindIdx];
+    if (!item) {
+      showDonePanel();
+      return;
+    }
+    session.blindAnswered = false;
+    const { ex, distractors } = item;
+    const fullSentence = ex.pt_cloze.replace('___', ex.answer);
+
+    el('blind-progress-badge').textContent = `Blind Audio · ${session.blindIdx + 1}/${session.blindQueue.length}`;
+    el('study-header-progress').textContent = `${session.blindIdx + 1} / ${session.blindQueue.length}`;
+    el('study-progress-fill').style.width = `${Math.round(((session.blindIdx + 1) / session.blindQueue.length) * 100)}%`;
+
+    el('blind-revealed-box').classList.add('hidden');
+    el('btn-blind-next').disabled = true;
+
+    const options = [
+      { text: ex.answer, correct: true },
+      ...distractors.map(d => ({ text: d, correct: false }))
+    ].sort(() => Math.random() - 0.5);
+
+    const grid = el('blind-options');
+    grid.textContent = '';
+
+    options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'blind-opt';
+      btn.textContent = opt.text;
+      btn.addEventListener('click', () => {
+        if (session.blindAnswered) return;
+        session.blindAnswered = true;
+        if (opt.correct) session.blindCorrect += 1;
+
+        Array.from(grid.children).forEach((b, i) => {
+          const o = options[i];
+          b.disabled = true;
+          if (o.correct) b.classList.add('opt-correct');
+          else if (b === btn) b.classList.add('opt-wrong');
+          else b.classList.add('opt-dim');
+        });
+
+        renderExample(el('blind-pt-revealed'), ex, { revealed: true });
+        el('blind-en-revealed').textContent = ex.en_sentence;
+        el('blind-revealed-box').classList.remove('hidden');
+        el('btn-blind-next').disabled = false;
+      });
+      grid.appendChild(btn);
+    });
+
+    speakPT(fullSentence);
+  }
+
+  function showDonePanel() {
+    el('study-card-panel').classList.add('hidden');
+    el('blind-panel').classList.add('hidden');
+    el('dock-typing').classList.add('hidden');
+    el('dock-walk').classList.add('hidden');
+    el('dock-blind').classList.add('hidden');
+    el('btn-study-finish').classList.add('hidden');
+    el('done-panel').classList.remove('hidden');
+
+    const acc = session.reviewedCount > 0 ? Math.round((session.cleanCount / session.reviewedCount) * 100) : 100;
+    el('done-heading').textContent = session.mode === 'verb_drill' ? 'Verb Drill Complete!' : 'Session Complete!';
+    el('done-reviewed').textContent = String(session.reviewedCount);
+    el('done-clean').textContent = `${acc}%`;
+    el('done-blind').textContent = session.blindQueue.length > 0
+      ? `${session.blindCorrect}/${session.blindQueue.length}`
+      : '—';
+  }
+
+  /* ==========================================================================
+     15. VOCABULARY BROWSER (SINGLE HEADER, FULL REVEALED EXAMPLES, AUDIO)
+     ========================================================================== */
+  function renderVocabList() {
+    const query = normalizeText(el('vocab-search').value);
+
+    el('vocab-tabs').querySelectorAll('.chip').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.bucket === currentVocabBucket);
+    });
+
+    const filtered = sortedCards.filter(card => {
+      if (query) {
+        const hay = `${normalizeText(card.lemma)} ${normalizeText(card.en_gloss)}`;
+        if (!hay.includes(query)) return false;
+      }
+      const bucket = getLemmaBucket(card);
+      const rec = userState.cards[card.id];
+      if (currentVocabBucket === 'studied') return bucket === 'learning' || bucket === 'mastered';
+      if (currentVocabBucket === 'learning') return bucket === 'learning';
+      if (currentVocabBucket === 'mastered') return bucket === 'mastered';
+      if (currentVocabBucket === 'to_learn') return bucket === 'to_learn';
+      if (currentVocabBucket === 'leeches') return Boolean(rec && rec.leech);
+      return true;
+    });
+
+    el('vocab-count').textContent = String(filtered.length);
+    const list = el('vocab-list');
+    list.textContent = '';
+
+    if (filtered.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'card';
+      empty.style.textAlign = 'center';
+      empty.style.color = 'var(--muted)';
+      empty.style.fontSize = '13px';
+      empty.textContent = currentVocabBucket === 'studied'
+        ? 'No studied words yet. Start a session to begin!'
+        : 'No matching words in this filter.';
+      list.appendChild(empty);
+      return;
+    }
+
+    filtered.forEach(card => {
+      const rec = userState.cards[card.id];
+      const tenseBadges = getLemmaMasteryByTense(card);
+      const eligibleExamples = getEligibleExamples(card);
+
+      const item = document.createElement('div');
+      item.className = 'vocab-item';
+
+      // Single clean header button (no duplicate markup)
+      const head = document.createElement('button');
+      head.type = 'button';
+      head.className = 'vocab-head';
+
+      const left = document.createElement('div');
+      left.style.minWidth = '0';
+
+      const titleLine = document.createElement('div');
+      titleLine.style.display = 'flex';
+      titleLine.style.alignItems = 'center';
+      titleLine.style.gap = '6px';
+      titleLine.style.flexWrap = 'wrap';
+
+      const lemmaEl = document.createElement('strong');
+      lemmaEl.style.fontSize = '15px';
+      lemmaEl.textContent = card.lemma;
+      titleLine.appendChild(lemmaEl);
+
+      const posEl = document.createElement('span');
+      posEl.className = 'badge';
+      posEl.textContent = card.pos;
+      titleLine.appendChild(posEl);
+
+      if (rec && rec.leech) {
+        const lb = document.createElement('span');
+        lb.className = 'badge badge-red';
+        lb.textContent = 'Leech';
+        titleLine.appendChild(lb);
+      }
+
+      const glossEl = document.createElement('div');
+      glossEl.className = 'muted-xs';
+      glossEl.style.marginTop = '2px';
+      glossEl.textContent = card.en_gloss;
+
+      left.append(titleLine, glossEl);
+
+      const right = document.createElement('div');
+      right.style.display = 'flex';
+      right.style.alignItems = 'center';
+      right.style.gap = '6px';
+      right.style.flexShrink = '0';
+
+      tenseBadges.forEach(tb => {
+        const pill = document.createElement('span');
+        pill.className = tb.mastered ? 'badge badge-primary' : 'badge badge-indigo';
+        const label = tb.tense.charAt(0).toUpperCase() + tb.tense.slice(1);
+        pill.textContent = tb.mastered ? `${label} ✓` : `${label} ${tb.detail || tb.pct + '%'}`;
+        right.appendChild(pill);
+      });
+
+      const chev = document.createElement('span');
+      chev.style.color = 'var(--muted)';
+      chev.style.fontSize = '12px';
+      chev.textContent = '▾';
+      right.appendChild(chev);
+
+      head.append(left, right);
+
+      // Expandable details body
+      const body = document.createElement('div');
+      body.className = 'vocab-body hidden';
+
+      // Forms grouped by unlocked tense with ok/fail counters
+      const byTense = new Map();
+      eligibleExamples.forEach(ex => {
+        if (!byTense.has(ex.tense)) byTense.set(ex.tense, new Map());
+        if (!byTense.get(ex.tense).has(ex.slot)) {
+          byTense.get(ex.tense).set(ex.slot, ex.answer);
+        }
+      });
+
+      byTense.forEach((slotMap, tense) => {
+        const groupWrap = document.createElement('div');
+        groupWrap.style.marginTop = '8px';
+        const tLabel = document.createElement('div');
+        tLabel.className = 'section-title';
+        tLabel.textContent = `${tense} forms`;
+        groupWrap.appendChild(tLabel);
+
+        const chips = document.createElement('div');
+        chips.className = 'chips-row';
+        slotMap.forEach((ans, slot) => {
+          const st = getSlotStat(card.id, slot);
+          const p = document.createElement('span');
+          p.className = st.fail >= 2 ? 'badge badge-red' : 'badge';
+          const shortSlot = slot.split('.').slice(1).join('.');
+          p.textContent = `${shortSlot} (${ans}): ${st.ok}✓ / ${st.fail}✗`;
+          chips.appendChild(p);
+        });
+        groupWrap.appendChild(chips);
+        body.appendChild(groupWrap);
+      });
+
+      // All eligible examples rendered via shared renderExample({ revealed: true }) + Audio Play
+      const exTitle = document.createElement('div');
+      exTitle.className = 'section-title';
+      exTitle.style.marginTop = '4px';
+      exTitle.textContent = `Examples (${eligibleExamples.length})`;
+      body.appendChild(exTitle);
+
+      eligibleExamples.forEach(ex => {
+        const exRow = document.createElement('div');
+        exRow.className = 'vocab-ex-row';
+
+        const textWrap = document.createElement('div');
+        textWrap.style.minWidth = '0';
+        const ptEl = document.createElement('div');
+        ptEl.className = 'vocab-ex-pt';
+        renderExample(ptEl, ex, { revealed: true });
+
+        const enEl = document.createElement('div');
+        enEl.className = 'vocab-ex-en';
+        enEl.textContent = ex.en_sentence;
+
+        textWrap.append(ptEl, enEl);
+
+        const playBtn = document.createElement('button');
+        playBtn.type = 'button';
+        playBtn.className = 'btn btn-neutral btn-icon';
+        playBtn.style.width = '32px';
+        playBtn.style.height = '32px';
+        playBtn.style.flexShrink = '0';
+        playBtn.setAttribute('aria-label', 'Play sentence audio');
+        playBtn.textContent = '🔊';
+        playBtn.addEventListener('click', () => {
+          speakPT(ex.pt_cloze.replace('___', ex.answer), true);
+        });
+
+        exRow.append(textWrap, playBtn);
+        body.appendChild(exRow);
+      });
+
+      // Grammar & False Friend notes (safe to show in Vocab browser)
+      if (card.grammar_note_en) {
+        const gn = document.createElement('div');
+        gn.className = 'notice notice-indigo';
+        gn.textContent = card.grammar_note_en;
+        body.appendChild(gn);
+      }
+      const ffEx = eligibleExamples.find(e => e.false_friend_note);
+      if (card.false_friend || ffEx) {
+        const fn = document.createElement('div');
+        fn.className = 'notice notice-amber';
+        fn.textContent = ffEx ? `False friend: ${ffEx.false_friend_note}` : `False friend: "${card.lemma}" = ${card.en_gloss}`;
+        body.appendChild(fn);
+      }
+
+      // Footer Actions: Drill Forms (verbs) + Reset Lapses (leeches)
+      const actRow = document.createElement('div');
+      actRow.className = 'chips-row';
+      if (card.pos === 'VERB') {
+        const drillBtn = document.createElement('button');
+        drillBtn.type = 'button';
+        drillBtn.className = 'btn btn-primary-soft btn-sm';
+        drillBtn.textContent = 'Drill Forms';
+        drillBtn.addEventListener('click', () => startVerbDrill(card));
+        actRow.appendChild(drillBtn);
+      }
+      if (rec && (rec.lapses || 0) >= FSRS6.leechThreshold) {
+        const resetBtn = document.createElement('button');
+        resetBtn.type = 'button';
+        resetBtn.className = 'btn btn-red-soft btn-sm';
+        resetBtn.textContent = 'Reset Lapses';
+        resetBtn.addEventListener('click', () => {
+          rec.lapses = 0;
+          rec.leech = false;
+          rec.updatedAt = Date.now();
+          saveState();
+          renderVocabList();
+          showToast(`Lapses reset for "${card.lemma}"`);
+        });
+        actRow.appendChild(resetBtn);
+      }
+      if (actRow.children.length > 0) body.appendChild(actRow);
+
+      head.addEventListener('click', () => {
+        const open = body.classList.toggle('hidden');
+        chev.textContent = open ? '▾' : '▴';
+      });
+
+      item.append(head, body);
+      list.appendChild(item);
+    });
+  }
+
+  /* ==========================================================================
+     16. SETTINGS, MULTI-VOICE UI & BACKUP SYNC
+     ========================================================================== */
+  function renderSettings() {
+    el('set-new-lemmas').value = String(userState.settings.dailyNewLemmaCap);
+    el('set-new-forms').value = String(userState.settings.dailyNewFormCap);
+    el('set-retention').value = String(userState.settings.desiredRetention);
+    el('set-retention-lbl').textContent = Number(userState.settings.desiredRetention).toFixed(2);
+
+    el('toggle-autoplay').classList.toggle('on', userState.settings.autoPlay);
+    el('toggle-autoplay').setAttribute('aria-checked', String(userState.settings.autoPlay));
+    el('toggle-rotate-voices').classList.toggle('on', userState.settings.rotateVoices);
+    el('toggle-rotate-voices').setAttribute('aria-checked', String(userState.settings.rotateVoices));
+
+    // Render available tenses dynamically from loaded packs
+    const tensesWrap = el('settings-tenses-list');
+    tensesWrap.textContent = '';
+    Array.from(availableTenses).forEach(tense => {
+      const row = document.createElement('div');
+      row.className = 'setting-row';
+      const label = document.createElement('span');
+      label.style.fontWeight = '600';
+      label.textContent = tense.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+      const isPresent = tense === 'present';
+      const isOn = userState.settings.unlockedTenses.includes(tense);
+      const sw = document.createElement('button');
+      sw.type = 'button';
+      sw.className = `switch ${isOn ? 'on' : ''}`;
+      sw.disabled = isPresent;
+      sw.setAttribute('role', 'switch');
+      sw.setAttribute('aria-checked', String(isOn));
+      const knob = document.createElement('span');
+      knob.className = 'switch-knob';
+      sw.appendChild(knob);
+
+      if (!isPresent) {
+        sw.addEventListener('click', () => {
+          const list = userState.settings.unlockedTenses;
+          const idx = list.indexOf(tense);
+          if (idx === -1) list.push(tense);
+          else list.splice(idx, 1);
+          saveState();
+          renderSettings();
+          showToast(`${tense} ${idx === -1 ? 'unlocked' : 'locked'}`);
+        });
+      }
+      row.append(label, sw);
+      tensesWrap.appendChild(row);
+    });
+
+    renderVoicesSettings();
+
+    const packs = Object.entries(packStore.packsMeta);
+    el('settings-packs-summary').textContent = packs.length > 0
+      ? `Loaded (${sortedCards.length} words): ` + packs.map(([k, v]) => `${k} v${v}`).join(', ')
+      : 'No packs loaded yet.';
+  }
+
+  function renderVoicesSettings() {
+    const list = el('settings-voices-list');
+    list.textContent = '';
+    el('tts-missing-banner').classList.toggle('hidden', ptVoices.length > 0);
+    if (ptVoices.length === 0) return;
+
+    const saved = userState.settings.enabledVoices || [];
+    ptVoices.forEach(voice => {
+      const row = document.createElement('div');
+      row.className = 'voice-row';
+
+      const lbl = document.createElement('label');
+      lbl.className = 'voice-label';
+
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = saved.some(s => s.voiceURI === voice.voiceURI || s.name === voice.name);
+      cb.style.accentColor = 'var(--primary)';
+      cb.addEventListener('change', () => {
+        let cur = userState.settings.enabledVoices.filter(s => s.voiceURI !== voice.voiceURI && s.name !== voice.name);
+        if (cb.checked) cur.push({ voiceURI: voice.voiceURI, name: voice.name });
+        userState.settings.enabledVoices = cur;
+        saveState();
+      });
+
+      const nameSpan = document.createElement('span');
+      nameSpan.className = 'voice-name';
+      nameSpan.textContent = `${voice.name} (${voice.lang})`;
+
+      lbl.append(cb, nameSpan);
+
+      const testBtn = document.createElement('button');
+      testBtn.type = 'button';
+      testBtn.className = 'btn btn-neutral btn-sm';
+      testBtn.textContent = 'Test';
+      testBtn.addEventListener('click', () => {
+        speakPT('Olá! Tudo bem com você hoje?', false, voice);
+      });
+
+      row.append(lbl, testBtn);
+      list.appendChild(row);
+    });
+  }
+
+  async function exportBackup() {
+    userState.lastBackupAt = Date.now();
+    saveState();
+
+    const payload = {
+      schemaVersion: SCHEMA_VERSION,
+      exportedAt: userState.lastBackupAt,
+      packsMeta: packStore.packsMeta,
+      settings: userState.settings,
+      cards: userState.cards,
+      formStats: userState.formStats
+    };
+    const jsonStr = JSON.stringify(payload, null, 2);
+    const filename = `falacloze_backup_${getStudyDayKey()}.json`;
+
+    // Prefer one-tap Web Share API on Android if supported for files
+    try {
+      const file = new File([jsonStr], filename, { type: 'application/json' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ title: 'FalaCloze Backup', files: [file] });
+        showToast('Backup shared!');
+        renderHome();
+        return;
+      }
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+    }
+
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('Backup downloaded!');
+    renderHome();
+  }
+
+  function mergeProgressBackup(jsonStr) {
+    try {
+      const inc = JSON.parse(jsonStr);
+      if (inc.schemaVersion && inc.schemaVersion > SCHEMA_VERSION) {
+        showToast(`Backup uses newer schema v${inc.schemaVersion}.`);
+        return;
+      }
+      const incCards = inc.cards || {};
+      let updatedCount = 0;
+
+      // Preserve ALL unknown cards verbatim during merge (round-trip safe across devices!)
+      for (const [cardKey, incRec] of Object.entries(incCards)) {
+        const local = userState.cards[cardKey];
+        const incTs = Math.max(incRec.last_review || 0, incRec.updatedAt || 0);
+        const locTs = local ? Math.max(local.last_review || 0, local.updatedAt || 0) : -1;
+        if (!local || incTs > locTs) {
+          userState.cards[cardKey] = incRec;
+          updatedCount++;
+        }
+      }
+
+      // Merge formStats taking max counters per slot
+      if (inc.formStats) {
+        for (const [lemmaId, slots] of Object.entries(inc.formStats)) {
+          if (!userState.formStats[lemmaId]) userState.formStats[lemmaId] = {};
+          for (const [slot, st] of Object.entries(slots)) {
+            const loc = userState.formStats[lemmaId][slot] || { ok: 0, fail: 0 };
+            userState.formStats[lemmaId][slot] = {
+              ok: Math.max(loc.ok || 0, st.ok || 0),
+              fail: Math.max(loc.fail || 0, st.fail || 0)
+            };
+          }
+        }
+      }
+
+      // Monotonic union of unlocked tenses
+      if (inc.settings && Array.isArray(inc.settings.unlockedTenses)) {
+        const mergedTenses = new Set([...userState.settings.unlockedTenses, ...inc.settings.unlockedTenses]);
+        userState.settings.unlockedTenses = Array.from(mergedTenses);
+      }
+
+      saveState();
+      renderHome();
+      showToast(`Merged ${updatedCount} cards cleanly!`);
+    } catch (e) {
+      showToast('Invalid backup JSON.');
+    }
+  }
+
+  function handlePackFileInput(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        const baseName = file.name.replace(/\.json$/i, '');
+        const res = mergePackObject(parsed, baseName);
+        if (!res.ok) {
+          showToast(res.error);
+          return;
+        }
+        renderHome();
+        if (currentView === 'settings') renderSettings();
+        showToast(`Loaded! +${res.addedCards} cards, +${res.appendedExamples} examples (${res.totalCards} total)`);
+      } catch (e) {
+        showToast('Could not parse JSON file.');
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  /* ==========================================================================
+     17. EVENT BINDINGS (ANDROID KEYBOARD-SAFE POINTERDOWN)
+     ========================================================================== */
+  function bindNoBlurAction(button, handler) {
+    button.addEventListener('pointerdown', e => {
+      e.preventDefault(); // Keeps docked <input> focused & Android keyboard open
+    });
+    button.addEventListener('click', handler);
+  }
+
+  function bindEvents() {
+    // Home navigation & clickable stat counters
+    el('btn-nav-vocab').addEventListener('click', () => openVocab({ bucket: 'studied' }));
+    el('btn-home-vocab').addEventListener('click', () => openVocab({ bucket: 'studied' }));
+    el('btn-nav-settings').addEventListener('click', () => navigateTo('settings'));
+
+    el('stat-btn-to-learn').addEventListener('click', () => openVocab({ bucket: 'to_learn' }));
+    el('stat-btn-learning').addEventListener('click', () => openVocab({ bucket: 'learning' }));
+    el('stat-btn-mastered').addEventListener('click', () => openVocab({ bucket: 'mastered' }));
+
+    el('btn-start-session').addEventListener('click', startStudySession);
+    el('btn-quick-backup').addEventListener('click', exportBackup);
+
+    // Home session length chips
+    el('home-length-chips').querySelectorAll('.chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        userState.settings.sessionLength = btn.dataset.len === 'all' ? 'all' : Number(btn.dataset.len);
+        saveState();
+        renderHome();
+      });
+    });
+
+    // Walk mode toggle
+    el('toggle-walk').addEventListener('click', () => {
+      userState.settings.walkMode = !userState.settings.walkMode;
+      saveState();
+      renderHome();
+    });
+
+    // Pack file inputs & drag-and-drop
+    ['input-home-deck', 'input-replace-demo', 'input-home-add-pack', 'input-settings-pack'].forEach(id => {
+      el(id).addEventListener('change', e => {
+        handlePackFileInput(e.target.files[0]);
+        e.target.value = '';
+      });
+    });
+
+    const dz = el('home-drop-zone');
+    dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('dragover'); });
+    dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+    dz.addEventListener('drop', e => {
+      e.preventDefault();
+      dz.classList.remove('dragover');
+      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+        handlePackFileInput(e.dataTransfer.files[0]);
+      }
+    });
+
+    // 5-card Demo load & remove
+    el('btn-load-demo').addEventListener('click', () => {
+      mergePackObject(DEMO_PACK, '__demo_5__');
+      renderHome();
+      showToast('Loaded 5-card Demo preview');
+    });
+    el('btn-remove-demo').addEventListener('click', () => {
+      packStore.cardsById = {};
+      packStore.packsMeta = {};
+      packStore.isDemoActive = false;
+      rebuildDeckIndexes();
+      savePacks();
+      renderHome();
+      showToast('Demo removed');
+    });
+
+    // Study header controls
+    el('btn-study-home').addEventListener('click', () => navigateTo('home'));
+    el('btn-study-undo').addEventListener('click', handleUndo);
+    el('btn-study-finish').addEventListener('click', startBlindAudioFinale);
+    el('btn-done-home').addEventListener('click', () => navigateTo('home'));
+
+    bindNoBlurAction(el('btn-study-speak'), () => {
+      if (session.mode === 'blind') {
+        const item = session.blindQueue[session.blindIdx];
+        if (item) speakPT(item.ex.pt_cloze.replace('___', item.ex.answer), true);
+      } else if (session.activeItem) {
+        const { ex, subjectOverride } = session.activeItem;
+        speakPT(applySubjectOverride(ex.pt_cloze, subjectOverride).replace('___', ex.answer), true);
+      }
+    });
+
+    // Tap anywhere on the Cloze sentence focuses docked input & opens Android keyboard
+    el('sc-pt-container').addEventListener('click', focusClozeInput);
+
+    // Optional manual grammar peek button
+    bindNoBlurAction(el('btn-grammar-peek'), () => {
+      if (!session.activeItem || !session.activeItem.card.grammar_note_en) return;
+      const box = el('sc-grammar-note');
+      if (box.classList.contains('hidden')) {
+        box.textContent = session.activeItem.card.grammar_note_en;
+        box.classList.remove('hidden');
+      } else {
+        box.classList.add('hidden');
+      }
+    });
+
+    // Persistent input with IME composition safety & live mirroring
+    const inp = el('cloze-input');
+    inp.addEventListener('compositionstart', () => { session.isComposing = true; });
+    inp.addEventListener('compositionend', () => {
+      session.isComposing = false;
+      mirrorInputToGap();
+    });
+
+    function mirrorInputToGap() {
+      if (!session.activeItem || session.revealed) return;
+      if (session.firstKeystrokeMs === null && inp.value.length > 0) {
+        session.firstKeystrokeMs = session.timerAccumMs + (session.timerStartMs ? Date.now() - session.timerStartMs : 0);
+      }
+      if (session.needsCorrection) return;
+      const { ex, subjectOverride } = session.activeItem;
+      renderExample(el('sc-pt-container'), ex, {
+        revealed: false,
+        liveText: inp.value,
+        onGapTap: focusClozeInput,
+        subjectOverride
+      });
+    }
+
+    inp.addEventListener('input', mirrorInputToGap);
+    inp.addEventListener('keydown', e => {
+      if (e.key === 'Enter' && !session.isComposing) {
+        e.preventDefault();
+        handleTypingSubmit();
+      }
+    });
+
+    // Keyboard-safe study buttons
+    bindNoBlurAction(el('btn-check'), handleTypingSubmit);
+    bindNoBlurAction(el('btn-hint'), handleHint);
+    bindNoBlurAction(el('btn-dont-know'), handleDontKnow);
+    bindNoBlurAction(el('btn-known'), seedCardAsKnown);
+    bindNoBlurAction(el('btn-override-again'), handleOverrideWrong);
+    bindNoBlurAction(el('btn-fast-known'), seedCardAsKnown);
+
+    // Walk mode controls
+    el('btn-walk-reveal').addEventListener('click', () => {
+      if (!session.activeItem) return;
+      const { card, ex, subjectOverride } = session.activeItem;
+      session.walkRevealed = true;
+      renderExample(el('sc-pt-container'), ex, { revealed: true, subjectOverride });
+      revealPostAnswerNotes(card, ex);
+      el('btn-walk-reveal').classList.add('hidden');
+      el('walk-grade-btns').classList.remove('hidden');
+      if (userState.settings.autoPlay) {
+        speakPT(applySubjectOverride(ex.pt_cloze, subjectOverride).replace('___', ex.answer));
+      }
+    });
+    el('btn-walk-again').addEventListener('click', () => {
+      if (!session.activeItem) return;
+      commitReview(capturePreSnapshot(), 1);
+      advanceStudy();
+    });
+    el('btn-walk-good').addEventListener('click', () => {
+      if (!session.activeItem) return;
+      commitReview(capturePreSnapshot(), 3);
+      advanceStudy();
+    });
+
+    // Blind Audio controls
+    el('btn-blind-play').addEventListener('click', () => {
+      const item = session.blindQueue[session.blindIdx];
+      if (item) speakPT(item.ex.pt_cloze.replace('___', item.ex.answer), true);
+    });
+    el('btn-blind-next').addEventListener('click', () => {
+      session.blindIdx += 1;
+      renderBlindStep();
+    });
+    el('btn-blind-skip').addEventListener('click', showDonePanel);
+
+    // Global desktop shortcut Ctrl+Space for audio
+    document.addEventListener('keydown', e => {
+      if (e.ctrlKey && e.code === 'Space' && currentView === 'study') {
+        e.preventDefault();
+        el('btn-study-speak').click();
+      }
+    });
+
+    // Vocab view
+    el('btn-vocab-back').addEventListener('click', () => navigateTo('home'));
+    el('vocab-search').addEventListener('input', renderVocabList);
+    el('vocab-tabs').querySelectorAll('.chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentVocabBucket = btn.dataset.bucket;
+        renderVocabList();
+      });
+    });
+
+    // Settings view
+    el('btn-settings-back').addEventListener('click', () => navigateTo('home'));
+    el('set-new-lemmas').addEventListener('change', e => {
+      userState.settings.dailyNewLemmaCap = Math.max(1, parseInt(e.target.value, 10) || 15);
+      saveState();
+    });
+    el('set-new-forms').addEventListener('change', e => {
+      userState.settings.dailyNewFormCap = Math.max(1, parseInt(e.target.value, 10) || 4);
+      saveState();
+    });
+    el('set-retention').addEventListener('input', e => {
+      userState.settings.desiredRetention = parseFloat(e.target.value);
+      el('set-retention-lbl').textContent = userState.settings.desiredRetention.toFixed(2);
+      saveState();
+    });
+    el('toggle-autoplay').addEventListener('click', () => {
+      userState.settings.autoPlay = !userState.settings.autoPlay;
+      saveState();
+      renderSettings();
+    });
+    el('toggle-rotate-voices').addEventListener('click', () => {
+      userState.settings.rotateVoices = !userState.settings.rotateVoices;
+      saveState();
+      renderSettings();
+    });
+    el('btn-export-backup').addEventListener('click', exportBackup);
+    el('input-merge-progress').addEventListener('change', e => {
+      const f = e.target.files[0];
+      if (!f) return;
+      const reader = new FileReader();
+      reader.onload = ev => mergeProgressBackup(ev.target.result);
+      reader.readAsText(f);
+      e.target.value = '';
+    });
+
+    // Two-tap inline confirmation for Reset Progress & Clear Packs (zero alert/confirm)
+    let armedReset = false;
+    el('btn-reset-progress').addEventListener('click', () => {
+      if (!armedReset) {
+        armedReset = true;
+        el('btn-reset-progress').textContent = 'Tap again to reset';
+        setTimeout(() => {
+          armedReset = false;
+          el('btn-reset-progress').textContent = 'Reset Progress';
+        }, 3500);
+        return;
+      }
+      userState.cards = {};
+      userState.formStats = {};
+      userState.daily = { day: getStudyDayKey(), newLemmas: 0, newForms: 0, clustersToday: [], reviewedLemmasToday: [], shownSentencesToday: [] };
+      saveState();
+      armedReset = false;
+      el('btn-reset-progress').textContent = 'Reset Progress';
+      showToast('All study progress reset.');
+      navigateTo('home');
+    });
+
+    let armedClear = false;
+    el('btn-clear-packs').addEventListener('click', () => {
+      if (!armedClear) {
+        armedClear = true;
+        el('btn-clear-packs').textContent = 'Tap again to clear';
+        setTimeout(() => {
+          armedClear = false;
+          el('btn-clear-packs').textContent = 'Clear Cached Packs';
+        }, 3500);
+        return;
+      }
+      packStore = { schemaVersion: SCHEMA_VERSION, packsMeta: {}, isDemoActive: false, cardsById: {} };
+      rebuildDeckIndexes();
+      savePacks();
+      armedClear = false;
+      el('btn-clear-packs').textContent = 'Clear Cached Packs';
+      showToast('Cached packs cleared.');
+      navigateTo('home');
+    });
+  }
+
+  /* ==========================================================================
+     18. BOOTSTRAP
+     ========================================================================== */
+  loadFromLocalStorage();
+  bindEvents();
+  renderHome();
+  autoFetchHostedPacks();
+})();
+</script>
+</body>
+</html>
