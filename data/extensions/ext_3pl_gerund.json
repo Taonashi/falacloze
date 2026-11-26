@@ -1,0 +1,3695 @@
+{
+  "schema": "3.1",
+  "extensionId": "ext_3pl_gerund",
+  "tense": "pres_3pl_ger",
+  "version": 2,
+  "introducedInUnit": 2,
+  "appliesToPacks": [
+    "pack_01"
+  ],
+  "requires": [
+    "pack_01"
+  ],
+  "examples": [
+    {
+      "exId": "pt_ser.x3pl1",
+      "lemmaId": "pt_ser",
+      "pt": "Eles são médicos no mesmo hospital.",
+      "en": "They are doctors at the same hospital.",
+      "answer": "são",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "são"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "estão"
+      ],
+      "distractors": [
+        "sou",
+        "é"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "are (profession)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_medico",
+        "pt_no",
+        "pt_mesmo_adj",
+        "pt_hospital"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "3360e28d2947",
+      "retired": false
+    },
+    {
+      "exId": "pt_ser.x3pl2",
+      "lemmaId": "pt_ser",
+      "pt": "Vocês são vizinhos desse prédio?",
+      "en": "Are you all neighbors in this building?",
+      "answer": "são",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "são"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "estão"
+      ],
+      "distractors": [
+        "sou",
+        "é"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "are (identity)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_vizinho",
+        "pt_dar",
+        "pt_predio"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "ccc535b3691f",
+      "retired": false
+    },
+    {
+      "exId": "pt_ser.xger1",
+      "lemmaId": "pt_ser",
+      "pt": "Ele tá sendo muito gentil comigo.",
+      "en": "He is being very kind to me.",
+      "answer": "sendo",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "sendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "ficando"
+      ],
+      "distractors": [
+        "sido",
+        "são"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "being",
+      "false_friend_note": null,
+      "grammar_note_en": "Estar + gerúndio describes temporary behavior.",
+      "requires": [
+        "pt_ele",
+        "pt_estar~ta",
+        "pt_muito",
+        "pt_comigo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "7ae024685a00",
+      "retired": false
+    },
+    {
+      "exId": "pt_ser.xger2",
+      "lemmaId": "pt_ser",
+      "pt": "A aula tá sendo bem útil.",
+      "en": "The class is being very useful.",
+      "answer": "sendo",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "sendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "ficando"
+      ],
+      "distractors": [
+        "sido",
+        "são"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "being",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_aula",
+        "pt_estar~ta",
+        "pt_bem",
+        "pt_util"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "c25c72921ee8",
+      "retired": false
+    },
+    {
+      "exId": "pt_pegar.x3pl1",
+      "lemmaId": "pt_pegar",
+      "pt": "Eles pegam o metrô bem cedo.",
+      "en": "They catch the subway very early.",
+      "answer": "pegam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "pegam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "usam"
+      ],
+      "distractors": [
+        "pega",
+        "pego"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "catch / take",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_o",
+        "pt_metro",
+        "pt_bem",
+        "pt_cedo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "bc625ce73e2a",
+      "retired": false
+    },
+    {
+      "exId": "pt_pegar.x3pl2",
+      "lemmaId": "pt_pegar",
+      "pt": "Onde vocês pegam ônibus pro centro?",
+      "en": "Where do you all catch the downtown bus?",
+      "answer": "pegam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "pegam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "acham"
+      ],
+      "distractors": [
+        "pega",
+        "pego"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "catch",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_onde",
+        "pt_voce",
+        "pt_onibus",
+        "pt_pro",
+        "pt_centro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "57d3bd585288",
+      "retired": false
+    },
+    {
+      "exId": "pt_pegar.xger1",
+      "lemmaId": "pt_pegar",
+      "pt": "Eu tô pegando um café agora.",
+      "en": "I am grabbing a coffee right now.",
+      "answer": "pegando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "pegando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazendo"
+      ],
+      "distractors": [
+        "pegam",
+        "pegaria"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "grabbing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_estar~to",
+        "pt_um",
+        "pt_cafe",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "931b960dc33a",
+      "retired": false
+    },
+    {
+      "exId": "pt_pegar.xger2",
+      "lemmaId": "pt_pegar",
+      "pt": "Ela tá pegando a chave na bolsa.",
+      "en": "She is grabbing the key from her bag.",
+      "answer": "pegando",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "pegando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vendo"
+      ],
+      "distractors": [
+        "pegam",
+        "pegavam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "grabbing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_o",
+        "pt_chave",
+        "pt_na",
+        "pt_bolsa"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "d9afd9dc6136",
+      "retired": false
+    },
+    {
+      "exId": "pt_ter.x3pl1",
+      "lemmaId": "pt_ter",
+      "pt": "Eles têm dois gatos bem mansos.",
+      "en": "They have two very gentle cats.",
+      "answer": "têm",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "têm"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "tenho",
+        "temos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "have (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": "Note circumflex on 3pl têm vs 3sg tem.",
+      "requires": [
+        "pt_ele",
+        "pt_dois",
+        "pt_gato",
+        "pt_bem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "7fd72ecd5804",
+      "retired": false
+    },
+    {
+      "exId": "pt_ter.x3pl2",
+      "lemmaId": "pt_ter",
+      "pt": "Vocês têm troco pra cinquenta?",
+      "en": "Do you all have change for fifty?",
+      "answer": "têm",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "têm"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "podem"
+      ],
+      "distractors": [
+        "tenho",
+        "temos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "have (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_trocar",
+        "pt_pra",
+        "pt_cinquenta"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "758e955ee7c7",
+      "retired": false
+    },
+    {
+      "exId": "pt_ter.xger1",
+      "lemmaId": "pt_ter",
+      "pt": "Tô tendo uma semana bem corrida.",
+      "en": "I am having a very busy week.",
+      "answer": "tendo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "tendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazendo"
+      ],
+      "distractors": [
+        "tenho",
+        "tido"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "having",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_um",
+        "pt_semana",
+        "pt_bem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "44223246e5e7",
+      "retired": false
+    },
+    {
+      "exId": "pt_ter.xger2",
+      "lemmaId": "pt_ter",
+      "pt": "Ela tá tendo aulas de piano.",
+      "en": "She is having piano lessons.",
+      "answer": "tendo",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "tendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazendo"
+      ],
+      "distractors": [
+        "tido",
+        "tenho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "having",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_aula",
+        "pt_de",
+        "pt_piano"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "302ad94ec8b5",
+      "retired": false
+    },
+    {
+      "exId": "pt_fazer.x3pl1",
+      "lemmaId": "pt_fazer",
+      "pt": "Eles fazem pão caseiro todo sábado.",
+      "en": "They bake homemade bread every Saturday.",
+      "answer": "fazem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fazem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "comem"
+      ],
+      "distractors": [
+        "fazemos",
+        "faço"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "make / bake",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_pao",
+        "pt_caseiro",
+        "pt_todo",
+        "pt_sabado"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0b68dd3a0d4b",
+      "retired": false
+    },
+    {
+      "exId": "pt_fazer.x3pl2",
+      "lemmaId": "pt_fazer",
+      "pt": "O que vocês fazem no feriado?",
+      "en": "What are you all doing on the holiday?",
+      "answer": "fazem",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fazem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "fazemos",
+        "faz"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "do",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_que",
+        "pt_voce",
+        "pt_no",
+        "pt_feriado"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "39df106cc960",
+      "retired": false
+    },
+    {
+      "exId": "pt_fazer.xger1",
+      "lemmaId": "pt_fazer",
+      "pt": "Eu tô fazendo almoço na cozinha.",
+      "en": "I am making lunch in the kitchen.",
+      "answer": "fazendo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fazendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "comendo"
+      ],
+      "distractors": [
+        "fazem",
+        "fazemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "making",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_estar~to",
+        "pt_almoco",
+        "pt_na",
+        "pt_cozinha"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "305803e0664e",
+      "retired": false
+    },
+    {
+      "exId": "pt_fazer.xger2",
+      "lemmaId": "pt_fazer",
+      "pt": "O que você tá fazendo agora?",
+      "en": "What are you doing right now?",
+      "answer": "fazendo",
+      "subject": "você",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fazendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vendo"
+      ],
+      "distractors": [
+        "fazem",
+        "fazemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "doing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_que",
+        "pt_voce",
+        "pt_estar~ta",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0dfa083beba0",
+      "retired": false
+    },
+    {
+      "exId": "pt_ir.x3pl1",
+      "lemmaId": "pt_ir",
+      "pt": "Eles vão pra praia no domingo.",
+      "en": "They are going to the beach on Sunday.",
+      "answer": "vão",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vêm"
+      ],
+      "distractors": [
+        "vai",
+        "vou"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "go (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_pra",
+        "pt_praia",
+        "pt_no",
+        "pt_domingo"
+      ],
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "a382e4b42795",
+      "retired": false
+    },
+    {
+      "exId": "pt_ir.x3pl2",
+      "lemmaId": "pt_ir",
+      "pt": "Vocês vão no cinema hoje?",
+      "en": "Are you all going to the movies today?",
+      "answer": "vão",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "ficam"
+      ],
+      "distractors": [
+        "vai",
+        "vou"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "go (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_no",
+        "pt_cinema",
+        "pt_hoje"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "92288562c8d5",
+      "retired": false
+    },
+    {
+      "exId": "pt_ir.xger1",
+      "lemmaId": "pt_ir",
+      "pt": "Eu tô indo pro mercado agora.",
+      "en": "I am heading to the market right now.",
+      "answer": "indo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "indo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vindo"
+      ],
+      "distractors": [
+        "ido",
+        "ia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "going",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_estar~to",
+        "pt_pro",
+        "pt_mercado",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a1e8bf21c980",
+      "retired": false
+    },
+    {
+      "exId": "pt_ir.xger2",
+      "lemmaId": "pt_ir",
+      "pt": "A gente tá indo de metrô.",
+      "en": "We are going by subway.",
+      "answer": "indo",
+      "subject": "a gente",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "indo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "saindo"
+      ],
+      "distractors": [
+        "ido",
+        "iria"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "going",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_a_gente",
+        "pt_estar~ta",
+        "pt_de",
+        "pt_metro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "5ce1d4762aa6",
+      "retired": false
+    },
+    {
+      "exId": "pt_dar.x3pl1",
+      "lemmaId": "pt_dar",
+      "pt": "Eles dão aula na escola perto.",
+      "en": "They teach class at the nearby school.",
+      "answer": "dão",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazem"
+      ],
+      "distractors": [
+        "dá",
+        "dou"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "give / teach",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_aula",
+        "pt_na",
+        "pt_escola",
+        "pt_perto"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "c11451f3be95",
+      "retired": false
+    },
+    {
+      "exId": "pt_dar.x3pl2",
+      "lemmaId": "pt_dar",
+      "pt": "Elas dão boas dicas de viagem.",
+      "en": "They give great travel tips.",
+      "answer": "dão",
+      "subject": "elas",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "têm"
+      ],
+      "distractors": [
+        "dá",
+        "dou"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "give",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_bom",
+        "pt_dica",
+        "pt_de",
+        "pt_viagem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "8fc3d2aa2bd2",
+      "retired": false
+    },
+    {
+      "exId": "pt_dar.xger1",
+      "lemmaId": "pt_dar",
+      "pt": "Ele tá dando comida pro cachorro.",
+      "en": "He is feeding the dog.",
+      "answer": "dando",
+      "subject": "ele",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "comprando"
+      ],
+      "distractors": [
+        "dado",
+        "dão"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "giving",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_estar~ta",
+        "pt_comida",
+        "pt_pro",
+        "pt_cachorro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "47999a3ea5b3",
+      "retired": false
+    },
+    {
+      "exId": "pt_dar.xger2",
+      "lemmaId": "pt_dar",
+      "pt": "Tô dando uma volta no parque.",
+      "en": "I am taking a stroll in the park.",
+      "answer": "dando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazendo"
+      ],
+      "distractors": [
+        "dado",
+        "dão"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "taking / giving",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_um",
+        "pt_voltar",
+        "pt_no",
+        "pt_parque"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "bc348bd9f57b",
+      "retired": false
+    },
+    {
+      "exId": "pt_querer.x3pl1",
+      "lemmaId": "pt_querer",
+      "pt": "Eles querem comprar uma casa grande.",
+      "en": "They want to buy a big house.",
+      "answer": "querem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "querem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "precisam"
+      ],
+      "distractors": [
+        "quer",
+        "quero"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "want",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_comprar",
+        "pt_um",
+        "pt_casa",
+        "pt_grande"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "c4c9463a733b",
+      "retired": false
+    },
+    {
+      "exId": "pt_querer.x3pl2",
+      "lemmaId": "pt_querer",
+      "pt": "Vocês querem água ou suco natural?",
+      "en": "Do you all want water or fresh juice?",
+      "answer": "querem",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "querem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "gostam"
+      ],
+      "distractors": [
+        "quero",
+        "quer"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "want",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_agua",
+        "pt_ou",
+        "pt_suco",
+        "pt_natural"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b5161e3d46fb",
+      "retired": false
+    },
+    {
+      "exId": "pt_querer.xger1",
+      "lemmaId": "pt_querer",
+      "pt": "Tô querendo aprender a cozinhar melhor.",
+      "en": "I am wanting to learn to cook better.",
+      "answer": "querendo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "querendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "precisando"
+      ],
+      "distractors": [
+        "querem",
+        "querido"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "wanting",
+      "false_friend_note": null,
+      "grammar_note_en": "Tô querendo is a natural spoken PT-BR softener.",
+      "requires": [
+        "pt_estar~to",
+        "pt_aprender",
+        "pt_o",
+        "pt_cozinhar",
+        "pt_melhor"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "f692bd158b27",
+      "retired": false
+    },
+    {
+      "exId": "pt_querer.xger2",
+      "lemmaId": "pt_querer",
+      "pt": "Ela tá querendo trocar de carro.",
+      "en": "She is thinking of changing cars.",
+      "answer": "querendo",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "querendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "tentando"
+      ],
+      "distractors": [
+        "querido",
+        "querem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "wanting",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_trocar",
+        "pt_de",
+        "pt_carro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "6258e13ecf25",
+      "retired": false
+    },
+    {
+      "exId": "pt_ficar.x3pl1",
+      "lemmaId": "pt_ficar",
+      "pt": "Eles ficam no hotel perto do mar.",
+      "en": "They stay at the hotel near the sea.",
+      "answer": "ficam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "ficam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "estão"
+      ],
+      "distractors": [
+        "fica",
+        "fico"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "stay",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_no",
+        "pt_hotel",
+        "pt_perto",
+        "pt_do",
+        "pt_mar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "c96bdab9bb94",
+      "retired": false
+    },
+    {
+      "exId": "pt_ficar.x3pl2",
+      "lemmaId": "pt_ficar",
+      "pt": "Vocês ficam aqui até domingo?",
+      "en": "Are you all staying here until Sunday?",
+      "answer": "ficam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "ficam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "estão"
+      ],
+      "distractors": [
+        "fica",
+        "fico"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "stay",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_aqui",
+        "pt_ate",
+        "pt_domingo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "73eeccbe4414",
+      "retired": false
+    },
+    {
+      "exId": "pt_ficar.xger1",
+      "lemmaId": "pt_ficar",
+      "pt": "O tempo tá ficando bem frio.",
+      "en": "The weather is getting very cold.",
+      "answer": "ficando",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "ficando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "sendo"
+      ],
+      "distractors": [
+        "ficado",
+        "ficam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "getting",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_tempo",
+        "pt_estar~ta",
+        "pt_bem",
+        "pt_frio"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "26109ed92b2a",
+      "retired": false
+    },
+    {
+      "exId": "pt_ficar.xger2",
+      "lemmaId": "pt_ficar",
+      "pt": "Eu tô ficando bem cansado agora.",
+      "en": "I am getting pretty tired right now.",
+      "answer": "ficando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "ficando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "estando"
+      ],
+      "distractors": [
+        "ficado",
+        "ficam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "getting",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_estar~to",
+        "pt_bem",
+        "pt_cansado",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "65db9cbe07de",
+      "retired": false
+    },
+    {
+      "exId": "pt_poder.x3pl1",
+      "lemmaId": "pt_poder",
+      "pt": "Eles podem ajudar na mudança amanhã.",
+      "en": "They can help with the move tomorrow.",
+      "answer": "podem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "podem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "pode",
+        "posso"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "can",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_ajudar",
+        "pt_na",
+        "pt_mudanca",
+        "pt_amanha"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "7f15a639a38e",
+      "retired": false
+    },
+    {
+      "exId": "pt_poder.x3pl2",
+      "lemmaId": "pt_poder",
+      "pt": "Vocês podem falar um pouco mais devagar?",
+      "en": "Can you all speak a bit more slowly?",
+      "answer": "podem",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "podem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "pode",
+        "posso"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "can",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_falar",
+        "pt_um",
+        "pt_pouco",
+        "pt_mais",
+        "pt_devagar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "3d99bbffd1a4",
+      "retired": false
+    },
+    {
+      "exId": "pt_poder.xger1",
+      "lemmaId": "pt_poder",
+      "pt": "Não tô podendo gastar muito agora.",
+      "en": "I am not able to spend much now.",
+      "answer": "podendo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "podendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querendo"
+      ],
+      "distractors": [
+        "podido",
+        "podem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "being able",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_estar~to",
+        "pt_gastar",
+        "pt_muito",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "ca2db64d639b",
+      "retired": false
+    },
+    {
+      "exId": "pt_poder.xger2",
+      "lemmaId": "pt_poder",
+      "pt": "Ela não tá podendo dirigir hoje.",
+      "en": "She is not able to drive today.",
+      "answer": "podendo",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "podendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querendo"
+      ],
+      "distractors": [
+        "podido",
+        "podem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "being able",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_nao",
+        "pt_estar~ta",
+        "pt_dirigir",
+        "pt_hoje"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "634f0b7e6916",
+      "retired": false
+    },
+    {
+      "exId": "pt_saber.x3pl1",
+      "lemmaId": "pt_saber",
+      "pt": "Eles sabem o caminho pro aeroporto.",
+      "en": "They know the way to the airport.",
+      "answer": "sabem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "sabem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "acham"
+      ],
+      "distractors": [
+        "sabe",
+        "sabemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "know",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_o",
+        "pt_caminho",
+        "pt_pro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "06aaee4e2bed",
+      "retired": false
+    },
+    {
+      "exId": "pt_saber.x3pl2",
+      "lemmaId": "pt_saber",
+      "pt": "Vocês sabem que hora a loja fecha?",
+      "en": "Do you all know what time the store closes?",
+      "answer": "sabem",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "sabem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "veem"
+      ],
+      "distractors": [
+        "sabe",
+        "sabemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "know",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_que",
+        "pt_hora",
+        "pt_o",
+        "pt_loja",
+        "pt_fechar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0400860f06c1",
+      "retired": false
+    },
+    {
+      "exId": "pt_saber.xger1",
+      "lemmaId": "pt_saber",
+      "pt": "Tô sabendo da novidade do bairro.",
+      "en": "I have heard about the neighborhood news.",
+      "answer": "sabendo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "sabendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vendo"
+      ],
+      "distractors": [
+        "sabido",
+        "sabem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "hearing / knowing",
+      "false_friend_note": null,
+      "grammar_note_en": "Tô sabendo means I am aware / I heard.",
+      "requires": [
+        "pt_estar~to",
+        "pt_da",
+        "pt_novidade",
+        "pt_do",
+        "pt_bairro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "ac8a48d70987",
+      "retired": false
+    },
+    {
+      "exId": "pt_saber.xger2",
+      "lemmaId": "pt_saber",
+      "pt": "Você tá sabendo do show domingo?",
+      "en": "Have you heard about the show on Sunday?",
+      "answer": "sabendo",
+      "subject": "você",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "sabendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "falando"
+      ],
+      "distractors": [
+        "sabido",
+        "sabem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "hearing / knowing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_estar~ta",
+        "pt_do",
+        "pt_show",
+        "pt_domingo"
+      ],
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "71340500ce23",
+      "retired": false
+    },
+    {
+      "exId": "pt_falar.x3pl1",
+      "lemmaId": "pt_falar",
+      "pt": "Eles falam espanhol muito bem.",
+      "en": "They speak Spanish very well.",
+      "answer": "falam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "falam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "sabem"
+      ],
+      "distractors": [
+        "fala",
+        "falo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "speak",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_espanhol",
+        "pt_muito",
+        "pt_bem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "d2cb4bcb886c",
+      "retired": false
+    },
+    {
+      "exId": "pt_falar.x3pl2",
+      "lemmaId": "pt_falar",
+      "pt": "Vocês falam com a avó sempre?",
+      "en": "Do you all talk with grandma often?",
+      "answer": "falam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "falam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "veem"
+      ],
+      "distractors": [
+        "fala",
+        "falo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "talk",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_com",
+        "pt_o",
+        "pt_avo_noun",
+        "pt_sempre"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "ea36b139584d",
+      "retired": false
+    },
+    {
+      "exId": "pt_falar.xger1",
+      "lemmaId": "pt_falar",
+      "pt": "Tô falando com o médico agora.",
+      "en": "I am talking with the doctor right now.",
+      "answer": "falando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "falando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "dizendo"
+      ],
+      "distractors": [
+        "falado",
+        "falam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "talking",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_com",
+        "pt_o",
+        "pt_medico",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "644bf9fb0fcb",
+      "retired": false
+    },
+    {
+      "exId": "pt_falar.xger2",
+      "lemmaId": "pt_falar",
+      "pt": "Ele tá falando baixo no telefone.",
+      "en": "He is speaking softly on the phone.",
+      "answer": "falando",
+      "subject": "ele",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "falando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "dizendo"
+      ],
+      "distractors": [
+        "falado",
+        "falam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "speaking",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_estar~ta",
+        "pt_baixo",
+        "pt_no",
+        "pt_telefonar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "04e2c8586c7b",
+      "retired": false
+    },
+    {
+      "exId": "pt_ver.x3pl1",
+      "lemmaId": "pt_ver",
+      "pt": "Eles veem o parque da varanda.",
+      "en": "They see the park from the balcony.",
+      "answer": "veem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "veem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "olham"
+      ],
+      "distractors": [
+        "vê",
+        "vejo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "see (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": "Post-1990 spelling: veem has no accent.",
+      "requires": [
+        "pt_ele",
+        "pt_o",
+        "pt_parque",
+        "pt_da",
+        "pt_varanda"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a5be93f88a8b",
+      "retired": false
+    },
+    {
+      "exId": "pt_ver.x3pl2",
+      "lemmaId": "pt_ver",
+      "pt": "Vocês veem algum táxi na esquina?",
+      "en": "Do you all see any taxi on the corner?",
+      "answer": "veem",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "veem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "acham"
+      ],
+      "distractors": [
+        "vê",
+        "vejo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "see (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_algum",
+        "pt_taxi",
+        "pt_na",
+        "pt_esquina"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "c632268511cc",
+      "retired": false
+    },
+    {
+      "exId": "pt_ver.xger1",
+      "lemmaId": "pt_ver",
+      "pt": "Eu tô vendo um filme brasileiro.",
+      "en": "I am watching a Brazilian movie.",
+      "answer": "vendo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazendo"
+      ],
+      "distractors": [
+        "veem",
+        "vejo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "watching",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_estar~to",
+        "pt_um",
+        "pt_filmar",
+        "pt_brasileiro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "7f63c2a62478",
+      "retired": false
+    },
+    {
+      "exId": "pt_ver.xger2",
+      "lemmaId": "pt_ver",
+      "pt": "Ela tá vendo fotos da viagem.",
+      "en": "She is looking at trip photos.",
+      "answer": "vendo",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "olhando"
+      ],
+      "distractors": [
+        "veem",
+        "vejo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "looking at",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_foto",
+        "pt_da",
+        "pt_viagem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a0a3909d7559",
+      "retired": false
+    },
+    {
+      "exId": "pt_precisar.x3pl1",
+      "lemmaId": "pt_precisar",
+      "pt": "Eles precisam comprar arroz e feijão.",
+      "en": "They need to buy rice and beans.",
+      "answer": "precisam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "precisam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "precisa",
+        "preciso"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "need",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_comprar",
+        "pt_arroz",
+        "pt_e",
+        "pt_feijao"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "27570938305d",
+      "retired": false
+    },
+    {
+      "exId": "pt_precisar.x3pl2",
+      "lemmaId": "pt_precisar",
+      "pt": "Vocês precisam de mais cadeiras ali?",
+      "en": "Do you all need more chairs there?",
+      "answer": "precisam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "precisam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "precisa",
+        "preciso"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "need",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_de",
+        "pt_mais",
+        "pt_cadeira",
+        "pt_ali"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0653d30e3750",
+      "retired": false
+    },
+    {
+      "exId": "pt_precisar.xger1",
+      "lemmaId": "pt_precisar",
+      "pt": "Tô precisando descansar no fim de semana.",
+      "en": "I am needing to rest on the weekend.",
+      "answer": "precisando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "precisando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querendo"
+      ],
+      "distractors": [
+        "precisado",
+        "precisam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "needing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_descansar",
+        "pt_no",
+        "pt_fim",
+        "pt_de",
+        "pt_semana"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "aadd07290be7",
+      "retired": false
+    },
+    {
+      "exId": "pt_precisar.xger2",
+      "lemmaId": "pt_precisar",
+      "pt": "A gente tá precisando de pão.",
+      "en": "We are needing some bread.",
+      "answer": "precisando",
+      "subject": "a gente",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "precisando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querendo"
+      ],
+      "distractors": [
+        "precisado",
+        "precisam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "needing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_a_gente",
+        "pt_estar~ta",
+        "pt_de",
+        "pt_pao"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "f212fdf0f87a",
+      "retired": false
+    },
+    {
+      "exId": "pt_estar.x3pl1",
+      "lemmaId": "pt_estar",
+      "pt": "Eles estão esperando na portaria.",
+      "en": "They are waiting at the front desk.",
+      "answer": "estão",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "estão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "são"
+      ],
+      "distractors": [
+        "está",
+        "estou"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "are (location)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_esperar",
+        "pt_na"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "d3a26ea6945d",
+      "retired": false
+    },
+    {
+      "exId": "pt_estar.x3pl2",
+      "lemmaId": "pt_estar",
+      "pt": "Como vocês estão nessa semana?",
+      "en": "How are you all doing this week?",
+      "answer": "estão",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "estão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "são"
+      ],
+      "distractors": [
+        "está",
+        "estou"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "are (state)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_comer",
+        "pt_voce",
+        "pt_nessa",
+        "pt_semana"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "3dcd9c47a48a",
+      "retired": false
+    },
+    {
+      "exId": "pt_estar.xger1",
+      "lemmaId": "pt_estar",
+      "pt": "Estando perto, passamos lá rápido.",
+      "en": "Being nearby, we can stop by quickly.",
+      "answer": "Estando",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "Estando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "Sendo"
+      ],
+      "distractors": [
+        "Estado",
+        "Estão"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "being (present)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_perto",
+        "pt_passar",
+        "pt_la",
+        "pt_rapido"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "04ee7fee1527",
+      "retired": false
+    },
+    {
+      "exId": "pt_estar.xger2",
+      "lemmaId": "pt_estar",
+      "pt": "Ela anda estando muito mais calma.",
+      "en": "She has been feeling much calmer lately.",
+      "answer": "estando",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "estando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "ficando"
+      ],
+      "distractors": [
+        "estado",
+        "estão"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "being (state)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_andar",
+        "pt_muito",
+        "pt_mais",
+        "pt_calma"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "49eef68f48b6",
+      "retired": false
+    },
+    {
+      "exId": "pt_dizer.x3pl1",
+      "lemmaId": "pt_dizer",
+      "pt": "Eles dizem que o restaurante é ótimo.",
+      "en": "They say the restaurant is great.",
+      "answer": "dizem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dizem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "falam"
+      ],
+      "distractors": [
+        "dizemos",
+        "diz"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "say",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_que",
+        "pt_o",
+        "pt_restaurante",
+        "pt_ser",
+        "pt_otimo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "28270a653051",
+      "retired": false
+    },
+    {
+      "exId": "pt_dizer.x3pl2",
+      "lemmaId": "pt_dizer",
+      "pt": "Elas dizem a verdade pro chefe.",
+      "en": "They tell the truth to the boss.",
+      "answer": "dizem",
+      "subject": "elas",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dizem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "falam"
+      ],
+      "distractors": [
+        "digo",
+        "dizemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "tell / say",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_o",
+        "pt_verdade",
+        "pt_pro",
+        "pt_chefe"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "095f17004a2f",
+      "retired": false
+    },
+    {
+      "exId": "pt_dizer.xger1",
+      "lemmaId": "pt_dizer",
+      "pt": "O que você tá dizendo agora?",
+      "en": "What are you saying right now?",
+      "answer": "dizendo",
+      "subject": "você",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dizendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "falando"
+      ],
+      "distractors": [
+        "dizem",
+        "dizemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "saying",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_que",
+        "pt_voce",
+        "pt_estar~ta",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "5c59fec78c06",
+      "retired": false
+    },
+    {
+      "exId": "pt_dizer.xger2",
+      "lemmaId": "pt_dizer",
+      "pt": "Ele tá dizendo o endereço devagar.",
+      "en": "He is saying the address slowly.",
+      "answer": "dizendo",
+      "subject": "ele",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dizendo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "falando"
+      ],
+      "distractors": [
+        "dizem",
+        "dizemos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "saying",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_estar~ta",
+        "pt_o",
+        "pt_endereco",
+        "pt_devagar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "092533b4ac25",
+      "retired": false
+    },
+    {
+      "exId": "pt_vir.x3pl1",
+      "lemmaId": "pt_vir",
+      "pt": "Eles vêm almoçar aqui no domingo.",
+      "en": "They come for lunch here on Sunday.",
+      "answer": "vêm",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vêm"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vão"
+      ],
+      "distractors": [
+        "venho",
+        "vimos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "come (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": "Note circumflex on 3pl vêm vs 3sg vem.",
+      "requires": [
+        "pt_ele",
+        "pt_almocar",
+        "pt_aqui",
+        "pt_no",
+        "pt_domingo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "1b519d5b622d",
+      "retired": false
+    },
+    {
+      "exId": "pt_vir.x3pl2",
+      "lemmaId": "pt_vir",
+      "pt": "Vocês vêm de ônibus ou metrô?",
+      "en": "Are you all coming by bus or subway?",
+      "answer": "vêm",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vêm"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vão"
+      ],
+      "distractors": [
+        "venho",
+        "vimos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "come (plural)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_de",
+        "pt_onibus",
+        "pt_ou",
+        "pt_metro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b01831a3537c",
+      "retired": false
+    },
+    {
+      "exId": "pt_vir.xger1",
+      "lemmaId": "pt_vir",
+      "pt": "O ônibus tá vindo na esquina.",
+      "en": "The bus is coming at the corner.",
+      "answer": "vindo",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vindo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "indo"
+      ],
+      "distractors": [
+        "vim",
+        "vimos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "coming",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_onibus",
+        "pt_estar~ta",
+        "pt_na",
+        "pt_esquina"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a96c433fa95e",
+      "retired": false
+    },
+    {
+      "exId": "pt_vir.xger2",
+      "lemmaId": "pt_vir",
+      "pt": "Já tô vindo com o café.",
+      "en": "I am already coming with the coffee.",
+      "answer": "vindo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "vindo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "indo"
+      ],
+      "distractors": [
+        "vim",
+        "venho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "coming",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ja",
+        "pt_estar~to",
+        "pt_com",
+        "pt_o",
+        "pt_cafe"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0d9a6e028a67",
+      "retired": false
+    },
+    {
+      "exId": "pt_gostar.x3pl1",
+      "lemmaId": "pt_gostar",
+      "pt": "Eles gostam de caminhar na praia.",
+      "en": "They like walking on the beach.",
+      "answer": "gostam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "gostam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "querem"
+      ],
+      "distractors": [
+        "gosta",
+        "gosto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "like",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_de",
+        "pt_caminhar",
+        "pt_na",
+        "pt_praia"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "2b2f42466b3d",
+      "retired": false
+    },
+    {
+      "exId": "pt_gostar.x3pl2",
+      "lemmaId": "pt_gostar",
+      "pt": "Vocês gostam desse queijo mineiro?",
+      "en": "Do you all like this Minas cheese?",
+      "answer": "gostam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "gostam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "acham"
+      ],
+      "distractors": [
+        "gosta",
+        "gosto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "like",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_dar",
+        "pt_queijo",
+        "pt_mineiro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "feacfe6eb3c5",
+      "retired": false
+    },
+    {
+      "exId": "pt_gostar.xger1",
+      "lemmaId": "pt_gostar",
+      "pt": "Tô gostando muito das aulas novas.",
+      "en": "I am really enjoying the new classes.",
+      "answer": "gostando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "gostando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "achando"
+      ],
+      "distractors": [
+        "gostado",
+        "gostam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "enjoying / liking",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_muito",
+        "pt_aula",
+        "pt_novo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "2a14efde7b9f",
+      "retired": false
+    },
+    {
+      "exId": "pt_gostar.xger2",
+      "lemmaId": "pt_gostar",
+      "pt": "Ela tá gostando do livro brasileiro.",
+      "en": "She is enjoying the Brazilian book.",
+      "answer": "gostando",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "gostando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "lendo"
+      ],
+      "distractors": [
+        "gostado",
+        "gostam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "enjoying",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_do",
+        "pt_livro",
+        "pt_brasileiro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "8c68107ee75a",
+      "retired": false
+    },
+    {
+      "exId": "pt_achar.x3pl1",
+      "lemmaId": "pt_achar",
+      "pt": "Eles acham o bairro bem seguro.",
+      "en": "They think the neighborhood is very safe.",
+      "answer": "acham",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "acham"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "sabem"
+      ],
+      "distractors": [
+        "acha",
+        "acho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "think",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_o",
+        "pt_bairro",
+        "pt_bem",
+        "pt_segurar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "4c40ebc57ab2",
+      "retired": false
+    },
+    {
+      "exId": "pt_achar.x3pl2",
+      "lemmaId": "pt_achar",
+      "pt": "O que vocês acham dessa música?",
+      "en": "What do you all think of this song?",
+      "answer": "acham",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "acham"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "sabem"
+      ],
+      "distractors": [
+        "acha",
+        "acho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "think",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_que",
+        "pt_voce",
+        "pt_dessa",
+        "pt_musica"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "31acb2531d9a",
+      "retired": false
+    },
+    {
+      "exId": "pt_achar.xger1",
+      "lemmaId": "pt_achar",
+      "pt": "Tô achando o café meio fraco.",
+      "en": "I am finding the coffee kinda weak.",
+      "answer": "achando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "achando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vendo"
+      ],
+      "distractors": [
+        "achado",
+        "acham"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "finding / thinking",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_o",
+        "pt_cafe",
+        "pt_mear",
+        "pt_fraco"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a00590b19f81",
+      "retired": false
+    },
+    {
+      "exId": "pt_achar.xger2",
+      "lemmaId": "pt_achar",
+      "pt": "Ela tá achando o curso fácil.",
+      "en": "She is finding the course easy.",
+      "answer": "achando",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "achando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "fazendo"
+      ],
+      "distractors": [
+        "achado",
+        "acham"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "finding",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_o",
+        "pt_curso",
+        "pt_facil"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "8e2bed6dc838",
+      "retired": false
+    },
+    {
+      "exId": "pt_chegar.x3pl1",
+      "lemmaId": "pt_chegar",
+      "pt": "Eles chegam do aeroporto às oito.",
+      "en": "They arrive from the airport at eight.",
+      "answer": "chegam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "chegam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "saem"
+      ],
+      "distractors": [
+        "chega",
+        "chego"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "arrive",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_do",
+        "pt_oito"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "25342f864fb3",
+      "retired": false
+    },
+    {
+      "exId": "pt_chegar.x3pl2",
+      "lemmaId": "pt_chegar",
+      "pt": "Que hora vocês chegam na festa?",
+      "en": "What time do you all get to the party?",
+      "answer": "chegam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "chegam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "voltam"
+      ],
+      "distractors": [
+        "chega",
+        "chego"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "arrive",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_que",
+        "pt_hora",
+        "pt_voce",
+        "pt_na",
+        "pt_festa"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "39b874b12d25",
+      "retired": false
+    },
+    {
+      "exId": "pt_chegar.xger1",
+      "lemmaId": "pt_chegar",
+      "pt": "Já tô chegando na sua rua.",
+      "en": "I am just arriving on your street.",
+      "answer": "chegando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "chegando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "saindo"
+      ],
+      "distractors": [
+        "chegado",
+        "chegam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "arriving",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ja",
+        "pt_estar~to",
+        "pt_na",
+        "pt_seu",
+        "pt_rua"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "39a09a2a62f8",
+      "retired": false
+    },
+    {
+      "exId": "pt_chegar.xger2",
+      "lemmaId": "pt_chegar",
+      "pt": "A chuva tá chegando bem forte.",
+      "en": "The rain is arriving very heavy.",
+      "answer": "chegando",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "chegando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "passando"
+      ],
+      "distractors": [
+        "chegado",
+        "chegam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "arriving",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_chuva",
+        "pt_estar~ta",
+        "pt_bem",
+        "pt_forte"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "8a9607fda3ee",
+      "retired": false
+    },
+    {
+      "exId": "pt_passar.x3pl1",
+      "lemmaId": "pt_passar",
+      "pt": "Eles passam na feira todo domingo.",
+      "en": "They stop by the market every Sunday.",
+      "answer": "passam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "passam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "chegam"
+      ],
+      "distractors": [
+        "passa",
+        "passo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "stop by",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_na",
+        "pt_feira",
+        "pt_todo",
+        "pt_domingo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "d0cc0d08fb9e",
+      "retired": false
+    },
+    {
+      "exId": "pt_passar.x3pl2",
+      "lemmaId": "pt_passar",
+      "pt": "Vocês passam pela farmácia hoje?",
+      "en": "Are you all passing by the pharmacy today?",
+      "answer": "passam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "passam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vão"
+      ],
+      "distractors": [
+        "passa",
+        "passo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "pass by",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_pela",
+        "pt_farmacia",
+        "pt_hoje"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b9c5c0d55c4e",
+      "retired": false
+    },
+    {
+      "exId": "pt_passar.xger1",
+      "lemmaId": "pt_passar",
+      "pt": "Tô passando no centro de carro.",
+      "en": "I am passing through downtown by car.",
+      "answer": "passando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "passando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "indo"
+      ],
+      "distractors": [
+        "passado",
+        "passam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "passing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_no",
+        "pt_centro",
+        "pt_de",
+        "pt_carro"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b1488188a0c1",
+      "retired": false
+    },
+    {
+      "exId": "pt_passar.xger2",
+      "lemmaId": "pt_passar",
+      "pt": "O tempo tá passando bem rápido.",
+      "en": "Time is going by very fast.",
+      "answer": "passando",
+      "subject": null,
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "passando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "ficando"
+      ],
+      "distractors": [
+        "passado",
+        "passam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "passing",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_tempo",
+        "pt_estar~ta",
+        "pt_bem",
+        "pt_rapido"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "d6ad0f8f7682",
+      "retired": false
+    },
+    {
+      "exId": "pt_sair.x3pl1",
+      "lemmaId": "pt_sair",
+      "pt": "Eles saem do escritório bem tarde.",
+      "en": "They leave the office very late.",
+      "answer": "saem",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "saem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "chegam"
+      ],
+      "distractors": [
+        "saio",
+        "sai"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "leave",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_do",
+        "pt_escritorio",
+        "pt_bem",
+        "pt_tarde"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "f5c6cd42139d",
+      "retired": false
+    },
+    {
+      "exId": "pt_sair.x3pl2",
+      "lemmaId": "pt_sair",
+      "pt": "Vocês saem pra jantar na sexta?",
+      "en": "Do you all go out for dinner on Friday?",
+      "answer": "saem",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "saem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "ficam"
+      ],
+      "distractors": [
+        "saio",
+        "sai"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "go out",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_pra",
+        "pt_jantar",
+        "pt_na",
+        "pt_sexto"
+      ],
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "f4fdfddc0443",
+      "retired": false
+    },
+    {
+      "exId": "pt_sair.xger1",
+      "lemmaId": "pt_sair",
+      "pt": "Eu tô saindo da padaria agora.",
+      "en": "I am leaving the bakery right now.",
+      "answer": "saindo",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "saindo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "chegando"
+      ],
+      "distractors": [
+        "saído",
+        "saiu"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "leaving",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_estar~to",
+        "pt_da",
+        "pt_padaria",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "deb424bf2431",
+      "retired": false
+    },
+    {
+      "exId": "pt_sair.xger2",
+      "lemmaId": "pt_sair",
+      "pt": "A gente tá saindo pro parque.",
+      "en": "We are heading out to the park.",
+      "answer": "saindo",
+      "subject": "a gente",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "saindo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "indo"
+      ],
+      "distractors": [
+        "saído",
+        "saiu"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "heading out",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_a_gente",
+        "pt_estar~ta",
+        "pt_pro",
+        "pt_parque"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "92630e23a157",
+      "retired": false
+    },
+    {
+      "exId": "pt_voltar.x3pl1",
+      "lemmaId": "pt_voltar",
+      "pt": "Eles voltam da viagem amanhã cedo.",
+      "en": "They get back from the trip early tomorrow.",
+      "answer": "voltam",
+      "subject": "eles",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "voltam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "chegam"
+      ],
+      "distractors": [
+        "volta",
+        "volto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "return",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_da",
+        "pt_viagem",
+        "pt_amanha",
+        "pt_cedo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "129514ba8727",
+      "retired": false
+    },
+    {
+      "exId": "pt_voltar.x3pl2",
+      "lemmaId": "pt_voltar",
+      "pt": "Quando vocês voltam pro trabalho?",
+      "en": "When are you all going back to work?",
+      "answer": "voltam",
+      "subject": "vocês",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "voltam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "vêm"
+      ],
+      "distractors": [
+        "volta",
+        "volto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "go back",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_quando",
+        "pt_voce",
+        "pt_pro",
+        "pt_trabalhar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b67ce266f572",
+      "retired": false
+    },
+    {
+      "exId": "pt_voltar.xger1",
+      "lemmaId": "pt_voltar",
+      "pt": "Tô voltando da academia a pé.",
+      "en": "I am walking back from the gym.",
+      "answer": "voltando",
+      "subject": "eu",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "voltando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "saindo"
+      ],
+      "distractors": [
+        "voltado",
+        "voltam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "coming back",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar~to",
+        "pt_da",
+        "pt_academia",
+        "pt_o",
+        "pt_pe"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "730e3b5fa2b1",
+      "retired": false
+    },
+    {
+      "exId": "pt_voltar.xger2",
+      "lemmaId": "pt_voltar",
+      "pt": "Ela tá voltando da escola agora.",
+      "en": "She is coming back from school now.",
+      "answer": "voltando",
+      "subject": "ela",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "voltando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [
+        "indo"
+      ],
+      "distractors": [
+        "voltado",
+        "voltam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "coming back",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_estar~ta",
+        "pt_da",
+        "pt_escola",
+        "pt_agora"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "51cb078c0240",
+      "retired": false
+    }
+  ]
+}

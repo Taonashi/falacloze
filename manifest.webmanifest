@@ -1,0 +1,10 @@
+{
+  "name": "FalaCloze - Spoken PT-BR SRS",
+  "short_name": "FalaCloze",
+  "description": "Mobile-first spoken Brazilian Portuguese FSRS cloze trainer",
+  "start_url": "./app/falacloze-v2.5.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4F46E5"
+}

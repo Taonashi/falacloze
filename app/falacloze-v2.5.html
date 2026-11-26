@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Single native Android keyboard viewport strategy: interactive-widget=resizes-content (no manual visualViewport hacks) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+  <meta name="theme-color" content="#F8FAFC" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <title>FalaCloze v2.5 - Spoken PT-BR SRS</title>
+  <link rel="stylesheet" href="./css/theme.css?v=09dd503b" />
+  <link rel="stylesheet" href="./css/views.css?v=09dd503b" />
+</head>
+<body>
+  <div id="app-shell">
+
+    <!-- ==================== VIEW 1: HOME ==================== -->
+    <section id="view-home" class="view">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-logo">F</div>
+          <div style="min-width:0;">
+            <div class="brand-title">FalaCloze</div>
+          </div>
+        </div>
+        <div class="bar-actions">
+          <button id="btn-home-nav-drills" type="button" class="home-nav-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 3h5v5" />
+              <path d="M8 3H3v5" />
+              <path d="M21 3l-7 7" />
+              <path d="M3 3l7 7" />
+              <path d="M12 10v11" />
+            </svg>
+            <span>Drills</span>
+          </button>
+          <button id="btn-home-nav-vocab" type="button" class="home-nav-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+              <path d="M8 7h8"/>
+            </svg>
+            <span>Vocab</span>
+          </button>
+          <button id="btn-home-nav-settings" type="button" class="btn btn-ghost btn-tap48" aria-label="Settings" title="Settings">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="scroll-pane">
+        <div class="stack">
+
+          <div id="home-checking-pill" class="hidden" style="text-align:center;">
+            <span class="inline-check-pill">Checking hosted content packs...</span>
+          </div>
+
+          <!-- Paused Session Resume Card -->
+          <div id="home-resume-card" class="card hidden stack" style="border-color: var(--primary-border); background: var(--primary-soft);">
+            <div class="row-between">
+              <div>
+                <div style="font-size:15px; font-weight:700; color:var(--primary-dark);">Paused Session</div>
+                <div id="home-resume-sub" class="muted-xs" style="color:#3730A3;">Continue where you left off.</div>
+              </div>
+              <button id="btn-discard-session" type="button" class="btn btn-neutral btn-sm">Discard</button>
+            </div>
+            <button id="btn-resume-session" type="button" class="btn btn-primary btn-lg">Resume Session</button>
+          </div>
+
+          <!-- Active Dashboard -->
+          <div id="home-dashboard" class="stack hidden">
+            <div class="stats-grid">
+              <button id="home-cnt-due" type="button" class="stat-card">
+                <div id="val-due" class="stat-num" style="color:var(--primary-blue);">0</div>
+                <div class="stat-label">Due</div>
+              </button>
+              <button id="home-cnt-learning" type="button" class="stat-card stat-learning">
+                <div id="val-learning" class="stat-num">0</div>
+                <div class="stat-label">In Study</div>
+              </button>
+              <button id="home-cnt-mastered" type="button" class="stat-card stat-mastered">
+                <div id="val-mastered" class="stat-num">0</div>
+                <div class="stat-label">Known</div>
+              </button>
+            </div>
+
+            <div class="card stack home-start-card">
+              <div id="home-daily-goal-wrap" class="stack" style="gap:6px;">
+                <div class="row-between">
+                  <span id="home-due-line" style="font-size:13.5px; font-weight:600; color:var(--ink-soft);">New today</span>
+                  <span id="home-daily-goal-rem" style="font-size:14px; font-weight:700; color:var(--ink);">0 / 10</span>
+                </div>
+                <div id="home-daily-goal-bar" class="daily-goal-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div id="home-daily-goal-fill" class="daily-goal-fill" style="width:0%;"></div>
+                </div>
+              </div>
+
+              <div class="start-btn-wrap">
+                <button id="btn-start-study" type="button" class="btn btn-primary btn-lg home-start-btn">
+                  <span id="btn-start-label">Start Session</span>
+                </button>
+                <button id="btn-session-options" type="button" class="start-options-btn" aria-label="Session options" title="Session options">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="4" y1="7" x2="20" y2="7" />
+                    <circle cx="9" cy="7" r="2.2" fill="var(--primary)" />
+                    <line x1="4" y1="17" x2="20" y2="17" />
+                    <circle cx="15" cy="17" r="2.2" fill="var(--primary)" />
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+
+            <div id="home-drill-rec" class="home-drill-strip hidden">
+              <div class="home-drill-left">
+                <div class="home-drill-eyebrow">RECOMMENDED</div>
+                <div id="home-drill-rec-text" class="home-drill-pair"></div>
+              </div>
+              <div class="home-drill-actions">
+                <button id="btn-home-drill-rec-go" type="button" class="home-drill-go">Practice</button>
+                <button id="btn-home-drill-rec-dismiss" type="button" class="home-drill-dismiss" aria-label="Dismiss recommendation">&times;</button>
+              </div>
+            </div>
+
+            <!-- Interactive Vocabulary Coverage Curve Card -->
+            <div id="home-coverage-card" class="card stack" style="gap:12px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+                <div style="font-size:16.5px; font-weight:700; color:var(--ink);">Vocabulary Coverage</div>
+                <div style="display:inline-flex; align-items:center; gap:12px;">
+                  <button id="btn-check-known" type="button" class="home-text-link hidden">Check Known (20)</button>
+                  <button id="btn-open-placement" type="button" class="home-text-link">Placement Test</button>
+                </div>
+              </div>
+
+              <div class="coverage-grid">
+                <div class="cov-yaxis" aria-hidden="true">
+                  <span>100%</span>
+                  <span>50%</span>
+                  <span>0%</span>
+                </div>
+                <div class="coverage-svg-wrap">
+                  <svg id="home-coverage-svg" viewBox="0 0 300 110" preserveAspectRatio="none" style="width:100%; height:110px; display:block; overflow:visible;" aria-label="Zipfian vocabulary coverage curve">
+                    <defs>
+                      <linearGradient id="cov-full-grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.16" />
+                        <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.02" />
+                      </linearGradient>
+                      <linearGradient id="cov-active-grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.36" />
+                        <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.22" />
+                      </linearGradient>
+                      <clipPath id="cov-active-clip">
+                        <rect id="cov-clip-rect" x="0" y="0" width="0" height="110" />
+                      </clipPath>
+                    </defs>
+                    <line x1="0" y1="4" x2="300" y2="4" stroke="#F1F5F9" stroke-width="1" />
+                    <line x1="0" y1="55" x2="300" y2="55" stroke="#F1F5F9" stroke-width="1" />
+                    <line x1="0" y1="106" x2="300" y2="106" stroke="#E2E8F0" stroke-width="1" />
+                    <path id="cov-area-full" d="" fill="url(#cov-full-grad)" />
+                    <path id="cov-area-active" d="" fill="url(#cov-active-grad)" clip-path="url(#cov-active-clip)" />
+                    <path id="cov-stroke-path" d="" fill="none" stroke="#4F46E5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+                  </svg>
+                  <div id="coverage-words-pill" class="cov-words-pill">0 words</div>
+                </div>
+                <div aria-hidden="true"></div>
+                <div class="coverage-slider-wrap">
+                  <div class="coverage-track-line" aria-hidden="true"></div>
+                  <input id="coverage-slider" class="cov-slider" type="range" min="0" max="100" step="1" value="0" aria-label="Explore vocabulary coverage from 0 to 5,000 words" />
+                </div>
+              </div>
+
+              <div id="coverage-pct-heading" class="cov-heading">0% of the words in any text</div>
+
+              <div id="coverage-preview-text" class="cov-preview-box" lang="pt-BR"></div>
+
+              <button id="btn-coverage-snap-user" type="button" class="cov-anchor-pill">
+                <span style="display:inline-flex; align-items:center; gap:8px;">
+                  <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="14"/><line x1="12" y1="20" x2="12" y2="8"/><line x1="18" y1="20" x2="18" y2="4"/></svg>
+                  <span>Total words</span>
+                  <span id="coverage-return-hint" class="muted-xs hidden" style="color:var(--primary); font-weight:600;">· Tap to return to your level</span>
+                </span>
+                <strong id="coverage-user-count" style="font-size:15px; color:var(--primary-dark);">0</strong>
+              </button>
+            </div>
+          </div>
+
+          <!-- Data & Content Files Checklist Card (Always Visible on Home) -->
+          <div id="home-files-card" class="card stack">
+            <div class="row-between">
+              <div>
+                <h2 style="margin:0; font-size:15px; font-weight:700;">Data &amp; Content Files</h2>
+                <div id="home-files-sub" class="muted-xs">3-layer offline PT-BR dataset</div>
+              </div>
+              <span id="home-files-status" class="badge badge-rose">Missing Files</span>
+            </div>
+
+            <div id="home-file-checklist" class="file-checklist"></div>
+
+            <div class="row-between" style="gap:8px;">
+              <label class="btn btn-primary-soft btn-sm" style="flex:1; cursor:pointer; min-height:40px;">
+                Import JSON Files
+                <input id="input-import-files" type="file" accept=".json,application/json" multiple class="hidden" />
+              </label>
+              <label class="btn btn-neutral btn-sm" style="flex:1; cursor:pointer; min-height:40px;">
+                Import Folder
+                <input id="input-import-folder" type="file" webkitdirectory directory multiple class="hidden" />
+              </label>
+            </div>
+            <button id="btn-reset-content" type="button" class="btn btn-ghost btn-sm" style="color:var(--muted);">Reset Imported Content</button>
+          </div>
+
+        </div>
+      </main>
+    </section>
+
+    <!-- ==================== VIEW 2: STUDY / ROUND 1 / VERB DRILL / CHECK KNOWN ==================== -->
+    <section id="view-session" class="view hidden">
+      <header class="top-bar study-header">
+        <button id="btn-prev-word" type="button" class="btn header-icon-btn" aria-label="Back to Home" title="Back to Home">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+
+        <div class="study-header-center">
+          <span id="session-title" class="study-phase-pill hidden"></span>
+          <div class="study-prog-track">
+            <div id="session-progress-fill" class="study-prog-fill"></div>
+          </div>
+          <span id="session-counter" class="study-counter">0/10</span>
+        </div>
+
+        <div class="study-header-right">
+          <button id="btn-session-sfx" type="button" class="btn header-icon-btn" aria-label="Sound effects on" title="Sound effects">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18V5l12-2v13" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="18" cy="16" r="3" />
+              <line id="sfx-mute-slash" class="hidden" x1="3" y1="3" x2="21" y2="21" />
+            </svg>
+          </button>
+          <button id="btn-session-settings" type="button" class="btn header-icon-btn" aria-label="Settings" title="Settings">
+            <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </button>
+          <button id="btn-session-menu" type="button" class="btn header-icon-btn" aria-label="Session Menu" title="Session Menu">
+            <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="train-body">
+        <!-- 1. PT Cloze -> 2. Frameless EN Subtitle -> 3. Conditional Hint -> 4. Divider + Tags & Already know -->
+        <div id="sc-card-box" class="cloze-card">
+          <div id="sc-pt-box" class="cloze-sentence"></div>
+
+          <div id="sc-en-row" class="en-translation-box">
+            <p id="sc-en" class="en-inline"></p>
+          </div>
+
+          <div id="sc-hint" class="hint-row-gloss hidden"></div>
+
+          <div id="sc-meta-row" class="sc-meta-footer">
+            <div class="row-wrap" style="flex:1; min-width:0;">
+              <span id="sc-pos" class="badge badge-pos-muted">Verb</span>
+              <span id="sc-slot" class="badge hidden"></span>
+              <span id="sc-gender" class="badge hidden"></span>
+              <span id="sc-number" class="badge hidden"></span>
+              <span id="sc-heteronym" class="badge badge-amber hidden">Heteronym</span>
+              <span id="sc-leech" class="badge badge-rose hidden">Leech</span>
+              <span id="sc-ff-badge" class="badge badge-amber hidden"></span>
+            </div>
+            <div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">
+              <button id="btn-report-sentence" type="button" class="btn-report-flag" aria-label="Report sentence" title="Report sentence">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <line x1="4" y1="22" x2="4" y2="15" />
+                </svg>
+              </button>
+              <button id="btn-known" type="button" class="btn btn-primary-soft btn-xs" style="flex-shrink:0;">Already know</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Single Unified Feedback Banner -->
+        <div class="feedback-region">
+          <div id="sc-feedback-banner" class="feedback-banner hidden">
+            <div class="fb-main-row">
+              <div id="sc-feedback-msg" class="feedback-msg fb-left"></div>
+              <div class="feedback-actions fb-actions">
+                <button id="btn-override-wrong" type="button" class="btn btn-rose-soft btn-xs hidden">I was wrong</button>
+              </div>
+            </div>
+            <div id="sc-feedback-sub" class="fb-sub hidden"></div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Fixed Bottom Input Dock (Typing Mode) -->
+      <div id="study-input-dock" class="bottom-dock">
+        <div class="dock-utility">
+          <div id="dock-audio-controls" class="row-wrap">
+            <button id="btn-replay-audio" type="button" class="btn btn-primary-soft btn-xs"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg><span>Listen</span></button>
+          </div>
+
+        </div>
+
+        <!-- 12-key PT-BR diacritic bar (toggleable via Settings -> Hide diacritics bar) -->
+        <div id="diacritic-bar" class="diacritic-bar">
+          <button type="button" class="diac-key" data-ch="á">á</button>
+          <button type="button" class="diac-key" data-ch="à">à</button>
+          <button type="button" class="diac-key" data-ch="â">â</button>
+          <button type="button" class="diac-key" data-ch="ã">ã</button>
+          <button type="button" class="diac-key" data-ch="é">é</button>
+          <button type="button" class="diac-key" data-ch="ê">ê</button>
+          <button type="button" class="diac-key" data-ch="í">í</button>
+          <button type="button" class="diac-key" data-ch="ó">ó</button>
+          <button type="button" class="diac-key" data-ch="ô">ô</button>
+          <button type="button" class="diac-key" data-ch="õ">õ</button>
+          <button type="button" class="diac-key" data-ch="ú">ú</button>
+          <button type="button" class="diac-key" data-ch="ç">ç</button>
+        </div>
+
+        <div class="input-row">
+          <!-- ONE persistent input element: NEVER disabled, blurred, hidden, or recreated between cards -->
+          <input id="answer-input" type="search" name="fc_pt_input_nofill" lang="pt-BR" inputmode="text" class="text-input"
+            placeholder="Type missing PT-BR word..."
+            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+            aria-autocomplete="none" data-lpignore="true" data-1p-ignore="true" data-form-type="other"
+            enterkeyhint="done" />
+          <button id="btn-hint" type="button" class="hint-bulb-btn" aria-label="Reveal next letter" title="Reveal next letter"><svg class="icon-svg" style="width:17px;height:17px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></button>
+          <button id="btn-primary-action" type="button" class="btn btn-primary-soft" style="min-width:106px; height:44px;">Don't know</button>
+        </div>
+      </div>
+
+      <!-- Fixed Bottom Dock (Walk Mode) -->
+      <div id="controls-walk" class="bottom-dock hidden">
+        <button id="btn-walk-reveal" type="button" class="btn btn-primary btn-lg">Tap to Reveal Answer</button>
+        <div id="walk-grade-row" class="hidden" style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <button id="btn-walk-again" type="button" class="btn btn-rose-soft btn-lg">Again</button>
+          <button id="btn-walk-good" type="button" class="btn btn-emerald btn-lg">Good</button>
+        </div>
+        <div class="row-between">
+          <div id="walk-audio-controls" class="row-wrap">
+            <button id="btn-walk-audio" type="button" class="btn btn-primary-soft btn-xs"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg><span>Listen</span></button>
+          </div>
+          <button id="btn-walk-undo" type="button" class="btn btn-neutral btn-xs" disabled>Undo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: FINALE (ROUND 2A BLIND AUDIO / ROUND 2B RECALL TILES / RICH SUMMARY) ==================== -->
+    <section id="view-finale" class="view hidden">
+      <header class="top-bar finale-header-grid">
+        <button id="btn-finale-back" type="button" class="btn header-icon-btn" aria-label="Back">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <div style="text-align:center; justify-self:center; min-width:0;">
+          <div id="finale-title" style="font-size:14px; font-weight:700;">Round 2 · Blind Audio</div>
+          <div id="finale-sub" class="muted-xs" style="font-size:11px;">Unlogged ear check</div>
+        </div>
+        <div style="display:flex; justify-content:flex-end; align-items:center;">
+          <button id="btn-finale-skip" type="button" class="btn btn-primary-soft btn-xs" style="min-height:32px; padding:0 8px;">Skip</button>
+          <button id="btn-recall-skip" type="button" class="btn-recall-skip hidden">Skip</button>
+          <button id="btn-summary-history" type="button" class="btn header-icon-btn hidden" aria-label="Session sentence history" title="Session sentence history">
+            <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <polyline points="12 7 12 12 15 14" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main id="finale-scroll-pane" class="scroll-pane">
+        <!-- Round 2A: Blind Audio Panel (WORDS ONLY on auto-play & option tap) -->
+        <div id="panel-blind" class="card stack hidden">
+          <div class="row-between">
+            <span id="blind-badge" class="badge badge-primary">Blind Audio · 1/5</span>
+            <span id="blind-phase-pill" class="badge badge-amber hidden">Retry Misses</span>
+          </div>
+          <div class="blind-play-row">
+            <button id="btn-blind-play" type="button" class="blind-play-btn" aria-label="Play target word">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+            </button>
+          </div>
+          <div id="blind-options" class="blind-grid"></div>
+          <div id="blind-reveal-box" class="hidden" style="padding:11px; border-radius:12px; background:var(--bg); border:1px solid var(--border); display:flex; flex-direction:column; gap:6px;">
+            <div id="blind-pt-full" style="font-size:16px; font-weight:600; line-height:1.42;"></div>
+            <div id="blind-en-full" class="muted-xs"></div>
+              <div id="blind-note-box" class="wd-ex-note hidden"></div>
+            <div class="row-wrap" style="padding-top:2px;">
+              <button id="btn-blind-sent-play" type="button" class="btn btn-primary-soft btn-xs"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg><span>Sentence</span></button>
+            </div>
+          </div>
+          <button id="btn-blind-next" type="button" class="btn btn-primary btn-lg" disabled>Next Audio</button>
+        </div>
+
+        <!-- Round 2B: Full-Session Recall Tiles Board (Scrollable grid ABOVE pinned bottom input dock) -->
+        <div id="panel-recall" class="finale-recall-pane hidden">
+          <div id="recall-scroll-area" class="recall-scroll-area">
+            <div id="recall-complete-banner" class="notice notice-emerald hidden" style="text-align:center; font-weight:700;">All words recalled!</div>
+            <div class="row-between" style="padding:2px 2px 4px;">
+              <span id="recall-progress-badge" class="badge badge-emerald">0 / 10 recalled</span>
+              <span class="muted-xs">Tap tile for letter hint</span>
+            </div>
+            <div id="recall-grid" class="recall-grid"></div>
+          </div>
+          <div id="recall-input-dock" class="bottom-dock">
+            <div id="recall-diacritic-bar" class="diacritic-bar">
+              <button type="button" class="diac-key" data-ch="á">á</button>
+              <button type="button" class="diac-key" data-ch="à">à</button>
+              <button type="button" class="diac-key" data-ch="â">â</button>
+              <button type="button" class="diac-key" data-ch="ã">ã</button>
+              <button type="button" class="diac-key" data-ch="é">é</button>
+              <button type="button" class="diac-key" data-ch="ê">ê</button>
+              <button type="button" class="diac-key" data-ch="í">í</button>
+              <button type="button" class="diac-key" data-ch="ó">ó</button>
+              <button type="button" class="diac-key" data-ch="ô">ô</button>
+              <button type="button" class="diac-key" data-ch="õ">õ</button>
+              <button type="button" class="diac-key" data-ch="ú">ú</button>
+              <button type="button" class="diac-key" data-ch="ç">ç</button>
+            </div>
+            <div class="input-row">
+              <input id="recall-input" type="search" name="fc_pt_input_nofill" lang="pt-BR" inputmode="text" class="text-input"
+                placeholder="Type any word above..."
+                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                aria-autocomplete="none" data-lpignore="true" data-1p-ignore="true" data-form-type="other"
+                enterkeyhint="go" />
+              <button id="btn-recall-submit" type="button" class="btn btn-primary" style="height:44px;">Check</button>
+              <button id="btn-recall-done" type="button" class="btn btn-emerald hidden" style="height:44px; width:100%;">Continue to Summary</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rich Session Complete Summary -->
+        <div id="panel-done" class="card stack hidden" style="text-align:center; padding-top:18px;">
+          <div id="done-check-circle" style="width:44px; height:44px; border-radius:999px; background:var(--emerald-soft); color:var(--emerald); font-size:22px; font-weight:800; margin:0 auto; display:flex; align-items:center; justify-content:center;">✓</div>
+          <div>
+            <h2 id="done-heading" style="margin:0; font-size:20px;">Session Complete!</h2>
+            <p id="done-sub" class="muted-xs" style="margin:4px 0 0;">Consistent recall builds effortless speech.</p>
+          </div>
+          <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr);">
+            <div class="stat-card" style="pointer-events:none; padding:10px 4px;">
+              <div id="done-reviewed" class="stat-num" style="font-size:20px;">0</div>
+              <div class="stat-label">Reviewed</div>
+            </div>
+            <div class="stat-card" style="pointer-events:none; padding:10px 4px;">
+              <div id="done-new" class="stat-num" style="font-size:20px; color:var(--primary);">0</div>
+              <div class="stat-label">New words</div>
+            </div>
+            <div class="stat-card stat-mastered" style="pointer-events:none; padding:10px 4px;">
+              <div id="done-clean" class="stat-num" style="font-size:20px;">0</div>
+              <div class="stat-label">Clean</div>
+            </div>
+            <div class="stat-card" style="pointer-events:none; padding:10px 4px;">
+              <div id="done-tricky" class="stat-num" style="font-size:20px; color:var(--amber);">0</div>
+              <div class="stat-label">Tricky</div>
+            </div>
+          </div>
+
+          <div id="done-tricky-section" class="hidden stack" style="text-align:left; gap:8px;">
+            <div id="done-tricky-title" class="sum-sec-head"><span class="sum-dot" style="background:#EF4444;"></span><span>TRICKY WORDS</span></div>
+            <div id="done-tricky-cards" class="stack" style="gap:8px;"></div>
+          </div>
+
+          <div id="done-clean-section" class="hidden stack" style="text-align:left; gap:8px;">
+            <div id="done-clean-title" class="sum-sec-head"><span class="sum-dot" style="background:#10B981;"></span><span>REVIEWED CLEANLY</span></div>
+            <div id="done-clean-cards" class="stack" style="gap:8px;"></div>
+          </div>
+
+          <div id="done-drill-rec" class="drill-rec-card hidden">
+            <div class="row-between" style="gap:8px; align-items:flex-start;">
+              <div id="done-drill-rec-text" class="drill-rec-text"></div>
+              <button id="btn-done-drill-rec-dismiss" type="button" class="btn btn-ghost btn-xs" aria-label="Dismiss recommendation" style="padding:2px 6px; min-height:24px; font-size:16px;">×</button>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <button id="btn-done-drill-rec-go" type="button" class="btn btn-primary-soft btn-xs">Start 2-min drill</button>
+            </div>
+          </div>
+
+          <button id="btn-done-next-session" type="button" class="btn btn-primary btn-lg hidden">Next session</button>
+          <button id="btn-done-home" type="button" class="btn btn-primary-soft btn-lg">Back to Home</button>
+        </div>
+      </main>
+    </section>
+
+    <!-- ==================== VIEW 3B: DRILLS HUB (Confusable Pairs + Spelling & Typos) ==================== -->
+    <section id="view-drills" class="view hidden">
+      <header class="top-bar">
+        <button id="btn-drills-back" type="button" class="btn btn-ghost btn-tap48" aria-label="Back">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div style="font-size:16px; font-weight:700;">Drills &amp; Practice</div>
+        <div style="width:48px;"></div>
+      </header>
+
+      <main class="scroll-pane">
+        <div class="stack">
+          <div class="card stack" style="gap:10px;">
+            <div class="row-between">
+              <div>
+                <h3 class="section-title" style="margin:0;">Spelling &amp; Typos</h3>
+                <div class="muted-xs">Auto-graduates after 2 clean typings in a row</div>
+              </div>
+              <span id="drills-typo-count" class="badge badge-primary">0 queued</span>
+            </div>
+            <div id="typo-mode-group" class="seg-group-2">
+              <button type="button" class="seg-btn active" data-typo-mode="all">All typos (incl. diacritics)</button>
+              <button type="button" class="seg-btn" data-typo-mode="real">Real typos only (no diacritics)</button>
+            </div>
+            <div id="drills-typo-preview" class="typo-preview-chips"></div>
+            <button id="btn-start-typo-drill" type="button" class="btn btn-primary btn-sm">Start Spelling Drill</button>
+          </div>
+
+          <div class="card stack" style="gap:10px;">
+            <div>
+              <h3 class="section-title" style="margin:0;">Confusable Pairs</h3>
+              <div class="muted-xs">Focused unlogged contrast drills unlocked by unit</div>
+            </div>
+            <div id="drills-confusable-list" class="stack" style="gap:12px;"></div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- ==================== VIEW 4: VOCABULARY (Studied Default + Bulk Select) ==================== -->
+    <section id="view-vocab" class="view hidden">
+      <header class="top-bar">
+        <button id="btn-vocab-back" type="button" class="btn btn-ghost btn-tap48" aria-label="Back">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div style="font-size:16px; font-weight:700;">Vocabulary</div>
+        <span id="vocab-count" class="badge" style="margin-right:6px;">0</span>
+      </header>
+
+      <div class="vocab-controls">
+        <div class="vocab-search-row">
+          <div class="vocab-search-wrap">
+            <input id="vocab-search" type="text" lang="en" inputmode="search"
+              placeholder="Search PT-BR, inflected forms, or English..."
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+            <button id="btn-vocab-clear" type="button" class="search-clear-btn hidden" aria-label="Clear search">×</button>
+          </div>
+          <button id="btn-toggle-bulk" type="button" class="btn btn-primary-soft" style="height:46px; padding:0 14px; flex:0 0 auto;">Select</button>
+        </div>
+        <div id="vocab-tabs" class="vocab-tabs">
+          <button type="button" class="chip" data-bucket="studied">Studied</button>
+          <button type="button" class="chip" data-bucket="due">Due</button>
+          <button type="button" class="chip" data-bucket="learning">Learning</button>
+          <button type="button" class="chip" data-bucket="review">Review</button>
+          <button type="button" class="chip" data-bucket="known">Known</button>
+          <button type="button" class="chip" data-bucket="assumed">Assumed</button>
+          <button type="button" class="chip" data-bucket="suspended">Suspended</button>
+          <button type="button" class="chip" data-bucket="to_learn">To Learn</button>
+          <button type="button" class="chip" data-bucket="leeches">Leeches</button>
+          <button type="button" class="chip" data-bucket="verbs">Verbs</button>
+          <button type="button" class="chip" data-bucket="all">All</button>
+        </div>
+        <div id="vocab-filter-desc" class="vocab-filter-desc"></div>
+      </div>
+
+      <main id="vocab-list"></main>
+
+      <!-- Sticky Bulk Action Bar -->
+      <div id="vocab-bulk-bar" class="bulk-bar hidden">
+        <div class="row-between">
+          <span id="bulk-selected-count" style="font-size:13px; font-weight:700; color:var(--primary-dark);">0 selected</span>
+          <div class="row-wrap">
+            <button id="btn-bulk-select-all" type="button" class="btn btn-primary-soft btn-xs">Select All</button>
+            <button id="btn-bulk-clear" type="button" class="btn btn-neutral btn-xs">Clear</button>
+          </div>
+        </div>
+        <div id="bulk-confirm-row" class="notice notice-amber hidden row-between">
+          <span id="bulk-confirm-msg">Apply to 50+ words?</span>
+          <button id="btn-bulk-confirm-go" type="button" class="btn btn-primary btn-xs">Confirm</button>
+        </div>
+        <div class="row-between" style="gap:6px;">
+          <button id="btn-bulk-known" type="button" class="btn btn-emerald btn-sm" style="flex:1;">Mark Known</button>
+          <button id="btn-bulk-to-learn" type="button" class="btn btn-primary btn-sm" style="flex:1;">To Learn</button>
+          <button id="btn-bulk-suspend" type="button" class="btn btn-slate-soft btn-sm" style="flex:1;">Suspend</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OVERLAY: SETTINGS ==================== -->
+    <div id="overlay-settings" class="overlay-backdrop hidden" role="dialog" aria-modal="true" aria-label="Settings">
+      <div class="overlay-sheet">
+        <header class="top-bar">
+          <button id="btn-settings-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close Settings">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <div style="font-size:16px; font-weight:700;">Settings &amp; Sync</div>
+          <div style="width:48px;"></div>
+        </header>
+
+        <main class="scroll-pane">
+          <div class="stack">
+
+            <div class="card stack">
+              <h3 class="section-title">Practice &amp; Validation</h3>
+
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Strict diacritics</div>
+                  <div class="muted-xs">OFF: accepts all accent-folded matches (with warning on collisions). ON: 1 free retry, then counts as wrong.</div>
+                </div>
+                <button id="toggle-strict-diacritics" type="button" class="switch" role="switch" aria-checked="false">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+
+              <div class="divider"></div>
+
+              <div>
+                <div style="font-size:14px; font-weight:600; margin-bottom:6px;">Attempts per card (progressive letter hints)</div>
+                <div id="max-attempts-group" class="seg-group-2">
+                  <button type="button" class="seg-btn" data-attempts="3">3 attempts</button>
+                  <button type="button" class="seg-btn" data-attempts="unlimited">Unlimited (∞)</button>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Hide diacritics bar during practice</div>
+                  <div class="muted-xs">Use your keyboard's built-in accents to save screen space.</div>
+                </div>
+                <button id="toggle-hide-diacritics" type="button" class="switch" role="switch" aria-checked="false">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Defer spoken contractions</div>
+                  <div class="muted-xs">Introduce colloquial contractions like tá, pra, pro only after their full forms and core basics are solid.</div>
+                </div>
+                <button id="toggle-defer-colloquial" type="button" class="switch on" role="switch" aria-checked="true">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Fix Mistakes round</div>
+                  <div class="muted-xs">Re-practice missed cards at the end of the main round</div>
+                </div>
+                <button id="toggle-fix-round" type="button" class="switch on" role="switch" aria-checked="true">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+              <div class="divider"></div>
+
+              <div>
+                <div style="font-size:14px; font-weight:600; margin-bottom:6px;">Round 2 Finale Mode (Unlogged)</div>
+                <div id="finale-mode-group" class="seg-group-2">
+                  <button type="button" class="seg-btn" data-finale="blind">✓ Blind Audio</button>
+                  <button type="button" class="seg-btn" data-finale="recall">✓ Recall Tiles</button>
+                </div>
+                <div class="muted-xs" style="margin-top:6px;">Select one, both, or none to skip Round 2.</div>
+              </div>
+              <button id="btn-standalone-blind" type="button" class="btn btn-primary-soft btn-sm">Standalone Blind Audio (Unlogged)</button>
+            </div>
+
+            <div class="card stack">
+              <h3 class="section-title">PT-BR Audio &amp; Voices</h3>
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Sound effects (chimes)</div>
+                  <div class="muted-xs">Subtle chime on correct answers and session completion</div>
+                </div>
+                <button id="toggle-sound-effects" type="button" class="switch on" role="switch" aria-checked="true">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+              <div class="setting-row">
+                <span style="font-size:14px; font-weight:600;">Auto-play after answer</span>
+                <button id="toggle-autoplay" type="button" class="switch" role="switch" aria-checked="true">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Rotate selected voices</div>
+                  <div class="muted-xs">Switch voice per new card (keeps same voice on replay)</div>
+                </div>
+                <button id="toggle-rotate-voices" type="button" class="switch" role="switch" aria-checked="true">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Subtle pitch variation (0.92-1.08)</div>
+                  <div class="muted-xs">Slightly varies voice pitch per card to avoid monotonous playback.</div>
+                </div>
+                <button id="toggle-vary-pitch" type="button" class="switch on" role="switch" aria-checked="true">
+                  <span class="switch-knob"></span>
+                </button>
+              </div>
+              <div id="pitch-range-wrap">
+                <div class="muted-xs" style="font-weight:600; margin-bottom:5px;">Pitch Range</div>
+                <div id="pitch-range-group" class="seg-group-2">
+                  <button type="button" class="seg-btn active" data-pitch-range="subtle">Subtle (0.92-1.08)</button>
+                  <button type="button" class="seg-btn" data-pitch-range="wide">Wide (0.85-1.15)</button>
+                </div>
+              </div>
+              <div id="tts-missing-note" class="notice notice-amber hidden">
+                No pt-BR voice detected. Install Google Speech Services Portuguese (Brazil) voice data in Android TTS settings.
+              </div>
+              <div id="settings-voices-list" class="stack" style="gap:7px;"></div>
+            </div>
+
+            <div class="card stack">
+              <h3 class="section-title">FSRS-6 &amp; Progressive Tenses</h3>
+              <div class="setting-row">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">New Lemmas / Day</div>
+                  <div class="muted-xs">3:00 AM local day rollover</div>
+                </div>
+                <input id="set-new-lemmas" type="number" min="1" max="100" class="num-input" />
+              </div>
+              <div class="setting-row">
+                <span style="font-size:14px; font-weight:600;">Desired Retention</span>
+                <span id="set-retention-val" class="badge badge-primary">0.85</span>
+              </div>
+              <input id="set-retention" type="range" min="0.80" max="0.92" step="0.01" value="0.85" style="width:100%; accent-color:var(--primary); touch-action:pan-y;" />
+              <div class="divider"></div>
+              <div id="settings-tenses" class="stack" style="gap:9px;"></div>
+            </div>
+
+            <div class="card stack">
+              <h3 class="section-title">Backup &amp; Progress Sync</h3>
+              <div id="settings-packs-info" class="muted-xs">No packs loaded.</div>
+              <div class="row-between" style="gap:8px;">
+                <button id="btn-export-progress" type="button" class="btn btn-primary-soft" style="flex:1;">Export Progress</button>
+                <label class="btn btn-emerald-soft" style="flex:1; cursor:pointer;">
+                  Import / Merge
+                  <input id="input-merge-progress" type="file" accept=".json,application/json,text/plain" class="hidden" />
+                </label>
+              </div>
+              <button id="btn-open-paste-backup" type="button" class="btn btn-surface btn-sm" style="width:100%;">Paste Backup JSON</button>
+              <div class="divider"></div>
+              <div class="row-between">
+                <div>
+                  <div style="font-size:14px; font-weight:600;">Flagged Sentence Reports</div>
+                  <div class="muted-xs">Export flagged items for batch repo fixes</div>
+                </div>
+                <span id="settings-reports-count" class="badge badge-slate">0 pending</span>
+              </div>
+              <div class="row-between" style="gap:8px;">
+                <button id="btn-copy-reports" type="button" class="btn btn-primary-soft btn-sm" style="flex:1;">Copy JSON</button>
+                <button id="btn-export-reports" type="button" class="btn btn-neutral btn-sm" style="flex:1;">Export</button>
+                <button id="btn-clear-reports" type="button" class="btn btn-rose-soft btn-sm">Clear</button>
+              </div>
+              <div class="divider"></div>
+              <button id="btn-refresh-ui" type="button" class="btn btn-neutral btn-sm">Check for Update / Refresh UI</button>
+              <button id="btn-reset-progress" type="button" class="btn btn-rose-soft btn-sm">Reset Study Progress</button>
+            </div>
+
+            <div id="settings-app-version" class="settings-version-footer">FalaCloze v2.5</div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- ==================== BOTTOM SHEET: SESSION MENU ==================== -->
+    <div id="sheet-session-menu" class="bottom-sheet-backdrop hidden" role="dialog" aria-modal="true" aria-label="Session Menu">
+      <div class="bottom-sheet">
+        <div class="sheet-handle"></div>
+        <div style="font-size:15px; font-weight:700; margin-bottom:2px;">Session Menu</div>
+        <button id="btn-sheet-details" type="button" class="sheet-btn"><span>Word Details &amp; Conjugation</span></button>
+        <button id="btn-sheet-suspend" type="button" class="sheet-btn"><span>Suspend Word &amp; Skip</span><span>Skip</span></button>
+        <button id="btn-sheet-finish" type="button" class="sheet-btn hidden"><span>Finish Session Early</span><span>Wrap-Up</span></button>
+        <button id="btn-sheet-exit" type="button" class="sheet-btn danger"><span>Pause &amp; Exit to Home</span><span>Save</span></button>
+      </div>
+    </div>
+
+    <!-- ==================== BOTTOM SHEET: SESSION OPTIONS ==================== -->
+    <div id="sheet-session-options" class="bottom-sheet-backdrop" role="dialog" aria-modal="true" aria-label="Session options" aria-hidden="true">
+      <div class="bottom-sheet session-options-sheet">
+        <div id="session-options-drag-zone" class="session-options-drag-zone">
+          <div class="sheet-handle"></div>
+          <div class="row-between" style="align-items:center;">
+            <div style="display:flex; align-items:baseline; gap:8px;">
+              <div style="font-size:16px; font-weight:700; color:var(--ink);">Session options</div>
+              <span id="sheet-session-est" class="sheet-session-est">~10 min</span>
+            </div>
+            <button id="btn-session-options-done" type="button" class="home-text-link" style="font-size:15px;">Done</button>
+          </div>
+        </div>
+        <div class="session-options-grid">
+          <span class="home-row-label">Session</span>
+          <div id="home-len-chips" class="seg-track">
+            <span id="home-len-thumb" class="seg-thumb" aria-hidden="true"></span>
+            <button type="button" class="chip home-len-chip" data-len="10">10</button>
+            <button type="button" class="chip home-len-chip" data-len="20">20</button>
+            <button type="button" class="chip home-len-chip" data-len="30">30</button>
+          </div>
+          <span class="home-row-label">After</span>
+          <div id="home-post-toggles" class="after-track">
+            <span id="after-pill-0" class="after-pill" aria-hidden="true"></span>
+            <span id="after-pill-1" class="after-pill" aria-hidden="true"></span>
+            <button type="button" class="post-toggle-chip active" data-post-mode="fix" aria-pressed="true">Fix</button>
+            <button type="button" class="post-toggle-chip active" data-post-mode="recall" aria-pressed="true">Recall</button>
+            <button type="button" class="post-toggle-chip active" data-post-mode="blind" aria-pressed="true">Audio</button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="setting-row">
+          <div>
+            <div style="font-size:14.5px; font-weight:600;">Walk Mode</div>
+            <div style="font-size:12.5px; color:var(--muted); line-height:1.4;">No typing · tap to reveal</div>
+          </div>
+          <button id="toggle-walk" type="button" class="switch" role="switch" aria-checked="false" aria-label="Toggle Walk Mode">
+            <span class="switch-knob"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: WORD DETAILS & CONJUGATION ==================== -->
+    <div id="modal-word-details" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Word Details">
+      <div class="modal-box">
+        <header class="top-bar" style="min-height:50px;">
+          <div id="wd-title" style="font-size:15px; font-weight:700; padding-left:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Word Details</div>
+          <button id="btn-wd-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close" style="font-size:20px;">×</button>
+        </header>
+        <div id="wd-body" class="scroll-pane" style="padding:14px;"></div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: PLACEMENT TEST ==================== -->
+    <div id="modal-placement" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Placement Test">
+      <div class="modal-box" style="display:flex; flex-direction:column; max-height:90dvh;">
+        <header class="top-bar" style="min-height:50px;">
+          <button id="btn-placement-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <div style="font-size:14px; font-weight:700; color:var(--ink);">Placement Test</div>
+          <button id="btn-placement-skip" type="button" class="btn btn-ghost btn-sm" style="font-weight:600; color:var(--muted);">Skip</button>
+        </header>
+        <div class="scroll-pane" style="padding:14px 16px; flex:1; overflow-y:auto;">
+          <div class="stack" style="gap:12px;">
+            <div>
+              <h2 style="margin:0; font-size:20px; font-weight:800; color:var(--ink); letter-spacing:-0.02em;">Choose the words you know</h2>
+              <div class="muted-xs" style="margin-top:4px; font-size:13px;">This is used to personalize your level.</div>
+            </div>
+
+            <div class="stack" style="gap:8px;">
+              <div class="row-between">
+                <span id="placement-selected-count" class="muted-xs" style="font-weight:700; color:var(--primary-dark);">0 / 28 selected</span>
+                <button id="btn-placement-more10" type="button" class="btn btn-primary-soft btn-xs">+10 words</button>
+              </div>
+              <div id="placement-diag-list">
+                <div id="placement-words-grid" class="placement-pill-cloud"></div>
+              </div>
+              <div id="placement-estimate-box" class="notice notice-primary" style="font-size:12px;">Tap the words you know to estimate your conservative lower-95% CI placement level.</div>
+            </div>
+
+            <div class="card stack" style="padding:12px; gap:7px; background:var(--bg);">
+              <div class="section-title" style="margin:0;">Verb tenses you already use</div>
+              <div id="placement-tenses" class="stack" style="gap:6px;"></div>
+            </div>
+
+            <details style="font-size:12px; color:var(--muted);">
+              <summary style="cursor:pointer; font-weight:600;">Manual starting unit override</summary>
+              <div style="padding-top:8px;">
+                <select id="placement-unit-select" class="text-input" style="width:100%;">
+                  <option value="0">Use diagnostic estimate above</option>
+                  <option value="1">Unit 1 - Complete Beginner (0 assumed)</option>
+                  <option value="2">Unit 2 - Know top 100 words (100 assumed)</option>
+                  <option value="3">Unit 3 - Know top 200 words (200 assumed)</option>
+                  <option value="4">Unit 4 - Know top 300 words (300 assumed)</option>
+                </select>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="placement-sticky-footer">
+          <button id="btn-apply-placement" type="button" class="btn btn-primary btn-lg">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: DAILY GOAL / LOW WORKLOAD ==================== -->
+    <div id="modal-daily-limit" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Daily Goal Reached">
+      <div class="modal-box" style="max-width:380px;">
+        <header class="top-bar" style="min-height:48px;">
+          <div id="dl-title" style="font-size:15px; font-weight:700; padding-left:6px;">Daily Goal Reached!</div>
+          <button id="btn-dl-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close" style="font-size:20px;">×</button>
+        </header>
+        <div class="scroll-pane" style="padding:16px;">
+          <div class="stack">
+            <p id="dl-message" style="margin:0; font-size:14px; color:var(--ink-soft); line-height:1.45;">
+              You've completed today's goal of 10 new words and have no reviews due right now.
+            </p>
+            <div class="row-between" style="gap:8px; padding-top:4px;">
+              <button id="btn-dl-not-now" type="button" class="btn btn-neutral" style="flex:1;">Not Now</button>
+              <button id="btn-dl-add-10" type="button" class="btn btn-primary" style="flex:1.4;">Add +10 New Words</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ==================== OVERLAY: CONFUSABLE-PAIR MINI-DRILL ==================== -->
+    <section id="view-cluster-drill" class="cd-overlay hidden" role="dialog" aria-modal="true" aria-label="Confusable Pair Mini-Drill">
+      <header class="top-bar study-header">
+        <button id="btn-cd-back" type="button" class="btn header-icon-btn" aria-label="Return to Practice" title="Return to Practice">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <div class="study-header-center">
+          <span id="cd-title" class="study-phase-pill">bom vs bem</span>
+          <div class="study-prog-track"><div id="cd-progress-fill" class="study-prog-fill"></div></div>
+          <span id="cd-counter" class="study-counter">1/6</span>
+        </div>
+        <div style="width:38px; flex-shrink:0;"></div>
+      </header>
+
+      <div class="cd-legend-wrap">
+        <button id="btn-cluster-legend-toggle" type="button" class="btn btn-ghost btn-xs cd-legend-toggle" aria-expanded="false"></button>
+        <div id="cd-legend" class="cd-legend-bar hidden"></div>
+      </div>
+
+      <main class="train-body">
+        <div id="cd-card-box" class="cloze-card">
+          <div id="cd-pt-box" class="cloze-sentence"></div>
+          <div class="en-translation-box"><p id="cd-en" class="en-inline"></p></div>
+          <div id="cd-hint" class="hint-row-gloss hidden"></div>
+          <div class="sc-meta-footer">
+            <div class="row-wrap" style="flex:1; min-width:0;">
+              <span id="cd-pos" class="badge">Word</span>
+              <span id="cd-gender" class="badge hidden"></span>
+              <span id="cd-number" class="badge hidden"></span>
+            </div>
+            <span class="muted-xs" style="font-size:11px; font-weight:600;">Unlogged mini-drill</span>
+          </div>
+        </div>
+
+        <div id="cd-feedback" class="feedback-banner hidden">
+          <div class="fb-main-row"><div id="cd-feedback-msg" class="feedback-msg fb-left"></div></div>
+          <div id="cd-feedback-sub" class="feedback-sub hidden"></div>
+        </div>
+
+        <div id="cd-done-panel" class="card stack hidden" style="text-align:center; padding:18px 14px; margin-top:10px;">
+          <div style="font-size:18px; font-weight:800; color:var(--ink);">Mini-Drill Complete</div>
+          <div id="cd-done-score" class="muted-xs" style="font-size:14px; font-weight:700; color:var(--primary-dark);">0 / 6 right</div>
+          <div class="row-between" style="gap:8px; padding-top:6px;">
+            <button id="btn-cd-again" type="button" class="btn btn-primary-soft" style="flex:1;">Drill Again</button>
+            <button id="btn-cd-return" type="button" class="btn btn-primary" style="flex:1.2;">Return to Practice</button>
+          </div>
+        </div>
+      </main>
+
+      <div id="cd-input-dock" class="bottom-dock">
+        <div class="dock-utility">
+          <div class="row-wrap">
+            <button id="btn-cd-audio" type="button" class="btn btn-primary-soft btn-xs">Listen</button>
+          </div>
+        </div>
+        <div id="cd-diacritic-bar" class="diacritic-bar">
+          <button type="button" class="diac-key" data-ch="á">á</button>
+          <button type="button" class="diac-key" data-ch="à">à</button>
+          <button type="button" class="diac-key" data-ch="â">â</button>
+          <button type="button" class="diac-key" data-ch="ã">ã</button>
+          <button type="button" class="diac-key" data-ch="é">é</button>
+          <button type="button" class="diac-key" data-ch="ê">ê</button>
+          <button type="button" class="diac-key" data-ch="í">í</button>
+          <button type="button" class="diac-key" data-ch="ó">ó</button>
+          <button type="button" class="diac-key" data-ch="ô">ô</button>
+          <button type="button" class="diac-key" data-ch="õ">õ</button>
+          <button type="button" class="diac-key" data-ch="ú">ú</button>
+          <button type="button" class="diac-key" data-ch="ç">ç</button>
+        </div>
+        <div class="input-row">
+          <input id="cd-input" type="search" name="fc_cd_input_nofill" lang="pt-BR" inputmode="text" class="text-input"
+            placeholder="Type missing PT-BR word..."
+            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+            aria-autocomplete="none" data-lpignore="true" data-1p-ignore="true" data-form-type="other"
+            enterkeyhint="done" />
+          <button id="btn-cd-submit" type="button" class="btn btn-primary" style="min-width:96px; height:44px;">Check</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MODAL: PAUSE PRACTICE CONFIRMATION ==================== -->
+    <div id="modal-pause-session" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Pause Practice">
+      <div class="modal-box" style="max-width:360px;">
+        <header class="top-bar" style="min-height:48px;">
+          <div style="font-size:15px; font-weight:700; padding-left:6px;">Pause Practice?</div>
+          <button id="btn-pause-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close" style="font-size:20px;">×</button>
+        </header>
+        <div class="scroll-pane" style="padding:16px;">
+          <div class="stack">
+            <p style="margin:0; font-size:14px; color:var(--ink-soft); line-height:1.45;">
+              Your progress is saved. You can resume right from this step later.
+            </p>
+            <div class="row-between" style="gap:8px; padding-top:4px;">
+              <button id="btn-pause-exit" type="button" class="btn btn-neutral" style="flex:1;">Save &amp; Exit</button>
+              <button id="btn-pause-keep" type="button" class="btn btn-primary" style="flex:1.2;">Keep Going</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: SESSION SENTENCE HISTORY ==================== -->
+    <div id="modal-session-history" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Session Sentence History">
+      <div class="modal-box" style="max-width:480px; max-height:84vh; display:flex; flex-direction:column;">
+        <header class="top-bar" style="min-height:48px; flex-shrink:0;">
+          <div style="display:flex; align-items:center; gap:8px; padding-left:6px;">
+            <span style="font-size:15px; font-weight:700;">Session History</span>
+            <span id="session-history-count" class="badge badge-primary">0</span>
+          </div>
+          <button id="btn-session-history-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close" style="font-size:20px;">×</button>
+        </header>
+        <div id="session-history-list" class="scroll-pane" style="padding:12px 14px; display:flex; flex-direction:column; gap:8px; overflow-y:auto; min-height:0;"></div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: PASTE BACKUP JSON ==================== -->
+    <div id="modal-paste-backup" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Paste Backup JSON">
+      <div class="modal-box" style="max-width:440px;">
+        <header class="top-bar" style="min-height:48px;">
+          <div style="font-size:15px; font-weight:700; padding-left:6px;">Paste Backup JSON</div>
+          <button id="btn-paste-backup-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close" style="font-size:20px;">×</button>
+        </header>
+        <div class="scroll-pane" style="padding:16px;">
+          <div class="stack">
+            <p style="margin:0; font-size:13px; color:var(--ink-soft); line-height:1.45;">
+              Paste the contents of an exported FalaCloze progress JSON file below to import and merge your study history.
+            </p>
+            <textarea id="input-paste-backup" rows="7" placeholder="Paste exported FalaCloze JSON here..." style="width:100%; padding:10px; border-radius:var(--radius-sm); border:1px solid var(--border-strong); background:var(--surface-alt); color:var(--ink); font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; resize:vertical;"></textarea>
+            <div class="row-between" style="gap:8px; padding-top:4px;">
+              <button id="btn-paste-backup-cancel" type="button" class="btn btn-neutral" style="flex:1;">Cancel</button>
+              <button id="btn-paste-backup-apply" type="button" class="btn btn-primary" style="flex:1.3;">Import Pasted JSON</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: REPORT SENTENCE ==================== -->
+    <div id="modal-report-sentence" class="modal-center hidden" role="dialog" aria-modal="true" aria-label="Report Sentence">
+      <div class="modal-box" style="max-width:420px;">
+        <header class="top-bar" style="min-height:48px;">
+          <div style="font-size:15px; font-weight:700; padding-left:6px;">Report Sentence</div>
+          <button id="btn-report-close" type="button" class="btn btn-ghost btn-tap48" aria-label="Close" style="font-size:20px;">×</button>
+        </header>
+        <div class="scroll-pane" style="padding:14px 16px;">
+          <div class="stack" style="gap:10px;">
+            <div id="report-ex-preview" class="muted-xs" style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:9px 11px; color:var(--ink); line-height:1.45;"></div>
+            <div id="report-reasons-grid" class="report-reasons-grid">
+              <button type="button" class="report-reason-chip active" data-reason="Wrong PT">Wrong PT</button>
+              <button type="button" class="report-reason-chip" data-reason="Wrong EN">Wrong EN</button>
+              <button type="button" class="report-reason-chip" data-reason="Accept my answer">Accept my answer</button>
+              <button type="button" class="report-reason-chip" data-reason="Audio/TTS">Audio/TTS</button>
+              <button type="button" class="report-reason-chip" data-reason="Other">Other</button>
+            </div>
+            <textarea id="report-note-input" rows="3" placeholder="Optional note (what should be changed?)..." style="width:100%; padding:9px 10px; border-radius:var(--radius-sm); border:1px solid var(--border-strong); background:var(--surface-alt); color:var(--ink); font-size:13px; resize:vertical;"></textarea>
+            <div class="row-between" style="gap:8px; padding-top:2px;">
+              <button id="btn-report-cancel" type="button" class="btn btn-neutral" style="flex:1;">Cancel</button>
+              <button id="btn-report-submit" type="button" class="btn btn-primary" style="flex:1.3;">Save Report</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Toast -->
+    <div id="toast" role="status" aria-live="polite">
+      <span id="toast-msg"></span>
+      <button id="toast-undo-btn" type="button" class="toast-undo-btn hidden">Undo</button>
+    </div>
+  </div>
+
+
+  <script type="module" src="./js/main.js?v=09dd503b"></script>
+</body>
+</html>

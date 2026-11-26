@@ -1,0 +1,957 @@
+{
+  "schema": "3.1",
+  "contentVersion": "2026.11.1",
+  "minAppVersion": "2.5.0",
+  "slotOrder": {
+    "verb": [
+      "inf",
+      "ger",
+      "part",
+      "pres.1sg",
+      "pres.3sg",
+      "pres.1pl",
+      "pres.3pl",
+      "perf.1sg",
+      "perf.3sg",
+      "perf.1pl",
+      "perf.3pl",
+      "impf.1sg",
+      "impf.3sg",
+      "impf.1pl",
+      "impf.3pl",
+      "cond.1sg",
+      "cond.3sg",
+      "cond.1pl",
+      "cond.3pl",
+      "fut_subj.1sg",
+      "fut_subj.3sg",
+      "fut_subj.1pl",
+      "fut_subj.3pl",
+      "pres_subj.1sg",
+      "pres_subj.3sg",
+      "pres_subj.1pl",
+      "pres_subj.3pl",
+      "impf_subj.1sg",
+      "impf_subj.3sg",
+      "impf_subj.1pl",
+      "impf_subj.3pl",
+      "imp.3sg",
+      "imp.3pl"
+    ],
+    "nominal": [
+      "m.sg",
+      "f.sg",
+      "m.pl",
+      "f.pl"
+    ]
+  },
+  "lexicon": {
+    "file": "lexicon.json",
+    "hash": "d8bace08",
+    "version": 2,
+    "count": 5000
+  },
+  "ambiguous": {
+    "file": "ambiguous.json",
+    "hash": "86e215d9",
+    "version": 2
+  },
+  "curriculum": {
+    "file": "curriculum.json",
+    "hash": "8a78e749",
+    "version": 2
+  },
+  "placementItems": {
+    "file": "placement_items.json",
+    "hash": null,
+    "status": "pending"
+  },
+  "packs": [
+    {
+      "id": "pack_01",
+      "file": "packs/pack_01.json",
+      "hash": "b083578f",
+      "unitRange": [
+        1,
+        1
+      ],
+      "lemmaIdxRange": [
+        0,
+        99
+      ],
+      "requires": [],
+      "exampleCount": 610
+    },
+    {
+      "id": "pack_02",
+      "file": "packs/pack_02.json",
+      "hash": "4608354c",
+      "unitRange": [
+        2,
+        2
+      ],
+      "lemmaIdxRange": [
+        100,
+        199
+      ],
+      "requires": [
+        "pack_01"
+      ],
+      "exampleCount": 640
+    },
+    {
+      "id": "pack_03",
+      "file": "packs/pack_03.json",
+      "hash": "32f7fc3d",
+      "unitRange": [
+        3,
+        3
+      ],
+      "lemmaIdxRange": [
+        200,
+        299
+      ],
+      "requires": [
+        "pack_02"
+      ],
+      "exampleCount": 630
+    },
+    {
+      "id": "pack_04",
+      "file": "packs/pack_04.json",
+      "hash": "860d2471",
+      "unitRange": [
+        4,
+        4
+      ],
+      "lemmaIdxRange": [
+        300,
+        399
+      ],
+      "requires": [
+        "pack_03"
+      ],
+      "exampleCount": 1052
+    },
+    {
+      "id": "pack_05",
+      "file": "packs/pack_05.json",
+      "hash": null,
+      "unitRange": [
+        5,
+        5
+      ],
+      "lemmaIdxRange": [
+        400,
+        499
+      ],
+      "requires": [
+        "pack_04"
+      ]
+    },
+    {
+      "id": "pack_06",
+      "file": "packs/pack_06.json",
+      "hash": null,
+      "unitRange": [
+        6,
+        6
+      ],
+      "lemmaIdxRange": [
+        500,
+        599
+      ],
+      "requires": [
+        "pack_05"
+      ]
+    },
+    {
+      "id": "pack_07",
+      "file": "packs/pack_07.json",
+      "hash": null,
+      "unitRange": [
+        7,
+        7
+      ],
+      "lemmaIdxRange": [
+        600,
+        699
+      ],
+      "requires": [
+        "pack_06"
+      ]
+    },
+    {
+      "id": "pack_08",
+      "file": "packs/pack_08.json",
+      "hash": null,
+      "unitRange": [
+        8,
+        8
+      ],
+      "lemmaIdxRange": [
+        700,
+        799
+      ],
+      "requires": [
+        "pack_07"
+      ]
+    },
+    {
+      "id": "pack_09",
+      "file": "packs/pack_09.json",
+      "hash": null,
+      "unitRange": [
+        9,
+        9
+      ],
+      "lemmaIdxRange": [
+        800,
+        899
+      ],
+      "requires": [
+        "pack_08"
+      ]
+    },
+    {
+      "id": "pack_10",
+      "file": "packs/pack_10.json",
+      "hash": null,
+      "unitRange": [
+        10,
+        10
+      ],
+      "lemmaIdxRange": [
+        900,
+        999
+      ],
+      "requires": [
+        "pack_09"
+      ]
+    },
+    {
+      "id": "pack_11",
+      "file": "packs/pack_11.json",
+      "hash": null,
+      "unitRange": [
+        11,
+        11
+      ],
+      "lemmaIdxRange": [
+        1000,
+        1099
+      ],
+      "requires": [
+        "pack_10"
+      ]
+    },
+    {
+      "id": "pack_12",
+      "file": "packs/pack_12.json",
+      "hash": null,
+      "unitRange": [
+        12,
+        12
+      ],
+      "lemmaIdxRange": [
+        1100,
+        1199
+      ],
+      "requires": [
+        "pack_11"
+      ]
+    },
+    {
+      "id": "pack_13",
+      "file": "packs/pack_13.json",
+      "hash": null,
+      "unitRange": [
+        13,
+        13
+      ],
+      "lemmaIdxRange": [
+        1200,
+        1299
+      ],
+      "requires": [
+        "pack_12"
+      ]
+    },
+    {
+      "id": "pack_14",
+      "file": "packs/pack_14.json",
+      "hash": null,
+      "unitRange": [
+        14,
+        14
+      ],
+      "lemmaIdxRange": [
+        1300,
+        1399
+      ],
+      "requires": [
+        "pack_13"
+      ]
+    },
+    {
+      "id": "pack_15",
+      "file": "packs/pack_15.json",
+      "hash": null,
+      "unitRange": [
+        15,
+        15
+      ],
+      "lemmaIdxRange": [
+        1400,
+        1499
+      ],
+      "requires": [
+        "pack_14"
+      ]
+    },
+    {
+      "id": "pack_16",
+      "file": "packs/pack_16.json",
+      "hash": null,
+      "unitRange": [
+        16,
+        16
+      ],
+      "lemmaIdxRange": [
+        1500,
+        1599
+      ],
+      "requires": [
+        "pack_15"
+      ]
+    },
+    {
+      "id": "pack_17",
+      "file": "packs/pack_17.json",
+      "hash": null,
+      "unitRange": [
+        17,
+        17
+      ],
+      "lemmaIdxRange": [
+        1600,
+        1699
+      ],
+      "requires": [
+        "pack_16"
+      ]
+    },
+    {
+      "id": "pack_18",
+      "file": "packs/pack_18.json",
+      "hash": null,
+      "unitRange": [
+        18,
+        18
+      ],
+      "lemmaIdxRange": [
+        1700,
+        1799
+      ],
+      "requires": [
+        "pack_17"
+      ]
+    },
+    {
+      "id": "pack_19",
+      "file": "packs/pack_19.json",
+      "hash": null,
+      "unitRange": [
+        19,
+        19
+      ],
+      "lemmaIdxRange": [
+        1800,
+        1899
+      ],
+      "requires": [
+        "pack_18"
+      ]
+    },
+    {
+      "id": "pack_20",
+      "file": "packs/pack_20.json",
+      "hash": null,
+      "unitRange": [
+        20,
+        20
+      ],
+      "lemmaIdxRange": [
+        1900,
+        1999
+      ],
+      "requires": [
+        "pack_19"
+      ]
+    },
+    {
+      "id": "pack_21",
+      "file": "packs/pack_21.json",
+      "hash": null,
+      "unitRange": [
+        21,
+        21
+      ],
+      "lemmaIdxRange": [
+        2000,
+        2099
+      ],
+      "requires": [
+        "pack_20"
+      ]
+    },
+    {
+      "id": "pack_22",
+      "file": "packs/pack_22.json",
+      "hash": null,
+      "unitRange": [
+        22,
+        22
+      ],
+      "lemmaIdxRange": [
+        2100,
+        2199
+      ],
+      "requires": [
+        "pack_21"
+      ]
+    },
+    {
+      "id": "pack_23",
+      "file": "packs/pack_23.json",
+      "hash": null,
+      "unitRange": [
+        23,
+        23
+      ],
+      "lemmaIdxRange": [
+        2200,
+        2299
+      ],
+      "requires": [
+        "pack_22"
+      ]
+    },
+    {
+      "id": "pack_24",
+      "file": "packs/pack_24.json",
+      "hash": null,
+      "unitRange": [
+        24,
+        24
+      ],
+      "lemmaIdxRange": [
+        2300,
+        2399
+      ],
+      "requires": [
+        "pack_23"
+      ]
+    },
+    {
+      "id": "pack_25",
+      "file": "packs/pack_25.json",
+      "hash": null,
+      "unitRange": [
+        25,
+        25
+      ],
+      "lemmaIdxRange": [
+        2400,
+        2499
+      ],
+      "requires": [
+        "pack_24"
+      ]
+    },
+    {
+      "id": "pack_26",
+      "file": "packs/pack_26.json",
+      "hash": null,
+      "unitRange": [
+        26,
+        26
+      ],
+      "lemmaIdxRange": [
+        2500,
+        2599
+      ],
+      "requires": [
+        "pack_25"
+      ]
+    },
+    {
+      "id": "pack_27",
+      "file": "packs/pack_27.json",
+      "hash": null,
+      "unitRange": [
+        27,
+        27
+      ],
+      "lemmaIdxRange": [
+        2600,
+        2699
+      ],
+      "requires": [
+        "pack_26"
+      ]
+    },
+    {
+      "id": "pack_28",
+      "file": "packs/pack_28.json",
+      "hash": null,
+      "unitRange": [
+        28,
+        28
+      ],
+      "lemmaIdxRange": [
+        2700,
+        2799
+      ],
+      "requires": [
+        "pack_27"
+      ]
+    },
+    {
+      "id": "pack_29",
+      "file": "packs/pack_29.json",
+      "hash": null,
+      "unitRange": [
+        29,
+        29
+      ],
+      "lemmaIdxRange": [
+        2800,
+        2899
+      ],
+      "requires": [
+        "pack_28"
+      ]
+    },
+    {
+      "id": "pack_30",
+      "file": "packs/pack_30.json",
+      "hash": null,
+      "unitRange": [
+        30,
+        30
+      ],
+      "lemmaIdxRange": [
+        2900,
+        2999
+      ],
+      "requires": [
+        "pack_29"
+      ]
+    },
+    {
+      "id": "pack_31",
+      "file": "packs/pack_31.json",
+      "hash": null,
+      "unitRange": [
+        31,
+        31
+      ],
+      "lemmaIdxRange": [
+        3000,
+        3099
+      ],
+      "requires": [
+        "pack_30"
+      ]
+    },
+    {
+      "id": "pack_32",
+      "file": "packs/pack_32.json",
+      "hash": null,
+      "unitRange": [
+        32,
+        32
+      ],
+      "lemmaIdxRange": [
+        3100,
+        3199
+      ],
+      "requires": [
+        "pack_31"
+      ]
+    },
+    {
+      "id": "pack_33",
+      "file": "packs/pack_33.json",
+      "hash": null,
+      "unitRange": [
+        33,
+        33
+      ],
+      "lemmaIdxRange": [
+        3200,
+        3299
+      ],
+      "requires": [
+        "pack_32"
+      ]
+    },
+    {
+      "id": "pack_34",
+      "file": "packs/pack_34.json",
+      "hash": null,
+      "unitRange": [
+        34,
+        34
+      ],
+      "lemmaIdxRange": [
+        3300,
+        3399
+      ],
+      "requires": [
+        "pack_33"
+      ]
+    },
+    {
+      "id": "pack_35",
+      "file": "packs/pack_35.json",
+      "hash": null,
+      "unitRange": [
+        35,
+        35
+      ],
+      "lemmaIdxRange": [
+        3400,
+        3499
+      ],
+      "requires": [
+        "pack_34"
+      ]
+    },
+    {
+      "id": "pack_36",
+      "file": "packs/pack_36.json",
+      "hash": null,
+      "unitRange": [
+        36,
+        36
+      ],
+      "lemmaIdxRange": [
+        3500,
+        3599
+      ],
+      "requires": [
+        "pack_35"
+      ]
+    },
+    {
+      "id": "pack_37",
+      "file": "packs/pack_37.json",
+      "hash": null,
+      "unitRange": [
+        37,
+        37
+      ],
+      "lemmaIdxRange": [
+        3600,
+        3699
+      ],
+      "requires": [
+        "pack_36"
+      ]
+    },
+    {
+      "id": "pack_38",
+      "file": "packs/pack_38.json",
+      "hash": null,
+      "unitRange": [
+        38,
+        38
+      ],
+      "lemmaIdxRange": [
+        3700,
+        3799
+      ],
+      "requires": [
+        "pack_37"
+      ]
+    },
+    {
+      "id": "pack_39",
+      "file": "packs/pack_39.json",
+      "hash": null,
+      "unitRange": [
+        39,
+        39
+      ],
+      "lemmaIdxRange": [
+        3800,
+        3899
+      ],
+      "requires": [
+        "pack_38"
+      ]
+    },
+    {
+      "id": "pack_40",
+      "file": "packs/pack_40.json",
+      "hash": null,
+      "unitRange": [
+        40,
+        40
+      ],
+      "lemmaIdxRange": [
+        3900,
+        3999
+      ],
+      "requires": [
+        "pack_39"
+      ]
+    },
+    {
+      "id": "pack_41",
+      "file": "packs/pack_41.json",
+      "hash": null,
+      "unitRange": [
+        41,
+        41
+      ],
+      "lemmaIdxRange": [
+        4000,
+        4099
+      ],
+      "requires": [
+        "pack_40"
+      ]
+    },
+    {
+      "id": "pack_42",
+      "file": "packs/pack_42.json",
+      "hash": null,
+      "unitRange": [
+        42,
+        42
+      ],
+      "lemmaIdxRange": [
+        4100,
+        4199
+      ],
+      "requires": [
+        "pack_41"
+      ]
+    },
+    {
+      "id": "pack_43",
+      "file": "packs/pack_43.json",
+      "hash": null,
+      "unitRange": [
+        43,
+        43
+      ],
+      "lemmaIdxRange": [
+        4200,
+        4299
+      ],
+      "requires": [
+        "pack_42"
+      ]
+    },
+    {
+      "id": "pack_44",
+      "file": "packs/pack_44.json",
+      "hash": null,
+      "unitRange": [
+        44,
+        44
+      ],
+      "lemmaIdxRange": [
+        4300,
+        4399
+      ],
+      "requires": [
+        "pack_43"
+      ]
+    },
+    {
+      "id": "pack_45",
+      "file": "packs/pack_45.json",
+      "hash": null,
+      "unitRange": [
+        45,
+        45
+      ],
+      "lemmaIdxRange": [
+        4400,
+        4499
+      ],
+      "requires": [
+        "pack_44"
+      ]
+    },
+    {
+      "id": "pack_46",
+      "file": "packs/pack_46.json",
+      "hash": null,
+      "unitRange": [
+        46,
+        46
+      ],
+      "lemmaIdxRange": [
+        4500,
+        4599
+      ],
+      "requires": [
+        "pack_45"
+      ]
+    },
+    {
+      "id": "pack_47",
+      "file": "packs/pack_47.json",
+      "hash": null,
+      "unitRange": [
+        47,
+        47
+      ],
+      "lemmaIdxRange": [
+        4600,
+        4699
+      ],
+      "requires": [
+        "pack_46"
+      ]
+    },
+    {
+      "id": "pack_48",
+      "file": "packs/pack_48.json",
+      "hash": null,
+      "unitRange": [
+        48,
+        48
+      ],
+      "lemmaIdxRange": [
+        4700,
+        4799
+      ],
+      "requires": [
+        "pack_47"
+      ]
+    },
+    {
+      "id": "pack_49",
+      "file": "packs/pack_49.json",
+      "hash": null,
+      "unitRange": [
+        49,
+        49
+      ],
+      "lemmaIdxRange": [
+        4800,
+        4899
+      ],
+      "requires": [
+        "pack_48"
+      ]
+    },
+    {
+      "id": "pack_50",
+      "file": "packs/pack_50.json",
+      "hash": null,
+      "unitRange": [
+        50,
+        50
+      ],
+      "lemmaIdxRange": [
+        4900,
+        4999
+      ],
+      "requires": [
+        "pack_49"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "ext_3pl_gerund",
+      "tense": "pres_3pl_ger",
+      "file": "extensions/ext_3pl_gerund.json",
+      "hash": "1cad92fc",
+      "appliesToPacks": [
+        "pack_01"
+      ],
+      "introducedInUnit": 2,
+      "exampleCount": 88
+    },
+    {
+      "id": "ext_past_perf",
+      "tense": "perf",
+      "file": "extensions/ext_past_perf.json",
+      "hash": "c4c8444e",
+      "appliesToPacks": [
+        "pack_01",
+        "pack_02"
+      ],
+      "introducedInUnit": 3,
+      "exampleCount": 200
+    },
+    {
+      "id": "ext_past_impf",
+      "tense": "impf",
+      "file": "extensions/ext_past_impf.json",
+      "hash": null,
+      "appliesToPacks": [
+        "pack_01",
+        "pack_02",
+        "pack_03",
+        "pack_04"
+      ],
+      "introducedInUnit": 5
+    },
+    {
+      "id": "ext_cond_fut_subj",
+      "tense": "cond_fut_subj",
+      "file": "extensions/ext_cond_fut_subj.json",
+      "hash": null,
+      "appliesToPacks": [
+        "pack_01",
+        "pack_02",
+        "pack_03",
+        "pack_04",
+        "pack_05",
+        "pack_06"
+      ],
+      "introducedInUnit": 7
+    },
+    {
+      "id": "ext_pres_subj",
+      "tense": "pres_subj",
+      "file": "extensions/ext_pres_subj.json",
+      "hash": null,
+      "appliesToPacks": [
+        "pack_01",
+        "pack_02",
+        "pack_03",
+        "pack_04",
+        "pack_05",
+        "pack_06",
+        "pack_07",
+        "pack_08",
+        "pack_09"
+      ],
+      "introducedInUnit": 10
+    }
+  ],
+  "manifestVersion": "3.1",
+  "cellClassMap": {
+    "impf.1sg": "impf.1sg=3sg",
+    "impf.3sg": "impf.1sg=3sg",
+    "cond.1sg": "cond.1sg=3sg",
+    "cond.3sg": "cond.1sg=3sg",
+    "pres_subj.1sg": "pres_subj.1sg=3sg",
+    "pres_subj.3sg": "pres_subj.1sg=3sg",
+    "fut_subj.1sg": "fut_subj.1sg=3sg",
+    "fut_subj.3sg": "fut_subj.1sg=3sg",
+    "impf_subj.1sg": "impf_subj.1sg=3sg",
+    "impf_subj.3sg": "impf_subj.1sg=3sg"
+  }
+}
