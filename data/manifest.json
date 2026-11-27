@@ -47,7 +47,7 @@
   },
   "lexicon": {
     "file": "lexicon.json",
-    "hash": "d8bace08",
+    "hash": "06ccc263",
     "version": 2,
     "count": 5000
   },
@@ -255,7 +255,7 @@
     {
       "id": "pack_12",
       "file": "packs/pack_12.json",
-      "hash": "575abccf",
+      "hash": "ea2be509",
       "unitRange": [
         12,
         12
@@ -272,7 +272,7 @@
     {
       "id": "pack_13",
       "file": "packs/pack_13.json",
-      "hash": "8e8e1038",
+      "hash": "3b924840",
       "unitRange": [
         13,
         13
@@ -289,7 +289,7 @@
     {
       "id": "pack_14",
       "file": "packs/pack_14.json",
-      "hash": "b13ffa79",
+      "hash": "15fa711c",
       "unitRange": [
         14,
         14
@@ -306,7 +306,7 @@
     {
       "id": "pack_15",
       "file": "packs/pack_15.json",
-      "hash": "b2232f18",
+      "hash": "1de0148f",
       "unitRange": [
         15,
         15
@@ -323,7 +323,7 @@
     {
       "id": "pack_16",
       "file": "packs/pack_16.json",
-      "hash": "51173173",
+      "hash": "5f161f11",
       "unitRange": [
         16,
         16
@@ -335,12 +335,12 @@
       "requires": [
         "pack_15"
       ],
-      "exampleCount": 220
+      "exampleCount": 222
     },
     {
       "id": "pack_17",
       "file": "packs/pack_17.json",
-      "hash": "38a7cc52",
+      "hash": "9e47aa8a",
       "unitRange": [
         17,
         17
@@ -352,12 +352,12 @@
       "requires": [
         "pack_16"
       ],
-      "exampleCount": 220
+      "exampleCount": 223
     },
     {
       "id": "pack_18",
       "file": "packs/pack_18.json",
-      "hash": "0492330b",
+      "hash": "57f2fc51",
       "unitRange": [
         18,
         18
@@ -374,7 +374,7 @@
     {
       "id": "pack_19",
       "file": "packs/pack_19.json",
-      "hash": "a8740d73",
+      "hash": "372169db",
       "unitRange": [
         19,
         19
@@ -391,7 +391,7 @@
     {
       "id": "pack_20",
       "file": "packs/pack_20.json",
-      "hash": "79baf496",
+      "hash": "147df263",
       "unitRange": [
         20,
         20
@@ -403,12 +403,12 @@
       "requires": [
         "pack_19"
       ],
-      "exampleCount": 220
+      "exampleCount": 221
     },
     {
       "id": "pack_21",
       "file": "packs/pack_21.json",
-      "hash": "935ee123",
+      "hash": "2ef6265b",
       "unitRange": [
         21,
         21
@@ -420,12 +420,12 @@
       "requires": [
         "pack_20"
       ],
-      "exampleCount": 87
+      "exampleCount": 221
     },
     {
       "id": "pack_22",
       "file": "packs/pack_22.json",
-      "hash": "49d860c0",
+      "hash": "6590104e",
       "unitRange": [
         22,
         22
@@ -437,12 +437,12 @@
       "requires": [
         "pack_21"
       ],
-      "exampleCount": 78
+      "exampleCount": 223
     },
     {
       "id": "pack_23",
       "file": "packs/pack_23.json",
-      "hash": "e5cce415",
+      "hash": "64f47ece",
       "unitRange": [
         23,
         23
@@ -454,7 +454,7 @@
       "requires": [
         "pack_22"
       ],
-      "exampleCount": 91
+      "exampleCount": 221
     },
     {
       "id": "pack_24",

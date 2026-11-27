@@ -293,8 +293,8 @@
     {
       "exId": "pack_19_pt_solar_m.sg_1",
       "lemmaId": "pt_solar",
-      "pt": "A energia solar é boa para o meio ambiente.",
-      "en": "Solar energy is good for the environment.",
+      "pt": "O sistema solar é muito grande.",
+      "en": "The solar system is very big.",
       "answer": "solar",
       "subject": "none",
       "person": "sg",
@@ -315,21 +315,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "adj meaning clue",
+      "hint_en": "of the sun (m.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_energia",
+        "pt_sistema",
         "pt_ser",
-        "pt_bom",
-        "pt_para",
-        "pt_mear",
-        "pt_ambiente"
+        "pt_muito",
+        "pt_grande"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "7a970760ab75",
+      "rev": 2,
+      "contentHash": "93f5fc1bf04a",
       "retired": false,
       "source_type": "speechling"
     },
@@ -709,9 +707,9 @@
     {
       "exId": "pack_19_pt_atrair_pres.1pl_1",
       "lemmaId": "pt_atrair",
-      "pt": "Atraímos os melhores alunos de todo o mundo.",
-      "en": "We attract the best students from all over the world.",
-      "answer": "Atraímos",
+      "pt": "Sempre atraímos os melhores alunos do país.",
+      "en": "We always attract the best students in the country.",
+      "answer": "atraímos",
       "subject": "none",
       "person": "1pl",
       "tense": "pres",
@@ -721,30 +719,30 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "Atraímos"
+        "atraímos"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
       "distractors": [
-        "Pegamos",
-        "Fazemos"
+        "evitamos",
+        "apoiamos"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to attract",
+      "hint_en": "attract (present)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_sempre",
         "pt_o",
         "pt_melhor",
         "pt_aluno",
-        "pt_de",
-        "pt_todo",
-        "pt_mundo"
+        "pt_do",
+        "pt_pais"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "cff5d7d86bfa",
+      "rev": 2,
+      "contentHash": "cc017967e933",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -786,8 +784,8 @@
     {
       "exId": "pack_19_pt_deprimir_pres.3sg_1",
       "lemmaId": "pt_deprimir",
-      "pt": "Lembrar isso me deprime.",
-      "en": "Remembering it depressed me.",
+      "pt": "Lembrar disso sempre me deprime.",
+      "en": "Remembering that always depresses me.",
       "answer": "deprime",
       "subject": "none",
       "person": "3sg",
@@ -808,16 +806,17 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to depress",
+      "hint_en": "depresses",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_lembrar",
-        "pt_isso"
+        "pt_sempre",
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "c8f0b2df48db",
+      "rev": 2,
+      "contentHash": "8d671a968049",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1911,7 +1910,7 @@
     {
       "exId": "pack_19_pt_alcool_m.sg_rm_1",
       "lemmaId": "pt_alcool",
-      "pt": "Este carro carro é a álcool.",
+      "pt": "Este carro é a álcool.",
       "en": "This car runs on alcohol.",
       "answer": "álcool",
       "subject": "none",
@@ -1943,8 +1942,8 @@
         "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "62084501319e",
+      "rev": 2,
+      "contentHash": "6eabaf6479f8",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -1973,17 +1972,17 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "shy, timid",
+      "hint_en": "scared / frightened (f. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_por",
         "pt_que",
-        "pt_elas",
+        "pt_ela",
         "pt_estar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "8241613a388c",
       "retired": false,
       "source_type": "lingvist"
@@ -1991,8 +1990,8 @@
     {
       "exId": "pack_19_pt_conteudo_m.sg_rm_1",
       "lemmaId": "pt_conteudo",
-      "pt": "Não compre algo sem verificar seu conteúdo.",
-      "en": "Don't buy a pig in a poke.",
+      "pt": "Não compre algo sem verificar o conteúdo.",
+      "en": "Don't buy anything without checking its contents.",
       "answer": "conteúdo",
       "subject": "none",
       "person": "sg",
@@ -2013,7 +2012,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "content",
+      "hint_en": "content / contents",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2022,11 +2021,11 @@
         "pt_algo",
         "pt_sem",
         "pt_verificar",
-        "pt_seu"
+        "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "1d8ee2699b81",
+      "rev": 2,
+      "contentHash": "594c4b9d3f3e",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2055,7 +2054,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "option",
+      "hint_en": "feature / resource",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2065,7 +2064,7 @@
         "pt_um"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "63ce92263854",
       "retired": false,
       "source_type": "lingvist"
@@ -2176,7 +2175,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "crop",
+      "hint_en": "hearts (cards)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2185,7 +2184,7 @@
         "pt_de"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "439df4a62b99",
       "retired": false,
       "source_type": "lingvist"
@@ -2715,8 +2714,8 @@
     {
       "exId": "pack_19_pt_ritmo_m.sg_rm_1",
       "lemmaId": "pt_ritmo",
-      "pt": "Nós vamos pegar o ritmo.",
-      "en": "Let's pick up the pace.",
+      "pt": "Nós vamos pegar o ritmo logo.",
+      "en": "We're going to get into the rhythm soon.",
       "answer": "ritmo",
       "subject": "none",
       "person": "sg",
@@ -2737,26 +2736,27 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "rhythm",
+      "hint_en": "rhythm / pace",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_nos",
         "pt_ir",
         "pt_pegar",
-        "pt_o"
+        "pt_o",
+        "pt_logo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "476134585d1f",
+      "rev": 2,
+      "contentHash": "3f1f3139d86c",
       "retired": false,
       "source_type": "lingvist"
     },
     {
       "exId": "pack_19_pt_preciso_m.sg_rm_1",
       "lemmaId": "pt_preciso",
-      "pt": "Eu preciso de um carro.",
-      "en": "I need a car.",
+      "pt": "O relógio dele é muito preciso.",
+      "en": "His watch is very accurate.",
       "answer": "preciso",
       "subject": "none",
       "person": "sg",
@@ -2777,27 +2777,27 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "precise",
+      "hint_en": "precise / accurate (m.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eu",
-        "pt_precisar",
-        "pt_de",
-        "pt_um",
-        "pt_carro"
+        "pt_o",
+        "pt_relogio",
+        "pt_dele",
+        "pt_ser",
+        "pt_muito"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "7fd59aeb7593",
+      "rev": 2,
+      "contentHash": "692d1984e8c2",
       "retired": false,
       "source_type": "lingvist"
     },
     {
       "exId": "pack_19_pt_termo_m.pl_rm_1",
       "lemmaId": "pt_termo",
-      "pt": "Estou feliz por termos estado lá.",
-      "en": "I'm glad we were there.",
+      "pt": "Ainda não li os termos do contrato.",
+      "en": "I haven't read the terms of the contract yet.",
       "answer": "termos",
       "subject": "none",
       "person": "pl",
@@ -2818,18 +2818,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "surroundings",
+      "hint_en": "terms / conditions (m. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_estar",
-        "pt_feliz",
-        "pt_por",
-        "pt_la"
+        "pt_ainda",
+        "pt_nao",
+        "pt_ler",
+        "pt_o",
+        "pt_do",
+        "pt_contratar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "3c75c16c9e94",
+      "rev": 2,
+      "contentHash": "11f483ad42bc",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3586,7 +3588,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "crop",
+      "hint_en": "hearts (cards)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3596,7 +3598,7 @@
         "pt_de"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "f4258c33823d",
       "retired": false,
       "source_type": "lingvist"
@@ -3803,8 +3805,8 @@
     {
       "exId": "pack_19_pt_termo_m.pl_rm_2",
       "lemmaId": "pt_termo",
-      "pt": "Em termos de salário, esse emprego é fantástico.",
-      "en": "In terms of salary, that job is fantastic.",
+      "pt": "Em termos de salário, esse emprego é ótimo.",
+      "en": "In terms of salary, that job is great.",
       "answer": "termos",
       "subject": "none",
       "person": "pl",
@@ -3825,7 +3827,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "surroundings",
+      "hint_en": "terms (m. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3835,11 +3837,11 @@
         "pt_esse",
         "pt_empregar",
         "pt_ser",
-        "pt_fantastico"
+        "pt_otimo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "4915463e3981",
+      "rev": 2,
+      "contentHash": "3adb45540164",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -5412,8 +5414,8 @@
     {
       "exId": "p19.paciencia.llm.01",
       "lemmaId": "pt_paciencia",
-      "pt": "Acabaram minhas paciências com esse atraso.",
-      "en": "I've run out of patience with this delay.",
+      "pt": "Joguei duas paciências no celular hoje.",
+      "en": "I played two games of solitaire on my phone today.",
       "answer": "paciências",
       "subject": "none",
       "person": "pl",
@@ -5434,19 +5436,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "patience (pl.)",
+      "hint_en": "games of solitaire (f. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_acabar",
-        "pt_meu",
-        "pt_com",
-        "pt_esse",
-        "pt_atrasar"
+        "pt_jogar",
+        "pt_no",
+        "pt_celular",
+        "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a7864a6fa68a",
+      "rev": 2,
+      "contentHash": "71f2d413500f",
       "retired": false,
       "source_type": "llm_generated"
     },

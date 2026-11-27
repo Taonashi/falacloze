@@ -95,8 +95,8 @@
     {
       "exId": "pack_20_pt_concentrar_ger_1",
       "lemmaId": "pt_concentrar",
-      "pt": "Por favor, use sua voz interior. Eu estou me concentrando.",
-      "en": "Please use your inside voice. I'm concentrating.",
+      "pt": "Por favor, fale baixo, estou me concentrando.",
+      "en": "Please speak softly, I'm concentrating.",
       "answer": "concentrando",
       "subject": "none",
       "person": null,
@@ -117,22 +117,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to concentrate",
+      "hint_en": "concentrating",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_por",
         "pt_favor",
-        "pt_usar",
-        "pt_seu",
-        "pt_voz",
-        "pt_interior",
-        "pt_eu",
-        "pt_estar"
+        "pt_falar",
+        "pt_baixo",
+        "pt_estar",
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "742fc77f85fe",
+      "rev": 2,
+      "contentHash": "331bc963b8aa",
       "retired": false,
       "source_type": "speechling"
     },
@@ -588,8 +586,8 @@
     {
       "exId": "pack_20_pt_exigir_pres.3sg_1",
       "lemmaId": "pt_exigir",
-      "pt": "Um serviço exige um serviço de retorno.",
-      "en": "A service requires a service in return.",
+      "pt": "Esse trabalho exige muita atenção de todos.",
+      "en": "This job requires a lot of attention from everyone.",
       "answer": "exige",
       "subject": "none",
       "person": "3sg",
@@ -610,18 +608,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to require, need",
+      "hint_en": "requires / demands",
       "false_friend_note": null,
       "grammar_note_en": "Simple present tense for habitual or general states.",
       "requires": [
-        "pt_um",
-        "pt_servico",
+        "pt_esse",
+        "pt_trabalhar",
+        "pt_muito",
+        "pt_atencao",
         "pt_de",
-        "pt_retornar"
+        "pt_todo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "6d7ec25a6ea7",
+      "rev": 2,
+      "contentHash": "51d535a7faac",
       "retired": false,
       "source_type": "linguno_practice"
     },
@@ -832,8 +832,8 @@
     {
       "exId": "pack_20_pt_conduzir_ger_1",
       "lemmaId": "pt_conduzir",
-      "pt": "Ele está conduzindo um treinamento de conscientização sobre segurança.",
-      "en": "He's conducting security awareness training.",
+      "pt": "Ele está conduzindo um treinamento de segurança.",
+      "en": "He's conducting a safety training session.",
       "answer": "conduzindo",
       "subject": "none",
       "person": null,
@@ -854,7 +854,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to wage",
+      "hint_en": "conducting / leading",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -863,12 +863,11 @@
         "pt_um",
         "pt_treinamento",
         "pt_de",
-        "pt_sobre",
         "pt_seguranca"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "d5bd5f52c896",
+      "rev": 2,
+      "contentHash": "6e114b9d58e8",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1117,7 +1116,7 @@
     {
       "exId": "pack_20_pt_estabelecer_pres.3pl_1",
       "lemmaId": "pt_estabelecer",
-      "pt": "Estes tipos estabelecem as suas próprias regras.",
+      "pt": "Esses caras estabelecem as próprias regras.",
       "en": "These guys set their own rules.",
       "answer": "estabelecem",
       "subject": "none",
@@ -1139,19 +1138,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to establish",
+      "hint_en": "establish / set",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_tipo",
-        "pt_o",
-        "pt_seu",
+        "pt_esse",
+        "pt_caro",
+        "pt_a",
         "pt_proprio",
         "pt_regra"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "af319e68793b",
+      "rev": 2,
+      "contentHash": "8d71328a36cb",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1237,8 +1236,8 @@
     {
       "exId": "pack_20_pt_capturar_perf.3sg_1",
       "lemmaId": "pt_capturar",
-      "pt": "O policial capturou pelo braço o ladrão em fuga.",
-      "en": "The policeman caught the fleeing thief by the arm.",
+      "pt": "A polícia capturou o ladrão na esquina.",
+      "en": "The police captured the thief on the corner.",
       "answer": "capturou",
       "subject": "none",
       "person": "3sg",
@@ -1259,21 +1258,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to capture, catch",
+      "hint_en": "captured / caught",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_policial",
-        "pt_pelo",
-        "pt_braco",
+        "pt_policia",
         "pt_ladrao",
-        "pt_em",
-        "pt_fuga"
+        "pt_na",
+        "pt_esquina"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "ec42259d7e1d",
+      "rev": 2,
+      "contentHash": "27a5f21585fb",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1408,8 +1405,8 @@
     {
       "exId": "pack_20_pt_mortal_m.pl_1",
       "lemmaId": "pt_mortal",
-      "pt": "Essas cobras são mortais.",
-      "en": "These snakes are deadly.",
+      "pt": "Todos os homens são mortais.",
+      "en": "All men are mortal.",
       "answer": "mortais",
       "subject": "none",
       "person": "pl",
@@ -1430,16 +1427,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "susceptible to death",
+      "hint_en": "subject to death (m. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_cobra",
+        "pt_todo",
+        "pt_o",
+        "pt_homem",
         "pt_ser"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "c7fd28132648",
+      "rev": 2,
+      "contentHash": "04b4926d4724",
       "retired": false,
       "source_type": "speechling"
     },
@@ -1814,10 +1813,10 @@
     {
       "exId": "pack_20_pt_remover_pres_subj.3sg_1",
       "lemmaId": "pt_remover",
-      "pt": "Por favor, remova seus sapatos quando você entrar na sala.",
-      "en": "Please remove your shoes when you enter the room.",
+      "pt": "Por favor, remova seu nome da lista.",
+      "en": "Please remove your name from the list.",
       "answer": "remova",
-      "subject": "você",
+      "subject": "none",
       "person": "3sg",
       "tense": "pres_subj",
       "slot": "pres_subj.3sg",
@@ -1836,23 +1835,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to remove",
+      "hint_en": "remove",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_por",
         "pt_favor",
         "pt_seu",
-        "pt_sapato",
-        "pt_quando",
-        "pt_voce",
-        "pt_entrar",
-        "pt_na",
-        "pt_sala"
+        "pt_nome",
+        "pt_da",
+        "pt_lista"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "8de17f870d53",
+      "rev": 2,
+      "contentHash": "8416a0ab1c8b",
       "retired": false,
       "source_type": "speechling"
     },
@@ -2183,7 +2179,7 @@
     {
       "exId": "pack_20_pt_gasolina_f.sg_rm_1",
       "lemmaId": "pt_gasolina",
-      "pt": "Meu caro está sem gasolina.",
+      "pt": "Meu carro está sem gasolina.",
       "en": "My car is out of gas.",
       "answer": "gasolina",
       "subject": "none",
@@ -2205,18 +2201,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "petrol / gasoline",
+      "hint_en": "gasoline / gas",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_meu",
-        "pt_caro",
+        "pt_carro",
         "pt_estar",
         "pt_sem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "471f49798095",
+      "rev": 2,
+      "contentHash": "05183023b589",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2303,8 +2299,8 @@
     {
       "exId": "pack_20_pt_cheque_m.sg_rm_1",
       "lemmaId": "pt_cheque",
-      "pt": "Eu pagarei ele com cheque.",
-      "en": "I will pay for it by check.",
+      "pt": "Eu vou pagar a conta com cheque.",
+      "en": "I'm going to pay the bill by check.",
       "answer": "cheque",
       "subject": "none",
       "person": "sg",
@@ -2325,18 +2321,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "noun meaning clue",
+      "hint_en": "bank check",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
-        "pt_ele",
-        "pt_com",
-        "pt_checar"
+        "pt_ir",
+        "pt_pagar",
+        "pt_o",
+        "pt_contar",
+        "pt_com"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "72e49ce649cb",
+      "rev": 2,
+      "contentHash": "bee21cdd25a8",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2382,8 +2380,8 @@
     {
       "exId": "pack_20_pt_abrigo_m.sg_rm_1",
       "lemmaId": "pt_abrigo",
-      "pt": "Esse é um belo abrigo.",
-      "en": "That's a nice coat.",
+      "pt": "A casa serviu de abrigo na chuva.",
+      "en": "The house served as shelter in the rain.",
       "answer": "abrigo",
       "subject": "none",
       "person": "sg",
@@ -2404,18 +2402,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "shelter, haven, refuge",
+      "hint_en": "shelter / refuge",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_esse",
-        "pt_ser",
-        "pt_um",
-        "pt_belo"
+        "pt_o",
+        "pt_casa",
+        "pt_servir",
+        "pt_de",
+        "pt_na",
+        "pt_chuva"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "e381d0199cf1",
+      "rev": 2,
+      "contentHash": "007e46fa7efe",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2444,16 +2444,17 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "hitchhiking",
+      "hint_en": "ride / lift",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
+        "pt_voce",
         "pt_dar",
         "pt_um"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "6ffd98a6c2ed",
       "retired": false,
       "source_type": "lingvist"
@@ -2561,7 +2562,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "assault, attack",
+      "hint_en": "robbery / holdup",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2572,7 +2573,7 @@
         "pt_um"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "7f386d4b6afe",
       "retired": false,
       "source_type": "lingvist"
@@ -2620,8 +2621,8 @@
     {
       "exId": "pack_20_pt_delicioso_m.sg_rm_1",
       "lemmaId": "pt_delicioso",
-      "pt": "Este bolo está muito delicioso.",
-      "en": "This cake is very delicious.",
+      "pt": "Esse bolo de chocolate está delicioso.",
+      "en": "This chocolate cake is delicious.",
       "answer": "delicioso",
       "subject": "none",
       "person": "sg",
@@ -2646,22 +2647,23 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_este",
+        "pt_esse",
         "pt_bolo",
-        "pt_estar",
-        "pt_muito"
+        "pt_de",
+        "pt_chocolate",
+        "pt_estar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "cf35e2a36ccc",
+      "rev": 2,
+      "contentHash": "39d5667769be",
       "retired": false,
       "source_type": "lingvist"
     },
     {
       "exId": "pack_20_pt_cenario_m.sg_rm_1",
       "lemmaId": "pt_cenario",
-      "pt": "O cenário era indescritivelmente belo.",
-      "en": "The scenery was beautiful beyond description.",
+      "pt": "O cenário da praia era lindo demais.",
+      "en": "The beach scenery was gorgeous.",
       "answer": "cenário",
       "subject": "none",
       "person": "sg",
@@ -2682,17 +2684,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "scenario",
+      "hint_en": "scenery / setting",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
+        "pt_da",
+        "pt_praia",
         "pt_ser",
-        "pt_belo"
+        "pt_lindo",
+        "pt_demais"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "38d0abc46d5b",
+      "rev": 2,
+      "contentHash": "f96c58bd18c1",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2739,8 +2744,8 @@
     {
       "exId": "pack_20_pt_drama_m.sg_rm_1",
       "lemmaId": "pt_drama",
-      "pt": "Por que todo o drama?",
-      "en": "Why all the drama?",
+      "pt": "Por que tanto drama por pouca coisa?",
+      "en": "Why so much drama over a small thing?",
       "answer": "drama",
       "subject": "none",
       "person": "sg",
@@ -2761,18 +2766,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "noun meaning clue",
+      "hint_en": "fuss / emotional scene",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_por",
         "pt_que",
-        "pt_todo",
-        "pt_o"
+        "pt_tanto",
+        "pt_pouco",
+        "pt_coisa"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "2799a37ca30a",
+      "rev": 2,
+      "contentHash": "52c3801df320",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2858,7 +2864,7 @@
       "exId": "pack_20_pt_filha_f.sg_rm_1",
       "lemmaId": "pt_filha",
       "pt": "Esta é a minha filha.",
-      "en": "This is my child.",
+      "en": "This is my daughter.",
       "answer": "filha",
       "subject": "none",
       "person": "sg",
@@ -2883,14 +2889,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_este",
         "pt_ser",
         "pt_o",
-        "pt_meu",
-        "pt_filho"
+        "pt_meu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "1a33d5ad81c9",
+      "rev": 2,
+      "contentHash": "79f4d24d3af6",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3295,8 +3301,8 @@
     {
       "exId": "pack_20_pt_funeral_m.sg_rm_1",
       "lemmaId": "pt_funeral",
-      "pt": "Esse é o seu funeral.",
-      "en": "That's your funeral.",
+      "pt": "O funeral do meu avô foi ontem.",
+      "en": "My grandfather's funeral was yesterday.",
       "answer": "funeral",
       "subject": "none",
       "person": "sg",
@@ -3317,18 +3323,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "noun meaning clue",
+      "hint_en": "burial service",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_esse",
-        "pt_ser",
         "pt_o",
-        "pt_seu"
+        "pt_do",
+        "pt_meu",
+        "pt_avo",
+        "pt_ser",
+        "pt_ontem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "84ef668920ec",
+      "rev": 2,
+      "contentHash": "1def45622ba3",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3357,7 +3365,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "tool",
+      "hint_en": "musical instrument",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3367,7 +3375,7 @@
         "pt_nenhum"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "c8291eae137a",
       "retired": false,
       "source_type": "lingvist"
@@ -3456,8 +3464,8 @@
     {
       "exId": "pack_20_pt_tradicional_m.sg_rm_2",
       "lemmaId": "pt_tradicional",
-      "pt": "Saquê é uma bebida alcoólica tradicional japonesa.",
-      "en": "Sake is a traditional Japanese alcoholic drink.",
+      "pt": "O churrasco é um prato tradicional brasileiro.",
+      "en": "Barbecue is a traditional Brazilian dish.",
       "answer": "tradicional",
       "subject": "none",
       "person": "sg",
@@ -3473,22 +3481,25 @@
       "alt_valid": [],
       "plausible_wrong": [],
       "distractors": [
-        "brasileiro",
-        "importante"
+        "adolescente",
+        "trabalhador"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "traditional",
+      "hint_en": "traditional (m.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_o",
+        "pt_churrasco",
         "pt_ser",
         "pt_um",
-        "pt_japones"
+        "pt_prato",
+        "pt_brasileiro"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "f39c8853db35",
+      "rev": 2,
+      "contentHash": "c93ccdf812fc",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3659,8 +3670,8 @@
     {
       "exId": "pack_20_pt_abrigo_m.sg_rm_2",
       "lemmaId": "pt_abrigo",
-      "pt": "De quem é este abrigo?",
-      "en": "Whose coat is this?",
+      "pt": "Eles acharam um abrigo perto do rio.",
+      "en": "They found a shelter near the river.",
       "answer": "abrigo",
       "subject": "none",
       "person": "sg",
@@ -3681,18 +3692,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "shelter, haven, refuge",
+      "hint_en": "shelter / refuge",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_de",
-        "pt_quem",
-        "pt_ser",
-        "pt_este"
+        "pt_ele",
+        "pt_achar",
+        "pt_um",
+        "pt_perto",
+        "pt_do",
+        "pt_rir"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "b822238249d8",
+      "rev": 2,
+      "contentHash": "d57187612b28",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3721,16 +3734,17 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "hitchhiking",
+      "hint_en": "ride / lift",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_poder",
+        "pt_voce",
         "pt_dar",
         "pt_um"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "20208c97861d",
       "retired": false,
       "source_type": "lingvist"
@@ -3881,7 +3895,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "tool",
+      "hint_en": "musical instrument",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3892,7 +3906,7 @@
         "pt_corda"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "265a6bfdca6a",
       "retired": false,
       "source_type": "lingvist"
@@ -3941,8 +3955,8 @@
     {
       "exId": "pack_20_pt_capturar_pres.3pl_rm_1",
       "lemmaId": "pt_capturar",
-      "pt": "É assim que capturam vivos os elefantes.",
-      "en": "This is how they hunt elephants alive.",
+      "pt": "É assim que capturam os elefantes vivos.",
+      "en": "This is how they capture elephants alive.",
       "answer": "capturam",
       "subject": "none",
       "person": "3pl",
@@ -3963,19 +3977,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to capture, catch",
+      "hint_en": "capture / catch",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_ser",
         "pt_assim",
         "pt_que",
-        "pt_vivo",
-        "pt_o"
+        "pt_o",
+        "pt_vivo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "775c0a01b2f5",
+      "rev": 2,
+      "contentHash": "9c7154c74441",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -4067,8 +4081,8 @@
     {
       "exId": "p20.crescimento.llm.01",
       "lemmaId": "pt_crescimento",
-      "pt": "Os crescimentos desse ano animaram nossa equipe.",
-      "en": "This year's growth spurts energized our team.",
+      "pt": "Os crescimentos nas vendas animaram nossa equipe.",
+      "en": "The increases in sales energized our team.",
       "answer": "crescimentos",
       "subject": "none",
       "person": "pl",
@@ -4091,19 +4105,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "growth spurts (pl.)",
+      "hint_en": "increases / growth (m. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_dar",
-        "pt_ano",
+        "pt_nas",
+        "pt_vendo",
         "pt_animar",
         "pt_equipe"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "ad3cadfad53c",
+      "rev": 2,
+      "contentHash": "5c83399659d8",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -5755,9 +5769,9 @@
     {
       "exId": "p20.conduzir.llm.02",
       "lemmaId": "pt_conduzir",
-      "pt": "O gerente conduze essa equipe sem estresse.",
+      "pt": "O gerente conduz essa equipe sem estresse.",
       "en": "The manager leads this team without stress.",
-      "answer": "conduze",
+      "answer": "conduz",
       "subject": "none",
       "person": "3sg",
       "tense": "pres",
@@ -5767,7 +5781,7 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "conduze"
+        "conduz"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -5788,8 +5802,8 @@
         "pt_sem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "c24c802a4608",
+      "rev": 2,
+      "contentHash": "61f82383a709",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -6959,7 +6973,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "imbecilic / idiotic",
+      "hint_en": "idiotic / moronic",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -6971,7 +6985,7 @@
         "pt_grupo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "d1892d558d43",
       "retired": false,
       "source_type": "llm_generated"
@@ -7470,7 +7484,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "not immortal / fatal",
+      "hint_en": "bound to die (m.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -7481,7 +7495,7 @@
         "pt_mesmo_adj"
       ],
       "register_tier": "spoken",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "74c42c7fcf36",
       "retired": false,
       "source_type": "llm_generated"
@@ -8881,8 +8895,8 @@
     {
       "exId": "p20.quimica.llm.01",
       "lemmaId": "pt_quimica",
-      "pt": "Nunca uso químicas fortes dentro de casa.",
-      "en": "I never use strong chemicals inside the house.",
+      "pt": "Ela não faz mais químicas no cabelo.",
+      "en": "She doesn't do chemical treatments on her hair anymore.",
       "answer": "químicas",
       "subject": "none",
       "person": "pl",
@@ -8903,20 +8917,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "chemicals (pl.)",
+      "hint_en": "hair treatments (f. pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nunca",
-        "pt_usar",
-        "pt_forte",
-        "pt_dentro",
-        "pt_de",
-        "pt_casa"
+        "pt_ela",
+        "pt_nao",
+        "pt_fazer",
+        "pt_mais",
+        "pt_no",
+        "pt_cabelo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e4eab64f419a",
+      "rev": 2,
+      "contentHash": "7576a799627a",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -9132,6 +9146,49 @@
       "register_tier": "spoken",
       "rev": 1,
       "contentHash": "eecbd84430f0",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p20.visual.llm.02",
+      "lemmaId": "pt_visual",
+      "pt": "Esse recurso visual é bem claro pra turma.",
+      "en": "This visual aid is really clear for the group.",
+      "answer": "visual",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "visual"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "máximo",
+        "quinto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "graphic / sight-based",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_esse",
+        "pt_recurso",
+        "pt_ser",
+        "pt_bem",
+        "pt_claro",
+        "pt_pra",
+        "pt_turma"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "87af66990b10",
       "retired": false,
       "source_type": "llm_generated"
     }

@@ -675,8 +675,8 @@
     {
       "exId": "pack_17_pt_sumir_pres_subj.1sg_1",
       "lemmaId": "pt_sumir",
-      "pt": "Eu só quero que essa dor de cabeça suma.",
-      "en": "I just want this headache to go away.",
+      "pt": "Eles querem que eu suma daqui.",
+      "en": "They want me to disappear from here.",
       "answer": "suma",
       "subject": "eu",
       "person": "1sg",
@@ -701,17 +701,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eu",
-        "pt_so_adj",
+        "pt_ele",
         "pt_querer",
         "pt_que",
-        "pt_dor",
-        "pt_de",
-        "pt_cabeca"
+        "pt_eu",
+        "pt_daqui"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "1bc4617ca664",
+      "rev": 2,
+      "contentHash": "d3b8150162d2",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -721,7 +719,7 @@
       "pt": "Ela apontou para ele.",
       "en": "She pointed at him.",
       "answer": "apontou",
-      "subject": "ele",
+      "subject": "ela",
       "person": "3sg",
       "tense": "perf",
       "slot": "perf.3sg",
@@ -740,7 +738,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to point out",
+      "hint_en": "to point",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -749,7 +747,7 @@
         "pt_ele"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "847284eeffda",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -779,7 +777,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to point out",
+      "hint_en": "to point",
       "false_friend_note": null,
       "grammar_note_en": "Simple present tense for habitual or general states.",
       "requires": [
@@ -787,7 +785,7 @@
         "pt_para"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "9784e4c94ee5",
       "retired": false,
       "source_type": "linguno_practice"
@@ -795,8 +793,8 @@
     {
       "exId": "pack_17_pt_espalhar_inf_1",
       "lemmaId": "pt_espalhar",
-      "pt": "Eu vou espalhar a palavra.",
-      "en": "I'll spread the word.",
+      "pt": "Eu vou espalhar a notícia hoje.",
+      "en": "I'll spread the news today.",
       "answer": "espalhar",
       "subject": "none",
       "person": null,
@@ -824,19 +822,20 @@
         "pt_eu",
         "pt_ir",
         "pt_o",
-        "pt_palavra"
+        "pt_noticia",
+        "pt_hoje"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "859f182acbef",
+      "rev": 2,
+      "contentHash": "c5df03a42dfd",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
     {
       "exId": "pack_17_pt_espalhar_pres_subj.3sg_1",
       "lemmaId": "pt_espalhar",
-      "pt": "Espero que você espalhe a palavra.",
-      "en": "I hope you spread the word.",
+      "pt": "Espero que você não espalhe esse segredo.",
+      "en": "I hope you don't spread that secret.",
       "answer": "espalhe",
       "subject": "você",
       "person": "3sg",
@@ -864,12 +863,12 @@
         "pt_esperar",
         "pt_que",
         "pt_voce",
-        "pt_o",
-        "pt_palavra"
+        "pt_nao",
+        "pt_esse"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "ec839bfc72a9",
+      "rev": 2,
+      "contentHash": "cd627818c3b4",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -940,7 +939,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to testify",
+      "hint_en": "to test",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -951,7 +950,7 @@
         "pt_limite"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "2cd79f2088a1",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -981,7 +980,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to testify",
+      "hint_en": "to test",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -990,7 +989,7 @@
         "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "239ed5e9e0f3",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -998,8 +997,8 @@
     {
       "exId": "pack_17_pt_testar_perf.1sg_2",
       "lemmaId": "pt_testar",
-      "pt": "Eu próprio testei estas toalhas e elas são fantásticas.",
-      "en": "I've tested these towels myself and they're terrific.",
+      "pt": "Eu mesmo testei o carro ontem.",
+      "en": "I tested the car myself yesterday.",
       "answer": "testei",
       "subject": "eu",
       "person": "1sg",
@@ -1020,21 +1019,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to testify",
+      "hint_en": "to test",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
-        "pt_proprio",
-        "pt_toalha",
-        "pt_e",
-        "pt_elas",
-        "pt_ser",
-        "pt_fantastico"
+        "pt_mesmo_adj",
+        "pt_o",
+        "pt_carro",
+        "pt_ontem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "0aae3837dead",
+      "rev": 2,
+      "contentHash": "e532c74accc8",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1127,7 +1124,7 @@
     {
       "exId": "pack_17_pt_rezar_perf.3sg_1",
       "lemmaId": "pt_rezar",
-      "pt": "Ela rezou que sua mãe a perdoasse.",
+      "pt": "Ela rezou para que sua mãe a perdoasse.",
       "en": "She prayed that her mother would forgive her.",
       "answer": "rezou",
       "subject": "ela",
@@ -1154,6 +1151,7 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ela",
+        "pt_para",
         "pt_que",
         "pt_seu",
         "pt_mae",
@@ -1161,8 +1159,8 @@
         "pt_perdoar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "275a0f1c5fea",
+      "rev": 2,
+      "contentHash": "c7c9af241b7c",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1868,10 +1866,10 @@
     {
       "exId": "pack_17_pt_liberar_perf.3sg_1",
       "lemmaId": "pt_liberar",
-      "pt": "A polícia liberou ele.",
-      "en": "The police released him.",
+      "pt": "A polícia liberou o homem ontem.",
+      "en": "The police released the man yesterday.",
       "answer": "liberou",
-      "subject": "ele",
+      "subject": "none",
       "person": "3sg",
       "tense": "perf",
       "slot": "perf.3sg",
@@ -1896,11 +1894,12 @@
       "requires": [
         "pt_o",
         "pt_policia",
-        "pt_ele"
+        "pt_homem",
+        "pt_ontem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "4df83131adcb",
+      "rev": 2,
+      "contentHash": "f0f413f37dea",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1929,7 +1928,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to bring",
+      "hint_en": "to be of use, to help",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -1939,7 +1938,7 @@
         "pt_que_pron"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "45c722706707",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -1969,17 +1968,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to bring",
+      "hint_en": "to be of use, to help",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_nao",
         "pt_ir",
+        "pt_eu",
         "pt_pedir",
         "pt_dinheiro"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "ff1e6ecac8f1",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -1987,8 +1987,8 @@
     {
       "exId": "pack_17_pt_adiantar_pres.3sg_1",
       "lemmaId": "pt_adiantar",
-      "pt": "Comer o teclado não adianta.",
-      "en": "Eating the keyboard doesn't help.",
+      "pt": "Não adianta reclamar agora sem provas.",
+      "en": "It's no use complaining now without proof.",
       "answer": "adianta",
       "subject": "none",
       "person": "3sg",
@@ -2009,18 +2009,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to bring",
+      "hint_en": "to be of use, to help",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_comer",
-        "pt_o",
-        "pt_teclado",
-        "pt_nao"
+        "pt_nao",
+        "pt_reclamar",
+        "pt_agora",
+        "pt_sem",
+        "pt_prova"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "a7c61ab3535f",
+      "rev": 2,
+      "contentHash": "3b3c6a0410e7",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -2069,7 +2070,7 @@
     {
       "exId": "pack_17_pt_acalmar_pres.3sg_rm_1",
       "lemmaId": "pt_acalmar",
-      "pt": "A musica clássica me acalma.",
+      "pt": "A música clássica me acalma.",
       "en": "Classical music soothes me.",
       "answer": "acalma",
       "subject": "none",
@@ -2091,16 +2092,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to calm",
+      "hint_en": "to calm, to soothe",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_classico"
+        "pt_musica",
+        "pt_classico",
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "20fbb2f52fe1",
+      "rev": 2,
+      "contentHash": "c8bfc96f4c38",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -2169,7 +2172,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "noun meaning clue",
+      "hint_en": "music or arts celebration",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2180,7 +2183,7 @@
         "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "44258b47eb9b",
       "retired": false,
       "source_type": "lingvist"
@@ -2309,8 +2312,8 @@
     {
       "exId": "pack_17_pt_ponta_f.sg_rm_1",
       "lemmaId": "pt_ponta",
-      "pt": "Esse mastro tem um ponta afiada.",
-      "en": "This pole is sharp at the end.",
+      "pt": "Esse mastro tem uma ponta afiada.",
+      "en": "This pole has a sharp tip.",
       "answer": "ponta",
       "subject": "none",
       "person": "sg",
@@ -2340,8 +2343,8 @@
         "pt_um"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ad98b9345343",
+      "rev": 2,
+      "contentHash": "5f334923d269",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2531,7 +2534,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "lady",
+      "hint_en": "checkers",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2543,7 +2546,7 @@
         "pt_avo_noun"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "03acbf7320f2",
       "retired": false,
       "source_type": "lingvist"
@@ -2692,7 +2695,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "affirmative",
+      "hint_en": "positive / optimistic",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2702,7 +2705,7 @@
         "pt_ser"
       ],
       "register_tier": "spoken",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "b5c2d61e91ae",
       "retired": false,
       "source_type": "lingvist"
@@ -3316,7 +3319,7 @@
     {
       "exId": "pack_17_pt_custo_m.pl_rm_1",
       "lemmaId": "pt_custo",
-      "pt": "Eu sei como cortar nos custos.",
+      "pt": "Eu sei como cortar custos.",
       "en": "I know how to cut costs.",
       "answer": "custos",
       "subject": "none",
@@ -3338,19 +3341,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "cost",
+      "hint_en": "costs",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
         "pt_saber",
         "pt_comer",
-        "pt_cortar",
-        "pt_nos_pron"
+        "pt_cortar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "839de2348a91",
+      "rev": 2,
+      "contentHash": "771be29cb7aa",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3561,7 +3563,7 @@
       "exId": "pack_17_pt_abertura_f.sg_rm_1",
       "lemmaId": "pt_abertura",
       "pt": "Quando é a abertura do museu?",
-      "en": "When is the museum open?",
+      "en": "When is the museum opening?",
       "answer": "abertura",
       "subject": "none",
       "person": "sg",
@@ -3582,7 +3584,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "opening, orifice",
+      "hint_en": "opening",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3593,8 +3595,8 @@
         "pt_museu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "596e12af3bb0",
+      "rev": 2,
+      "contentHash": "fb9a160eaa68",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3820,7 +3822,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "noun meaning clue",
+      "hint_en": "music or arts celebration",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3830,7 +3832,7 @@
         "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "ff7aaf8c01e0",
       "retired": false,
       "source_type": "lingvist"
@@ -3942,7 +3944,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "ladder",
+      "hint_en": "stairs / staircase",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3951,7 +3953,7 @@
         "pt_na"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "d5afb9373903",
       "retired": false,
       "source_type": "lingvist"
@@ -4000,7 +4002,7 @@
       "exId": "pack_17_pt_veiculo_m.pl_rm_2",
       "lemmaId": "pt_veiculo",
       "pt": "Inúmeros veículos foram danificados pela enchente.",
-      "en": "Several vehicles were damaged by the flood.",
+      "en": "Countless vehicles were damaged by the flood.",
       "answer": "veículos",
       "subject": "none",
       "person": "pl",
@@ -4021,7 +4023,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "vehicle",
+      "hint_en": "vehicles",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -4029,8 +4031,8 @@
         "pt_pela"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "dc23cc1458b6",
+      "rev": 2,
+      "contentHash": "842eb4923283",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -4460,7 +4462,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to point out",
+      "hint_en": "to point, to aim",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -4469,7 +4471,7 @@
         "pt_para"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "f5558a832dec",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -5063,9 +5065,9 @@
     {
       "exId": "p17.uau.llm.01",
       "lemmaId": "pt_uau",
-      "pt": "Caramba, uau, que pintura mais linda!",
-      "en": "Whoa, wow, what a gorgeous painting!",
-      "answer": "uau",
+      "pt": "Uau, que pintura mais linda você fez!",
+      "en": "Wow, what a gorgeous painting you made!",
+      "answer": "Uau",
       "subject": "none",
       "person": "none",
       "tense": "none",
@@ -5075,13 +5077,13 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "uau"
+        "Uau"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
       "distractors": [
-        "foi",
-        "olá"
+        "Foi",
+        "Olá"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -5089,24 +5091,25 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_caramba",
         "pt_que",
         "pt_pintura",
         "pt_mais",
-        "pt_lindo"
+        "pt_lindo",
+        "pt_voce",
+        "pt_fazer"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "552e82267931",
+      "rev": 2,
+      "contentHash": "756468c0f2e5",
       "retired": false,
       "source_type": "llm_generated"
     },
     {
       "exId": "p17.uau.llm.02",
       "lemmaId": "pt_uau",
-      "pt": "Nossa, uau, você fez esse bolo sozinha?",
-      "en": "Oh wow, did you make this cake yourself?",
-      "answer": "uau",
+      "pt": "Uau, você fez esse bolo sozinha mesmo?",
+      "en": "Wow, did you really make this cake yourself?",
+      "answer": "Uau",
       "subject": "none",
       "person": "none",
       "tense": "none",
@@ -5116,13 +5119,13 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "uau"
+        "Uau"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
       "distractors": [
-        "alô",
-        "foi"
+        "Alô",
+        "Foi"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -5134,11 +5137,12 @@
         "pt_fazer",
         "pt_esse",
         "pt_bolo",
-        "pt_sozinho"
+        "pt_sozinho",
+        "pt_mesmo_adj"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e79812d8761c",
+      "rev": 2,
+      "contentHash": "d129212a0e13",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -5229,8 +5233,8 @@
     {
       "exId": "p17.acusar.llm.02",
       "lemmaId": "pt_acusar",
-      "pt": "Esse artigo acusa o banco de erro.",
-      "en": "This article accuses the bank of an error.",
+      "pt": "O jornal acusa a empresa de mentir.",
+      "en": "The newspaper accuses the company of lying.",
       "answer": "acusa",
       "subject": "none",
       "person": "3sg",
@@ -5255,16 +5259,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_esse",
-        "pt_artigo",
         "pt_o",
-        "pt_banco",
+        "pt_jornal",
+        "pt_empresa",
         "pt_de",
-        "pt_errar"
+        "pt_mentir"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "90cf26b4e459",
+      "rev": 2,
+      "contentHash": "9441dbb2cc2c",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -5353,8 +5356,8 @@
     {
       "exId": "p17.dama.llm.01",
       "lemmaId": "pt_dama",
-      "pt": "Aquela dama sorriu pro porteiro do prédio.",
-      "en": "That lady smiled at the building's doorman.",
+      "pt": "Aquela dama sorriu para o porteiro.",
+      "en": "That lady smiled at the doorman.",
       "answer": "dama",
       "subject": "none",
       "person": "sg",
@@ -5383,14 +5386,13 @@
       "requires": [
         "pt_aquele",
         "pt_sorrir",
-        "pt_pro",
-        "pt_porteiro",
-        "pt_do",
-        "pt_predio"
+        "pt_para",
+        "pt_o",
+        "pt_porteiro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "20d42260add3",
+      "rev": 2,
+      "contentHash": "515493895704",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -7351,8 +7353,8 @@
     {
       "exId": "p17.mudo.llm.02",
       "lemmaId": "pt_mudo",
-      "pt": "Os mudos conversam usando as mãos rápido.",
-      "en": "Mute people talk fast using their hands.",
+      "pt": "Os mudos conversam usando as mãos.",
+      "en": "Mute people talk using their hands.",
       "answer": "mudos",
       "subject": "none",
       "person": "pl",
@@ -7381,12 +7383,11 @@
         "pt_conversar",
         "pt_usar",
         "pt_a",
-        "pt_mao",
-        "pt_rapido"
+        "pt_mao"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "c911f0c5f9d8",
+      "rev": 2,
+      "contentHash": "162e1a111f38",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -8226,10 +8227,10 @@
     {
       "exId": "p17.apanhar.llm.01",
       "lemmaId": "pt_apanhar",
-      "pt": "Todo sábado apanho laranjas boas em casa.",
-      "en": "Every Saturday I pick good oranges at home.",
+      "pt": "Eu sempre apanho um pouco desse celular.",
+      "en": "I always struggle a bit with this phone.",
       "answer": "apanho",
-      "subject": "none",
+      "subject": "eu",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -8248,30 +8249,30 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "pick / gather",
+      "hint_en": "struggle with",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_todo",
-        "pt_sabado",
-        "pt_laranja",
-        "pt_bom",
-        "pt_em",
-        "pt_casa"
+        "pt_eu",
+        "pt_sempre",
+        "pt_um",
+        "pt_pouco",
+        "pt_dar",
+        "pt_celular"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "27c103e3e056",
+      "rev": 2,
+      "contentHash": "9b3fc94817dd",
       "retired": false,
       "source_type": "llm_generated"
     },
     {
       "exId": "p17.apanhar.llm.02",
       "lemmaId": "pt_apanhar",
-      "pt": "Minha avó apanha as roupas bem cedo.",
-      "en": "My grandmother gathers the clothes very early.",
+      "pt": "Ele sempre apanha para abrir essa porta.",
+      "en": "He always struggles to open this door.",
       "answer": "apanha",
-      "subject": "none",
+      "subject": "ele",
       "person": "3sg",
       "tense": "pres",
       "slot": "pres.3sg",
@@ -8290,28 +8291,28 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "gathers / picks up",
+      "hint_en": "struggles",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_meu",
-        "pt_avo_noun",
-        "pt_a",
-        "pt_roupa",
-        "pt_bem",
-        "pt_cedo"
+        "pt_ele",
+        "pt_sempre",
+        "pt_para",
+        "pt_abrir",
+        "pt_esse",
+        "pt_porta"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "eac93640040f",
+      "rev": 2,
+      "contentHash": "769c290eec39",
       "retired": false,
       "source_type": "llm_generated"
     },
     {
       "exId": "p17.apanhar.llm.03",
       "lemmaId": "pt_apanhar",
-      "pt": "Ontem apanhei tomates maduros pra fazer molho.",
-      "en": "Yesterday I picked ripe tomatoes to make sauce.",
+      "pt": "Ontem apanhei muito para montar a mesa.",
+      "en": "Yesterday I struggled a lot to assemble the table.",
       "answer": "apanhei",
       "subject": "none",
       "person": "1sg",
@@ -8335,19 +8336,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "picked / gathered (past 1sg)",
+      "hint_en": "struggled (past 1sg)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_ontem",
-        "pt_tomate",
-        "pt_pra",
-        "pt_fazer",
-        "pt_molho"
+        "pt_muito",
+        "pt_para",
+        "pt_montar",
+        "pt_o",
+        "pt_mesa"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "112465c90ffc",
+      "rev": 2,
+      "contentHash": "e5f7cddea844",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -9104,6 +9106,134 @@
       "register_tier": "spoken",
       "rev": 1,
       "contentHash": "ff497e5c3281",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p17.top.llm.02",
+      "lemmaId": "pt_top",
+      "pt": "O café desse lugar tá top!",
+      "en": "The coffee at this place is awesome!",
+      "answer": "top",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "top"
+      ],
+      "alt_valid": [
+        "ótimo"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "mau",
+        "bom"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "awesome / great",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_cafe",
+        "pt_dar",
+        "pt_lugar",
+        "pt_estar~ta"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "e878209ab31c",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p17.taxi.llm.01",
+      "lemmaId": "pt_taxi",
+      "pt": "O gerente pediu um táxi para você.",
+      "en": "The manager called a cab for you.",
+      "answer": "táxi",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "táxi"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "frio",
+        "jack"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "cab",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_gerente",
+        "pt_pedir",
+        "pt_um",
+        "pt_para",
+        "pt_voce"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "313407e0e80d",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p17.taxi.llm.02",
+      "lemmaId": "pt_taxi",
+      "pt": "Tem uma fila grande de táxis no shopping.",
+      "en": "There's a long line of cabs at the mall.",
+      "answer": "táxis",
+      "subject": "none",
+      "person": "pl",
+      "tense": "m",
+      "slot": "m.pl",
+      "cellClass": "m.pl",
+      "construction": null,
+      "inflection": "m.pl",
+      "sense": "core",
+      "accept": [
+        "táxis"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "fatos",
+        "donos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "cabs (pl.)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ter",
+        "pt_um",
+        "pt_fila",
+        "pt_grande",
+        "pt_de",
+        "pt_no",
+        "pt_shopping"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "4972b9b671b8",
       "retired": false,
       "source_type": "llm_generated"
     }

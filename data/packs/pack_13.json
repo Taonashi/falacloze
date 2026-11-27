@@ -6183,7 +6183,7 @@
     {
       "exId": "p13.intencao.llm.01",
       "lemmaId": "pt_intencao",
-      "pt": "Ele sempre teve boas intenções contigo.",
+      "pt": "Ele sempre teve boas intenções com você.",
       "en": "He always had good intentions with you.",
       "answer": "intenções",
       "subject": "none",
@@ -6212,11 +6212,13 @@
         "pt_ele",
         "pt_sempre",
         "pt_ter",
-        "pt_bom"
+        "pt_bom",
+        "pt_com",
+        "pt_voce"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "83369434bd6b",
+      "rev": 2,
+      "contentHash": "fe5db3c194c6",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -9450,9 +9452,9 @@
     {
       "exId": "p13.gas.llm.02",
       "lemmaId": "pt_gas",
-      "pt": "Esses gáses fazem muito mal pra saúde.",
+      "pt": "Esses gases fazem muito mal pra saúde.",
       "en": "Those fumes are really bad for your health.",
-      "answer": "gáses",
+      "answer": "gases",
       "subject": "none",
       "person": "pl",
       "tense": "m",
@@ -9462,7 +9464,7 @@
       "inflection": "m.pl",
       "sense": "core",
       "accept": [
-        "gáses"
+        "gases"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -9483,8 +9485,8 @@
         "pt_pra"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "c40879b4c596",
+      "rev": 2,
+      "contentHash": "f62daf7785c2",
       "retired": false,
       "source_type": "llm_generated"
     },

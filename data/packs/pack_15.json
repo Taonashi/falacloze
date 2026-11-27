@@ -4973,9 +4973,9 @@
     {
       "exId": "p15.reunir.llm.01",
       "lemmaId": "pt_reunir",
-      "pt": "Todo ano reuno a família aqui.",
+      "pt": "Todo ano reúno a família aqui.",
       "en": "Every year I gather the family here.",
-      "answer": "reuno",
+      "answer": "reúno",
       "subject": "none",
       "person": "1sg",
       "tense": "pres",
@@ -4985,7 +4985,7 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "reuno"
+        "reúno"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -5006,17 +5006,17 @@
         "pt_aqui"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "bfb1ed1e6488",
+      "rev": 2,
+      "contentHash": "fea57648dcaa",
       "retired": false,
       "source_type": "llm_generated"
     },
     {
       "exId": "p15.reunir.llm.02",
       "lemmaId": "pt_reunir",
-      "pt": "A mãe reune todos na sala.",
-      "en": "The mother gathers everyone in the living room.",
-      "answer": "reune",
+      "pt": "Minha mãe reúne todos na sala.",
+      "en": "My mom gathers everyone in the living room.",
+      "answer": "reúne",
       "subject": "none",
       "person": "3sg",
       "tense": "pres",
@@ -5026,7 +5026,7 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "reune"
+        "reúne"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -5040,15 +5040,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_meu",
         "pt_mae",
         "pt_todo",
         "pt_na",
         "pt_sala"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "d49979cbaee0",
+      "rev": 2,
+      "contentHash": "6dd67fe891a3",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -5135,9 +5135,9 @@
     {
       "exId": "p15.reunir.llm.05",
       "lemmaId": "pt_reunir",
-      "pt": "Elas se reunem na praça hoje.",
+      "pt": "Elas se reúnem na praça hoje.",
       "en": "They meet up at the square today.",
-      "answer": "reunem",
+      "answer": "reúnem",
       "subject": "none",
       "person": "3pl",
       "tense": "pres",
@@ -5147,7 +5147,7 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "reunem"
+        "reúnem"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -5168,8 +5168,8 @@
         "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "990d93637658",
+      "rev": 2,
+      "contentHash": "6ba8b33808ef",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -6406,9 +6406,9 @@
     {
       "exId": "p15.produzir.llm.02",
       "lemmaId": "pt_produzir",
-      "pt": "A fábrica produze queijo todo dia.",
+      "pt": "A fábrica produz queijo todo dia.",
       "en": "The factory produces cheese every day.",
-      "answer": "produze",
+      "answer": "produz",
       "subject": "none",
       "person": "3sg",
       "tense": "pres",
@@ -6418,7 +6418,7 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "produze"
+        "produz"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -6438,8 +6438,8 @@
         "pt_dia"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ed344bb93619",
+      "rev": 2,
+      "contentHash": "9899e9eb2b79",
       "retired": false,
       "source_type": "llm_generated"
     },

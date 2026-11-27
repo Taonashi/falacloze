@@ -17,8 +17,8 @@
     {
       "exId": "pack_16_pt_combinar_impf.3pl_1",
       "lemmaId": "pt_combinar",
-      "pt": "As irmãs usavam vestidos que se combinavam.",
-      "en": "The sisters wore matching dresses.",
+      "pt": "As cores da sala combinavam muito bem.",
+      "en": "The colors of the room matched very well.",
       "answer": "combinavam",
       "subject": "none",
       "person": "3pl",
@@ -39,20 +39,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to combine",
+      "hint_en": "to match",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_irmao",
-        "pt_usar",
-        "pt_vestido",
-        "pt_que",
-        "pt_se"
+        "pt_a",
+        "pt_cor",
+        "pt_da",
+        "pt_sala",
+        "pt_muito",
+        "pt_bem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "c4befccc7edf",
+      "rev": 2,
+      "contentHash": "6a1ebd170a3f",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -99,7 +99,7 @@
       "exId": "pack_16_pt_desafiar_pres.1sg_1",
       "lemmaId": "pt_desafiar",
       "pt": "Eu desafio você a contar para todo mundo.",
-      "en": "I defy you to make it public.",
+      "en": "I challenge you to tell everyone.",
       "answer": "desafio",
       "subject": "eu",
       "person": "1sg",
@@ -120,7 +120,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to challenge, to defy",
+      "hint_en": "to challenge, to dare",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -133,8 +133,8 @@
         "pt_mundo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "19498240d229",
+      "rev": 2,
+      "contentHash": "b4cef45470c3",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -163,7 +163,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to experience",
+      "hint_en": "to try on",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -176,7 +176,7 @@
         "pt_comprar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "dc6bf92f3538",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -225,7 +225,7 @@
       "exId": "pack_16_pt_consertar_perf.3pl_1",
       "lemmaId": "pt_consertar",
       "pt": "Consertaram a porta para mim.",
-      "en": "I had the door repaired.",
+      "en": "They fixed the door for me.",
       "answer": "Consertaram",
       "subject": "none",
       "person": "3pl",
@@ -253,19 +253,19 @@
         "pt_o",
         "pt_porta",
         "pt_para",
-        "pt_mim"
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "803433635e80",
+      "rev": 2,
+      "contentHash": "15732783491c",
       "retired": false,
       "source_type": "linguno_practice"
     },
     {
       "exId": "pack_16_pt_cancelar_impf_subj.3sg_1",
       "lemmaId": "pt_cancelar",
-      "pt": "Ela me sugeriu que eu cancelasse a reunião.",
-      "en": "She suggested to me that I call off the meeting.",
+      "pt": "Eu sugeri que ela cancelasse a reunião.",
+      "en": "I suggested that she cancel the meeting.",
       "answer": "cancelasse",
       "subject": "ela",
       "person": "3sg",
@@ -286,20 +286,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to call off",
+      "hint_en": "to cancel, to call off",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ela",
+        "pt_eu",
         "pt_sugerir",
         "pt_que",
-        "pt_eu",
+        "pt_ela",
         "pt_o",
         "pt_reuniao"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "9c1bcdeb0d1c",
+      "rev": 2,
+      "contentHash": "2e8cb596ef94",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -345,10 +345,10 @@
     {
       "exId": "pack_16_pt_revelar_perf.3pl_1",
       "lemmaId": "pt_revelar",
-      "pt": "Por que nunca me revelaram?",
-      "en": "Why didn't you ever tell me?",
+      "pt": "Eles nunca revelaram o segredo para ninguém.",
+      "en": "They never revealed the secret to anyone.",
       "answer": "revelaram",
-      "subject": "none",
+      "subject": "eles",
       "person": "3pl",
       "tense": "perf",
       "slot": "perf.3pl",
@@ -367,17 +367,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to reveal, disclose",
+      "hint_en": "to reveal, to disclose",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_por",
-        "pt_que",
-        "pt_nunca"
+        "pt_ele",
+        "pt_nunca",
+        "pt_o",
+        "pt_para",
+        "pt_ninguem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "80668b6901aa",
+      "rev": 2,
+      "contentHash": "ccde132d3bb4",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -469,7 +471,7 @@
       "exId": "pack_16_pt_montar_perf.3pl_1",
       "lemmaId": "pt_montar",
       "pt": "Quantas vezes vocês já montaram esse quebra-cabeça?",
-      "en": "How many times have you done this puzzle already?",
+      "en": "How many times have you put this puzzle together already?",
       "answer": "montaram",
       "subject": "vocês",
       "person": "3pl",
@@ -490,18 +492,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to go up, climb",
+      "hint_en": "to assemble, to put together",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_vez",
-        "pt_voces",
+        "pt_voce",
         "pt_ja",
         "pt_esse"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "5960b8b89abd",
+      "rev": 2,
+      "contentHash": "fa133190a0ff",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -530,7 +532,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to go up, climb",
+      "hint_en": "to assemble, to build",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -543,7 +545,7 @@
         "pt_proprio"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "91442a883107",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -633,7 +635,7 @@
       "exId": "pack_16_pt_sorrir_perf.3sg_1",
       "lemmaId": "pt_sorrir",
       "pt": "Finalmente a sorte sorriu para nós.",
-      "en": "Luck smiled on us then.",
+      "en": "Finally, luck smiled on us.",
       "answer": "sorriu",
       "subject": "none",
       "person": "3sg",
@@ -665,8 +667,8 @@
         "pt_nos"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "e69c36291140",
+      "rev": 2,
+      "contentHash": "ea4cc49027a0",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -714,10 +716,10 @@
     {
       "exId": "pack_16_pt_passear_pres.1sg_1",
       "lemmaId": "pt_passear",
-      "pt": "Passeio por um parque.",
-      "en": "I walk through a park.",
-      "answer": "Passeio",
-      "subject": "none",
+      "pt": "Eu sempre passeio no parque com amigos.",
+      "en": "I always go for a walk in the park with friends.",
+      "answer": "passeio",
+      "subject": "eu",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -726,27 +728,30 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "Passeio"
+        "passeio"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
       "distractors": [
-        "Tenho",
-        "Quero"
+        "termino",
+        "discuto"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to walk",
+      "hint_en": "to stroll, to go for a walk",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_por",
-        "pt_um",
-        "pt_parque"
+        "pt_eu",
+        "pt_sempre",
+        "pt_no",
+        "pt_parque",
+        "pt_com",
+        "pt_amigo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "1e1605f23b85",
+      "rev": 2,
+      "contentHash": "f4e4629d57dc",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -879,10 +884,10 @@
     {
       "exId": "pack_16_pt_possuir_pres.3sg_2",
       "lemmaId": "pt_possuir",
-      "pt": "Ela possui mais dinheiro do que cérebro.",
-      "en": "She has more money than brains.",
+      "pt": "A empresa possui três lojas na cidade.",
+      "en": "The company owns three stores in the city.",
       "answer": "possui",
-      "subject": "ela",
+      "subject": "none",
       "person": "3sg",
       "tense": "pres",
       "slot": "pres.3sg",
@@ -901,20 +906,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to possess",
+      "hint_en": "to possess, to own",
       "false_friend_note": null,
       "grammar_note_en": "Simple present tense for habitual or general states.",
       "requires": [
-        "pt_ela",
-        "pt_mais",
-        "pt_dinheiro",
-        "pt_do",
-        "pt_que",
-        "pt_cerebro"
+        "pt_o",
+        "pt_empresa",
+        "pt_tres",
+        "pt_loja",
+        "pt_na",
+        "pt_cidade"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "cb72acaaf93d",
+      "rev": 2,
+      "contentHash": "52d5c874a4e9",
       "retired": false,
       "source_type": "linguno_practice"
     },
@@ -922,7 +927,7 @@
       "exId": "pack_16_pt_atravessar_perf.1sg_1",
       "lemmaId": "pt_atravessar",
       "pt": "Eu atravessei o campo.",
-      "en": "I ran across the field.",
+      "en": "I crossed the field.",
       "answer": "atravessei",
       "subject": "eu",
       "person": "1sg",
@@ -943,7 +948,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to put across",
+      "hint_en": "to cross",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -952,8 +957,8 @@
         "pt_campo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "3c3978a005b4",
+      "rev": 2,
+      "contentHash": "984bd0777731",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -982,7 +987,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to put across",
+      "hint_en": "to cross",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -991,7 +996,7 @@
         "pt_rua"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "cacded4c1f17",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -1526,10 +1531,10 @@
     {
       "exId": "pack_16_pt_piorar_fut_subj.1sg_1",
       "lemmaId": "pt_piorar",
-      "pt": "Se a situação piorar, vou chamar a polícia.",
-      "en": "If the situation gets worse, I will call the police.",
+      "pt": "Se eu piorar hoje, vou ao médico.",
+      "en": "If I get worse today, I'll go to the doctor.",
       "answer": "piorar",
-      "subject": "none",
+      "subject": "eu",
       "person": "1sg",
       "tense": "fut_subj",
       "slot": "fut_subj.1sg",
@@ -1548,20 +1553,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to worsen",
+      "hint_en": "to get worse, to worsen",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_se",
-        "pt_o",
-        "pt_situacao",
+        "pt_eu",
+        "pt_hoje",
         "pt_ir",
-        "pt_chamar",
-        "pt_policia"
+        "pt_ao",
+        "pt_medico"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "457eb4c38a41",
+      "rev": 2,
+      "contentHash": "751831b0b8c9",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -1694,8 +1699,8 @@
     {
       "exId": "pack_16_pt_namorar_ger_1",
       "lemmaId": "pt_namorar",
-      "pt": "Estou namorando uma pessoa maravilhosa que conheci no trabalho.",
-      "en": "I'm dating a wonderful person I met at work.",
+      "pt": "Estou namorando uma pessoa que conheci no trabalho.",
+      "en": "I'm dating someone I met at work.",
       "answer": "namorando",
       "subject": "none",
       "person": null,
@@ -1716,22 +1721,21 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to endeavor to gain",
+      "hint_en": "to date",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_estar",
         "pt_um",
         "pt_pessoa",
-        "pt_maravilhoso",
         "pt_que",
         "pt_conhecer",
         "pt_no",
         "pt_trabalhar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "522868cccf69",
+      "rev": 2,
+      "contentHash": "b304f4f1067e",
       "retired": false,
       "source_type": "linguno_practice"
     },
@@ -1760,7 +1764,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to endeavor to gain",
+      "hint_en": "to date",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -1772,7 +1776,7 @@
         "pt_que"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "a3a1a5baee0a",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -1962,7 +1966,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "photography",
+      "hint_en": "photograph / picture",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -1970,7 +1974,7 @@
         "pt_estar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "be8046919be5",
       "retired": false,
       "source_type": "lingvist"
@@ -2099,7 +2103,7 @@
       "exId": "pack_16_pt_experimentar_inf_rm_1",
       "lemmaId": "pt_experimentar",
       "pt": "Você vai me deixar experimentar?",
-      "en": "Will you let me at it?",
+      "en": "Are you going to let me try it?",
       "answer": "experimentar",
       "subject": "none",
       "person": null,
@@ -2120,17 +2124,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to experience",
+      "hint_en": "to try, to taste",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_voce",
         "pt_ir",
+        "pt_eu",
         "pt_deixar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "8d683930d77c",
+      "rev": 2,
+      "contentHash": "2a37e244d10d",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2376,8 +2381,8 @@
     {
       "exId": "pack_16_pt_montar_inf_rm_1",
       "lemmaId": "pt_montar",
-      "pt": "Acho que deveria montar uma festinha.",
-      "en": "I think that I should organize a little party.",
+      "pt": "Preciso montar a mesa nova hoje.",
+      "en": "I need to assemble the new table today.",
       "answer": "montar",
       "subject": "none",
       "person": null,
@@ -2398,18 +2403,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to go up, climb",
+      "hint_en": "to assemble, to put together",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_achar",
-        "pt_que",
-        "pt_dever",
-        "pt_um"
+        "pt_precisar",
+        "pt_o",
+        "pt_mesa",
+        "pt_novo",
+        "pt_hoje"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "7c7fcfea33cd",
+      "rev": 2,
+      "contentHash": "863802e9c849",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2985,7 +2991,7 @@
       "exId": "pack_16_pt_cobertura_f.sg_rm_1",
       "lemmaId": "pt_cobertura",
       "pt": "Preciso que você me dê cobertura.",
-      "en": "I need you to back me up.",
+      "en": "I need you to cover for me.",
       "answer": "cobertura",
       "subject": "none",
       "person": "sg",
@@ -3006,18 +3012,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "covering something",
+      "hint_en": "cover / backup",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_precisar",
         "pt_que",
         "pt_voce",
+        "pt_eu",
         "pt_dar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "b8fa2198b31a",
+      "rev": 2,
+      "contentHash": "3e43512ed5be",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3167,7 +3174,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to lower",
+      "hint_en": "to download",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3177,7 +3184,7 @@
         "pt_estar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "faa462c8e4da",
       "retired": false,
       "source_type": "lingvist"
@@ -3185,8 +3192,8 @@
     {
       "exId": "pack_16_pt_novidade_f.sg_rm_1",
       "lemmaId": "pt_novidade",
-      "pt": "Isto é novidade pra mim.",
-      "en": "It's news to me.",
+      "pt": "Tenho uma novidade boa pra contar.",
+      "en": "I have some good news to tell.",
       "answer": "novidade",
       "subject": "none",
       "person": "sg",
@@ -3207,17 +3214,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "novelty",
+      "hint_en": "news / something new",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ser",
+        "pt_ter",
+        "pt_um",
+        "pt_bom",
         "pt_pra",
-        "pt_mim"
+        "pt_contar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "0ff7a4d4407d",
+      "rev": 2,
+      "contentHash": "f656c8d6fa93",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3308,8 +3317,8 @@
     {
       "exId": "pack_16_pt_religiao_f.sg_rm_1",
       "lemmaId": "pt_religiao",
-      "pt": "Toda religião proíbe o assassinato.",
-      "en": "Every religion prohibits murder.",
+      "pt": "A religião é muito importante para minha família.",
+      "en": "Religion is very important to my family.",
       "answer": "religião",
       "subject": "none",
       "person": "sg",
@@ -3325,8 +3334,8 @@
       "alt_valid": [],
       "plausible_wrong": [],
       "distractors": [
-        "pessoa",
-        "família"
+        "presença",
+        "promessa"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -3335,11 +3344,16 @@
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_assassinato"
+        "pt_ser",
+        "pt_muito",
+        "pt_importante",
+        "pt_para",
+        "pt_meu",
+        "pt_familia"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "409dd70e8f30",
+      "rev": 2,
+      "contentHash": "aba9a9ae1460",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3368,7 +3382,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "infancy",
+      "hint_en": "childhood",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3378,7 +3392,7 @@
         "pt_horrivel"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "bfa2884cca10",
       "retired": false,
       "source_type": "lingvist"
@@ -3408,7 +3422,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "a painting",
+      "hint_en": "painting",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3417,7 +3431,7 @@
         "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "b3fad89663d7",
       "retired": false,
       "source_type": "lingvist"
@@ -3506,8 +3520,8 @@
     {
       "exId": "pack_16_pt_tela_f.pl_rm_1",
       "lemmaId": "pt_tela",
-      "pt": "De quantas telas as senhoras precisam?",
-      "en": "How many pictures do you need?",
+      "pt": "De quantas telas vocês precisam hoje?",
+      "en": "How many canvases do you need today?",
       "answer": "telas",
       "subject": "none",
       "person": "pl",
@@ -3528,17 +3542,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "canvas",
+      "hint_en": "canvases",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_de",
-        "pt_o",
-        "pt_precisar"
+        "pt_voce",
+        "pt_precisar",
+        "pt_hoje"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "5c699de3b083",
+      "rev": 2,
+      "contentHash": "ff9d2cf7a3c4",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3585,8 +3600,8 @@
     {
       "exId": "pack_16_pt_audiencia_f.sg_rm_1",
       "lemmaId": "pt_audiencia",
-      "pt": "A audiência foi à loucura.",
-      "en": "The audience went crazy.",
+      "pt": "A audiência do programa caiu muito.",
+      "en": "The show's ratings dropped a lot.",
       "answer": "audiência",
       "subject": "none",
       "person": "sg",
@@ -3607,17 +3622,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "hearing",
+      "hint_en": "viewership / ratings",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_ser",
-        "pt_loucura"
+        "pt_do",
+        "pt_programa",
+        "pt_cair",
+        "pt_muito"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "d2c5d61df5d2",
+      "rev": 2,
+      "contentHash": "79e5fd6f07c8",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3646,15 +3663,15 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "photography",
+      "hint_en": "photograph / picture",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_a",
         "pt_estar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "87d17364da09",
       "retired": false,
       "source_type": "lingvist"
@@ -3763,7 +3780,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to experience",
+      "hint_en": "to try",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3774,7 +3791,7 @@
         "pt_isso"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "9fa641ab9603",
       "retired": false,
       "source_type": "lingvist"
@@ -4044,17 +4061,17 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "novelty",
+      "hint_en": "news / something new",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_isso",
         "pt_ser",
         "pt_para",
-        "pt_mim"
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "67bda986660e",
       "retired": false,
       "source_type": "lingvist"
@@ -4084,7 +4101,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "infancy",
+      "hint_en": "childhood",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -4095,7 +4112,7 @@
         "pt_meu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "b6f2f9607b68",
       "retired": false,
       "source_type": "lingvist"
@@ -4143,8 +4160,8 @@
     {
       "exId": "pack_16_pt_audiencia_f.sg_rm_2",
       "lemmaId": "pt_audiencia",
-      "pt": "A audiência encheu o auditório.",
-      "en": "The audience filled the hall.",
+      "pt": "A audiência começa às nove da manhã.",
+      "en": "The hearing starts at nine in the morning.",
       "answer": "audiência",
       "subject": "none",
       "person": "sg",
@@ -4170,11 +4187,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_encher"
+        "pt_comecar",
+        "pt_nove",
+        "pt_da",
+        "pt_manha"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "75fa06de5af3",
+      "rev": 2,
+      "contentHash": "1ab87e95a7d4",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -4264,7 +4284,7 @@
       "exId": "pack_16_pt_atravessar_perf.3pl_rm_1",
       "lemmaId": "pt_atravessar",
       "pt": "Vocês já atravessaram um rio nadando?",
-      "en": "Have you ever got across a river by swimming?",
+      "en": "Have you ever crossed a river swimming?",
       "answer": "atravessaram",
       "subject": "vocês",
       "person": "3pl",
@@ -4285,18 +4305,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to put across",
+      "hint_en": "to cross",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voces",
+        "pt_voce",
         "pt_ja",
         "pt_um",
         "pt_rir"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "2d85eee3c58d",
+      "rev": 2,
+      "contentHash": "218ff1778f58",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
@@ -4343,8 +4363,8 @@
     {
       "exId": "p16.diversao.llm.01",
       "lemmaId": "pt_diversao",
-      "pt": "Tem diversões boas naquela praça nova?",
-      "en": "Are there fun things to do in that new square?",
+      "pt": "Ler é uma das minhas diversões favoritas.",
+      "en": "Reading is one of my favorite pastimes.",
       "answer": "diversões",
       "subject": "none",
       "person": "pl",
@@ -4365,18 +4385,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "fun activities (pl.)",
+      "hint_en": "pastimes / amusements (pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ter",
-        "pt_bom",
-        "pt_praca",
-        "pt_novo"
+        "pt_ler",
+        "pt_ser",
+        "pt_um",
+        "pt_meu",
+        "pt_favorito"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "49211663eb25",
+      "rev": 2,
+      "contentHash": "28299c53fb66",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -4882,9 +4903,9 @@
     {
       "exId": "p16.judeu.llm.02",
       "lemmaId": "pt_judeu",
-      "pt": "Conheci uma família judeia muito agradável.",
+      "pt": "Conheci uma família judia muito agradável.",
       "en": "I met a very pleasant Jewish family.",
-      "answer": "judeia",
+      "answer": "judia",
       "subject": "none",
       "person": "sg",
       "tense": "f",
@@ -4894,7 +4915,7 @@
       "inflection": "f.sg",
       "sense": "core",
       "accept": [
-        "judeia"
+        "judia"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -4915,8 +4936,8 @@
         "pt_agradavel"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "96fb7ff58d68",
+      "rev": 2,
+      "contentHash": "78b58336a439",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -5412,8 +5433,8 @@
     {
       "exId": "p16.bordo.llm.01",
       "lemmaId": "pt_bordo",
-      "pt": "Tinha água no bordo da xícara.",
-      "en": "There was water on the rim of the cup.",
+      "pt": "A família já está a bordo do barco.",
+      "en": "The family is already on board the boat.",
       "answer": "bordo",
       "subject": "none",
       "person": "sg",
@@ -5434,27 +5455,28 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "edge / rim",
+      "hint_en": "board (on board)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ter",
-        "pt_agua",
-        "pt_no",
-        "pt_da",
-        "pt_xicara"
+        "pt_o",
+        "pt_familia",
+        "pt_ja",
+        "pt_estar",
+        "pt_do",
+        "pt_barco"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e02e62f1e474",
+      "rev": 2,
+      "contentHash": "295bd5164a56",
       "retired": false,
       "source_type": "llm_generated"
     },
     {
       "exId": "p16.bordo.llm.02",
       "lemmaId": "pt_bordo",
-      "pt": "Os bordos da panela ficaram pretos.",
-      "en": "The rims of the pot turned black.",
+      "pt": "A água batia nos dois bordos do barco.",
+      "en": "The water was hitting both sides of the boat.",
       "answer": "bordos",
       "subject": "none",
       "person": "pl",
@@ -5475,19 +5497,21 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "edges / rims",
+      "hint_en": "sides (of a boat, pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_da",
-        "pt_panela",
-        "pt_ficar",
-        "pt_preto"
+        "pt_agua",
+        "pt_bater",
+        "pt_nos_pron",
+        "pt_dois",
+        "pt_do",
+        "pt_barco"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "52478d1a7ac2",
+      "rev": 2,
+      "contentHash": "0f07cedbe555",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -6151,8 +6175,8 @@
     {
       "exId": "p16.corredor.llm.02",
       "lemmaId": "pt_corredor",
-      "pt": "Aquela garota corredora bebeu muita água.",
-      "en": "That running girl drank a lot of water.",
+      "pt": "Aquela corredora chegou em primeiro lugar.",
+      "en": "That runner came in first place.",
       "answer": "corredora",
       "subject": "none",
       "person": "sg",
@@ -6173,19 +6197,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "running (fem.)",
+      "hint_en": "runner (fem.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_aquele",
-        "pt_garota",
-        "pt_beber",
-        "pt_muito",
-        "pt_agua"
+        "pt_chegar",
+        "pt_em",
+        "pt_primeiro",
+        "pt_lugar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "41194d86f16f",
+      "rev": 2,
+      "contentHash": "a683500f79ee",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -7013,8 +7037,8 @@
     {
       "exId": "p16.independente.llm.01",
       "lemmaId": "pt_independente",
-      "pt": "Minha irmã ainda não tá independente.",
-      "en": "My sister isn't independent yet.",
+      "pt": "Minha irmã já é bem independente.",
+      "en": "My sister is already very independent.",
       "answer": "independente",
       "subject": "none",
       "person": "sg",
@@ -7041,13 +7065,13 @@
       "requires": [
         "pt_meu",
         "pt_irmao",
-        "pt_ainda",
-        "pt_nao",
-        "pt_estar~ta"
+        "pt_ja",
+        "pt_ser",
+        "pt_bem"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "dab7bfe0f97f",
+      "rev": 2,
+      "contentHash": "e5645481d2fe",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -8303,8 +8327,8 @@
     {
       "exId": "p16.formacao.llm.02",
       "lemmaId": "pt_formacao",
-      "pt": "A gente tem duas formações aqui.",
-      "en": "We have two formations here.",
+      "pt": "Ela tem duas formações muito boas.",
+      "en": "She has two very good degrees.",
       "answer": "formações",
       "subject": "none",
       "person": "pl",
@@ -8325,17 +8349,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "formations",
+      "hint_en": "degrees / qualifications (pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_a_gente",
+        "pt_ela",
         "pt_ter",
-        "pt_aqui"
+        "pt_muito",
+        "pt_bom"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ff7ad54d8f22",
+      "rev": 2,
+      "contentHash": "b38b46db54de",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -8875,8 +8900,8 @@
     {
       "exId": "p16.criatura.llm.02",
       "lemmaId": "pt_criatura",
-      "pt": "Muitas criaturas ficam nesse lago profundo.",
-      "en": "Many creatures stay in that deep lake.",
+      "pt": "Muitas criaturas vivem nesse lago profundo.",
+      "en": "Many creatures live in that deep lake.",
       "answer": "criaturas",
       "subject": "none",
       "person": "pl",
@@ -8902,14 +8927,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_muito",
-        "pt_ficar",
+        "pt_viver",
         "pt_nesse",
         "pt_lago",
         "pt_profundo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "f54cda839248",
+      "rev": 2,
+      "contentHash": "8933f68c5297",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -8992,6 +9017,94 @@
       "register_tier": "neutral",
       "rev": 1,
       "contentHash": "177e3d01c119",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p16.exterior.llm.01",
+      "lemmaId": "pt_exterior",
+      "pt": "Ela perdeu contato com o mundo exterior.",
+      "en": "She lost contact with the outside world.",
+      "answer": "exterior",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "exterior"
+      ],
+      "alt_valid": [
+        "externo"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "espanhol",
+        "poderoso"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "outside / outer",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_perder",
+        "pt_contato",
+        "pt_com",
+        "pt_o",
+        "pt_mundo"
+      ],
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "330f71450896",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p16.exterior.llm.02",
+      "lemmaId": "pt_exterior",
+      "pt": "A política exterior do país mudou muito.",
+      "en": "The country's foreign policy changed a lot.",
+      "answer": "exterior",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "exterior"
+      ],
+      "alt_valid": [
+        "externa"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "obrigada",
+        "anterior"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "foreign / external (fem.)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_politico",
+        "pt_do",
+        "pt_pais",
+        "pt_mudar",
+        "pt_muito"
+      ],
+      "register_tier": "neutral",
+      "rev": 2,
+      "contentHash": "f3eb3a1e2d50",
       "retired": false,
       "source_type": "llm_generated"
     }

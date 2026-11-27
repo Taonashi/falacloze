@@ -157,7 +157,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to shoot, to fire",
+      "hint_en": "to skyrocket, to shoot up",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -167,7 +167,7 @@
         "pt_comida"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "629edfca2656",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -239,7 +239,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to shoot, to fire",
+      "hint_en": "to go off, to trigger",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -248,7 +248,7 @@
         "pt_incendio"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "71d3451e4ed0",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -337,10 +337,10 @@
     {
       "exId": "pack_18_pt_invadir_pres_subj.1sg_1",
       "lemmaId": "pt_invadir",
-      "pt": "Espero que ninguém invada a minha casa.",
-      "en": "I hope no one breaks into my house.",
+      "pt": "Ela não quer que eu invada seu espaço.",
+      "en": "She doesn't want me to invade her space.",
       "answer": "invada",
-      "subject": "none",
+      "subject": "eu",
       "person": "1sg",
       "tense": "pres_subj",
       "slot": "pres_subj.1sg",
@@ -359,27 +359,28 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to invade",
+      "hint_en": "to intrude on",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_esperar",
+        "pt_ela",
+        "pt_nao",
+        "pt_querer",
         "pt_que",
-        "pt_ninguem",
-        "pt_o",
-        "pt_meu",
-        "pt_casa"
+        "pt_eu",
+        "pt_seu",
+        "pt_espaco"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "d46ed6f9d04c",
+      "rev": 2,
+      "contentHash": "b98643d84db4",
       "retired": false,
       "source_type": "linguno_catalog_example"
     },
     {
       "exId": "pack_18_pt_confortavel_m.pl_1",
       "lemmaId": "pt_confortavel",
-      "pt": "Estas cadeiras não são bonitas, mas são confortáveis",
+      "pt": "Estas cadeiras não são bonitas, mas são confortáveis.",
       "en": "These chairs aren't beautiful, but they're comfortable.",
       "answer": "confortáveis",
       "subject": "none",
@@ -405,14 +406,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_este",
         "pt_cadeira",
         "pt_nao",
         "pt_ser",
         "pt_mas"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "35c8a49b2d6f",
+      "rev": 2,
+      "contentHash": "6e0aa04b6867",
       "retired": false,
       "source_type": "speechling"
     },
@@ -1822,15 +1824,16 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "passerine",
+      "hint_en": "birds",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_todo",
         "pt_o",
         "pt_voar"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "9284e9e83fcd",
       "retired": false,
       "source_type": "lingvist"
@@ -1901,7 +1904,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "ten",
+      "hint_en": "decades",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -1913,7 +1916,7 @@
         "pt_calor"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "9932d89ce01f",
       "retired": false,
       "source_type": "lingvist"
@@ -1963,7 +1966,7 @@
       "exId": "pack_18_pt_estrangeiro_m.sg_rm_1",
       "lemmaId": "pt_estrangeiro",
       "pt": "Eu vivi no estrangeiro por dez anos.",
-      "en": "I lived overseas for ten years.",
+      "en": "I lived abroad for ten years.",
       "answer": "estrangeiro",
       "subject": "none",
       "person": "sg",
@@ -1984,7 +1987,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "foreigner",
+      "hint_en": "abroad / overseas",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -1996,8 +1999,8 @@
         "pt_ano"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "5d6402c1d955",
+      "rev": 2,
+      "contentHash": "dbc42f53d56b",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -2149,17 +2152,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to face",
+      "hint_en": "to stare at",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_por",
         "pt_que",
         "pt_ele",
-        "pt_estar"
+        "pt_estar",
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "a2a92077743b",
       "retired": false,
       "source_type": "lingvist"
@@ -2710,7 +2714,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "child",
+      "hint_en": "childish",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -2720,7 +2724,7 @@
         "pt_ato"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "79058a2e92e1",
       "retired": false,
       "source_type": "lingvist"
@@ -2808,10 +2812,10 @@
     {
       "exId": "pack_18_pt_chatear_fut_subj.3sg_rm_1",
       "lemmaId": "pt_chatear",
-      "pt": "É para não me chatear.",
-      "en": "Don't be mad.",
+      "pt": "Se ele me chatear de novo, eu saio.",
+      "en": "If he annoys me again, I'm leaving.",
       "answer": "chatear",
-      "subject": "none",
+      "subject": "ele",
       "person": "3sg",
       "tense": "fut_subj",
       "slot": "fut_subj.3sg",
@@ -2830,17 +2834,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to annoy, pester, peeve",
+      "hint_en": "to annoy, to bother",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ser",
-        "pt_para",
-        "pt_nao"
+        "pt_se",
+        "pt_ele",
+        "pt_eu",
+        "pt_de",
+        "pt_novo",
+        "pt_sair"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "f64fa2c2dcd1",
+      "rev": 2,
+      "contentHash": "3e3cb30d0e4f",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3147,7 +3154,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "advertisement",
+      "hint_en": "announcement",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3156,7 +3163,7 @@
         "pt_um"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "6c3ffde877f7",
       "retired": false,
       "source_type": "lingvist"
@@ -3589,7 +3596,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "noun meaning clue",
+      "hint_en": "photo book / music record",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3599,7 +3606,7 @@
         "pt_meu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "55eba524ee0b",
       "retired": false,
       "source_type": "lingvist"
@@ -3727,8 +3734,8 @@
     {
       "exId": "pack_18_pt_senso_m.sg_rm_2",
       "lemmaId": "pt_senso",
-      "pt": "Havia um senso de medo.",
-      "en": "There was a sense of fear.",
+      "pt": "Ela tem um ótimo senso de humor.",
+      "en": "She has a great sense of humor.",
       "answer": "senso",
       "subject": "none",
       "person": "sg",
@@ -3753,14 +3760,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_haver",
+        "pt_ela",
+        "pt_ter",
         "pt_um",
+        "pt_otimo",
         "pt_de",
-        "pt_medo"
+        "pt_humor"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "3444caad4234",
+      "rev": 2,
+      "contentHash": "e0c75b0cdb5e",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3789,7 +3798,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "verb meaning clue",
+      "hint_en": "to intrude on, to violate",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3797,7 +3806,7 @@
         "pt_o"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "624190eb99df",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -3827,7 +3836,7 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "to stop / arrest",
+      "hint_en": "to hold (a title)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
@@ -3839,7 +3848,7 @@
         "pt_peso"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "dde130755955",
       "retired": false,
       "source_type": "linguno_catalog_example"
@@ -4865,8 +4874,8 @@
     {
       "exId": "p18.instante.llm.01",
       "lemmaId": "pt_instante",
-      "pt": "Um pedido instante chegou pro gerente agora.",
-      "en": "An urgent request just reached the manager.",
+      "pt": "O diretor recebeu um pedido instante hoje.",
+      "en": "The director received an urgent request today.",
       "answer": "instante",
       "subject": "none",
       "person": "sg",
@@ -4889,28 +4898,28 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "urgent / imminent (m.)",
+      "hint_en": "urgent / pressing (m.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_o",
+        "pt_diretor",
+        "pt_receber",
         "pt_um",
         "pt_pedir",
-        "pt_chegar",
-        "pt_pro",
-        "pt_gerente",
-        "pt_agora"
+        "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ee69ceeec6b5",
+      "rev": 2,
+      "contentHash": "05e0ed90ebbf",
       "retired": false,
       "source_type": "llm_generated"
     },
     {
       "exId": "p18.instante.llm.02",
       "lemmaId": "pt_instante",
-      "pt": "Essa entrega instante resolve o nosso almoço, viu?",
-      "en": "This immediate delivery solves our lunch, you know?",
+      "pt": "O chefe recebeu uma ordem instante hoje.",
+      "en": "The boss received an urgent order today.",
       "answer": "instante",
       "subject": "none",
       "person": "sg",
@@ -4933,21 +4942,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "immediate / urgent (f.)",
+      "hint_en": "urgent / pressing (f.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_esse",
-        "pt_entregar",
-        "pt_resolver",
         "pt_o",
-        "pt_nosso",
-        "pt_almoco",
-        "pt_ver"
+        "pt_chefe",
+        "pt_receber",
+        "pt_um",
+        "pt_ordem",
+        "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "39517f4ac60c",
+      "rev": 2,
+      "contentHash": "1f404b8b5cae",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -5889,8 +5897,8 @@
     {
       "exId": "p18.lindar.llm.02",
       "lemmaId": "pt_lindar",
-      "pt": "Nossa casa linda bem com aquela praça ali.",
-      "en": "Our house borders right on that square over there.",
+      "pt": "Nossa casa linda com aquela praça antiga.",
+      "en": "Our house borders on that old square.",
       "answer": "linda",
       "subject": "none",
       "person": "3sg",
@@ -5916,15 +5924,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_casa",
-        "pt_bem",
         "pt_com",
         "pt_aquele",
         "pt_praca",
-        "pt_ali"
+        "pt_antigo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "6d69a52c3846",
+      "rev": 2,
+      "contentHash": "e63dcb1da890",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -6815,8 +6822,8 @@
     {
       "exId": "p18.foco.llm.02",
       "lemmaId": "pt_foco",
-      "pt": "Os focos da reunião mudaram na última hora.",
-      "en": "The focuses of the meeting changed at the last minute.",
+      "pt": "Eles apagaram todos os focos de fogo.",
+      "en": "They put out all the pockets of fire.",
       "answer": "focos",
       "subject": "none",
       "person": "pl",
@@ -6837,21 +6844,20 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "focuses",
+      "hint_en": "hotspots / pockets (pl.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_ele",
+        "pt_apagar",
+        "pt_todo",
         "pt_o",
-        "pt_da",
-        "pt_reuniao",
-        "pt_mudar",
-        "pt_na",
-        "pt_ultimo",
-        "pt_hora"
+        "pt_de",
+        "pt_fogo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "8d6d4e6ef19f",
+      "rev": 2,
+      "contentHash": "2ab5c1d7e8cf",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -8410,7 +8416,7 @@
     {
       "exId": "p18.guia.llm.02",
       "lemmaId": "pt_guia",
-      "pt": "Já paguei todas as guias do pagamento.",
+      "pt": "Já paguei todas as guias de pagamento.",
       "en": "I already paid all the payment slips.",
       "answer": "guias",
       "subject": "none",
@@ -8440,12 +8446,12 @@
         "pt_pagar",
         "pt_todo",
         "pt_a",
-        "pt_do",
+        "pt_de",
         "pt_pagamento"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "87c647df6077",
+      "rev": 2,
+      "contentHash": "f8c2b9a4135a",
       "retired": false,
       "source_type": "llm_generated"
     },

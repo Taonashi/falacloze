@@ -1786,8 +1786,8 @@
     {
       "exId": "pack_14_pt_familiar_m.sg_rm_1",
       "lemmaId": "pt_familiar",
-      "pt": "O nome dele me é familiar.",
-      "en": "His name is known to me.",
+      "pt": "O nome dele é bem familiar.",
+      "en": "His name is very familiar.",
       "answer": "familiar",
       "subject": "none",
       "person": "sg",
@@ -1808,18 +1808,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "adj meaning clue",
+      "hint_en": "recognizable / well-known (m. sg.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_o",
         "pt_nome",
         "pt_dele",
-        "pt_ser"
+        "pt_ser",
+        "pt_bem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "80e985993742",
+      "rev": 2,
+      "contentHash": "9f85e6604c8b",
       "retired": false,
       "source_type": "lingvist"
     },
@@ -3611,15 +3612,16 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "adj meaning clue",
+      "hint_en": "recognizable / well-known (m. sg.)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
         "pt_seu",
-        "pt_nome"
+        "pt_nome",
+        "pt_eu"
       ],
       "register_tier": "neutral",
-      "rev": 1,
+      "rev": 2,
       "contentHash": "0d874281f490",
       "retired": false,
       "source_type": "lingvist"
@@ -4227,9 +4229,9 @@
     {
       "exId": "p14.explodir.llm.01",
       "lemmaId": "pt_explodir",
-      "pt": "Com esse barulho todo, eu expludo!",
+      "pt": "Com esse barulho todo, eu explodo!",
       "en": "With all this noise, I'm going to snap!",
-      "answer": "expludo",
+      "answer": "explodo",
       "subject": "eu",
       "person": "1sg",
       "tense": "pres",
@@ -4239,7 +4241,7 @@
       "inflection": null,
       "sense": "core",
       "accept": [
-        "expludo"
+        "explodo"
       ],
       "alt_valid": [],
       "plausible_wrong": [],
@@ -4260,8 +4262,8 @@
         "pt_eu"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "6bd07558b5ee",
+      "rev": 2,
+      "contentHash": "d6ace7330a26",
       "retired": false,
       "source_type": "llm_generated"
     },
@@ -11024,8 +11026,8 @@
     {
       "exId": "p14.quantidade.llm.02",
       "lemmaId": "pt_quantidade",
-      "pt": "A fazenda produz grandes quantidades de leite.",
-      "en": "The farm produces large quantities of milk.",
+      "pt": "A loja compra grandes quantidades de leite.",
+      "en": "The store buys large quantities of milk.",
       "answer": "quantidades",
       "subject": "none",
       "person": "pl",
@@ -11051,13 +11053,15 @@
       "grammar_note_en": null,
       "requires": [
         "pt_o",
+        "pt_loja",
+        "pt_comprar",
         "pt_grande",
         "pt_de",
         "pt_leite"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "8e214114de86",
+      "rev": 2,
+      "contentHash": "16b61ac5afbb",
       "retired": false,
       "source_type": "llm_generated"
     },
