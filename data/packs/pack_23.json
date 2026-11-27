@@ -9313,6 +9313,48 @@
       "contentHash": "d3508ebc746f",
       "retired": false,
       "source_type": "llm_generated"
+    },
+    {
+      "exId": "p23.gene.llm.02",
+      "lemmaId": "pt_gene",
+      "pt": "Esses genes passam de pai pra filho.",
+      "en": "These genes pass from father to son.",
+      "answer": "genes",
+      "subject": "none",
+      "person": "pl",
+      "tense": "m",
+      "slot": "m.pl",
+      "cellClass": "m.pl",
+      "construction": null,
+      "inflection": "m.pl",
+      "sense": "core",
+      "accept": [
+        "genes"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "manos",
+        "times"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "DNA units (pl.)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_esse",
+        "pt_passar",
+        "pt_de",
+        "pt_pai",
+        "pt_pra",
+        "pt_filho"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b5836ad861c9",
+      "retired": false,
+      "source_type": "llm_generated"
     }
   ]
 }

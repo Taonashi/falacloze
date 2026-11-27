@@ -2618,6 +2618,2507 @@
       "contentHash": "543782267629",
       "retired": false,
       "source_type": "lingvist"
+    },
+    {
+      "exId": "p33.trevas.llm.01",
+      "lemmaId": "pt_trevas",
+      "pt": "Quando a luz acabou, tudo ficou nas trevas.",
+      "en": "When the power went out, everything fell into darkness.",
+      "answer": "trevas",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "trevas"
+      ],
+      "alt_valid": [
+        "escuridão"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "fígado",
+        "senado"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "darkness / gloom",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_quando",
+        "pt_o",
+        "pt_acabar",
+        "pt_tudo",
+        "pt_ficar",
+        "pt_nas"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "64f6a5d5d8e7",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.saudacao.llm.01",
+      "lemmaId": "pt_saudacao",
+      "pt": "Ele fez uma saudação rápida pra turma toda.",
+      "en": "He gave a quick greeting to the whole group.",
+      "answer": "saudação",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "saudação"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "tragédia",
+        "intenção"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "greeting / wave",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_fazer",
+        "pt_um",
+        "pt_rapido",
+        "pt_pra",
+        "pt_turma",
+        "pt_todo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a31db261eae0",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.fiscal.llm.01",
+      "lemmaId": "pt_fiscal",
+      "pt": "O país precisa melhorar seu sistema fiscal.",
+      "en": "The country needs to improve its tax system.",
+      "answer": "fiscal",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "fiscal"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pânico",
+        "lógico"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "tax / budget (adj.)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_pais",
+        "pt_precisar",
+        "pt_melhorar",
+        "pt_seu",
+        "pt_sistema"
+      ],
+      "register_tier": "written",
+      "rev": 1,
+      "contentHash": "88d7abd9b407",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.recem.llm.01",
+      "lemmaId": "pt_recem",
+      "pt": "Os vizinhos recém compraram essa casa bonita.",
+      "en": "The neighbors just bought this nice house.",
+      "answer": "recém",
+      "subject": "none",
+      "person": "none",
+      "tense": "none",
+      "slot": "base",
+      "cellClass": "base",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "recém"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "longe",
+        "então"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "just now / newly",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_vizinho",
+        "pt_comprar",
+        "pt_esse",
+        "pt_casa"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0fdc17933d76",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.sindrome.llm.01",
+      "lemmaId": "pt_sindrome",
+      "pt": "O médico explicou essa síndrome rara pra mãe.",
+      "en": "The doctor explained that rare condition to the mom.",
+      "answer": "síndrome",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "síndrome"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "ministro",
+        "conteúdo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "disorder / condition",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_medico",
+        "pt_explicar",
+        "pt_esse",
+        "pt_raro",
+        "pt_pra",
+        "pt_mae"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "f75f899d83ae",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.espetacular.llm.01",
+      "lemmaId": "pt_espetacular",
+      "pt": "Não ficou espetacular essa varanda cheia de flores?",
+      "en": "Didn't this balcony full of flowers turn out amazing?",
+      "answer": "espetacular",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "espetacular"
+      ],
+      "alt_valid": [
+        "linda",
+        "incrível"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "adolescente",
+        "dispositivo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "amazing / breathtaking",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_ficar",
+        "pt_esse",
+        "pt_varanda",
+        "pt_cheio",
+        "pt_de",
+        "pt_flor"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "8b43d17bde45",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.primario.llm.01",
+      "lemmaId": "pt_primario",
+      "pt": "Nosso objetivo primário é resolver esse problema.",
+      "en": "Our main goal is to solve this problem.",
+      "answer": "primário",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "primário"
+      ],
+      "alt_valid": [
+        "principal"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "instante",
+        "contente"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "first / main",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nosso",
+        "pt_objetivo",
+        "pt_ser",
+        "pt_resolver",
+        "pt_esse",
+        "pt_problema"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "039fcc7804c1",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.dentre.llm.01",
+      "lemmaId": "pt_dentre",
+      "pt": "Não sei qual escolher dentre tantas frutas frescas.",
+      "en": "I don't know which to pick among so many fresh fruits.",
+      "answer": "dentre",
+      "subject": "none",
+      "person": "none",
+      "tense": "none",
+      "slot": "base",
+      "cellClass": "base",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "dentre"
+      ],
+      "alt_valid": [
+        "entre"
+      ],
+      "plausible_wrong": [],
+      "distractors": [],
+      "excludeBlindAudio": true,
+      "needs_distractors": false,
+      "hint_en": "among / out of",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_saber",
+        "pt_qual",
+        "pt_escolher",
+        "pt_fruta",
+        "pt_fresco"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "e4a0e3452dcd",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.profeta.llm.01",
+      "lemmaId": "pt_profeta",
+      "pt": "Aquele velho profeta falava sobre tempos melhores.",
+      "en": "That old prophet used to speak about better times.",
+      "answer": "profeta",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "profeta"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "artista",
+        "trailer"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "seer / messenger",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_aquele",
+        "pt_velho",
+        "pt_falar",
+        "pt_sobre",
+        "pt_tempo",
+        "pt_melhor"
+      ],
+      "register_tier": "written",
+      "rev": 1,
+      "contentHash": "2c6e99f04e06",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.alfa.llm.01",
+      "lemmaId": "pt_alfa",
+      "pt": "O lobo alfa tá sempre cuidando do grupo.",
+      "en": "The alpha wolf is always looking after the pack.",
+      "answer": "alfa",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "alfa"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "gado",
+        "azar"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "lead / top rank",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_estar~ta",
+        "pt_sempre",
+        "pt_cuidar",
+        "pt_do",
+        "pt_grupo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a5d701631f86",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.investigador.llm.01",
+      "lemmaId": "pt_investigador",
+      "pt": "O investigador ouviu cada detalhe com muita atenção.",
+      "en": "The detective listened to every detail very carefully.",
+      "answer": "investigador",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "investigador"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "proprietário",
+        "refrigerante"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "detective / researcher",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_ouvir",
+        "pt_cada",
+        "pt_detalhe",
+        "pt_com",
+        "pt_muito",
+        "pt_atencao"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "711ec12dcd5e",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.brutal.llm.01",
+      "lemmaId": "pt_brutal",
+      "pt": "O vento frio da noite tava brutal ontem.",
+      "en": "The cold night wind was brutal yesterday.",
+      "answer": "brutal",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "brutal"
+      ],
+      "alt_valid": [
+        "intenso",
+        "forte"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "quarto",
+        "idiota"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "harsh / intense",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_vento",
+        "pt_frio",
+        "pt_da",
+        "pt_noite",
+        "pt_ontem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "69082520bec6",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.incrivelmente.llm.01",
+      "lemmaId": "pt_incrivelmente",
+      "pt": "Como esse pão de alho ficou incrivelmente gostoso?",
+      "en": "How did this garlic bread turn out so amazingly good?",
+      "answer": "incrivelmente",
+      "subject": "none",
+      "person": "none",
+      "tense": "none",
+      "slot": "base",
+      "cellClass": "base",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "incrivelmente"
+      ],
+      "alt_valid": [
+        "muito",
+        "bem"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "especialmente",
+        "profundamente"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "amazingly / surprisingly",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_comer",
+        "pt_esse",
+        "pt_pao",
+        "pt_de",
+        "pt_alho",
+        "pt_ficar",
+        "pt_gostoso"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "ec535917a1e6",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.vagina.llm.01",
+      "lemmaId": "pt_vagina",
+      "pt": "A enfermeira falou sobre cuidados com a vagina.",
+      "en": "The nurse talked about caring for the vagina.",
+      "answer": "vagina",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "vagina"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "mulher",
+        "colega"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "female anatomy",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_falar",
+        "pt_sobre",
+        "pt_com"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "9ef4d2a05c9e",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.pulsar.llm.01",
+      "lemmaId": "pt_pulsar",
+      "pt": "Quando a música começa, eu pulso no ritmo.",
+      "en": "When the music starts, I pulse to the beat.",
+      "answer": "pulso",
+      "subject": "eu",
+      "person": "1sg",
+      "tense": "pres",
+      "slot": "pres.1sg",
+      "cellClass": "pres.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "pulso"
+      ],
+      "alt_valid": [
+        "vibro"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "cerco",
+        "gravo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "throb / beat (1sg)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_quando",
+        "pt_o",
+        "pt_musica",
+        "pt_comecar",
+        "pt_eu",
+        "pt_no",
+        "pt_ritmo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b0f20ad93930",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.pulsar.llm.02",
+      "lemmaId": "pt_pulsar",
+      "pt": "Seu coração também pulsa forte antes da prova?",
+      "en": "Does your heart also pound hard before a test?",
+      "answer": "pulsa",
+      "subject": "none",
+      "person": "3sg",
+      "tense": "pres",
+      "slot": "pres.3sg",
+      "cellClass": "pres.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "pulsa"
+      ],
+      "alt_valid": [
+        "bate"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "sorri",
+        "enche"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "beats / throbs (3sg)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_seu",
+        "pt_coracao",
+        "pt_tambem",
+        "pt_forte",
+        "pt_antes",
+        "pt_da",
+        "pt_prova"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "1e9f1888b892",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.regressar.llm.01",
+      "lemmaId": "pt_regressar",
+      "pt": "Eu regresso para o escritório só na quinta.",
+      "en": "I won't return to the office until Thursday.",
+      "answer": "regresso",
+      "subject": "eu",
+      "person": "1sg",
+      "tense": "pres",
+      "slot": "pres.1sg",
+      "cellClass": "pres.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "regresso"
+      ],
+      "alt_valid": [
+        "volto"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "controlo",
+        "alimento"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "go back / return (1sg)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_para",
+        "pt_o",
+        "pt_escritorio",
+        "pt_so_adj",
+        "pt_na",
+        "pt_quinto"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "a423a566c2d2",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.regressar.llm.02",
+      "lemmaId": "pt_regressar",
+      "pt": "A equipe médica regressa da viagem amanhã cedo.",
+      "en": "The medical team returns from the trip early tomorrow.",
+      "answer": "regressa",
+      "subject": "none",
+      "person": "3sg",
+      "tense": "pres",
+      "slot": "pres.3sg",
+      "cellClass": "pres.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "regressa"
+      ],
+      "alt_valid": [
+        "volta"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "recupera",
+        "expressa"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "heads back / returns (3sg)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_equipe",
+        "pt_medico",
+        "pt_da",
+        "pt_viagem",
+        "pt_amanha",
+        "pt_cedo"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "d55d9548bf85",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.acontecimento.llm.01",
+      "lemmaId": "pt_acontecimento",
+      "pt": "A formatura da minha irmã foi um acontecimento.",
+      "en": "My sister's graduation was a huge event.",
+      "answer": "acontecimento",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "acontecimento"
+      ],
+      "alt_valid": [
+        "evento"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "representante",
+        "comportamento"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "big event / milestone",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_formatura",
+        "pt_da",
+        "pt_meu",
+        "pt_irmao",
+        "pt_ser",
+        "pt_um"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "9c59c59b180d",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.encostar.llm.01",
+      "lemmaId": "pt_encostar",
+      "pt": "Eu encosto a escada aqui na parede branca?",
+      "en": "Should I lean the ladder here against the white wall?",
+      "answer": "encosto",
+      "subject": "eu",
+      "person": "1sg",
+      "tense": "pres",
+      "slot": "pres.1sg",
+      "cellClass": "pres.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "encosto"
+      ],
+      "alt_valid": [
+        "apoio"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "conheço",
+        "desafio"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "lean / rest against (1sg)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_o",
+        "pt_escada",
+        "pt_aqui",
+        "pt_na",
+        "pt_parede",
+        "pt_branco"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0c20c5bd753c",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.adocao.llm.01",
+      "lemmaId": "pt_adocao",
+      "pt": "O casal finalmente conseguiu terminar a adoção hoje.",
+      "en": "The couple finally managed to finish the adoption today.",
+      "answer": "adoção",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "adoção"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "boneca",
+        "aldeia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "family placement",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_casal",
+        "pt_finalmente",
+        "pt_conseguir",
+        "pt_terminar",
+        "pt_hoje"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "06af5e57def3",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.perito.llm.01",
+      "lemmaId": "pt_perito",
+      "pt": "Meu avô é perito em consertar relógios antigos.",
+      "en": "My grandfather is an expert at fixing old watches.",
+      "answer": "perito",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "perito"
+      ],
+      "alt_valid": [
+        "especialista"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "mínimo",
+        "máximo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "skilled / specialist",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_meu",
+        "pt_avo",
+        "pt_ser",
+        "pt_em",
+        "pt_consertar",
+        "pt_relogio",
+        "pt_antigo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b7fbf74da194",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.injecao.llm.01",
+      "lemmaId": "pt_injecao",
+      "pt": "Cê já tomou aquela injeção na farmácia hoje?",
+      "en": "Did you already get that shot at the pharmacy today?",
+      "answer": "injeção",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "injeção"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "opinião",
+        "laranja"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "shot / needle",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce~ce",
+        "pt_ja",
+        "pt_tomar",
+        "pt_aquele",
+        "pt_na",
+        "pt_farmacia",
+        "pt_hoje"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "12797ea0f4a4",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.tartaruga.llm.01",
+      "lemmaId": "pt_tartaruga",
+      "pt": "Vimos uma tartaruga enorme nadando perto das pedras.",
+      "en": "We saw a huge turtle swimming near the rocks.",
+      "answer": "tartaruga",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "tartaruga"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "cerimônia",
+        "transição"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "turtle",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ver",
+        "pt_um",
+        "pt_enorme",
+        "pt_nadar",
+        "pt_perto",
+        "pt_pedra"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "adb73a979a1d",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.cozinheiro.llm.01",
+      "lemmaId": "pt_cozinheiro",
+      "pt": "O cozinheiro da padaria faz um pão maravilhoso.",
+      "en": "The bakery cook makes wonderful bread.",
+      "answer": "cozinheiro",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "cozinheiro"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "sacrifício",
+        "passaporte"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "chef / baker",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_da",
+        "pt_padaria",
+        "pt_fazer",
+        "pt_um",
+        "pt_pao",
+        "pt_maravilhoso"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a1687af727a9",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.suicida.llm.01",
+      "lemmaId": "pt_suicida",
+      "pt": "O terapeuta percebeu logo aquele comportamento suicida dele.",
+      "en": "The therapist quickly noticed that suicidal behavior of his.",
+      "answer": "suicida",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "suicida"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pequeno",
+        "cansado"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "self-harming / fatal",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_terapeuta",
+        "pt_perceber",
+        "pt_logo",
+        "pt_aquele",
+        "pt_comportamento",
+        "pt_dele"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "78e2ead052d1",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.docinho.llm.01",
+      "lemmaId": "pt_docinho",
+      "pt": "Acorda logo, meu docinho, o café tá pronto.",
+      "en": "Wake up soon, sweetie, the coffee's ready.",
+      "answer": "docinho",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "docinho"
+      ],
+      "alt_valid": [
+        "amor",
+        "querido"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "sintoma",
+        "condado"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "sweetie / darling",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_acordar",
+        "pt_logo",
+        "pt_meu",
+        "pt_o",
+        "pt_cafe",
+        "pt_estar~ta",
+        "pt_pronto"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "5c9fef2ed423",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.excesso.llm.01",
+      "lemmaId": "pt_excesso",
+      "pt": "Esse excesso de café não faz mal pra você?",
+      "en": "Isn't all that excess coffee bad for you?",
+      "answer": "excesso",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "excesso"
+      ],
+      "alt_valid": [
+        "exagero"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "inferno",
+        "pescoço"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "too much / surplus",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_esse",
+        "pt_de",
+        "pt_cafe",
+        "pt_nao",
+        "pt_fazer",
+        "pt_mal",
+        "pt_pra",
+        "pt_voce"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "bc1d2978636b",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.desperdicio.llm.01",
+      "lemmaId": "pt_desperdicio",
+      "pt": "Não deixa a água correndo, isso é desperdício.",
+      "en": "Don't leave the water running, that's a waste.",
+      "answer": "desperdício",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "desperdício"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "crescimento",
+        "compromisso"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "waste / squandering",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_deixar",
+        "pt_o",
+        "pt_agua",
+        "pt_correr",
+        "pt_isso",
+        "pt_ser"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "42df2434fbdc",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.colegial.llm.01",
+      "lemmaId": "pt_colegial",
+      "pt": "O time colegial venceu o jogo lá no ginásio.",
+      "en": "The high school team won the game over at the gym.",
+      "answer": "colegial",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "colegial"
+      ],
+      "alt_valid": [
+        "escolar"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "exterior",
+        "patético"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "high school (adj.)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_time",
+        "pt_vencer",
+        "pt_jogo",
+        "pt_la",
+        "pt_no",
+        "pt_ginasio"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "fe92ef177f1c",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.turco.llm.01",
+      "lemmaId": "pt_turco",
+      "pt": "Conheci um turco simpático lá na feira ontem.",
+      "en": "I met a friendly Turkish guy at the street market yesterday.",
+      "answer": "turco",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "turco"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "favor",
+        "tumor"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "person from Turkey",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_conhecer",
+        "pt_um",
+        "pt_simpatico",
+        "pt_la",
+        "pt_na",
+        "pt_feira",
+        "pt_ontem"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "a0c229225de4",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.torturar.llm.01",
+      "lemmaId": "pt_torturar",
+      "pt": "Às vezes eu me torturo por qualquer coisa pequena.",
+      "en": "Sometimes I torture myself over every little thing.",
+      "answer": "torturo",
+      "subject": "eu",
+      "person": "1sg",
+      "tense": "pres",
+      "slot": "pres.1sg",
+      "cellClass": "pres.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "torturo"
+      ],
+      "alt_valid": [
+        "atormento"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "escolho",
+        "prometo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "torment / agonize (1sg)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_vez",
+        "pt_eu",
+        "pt_por",
+        "pt_qualquer",
+        "pt_coisa",
+        "pt_pequeno"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "da483a834af5",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.dialogo.llm.01",
+      "lemmaId": "pt_dialogo",
+      "pt": "Sem um diálogo aberto, a gente não resolve.",
+      "en": "Without an open conversation, we won't sort this out.",
+      "answer": "diálogo",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "diálogo"
+      ],
+      "alt_valid": [
+        "papo"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "estádio",
+        "combate"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "open talk / conversation",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_a_gente",
+        "pt_sem",
+        "pt_um",
+        "pt_abrir",
+        "pt_nao",
+        "pt_resolver"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "7249c76e812f",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.silencioso.llm.01",
+      "lemmaId": "pt_silencioso",
+      "pt": "Esse carro velho não é nada silencioso, né?",
+      "en": "That old car isn't quiet at all, is it?",
+      "answer": "silencioso",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "silencioso"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "computador",
+        "matemático"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "quiet / noiseless",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_esse",
+        "pt_carro",
+        "pt_velho",
+        "pt_nao",
+        "pt_ser",
+        "pt_nada",
+        "pt_ne"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "bcf6e935d54f",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.postura.llm.01",
+      "lemmaId": "pt_postura",
+      "pt": "Por que ninguém corrige a postura na cadeira?",
+      "en": "Why doesn't anyone fix their posture in the chair?",
+      "answer": "postura",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "postura"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "exceção",
+        "notícia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "stance / back alignment",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_por",
+        "pt_que",
+        "pt_ninguem",
+        "pt_corrigir",
+        "pt_o",
+        "pt_na",
+        "pt_cadeira"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "f444179c022d",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.leilao.llm.01",
+      "lemmaId": "pt_leilao",
+      "pt": "Meu tio comprou um quadro antigo num leilão.",
+      "en": "My uncle bought an old painting at an auction.",
+      "answer": "leilão",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "leilão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "cinema",
+        "volume"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "auction",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_meu",
+        "pt_tio",
+        "pt_comprar",
+        "pt_um",
+        "pt_quadro",
+        "pt_antigo",
+        "pt_num"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "4300d19a3bd9",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.esportivo.llm.01",
+      "lemmaId": "pt_esportivo",
+      "pt": "O clube construiu um centro esportivo bem moderno.",
+      "en": "The club built a very modern sports center.",
+      "answer": "esportivo",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "esportivo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "magnífico",
+        "contrário"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "athletic / sports-related",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_clube",
+        "pt_construir",
+        "pt_um",
+        "pt_centro",
+        "pt_bem",
+        "pt_moderno"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "42dc370e7f0c",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.promotoria.llm.01",
+      "lemmaId": "pt_promotoria",
+      "pt": "A promotoria apresentou todas as provas ao tribunal.",
+      "en": "The prosecutor's office presented all the evidence to the court.",
+      "answer": "promotoria",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "promotoria"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "entrevista",
+        "engenharia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "prosecutor's office",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_apresentar",
+        "pt_todo",
+        "pt_a",
+        "pt_prova",
+        "pt_ao",
+        "pt_tribunal"
+      ],
+      "register_tier": "written",
+      "rev": 1,
+      "contentHash": "0a21cb95c451",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.vulneravel.llm.01",
+      "lemmaId": "pt_vulneravel",
+      "pt": "Não deixa seu telefone tão vulnerável sem senha.",
+      "en": "Don't leave your phone so vulnerable without a password.",
+      "answer": "vulnerável",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "vulnerável"
+      ],
+      "alt_valid": [
+        "exposto"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "científico",
+        "substituto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "exposed / at risk",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_deixar",
+        "pt_seu",
+        "pt_telefonar",
+        "pt_sem",
+        "pt_senha"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "b6231b7749cb",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.santuario.llm.01",
+      "lemmaId": "pt_santuario",
+      "pt": "Visitamos um santuário lindo no alto da montanha.",
+      "en": "We visited a beautiful sanctuary at the top of the mountain.",
+      "answer": "santuário",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "santuário"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "movimento",
+        "propósito"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "refuge / holy place",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_visitar",
+        "pt_um",
+        "pt_lindo",
+        "pt_no",
+        "pt_alto",
+        "pt_da",
+        "pt_montanha"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "80249aa68297",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.fugitivo.llm.01",
+      "lemmaId": "pt_fugitivo",
+      "pt": "A polícia achou o preso fugitivo lá na ponte.",
+      "en": "The police found the escaped prisoner over on the bridge.",
+      "answer": "fugitivo",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "fugitivo"
+      ],
+      "alt_valid": [
+        "foragido"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "traseiro",
+        "saudável"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "on the run / runaway",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_policia",
+        "pt_achar",
+        "pt_preso",
+        "pt_la",
+        "pt_na",
+        "pt_ponte"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "8f123aac9bcf",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.defensor.llm.01",
+      "lemmaId": "pt_defensor",
+      "pt": "Meu irmão sempre foi defensor dos animais de rua.",
+      "en": "My brother has always been a defender of stray animals.",
+      "answer": "defensor",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "defensor"
+      ],
+      "alt_valid": [
+        "protetor"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "trabalho",
+        "mistério"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "advocate / protector",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_meu",
+        "pt_irmao",
+        "pt_sempre",
+        "pt_ser",
+        "pt_animal",
+        "pt_de",
+        "pt_rua"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "04ffc78ed7ef",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.ancestral.llm.01",
+      "lemmaId": "pt_ancestral",
+      "pt": "A aldeia preservou aquele ritual ancestral com respeito.",
+      "en": "The village preserved that ancestral ritual with respect.",
+      "answer": "ancestral",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "ancestral"
+      ],
+      "alt_valid": [
+        "antigo"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "cuidadoso",
+        "exclusivo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "family / ancient",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_aldeia",
+        "pt_preservar",
+        "pt_aquele",
+        "pt_ritual",
+        "pt_com",
+        "pt_respeito"
+      ],
+      "register_tier": "written",
+      "rev": 1,
+      "contentHash": "9f76cf439b34",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.night.llm.01",
+      "lemmaId": "pt_night",
+      "pt": "A gente vai curtir a night hoje, né?",
+      "en": "We're going out to enjoy the nightlife tonight, right?",
+      "answer": "night",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "night"
+      ],
+      "alt_valid": [
+        "balada",
+        "noitada"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "lista",
+        "etapa"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "clubbing / evening scene",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_a_gente",
+        "pt_ir",
+        "pt_curtir",
+        "pt_o",
+        "pt_hoje",
+        "pt_ne"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "9f6f4affcaf4",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.vacina.llm.01",
+      "lemmaId": "pt_vacina",
+      "pt": "Levei meu cachorro pra tomar a vacina anual.",
+      "en": "I took my dog to get his annual vaccine.",
+      "answer": "vacina",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "vacina"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "oferta",
+        "inveja"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "shot / immunization",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_levar",
+        "pt_meu",
+        "pt_cachorro",
+        "pt_pra",
+        "pt_tomar",
+        "pt_o",
+        "pt_anual"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "fd1d7e1b6969",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.chique.llm.01",
+      "lemmaId": "pt_chique",
+      "pt": "Esse restaurante novo da esquina parece bem chique, né?",
+      "en": "That new restaurant on the corner looks pretty fancy, huh?",
+      "answer": "chique",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "chique"
+      ],
+      "alt_valid": [
+        "elegante"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "pânico",
+        "adulto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "fancy / upscale",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_esse",
+        "pt_restaurante",
+        "pt_novo",
+        "pt_da",
+        "pt_esquina",
+        "pt_parecer",
+        "pt_bem",
+        "pt_ne"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "2591440ea00a",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.gama.llm.01",
+      "lemmaId": "pt_gama",
+      "pt": "Os cientistas mediram um forte raio gama ontem.",
+      "en": "The scientists measured a strong gamma ray yesterday.",
+      "answer": "gama",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "gama"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "lado",
+        "rato"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "Greek letter / ray type",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_cientista",
+        "pt_medir",
+        "pt_um",
+        "pt_forte",
+        "pt_raio",
+        "pt_ontem"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "3c156a13f187",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.atraido.llm.01",
+      "lemmaId": "pt_atraido",
+      "pt": "Não fui atraído pelo preço, fui pela qualidade.",
+      "en": "I wasn't drawn in by the price, I came for the quality.",
+      "answer": "atraído",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "atraído"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "estelar",
+        "virtual"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "drawn / pulled toward",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_ser",
+        "pt_pelo",
+        "pt_preco",
+        "pt_pela",
+        "pt_qualidade"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "74e2ea7ba035",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.compaixao.llm.01",
+      "lemmaId": "pt_compaixao",
+      "pt": "Ele nunca tratou os outros com muita compaixão.",
+      "en": "He never treated other people with much compassion.",
+      "answer": "compaixão",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "compaixão"
+      ],
+      "alt_valid": [
+        "empatia",
+        "carinho"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "delegacia",
+        "cerimônia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "empathy / kindness",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_nunca",
+        "pt_tratar",
+        "pt_o",
+        "pt_com",
+        "pt_muito"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "0124a4d5dcc5",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.expansao.llm.01",
+      "lemmaId": "pt_expansao",
+      "pt": "Essa rápida expansão da cidade trouxe mais trânsito.",
+      "en": "This rapid expansion of the city brought more traffic.",
+      "answer": "expansão",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "expansão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "história",
+        "custódia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "growth / widening",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_esse",
+        "pt_rapido",
+        "pt_da",
+        "pt_cidade",
+        "pt_trazer",
+        "pt_mais",
+        "pt_transito"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "9cdcbc0c097c",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.fabuloso.llm.01",
+      "lemmaId": "pt_fabuloso",
+      "pt": "Não ficou fabuloso o bolo de laranja dela?",
+      "en": "Didn't her orange cake turn out fabulous?",
+      "answer": "fabuloso",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "fabuloso"
+      ],
+      "alt_valid": [
+        "maravilhoso",
+        "delicioso"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "terrível",
+        "vermelho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "wonderful / terrific",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_ficar",
+        "pt_o",
+        "pt_bolo",
+        "pt_de",
+        "pt_laranja",
+        "pt_dele"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "868db175eadb",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.maquilhagem.llm.01",
+      "lemmaId": "pt_maquilhagem",
+      "pt": "Cê já tirou toda a maquilhagem antes de dormir?",
+      "en": "Did you already take off all your makeup before bed?",
+      "answer": "maquilhagem",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "maquilhagem"
+      ],
+      "alt_valid": [
+        "maquiagem"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "publicidade",
+        "perseguição"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "makeup",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce~ce",
+        "pt_ja",
+        "pt_tirar",
+        "pt_todo",
+        "pt_o",
+        "pt_antes",
+        "pt_de",
+        "pt_dormir"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "1d9020d4d5d5",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.percepcao.llm.01",
+      "lemmaId": "pt_percepcao",
+      "pt": "Cada pessoa tem uma percepção diferente desse filme.",
+      "en": "Each person has a different perception of that movie.",
+      "answer": "percepção",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "percepção"
+      ],
+      "alt_valid": [
+        "visão"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "profissão",
+        "audiência"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "view / awareness",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_cada",
+        "pt_pessoa",
+        "pt_ter",
+        "pt_um",
+        "pt_diferente",
+        "pt_dar",
+        "pt_filmar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "100a2d63170b",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.demanda.llm.01",
+      "lemmaId": "pt_demanda",
+      "pt": "A demanda por casaco grosso não subiu muito.",
+      "en": "The demand for heavy coats didn't go up much.",
+      "answer": "demanda",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "demanda"
+      ],
+      "alt_valid": [
+        "procura"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "gravata",
+        "oficina"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "need / request",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_por",
+        "pt_casaco",
+        "pt_grosso",
+        "pt_nao",
+        "pt_subir",
+        "pt_muito"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "6d92469fd737",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.corrupto.llm.01",
+      "lemmaId": "pt_corrupto",
+      "pt": "Ninguém aguenta mais ver político corrupto no poder.",
+      "en": "Nobody can stand seeing corrupt politicians in power anymore.",
+      "answer": "corrupto",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "corrupto"
+      ],
+      "alt_valid": [
+        "desonesto"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "horrível",
+        "exterior"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "crooked / dishonest",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ninguem",
+        "pt_aguentar",
+        "pt_mais",
+        "pt_ver",
+        "pt_politico",
+        "pt_no",
+        "pt_poder"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "3e845210d850",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.reducao.llm.01",
+      "lemmaId": "pt_reducao",
+      "pt": "Teve uma redução grande na conta de luz.",
+      "en": "There was a big drop in the electric bill.",
+      "answer": "redução",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "redução"
+      ],
+      "alt_valid": [
+        "queda"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "galeria",
+        "caverna"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "cut / drop",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ter",
+        "pt_um",
+        "pt_grande",
+        "pt_na",
+        "pt_contar",
+        "pt_de"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "32e1e540f782",
+      "retired": false,
+      "source_type": "llm_generated"
+    },
+    {
+      "exId": "p33.corporacao.llm.01",
+      "lemmaId": "pt_corporacao",
+      "pt": "A grande corporação transferiu sua sede para outro país.",
+      "en": "The large corporation moved its headquarters to another country.",
+      "answer": "corporação",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "corporação"
+      ],
+      "alt_valid": [
+        "empresa"
+      ],
+      "plausible_wrong": [],
+      "distractors": [
+        "inspiração",
+        "instalação"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "big company / firm",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_grande",
+        "pt_transferir",
+        "pt_seu",
+        "pt_para",
+        "pt_outro",
+        "pt_pais"
+      ],
+      "register_tier": "written",
+      "rev": 1,
+      "contentHash": "fd0342c321d5",
+      "retired": false,
+      "source_type": "llm_generated"
     }
   ]
 }

@@ -9342,6 +9342,50 @@
       "contentHash": "9756f23ce9bf",
       "retired": false,
       "source_type": "llm_generated"
+    },
+    {
+      "exId": "p21.dose.llm.02",
+      "lemmaId": "pt_dose",
+      "pt": "Cê precisa tomar todas as doses na hora certa.",
+      "en": "You need to take all the doses at the right time.",
+      "answer": "doses",
+      "subject": "none",
+      "person": "pl",
+      "tense": "f",
+      "slot": "f.pl",
+      "cellClass": "f.pl",
+      "construction": null,
+      "inflection": "f.pl",
+      "sense": "core",
+      "accept": [
+        "doses"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "malas",
+        "neves"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "medication amounts (pl.)",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce~ce",
+        "pt_precisar",
+        "pt_tomar",
+        "pt_todo",
+        "pt_a",
+        "pt_na",
+        "pt_hora",
+        "pt_certo"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "153ccc5f3701",
+      "retired": false,
+      "source_type": "llm_generated"
     }
   ]
 }
