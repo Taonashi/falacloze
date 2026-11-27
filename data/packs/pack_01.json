@@ -920,8 +920,8 @@
     {
       "exId": "pt_nos.e4",
       "lemmaId": "pt_nos",
-      "pt": "Nós ficamos perto do parque.",
-      "en": "We are staying near the park.",
+      "pt": "Nós sempre ficamos perto do parque.",
+      "en": "We always stay near the park.",
       "answer": "Nós",
       "subject": "nós",
       "person": null,
@@ -948,21 +948,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_sempre",
         "pt_ficar",
         "pt_perto",
         "pt_do",
         "pt_parque"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "c6ca44d955f7",
+      "rev": 3,
+      "contentHash": "9b3a986d57f1",
       "retired": false
     },
     {
       "exId": "pt_nos.e5",
       "lemmaId": "pt_nos",
-      "pt": "Você quer sentar com nós?",
-      "en": "Do you want to sit with us?",
+      "pt": "Isso é muito bom pra nós.",
+      "en": "This is very good for us.",
       "answer": "nós",
       "subject": "nós",
       "person": null,
@@ -989,21 +990,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voce",
-        "pt_querer",
-        "pt_sentar",
-        "pt_com"
+        "pt_isso",
+        "pt_ser",
+        "pt_muito",
+        "pt_bom",
+        "pt_pra"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "23a432649b2f",
+      "rev": 4,
+      "contentHash": "5bfed3af967b",
       "retired": false
     },
     {
       "exId": "pt_gente.e1",
       "lemmaId": "pt_gente",
-      "pt": "A gente vê o mar.",
-      "en": "We see the ocean.",
+      "pt": "Tem gente vendo o mar.",
+      "en": "There are people watching the ocean.",
       "answer": "gente",
       "subject": null,
       "person": null,
@@ -1030,13 +1032,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_ter",
         "pt_ver",
+        "pt_o",
         "pt_mar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "fb269c19b879",
+      "rev": 2,
+      "contentHash": "eaa4e6ead321",
       "retired": false
     },
     {
@@ -1695,8 +1698,8 @@
     {
       "exId": "pt_pegar.e3",
       "lemmaId": "pt_pegar",
-      "pt": "Não pego chuva sem guarda-chuva.",
-      "en": "I do not go in rain without an umbrella.",
+      "pt": "Eu sempre pego chuva sem guarda-chuva.",
+      "en": "I always get caught in the rain without an umbrella.",
       "answer": "pego",
       "subject": "eu",
       "person": "1sg",
@@ -1719,18 +1722,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "catch / get",
+      "hint_en": "get (caught in)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nao",
+        "pt_eu",
+        "pt_sempre",
         "pt_chuva",
         "pt_sem",
         "pt_guarda_chuva"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "0d51c7358696",
+      "rev": 2,
+      "contentHash": "4fe443c6c8ba",
       "retired": false
     },
     {
@@ -5144,8 +5148,8 @@
     {
       "exId": "pt_saber.e7",
       "lemmaId": "pt_saber",
-      "pt": "A gente sabe o caminho curto.",
-      "en": "We know the shortcut.",
+      "pt": "A gente sabe o caminho mais curto.",
+      "en": "We know the shortest way.",
       "answer": "sabe",
       "subject": "a gente",
       "person": "3sg",
@@ -5175,11 +5179,12 @@
         "pt_a_gente",
         "pt_o",
         "pt_caminho",
+        "pt_mais",
         "pt_curtir"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "55d8f41c3f07",
+      "rev": 2,
+      "contentHash": "65a015efadd7",
       "retired": false
     },
     {
@@ -7453,7 +7458,7 @@
       "exId": "pt_para.e4",
       "lemmaId": "pt_para",
       "pt": "Falta tempo para ler tudo.",
-      "en": "There is not enough time to read all.",
+      "en": "There is not enough time to read everything.",
       "answer": "para",
       "subject": null,
       "person": null,
@@ -7484,8 +7489,8 @@
         "pt_tudo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "b15a8398f76f",
+      "rev": 2,
+      "contentHash": "8fd35883f6e0",
       "retired": false
     },
     {
@@ -10528,8 +10533,8 @@
     {
       "exId": "pt_no.e4",
       "lemmaId": "pt_no",
-      "pt": "Vamos almoçar no restaurante perto.",
-      "en": "Let's have lunch at the nearby restaurant.",
+      "pt": "Vamos almoçar no restaurante aqui perto.",
+      "en": "Let's have lunch at the restaurant nearby.",
       "answer": "no",
       "subject": null,
       "person": null,
@@ -10556,11 +10561,12 @@
         "pt_ir",
         "pt_almocar",
         "pt_restaurante",
+        "pt_aqui",
         "pt_perto"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "18f38c2ddeb5",
+      "rev": 3,
+      "contentHash": "b79d7835c736",
       "retired": false
     },
     {
@@ -10678,8 +10684,8 @@
     {
       "exId": "pt_na.e3",
       "lemmaId": "pt_na",
-      "pt": "Ela trabalha na padaria perto.",
-      "en": "She works at the nearby bakery.",
+      "pt": "Ela trabalha na padaria aqui perto.",
+      "en": "She works at the bakery nearby.",
       "answer": "na",
       "subject": null,
       "person": null,
@@ -10706,11 +10712,12 @@
         "pt_ela",
         "pt_trabalhar",
         "pt_padaria",
+        "pt_aqui",
         "pt_perto"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "f1e5ed815d16",
+      "rev": 2,
+      "contentHash": "78867b0ead73",
       "retired": false
     },
     {
@@ -10917,8 +10924,8 @@
     {
       "exId": "pt_pra.e4",
       "lemmaId": "pt_pra",
-      "pt": "Preciso de calma pra estudar.",
-      "en": "I need quiet to study.",
+      "pt": "Preciso de silêncio pra estudar.",
+      "en": "I need silence to study.",
       "answer": "pra",
       "subject": null,
       "person": null,
@@ -10948,12 +10955,12 @@
       "requires": [
         "pt_precisar",
         "pt_de",
-        "pt_calma",
+        "pt_silencio",
         "pt_estudar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "bd2f17ade491",
+      "rev": 3,
+      "contentHash": "0508c494fa11",
       "retired": false
     },
     {
@@ -11943,8 +11950,8 @@
     {
       "exId": "pt_voce~ce.e4",
       "lemmaId": "pt_voce~ce",
-      "pt": "Cê tá bem hoje cedo?",
-      "en": "Are you doing well this morning?",
+      "pt": "Cê já precisa sair pro centro?",
+      "en": "Do you already need to leave for downtown?",
       "answer": "Cê",
       "subject": "você",
       "person": null,
@@ -11972,14 +11979,15 @@
       "false_friend_note": null,
       "grammar_note_en": "Spoken PT-BR reduction of você.",
       "requires": [
-        "pt_estar~ta",
-        "pt_bem",
-        "pt_hoje",
-        "pt_cedo"
+        "pt_ja",
+        "pt_precisar",
+        "pt_sair",
+        "pt_pro",
+        "pt_centro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "257fb93e254e",
+      "rev": 4,
+      "contentHash": "bfbcbbb53c2a",
       "retired": false
     },
     {
@@ -12027,8 +12035,8 @@
     {
       "exId": "pt_bem.e1",
       "lemmaId": "pt_bem",
-      "pt": "Eu falo bem com ela.",
-      "en": "I speak well with her.",
+      "pt": "Eu falo bem de você.",
+      "en": "I speak well of you.",
       "answer": "bem",
       "subject": null,
       "person": null,
@@ -12057,12 +12065,12 @@
       "requires": [
         "pt_eu",
         "pt_falar",
-        "pt_com",
-        "pt_ela"
+        "pt_de",
+        "pt_voce"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d6bf3da475c1",
+      "rev": 3,
+      "contentHash": "664d2b8ea51d",
       "retired": false
     },
     {
@@ -13102,8 +13110,8 @@
     {
       "exId": "pt_pessoa.e3",
       "lemmaId": "pt_pessoa",
-      "pt": "Cada pessoa tem um ritmo.",
-      "en": "Each person has a pace.",
+      "pt": "Cada pessoa tem seu próprio ritmo.",
+      "en": "Each person has their own pace.",
       "answer": "pessoa",
       "subject": null,
       "person": null,
@@ -13132,12 +13140,13 @@
       "requires": [
         "pt_cada",
         "pt_ter",
-        "pt_um",
+        "pt_seu",
+        "pt_proprio",
         "pt_ritmo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "da76ea86c821",
+      "rev": 3,
+      "contentHash": "631cb9ecc6ef",
       "retired": false
     },
     {
@@ -13923,8 +13932,8 @@
     {
       "exId": "pt_hora.e3",
       "lemmaId": "pt_hora",
-      "pt": "Que hora o banco abre?",
-      "en": "What time does the bank open?",
+      "pt": "Já tá na hora de sair.",
+      "en": "It is already time to leave.",
       "answer": "hora",
       "subject": null,
       "person": null,
@@ -13947,18 +13956,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "time / hour",
+      "hint_en": "time",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_que",
-        "pt_o",
-        "pt_banco",
-        "pt_abrir"
+        "pt_ja",
+        "pt_estar~ta",
+        "pt_na",
+        "pt_de",
+        "pt_sair"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "46cd945acb3f",
+      "rev": 3,
+      "contentHash": "369e3ba27a0c",
       "retired": false
     },
     {
@@ -14543,7 +14553,7 @@
     {
       "exId": "pt_dizer.e3",
       "lemmaId": "pt_dizer",
-      "pt": "Eu digo sempre a verdade.",
+      "pt": "Eu sempre digo a verdade.",
       "en": "I always tell the truth.",
       "answer": "digo",
       "subject": "eu",
@@ -14577,8 +14587,8 @@
         "pt_verdade"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "3f3f1d9c94fd",
+      "rev": 2,
+      "contentHash": "449bb17fbb1e",
       "retired": false
     },
     {
@@ -14708,8 +14718,8 @@
     {
       "exId": "pt_dizer.e7",
       "lemmaId": "pt_dizer",
-      "pt": "A gente diz bom dia cedo.",
-      "en": "We say good morning early.",
+      "pt": "A gente sempre diz bom dia pro porteiro.",
+      "en": "We always say good morning to the doorman.",
       "answer": "diz",
       "subject": "a gente",
       "person": "3sg",
@@ -14737,13 +14747,15 @@
       "grammar_note_en": null,
       "requires": [
         "pt_a_gente",
+        "pt_sempre",
         "pt_bom",
         "pt_dia",
-        "pt_cedo"
+        "pt_pro",
+        "pt_porteiro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d92f8ea4c262",
+      "rev": 2,
+      "contentHash": "9e6e0813676c",
       "retired": false
     },
     {
@@ -14957,7 +14969,7 @@
     {
       "exId": "pt_vir.e3",
       "lemmaId": "pt_vir",
-      "pt": "Eu venho de metrô sempre.",
+      "pt": "Eu sempre venho de metrô.",
       "en": "I always come by subway.",
       "answer": "venho",
       "subject": "eu",
@@ -14986,13 +14998,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
+        "pt_sempre",
         "pt_de",
-        "pt_metro",
-        "pt_sempre"
+        "pt_metro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "b64c8f2f5072",
+      "rev": 3,
+      "contentHash": "ad6949accfac",
       "retired": false
     },
     {
@@ -16238,7 +16250,7 @@
     {
       "exId": "pt_chegar.e4",
       "lemmaId": "pt_chegar",
-      "pt": "Que hora você chega no centro?",
+      "pt": "Que horas você chega no centro?",
       "en": "What time do you get downtown?",
       "answer": "chega",
       "subject": "você",
@@ -16273,8 +16285,8 @@
         "pt_centro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "470d132f6ab2",
+      "rev": 3,
+      "contentHash": "e445a3947914",
       "retired": false
     },
     {
@@ -16983,10 +16995,10 @@
     {
       "exId": "pt_sair.e2",
       "lemmaId": "pt_sair",
-      "pt": "Não saio de noite quase nunca.",
+      "pt": "Quase nunca saio de noite.",
       "en": "I almost never go out at night.",
       "answer": "saio",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -17011,15 +17023,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nao",
-        "pt_de",
-        "pt_noite",
         "pt_quase",
-        "pt_nunca"
+        "pt_nunca",
+        "pt_de",
+        "pt_noite"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "fbb697126657",
+      "rev": 2,
+      "contentHash": "7ee9cf421b08",
       "retired": false
     },
     {
@@ -17066,7 +17077,7 @@
     {
       "exId": "pt_sair.e4",
       "lemmaId": "pt_sair",
-      "pt": "Que hora você sai pro banco?",
+      "pt": "Que horas você sai pro banco?",
       "en": "What time do you leave for the bank?",
       "answer": "sai",
       "subject": "você",
@@ -17101,8 +17112,8 @@
         "pt_banco"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "dcc09319e7e2",
+      "rev": 3,
+      "contentHash": "a436bbe969be",
       "retired": false
     },
     {
@@ -17769,7 +17780,7 @@
       "exId": "pt_familia.e1",
       "lemmaId": "pt_familia",
       "pt": "Eu falo com a família hoje.",
-      "en": "I talk with family today.",
+      "en": "I am talking with my family today.",
       "answer": "família",
       "subject": null,
       "person": null,
@@ -17803,8 +17814,8 @@
         "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "9f8b37804466",
+      "rev": 3,
+      "contentHash": "b8eaad98f487",
       "retired": false
     },
     {
@@ -18640,7 +18651,7 @@
     {
       "exId": "pt_irmao.e2",
       "lemmaId": "pt_irmao",
-      "pt": "O irmão chega em casa hoje.",
+      "pt": "Meu irmão chega em casa hoje.",
       "en": "My brother arrives home today.",
       "answer": "irmão",
       "subject": null,
@@ -18668,15 +18679,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_meu",
         "pt_chegar",
         "pt_em",
         "pt_casa",
         "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "91e0f92f5d78",
+      "rev": 2,
+      "contentHash": "f61372c5fc9d",
       "retired": false
     },
     {
@@ -19222,8 +19233,8 @@
     {
       "exId": "pt_marido.e1",
       "lemmaId": "pt_marido",
-      "pt": "O marido chega do banco.",
-      "en": "Her husband arrives from the bank.",
+      "pt": "Meu marido chega do banco.",
+      "en": "My husband arrives from the bank.",
       "answer": "marido",
       "subject": null,
       "person": null,
@@ -19250,14 +19261,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_meu",
         "pt_chegar",
         "pt_do",
         "pt_banco"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "323425841b90",
+      "rev": 2,
+      "contentHash": "d839aa4ed3b5",
       "retired": false
     },
     {
@@ -19389,8 +19400,8 @@
     {
       "exId": "pt_marido.e5",
       "lemmaId": "pt_marido",
-      "pt": "O marido pegou o pão cedo.",
-      "en": "The husband picked up bread early.",
+      "pt": "Meu marido pegou o pão cedo.",
+      "en": "My husband picked up the bread early.",
       "answer": "marido",
       "subject": null,
       "person": null,
@@ -19417,14 +19428,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_meu",
         "pt_pegar",
+        "pt_o",
         "pt_pao",
         "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "03412e8b7e58",
+      "rev": 2,
+      "contentHash": "d1a34a1e3337",
       "retired": false
     },
     {
@@ -19514,7 +19526,7 @@
     {
       "exId": "pt_esposa.e3",
       "lemmaId": "pt_esposa",
-      "pt": "Ele janta com a esposa fora.",
+      "pt": "Ele janta fora com a esposa.",
       "en": "He has dinner out with his wife.",
       "answer": "esposa",
       "subject": null,
@@ -19548,8 +19560,8 @@
         "pt_o"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "6dcb8df048c6",
+      "rev": 2,
+      "contentHash": "9c840a00b94a",
       "retired": false
     },
     {
@@ -19806,7 +19818,7 @@
     {
       "exId": "pt_tio.e5",
       "lemmaId": "pt_tio",
-      "pt": "A casa do tio é espaçosa.",
+      "pt": "A casa do meu tio é espaçosa.",
       "en": "My uncle's house is spacious.",
       "answer": "tio",
       "subject": null,
@@ -19837,11 +19849,12 @@
         "pt_o",
         "pt_casa",
         "pt_do",
+        "pt_meu",
         "pt_ser"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a94e7cbf94f8",
+      "rev": 2,
+      "contentHash": "7c0a57d06369",
       "retired": false
     },
     {
@@ -20055,7 +20068,7 @@
     {
       "exId": "pt_amigo.e1",
       "lemmaId": "pt_amigo",
-      "pt": "O amigo chega do mercado.",
+      "pt": "Meu amigo chega do mercado.",
       "en": "My friend arrives from the market.",
       "answer": "amigo",
       "subject": null,
@@ -20083,14 +20096,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
+        "pt_meu",
         "pt_chegar",
         "pt_do",
         "pt_mercado"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "53f4512aea75",
+      "rev": 2,
+      "contentHash": "2fa111f014f8",
       "retired": false
     },
     {
@@ -20386,7 +20399,7 @@
     {
       "exId": "pt_bebe.e4",
       "lemmaId": "pt_bebe",
-      "pt": "O bebê acorda bem cedo sempre.",
+      "pt": "O bebê sempre acorda bem cedo.",
       "en": "The baby always wakes up very early.",
       "answer": "bebê",
       "subject": null,
@@ -20415,14 +20428,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_o",
+        "pt_sempre",
         "pt_acordar",
         "pt_bem",
-        "pt_cedo",
-        "pt_sempre"
+        "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "09cf51d03390",
+      "rev": 2,
+      "contentHash": "2232af9aaf22",
       "retired": false
     },
     {
@@ -22563,7 +22576,7 @@
       "exId": "pt_perna.e1",
       "lemmaId": "pt_perna",
       "pt": "O médico vê a perna do tio.",
-      "en": "The doctor checks uncle's leg.",
+      "en": "The doctor checks my uncle's leg.",
       "answer": "perna",
       "subject": null,
       "person": null,
@@ -22597,8 +22610,8 @@
         "pt_tio"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ffccf58143cd",
+      "rev": 2,
+      "contentHash": "7c0ef3c70888",
       "retired": false
     },
     {
@@ -23144,7 +23157,7 @@
       "exId": "pt_coracao.e5",
       "lemmaId": "pt_coracao",
       "pt": "Obrigado de coração pela ajuda!",
-      "en": "Thank you from the heart for helping!",
+      "en": "Thank you from the bottom of my heart for the help!",
       "answer": "coração",
       "subject": null,
       "person": null,
@@ -23177,8 +23190,8 @@
         "pt_ajudar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a6f7d7370f36",
+      "rev": 2,
+      "contentHash": "489231fc8de3",
       "retired": false
     },
     {
@@ -23390,8 +23403,8 @@
     {
       "exId": "pt_agua.e1",
       "lemmaId": "pt_agua",
-      "pt": "Eu quero água de casa.",
-      "en": "I want water from home.",
+      "pt": "Eu quero um copo de água.",
+      "en": "I want a glass of water.",
       "answer": "água",
       "subject": null,
       "person": null,
@@ -23420,12 +23433,13 @@
       "requires": [
         "pt_eu",
         "pt_querer",
-        "pt_de",
-        "pt_casa"
+        "pt_um",
+        "pt_copo",
+        "pt_de"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "b64435430dff",
+      "rev": 2,
+      "contentHash": "6a87836150d3",
       "retired": false
     },
     {
@@ -23556,8 +23570,8 @@
     {
       "exId": "pt_agua.e5",
       "lemmaId": "pt_agua",
-      "pt": "Levei uma garrafa de água cheia.",
-      "en": "I brought a full bottle of water.",
+      "pt": "Levei uma garrafa cheia de água.",
+      "en": "I brought a bottle full of water.",
       "answer": "água",
       "subject": null,
       "person": null,
@@ -23587,12 +23601,12 @@
         "pt_levar",
         "pt_um",
         "pt_garrafa",
-        "pt_de",
-        "pt_cheio"
+        "pt_cheio",
+        "pt_de"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "147908038d1b",
+      "rev": 2,
+      "contentHash": "374d49050dcb",
       "retired": false
     },
     {
@@ -23721,7 +23735,7 @@
     {
       "exId": "pt_bom.e4",
       "lemmaId": "pt_bom",
-      "pt": "Ela dá sempre bons conselhos.",
+      "pt": "Ela sempre dá bons conselhos.",
       "en": "She always gives good advice.",
       "answer": "bons",
       "subject": null,
@@ -23750,13 +23764,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ela",
-        "pt_dar",
         "pt_sempre",
+        "pt_dar",
         "pt_conselho"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "9dc3708bf5ed",
+      "rev": 2,
+      "contentHash": "09d38cee8956",
       "retired": false
     },
     {
@@ -23803,8 +23817,8 @@
     {
       "exId": "pt_mau.e1",
       "lemmaId": "pt_mau",
-      "pt": "O tempo tá mau hoje.",
-      "en": "The weather is bad today.",
+      "pt": "Que mau tempo hoje!",
+      "en": "What bad weather today!",
       "answer": "mau",
       "subject": null,
       "person": null,
@@ -23831,14 +23845,13 @@
       "false_friend_note": null,
       "grammar_note_en": "Mau is an adjective (opposite of bom); mal is an adverb.",
       "requires": [
-        "pt_o",
+        "pt_que",
         "pt_tempo",
-        "pt_estar~ta",
         "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ef7b3ef0beaa",
+      "rev": 2,
+      "contentHash": "f190ea27a3a3",
       "retired": false
     },
     {
@@ -24218,8 +24231,8 @@
     {
       "exId": "pt_vermelho.e1",
       "lemmaId": "pt_vermelho",
-      "pt": "O carro vermelho chega em casa.",
-      "en": "The red car arrives home.",
+      "pt": "Meu pai tem um carro vermelho.",
+      "en": "My dad has a red car.",
       "answer": "vermelho",
       "subject": null,
       "person": null,
@@ -24246,15 +24259,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_carro",
-        "pt_chegar",
-        "pt_em",
-        "pt_casa"
+        "pt_meu",
+        "pt_pai",
+        "pt_ter",
+        "pt_um",
+        "pt_carro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ccec5d745886",
+      "rev": 2,
+      "contentHash": "60a59ca7c741",
       "retired": false
     },
     {

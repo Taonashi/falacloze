@@ -533,8 +533,8 @@
     {
       "exId": "pack_04_pt_fugir_inf_2",
       "lemmaId": "pt_fugir",
-      "pt": "Eles vão fugir de tanta mensagem.",
-      "en": "They are going to run away from so many messages.",
+      "pt": "Eles vão fugir do trânsito na sexta.",
+      "en": "They are going to escape the traffic on Friday.",
       "answer": "fugir",
       "subject": "none",
       "person": "inf",
@@ -556,8 +556,8 @@
         "fugimos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "comer",
+        "saber"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -565,14 +565,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
         "pt_ir",
-        "pt_de",
-        "pt_mensagem"
+        "pt_do",
+        "pt_transito",
+        "pt_na",
+        "pt_sexto"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "4c20e368efc1",
+      "rev": 2,
+      "contentHash": "72f51a37392f",
       "retired": false
     },
     {
@@ -762,8 +764,8 @@
     {
       "exId": "pack_04_pt_fugir_perf.1pl_3",
       "lemmaId": "pt_fugir",
-      "pt": "Antes nós já fugimos desse grupo chato.",
-      "en": "Before we already ran away from that annoying group.",
+      "pt": "No ano passado nós fugimos daquele grupo chato.",
+      "en": "Last year we ran away from that annoying group.",
       "answer": "fugimos",
       "subject": "nós",
       "person": "1pl",
@@ -794,16 +796,17 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_antes",
+        "pt_no",
+        "pt_ano",
+        "pt_passar",
         "pt_nos",
-        "pt_ja",
-        "pt_dar",
+        "pt_daquele",
         "pt_grupo",
         "pt_chato"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ecf8bac2339b",
+      "rev": 2,
+      "contentHash": "d88e8dbf8290",
       "retired": false
     },
     {
@@ -1464,8 +1467,8 @@
     {
       "exId": "pack_04_pt_fugir_pres.1pl_3",
       "lemmaId": "pt_fugir",
-      "pt": "Nós nunca fugimos dessa rotina cedo.",
-      "en": "We never run away from that early routine.",
+      "pt": "Hoje em dia nós nunca fugimos da rotina.",
+      "en": "These days we never escape the routine.",
       "answer": "fugimos",
       "subject": "nós",
       "person": "1pl",
@@ -1496,15 +1499,17 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_hoje",
+        "pt_em",
+        "pt_dia",
         "pt_nos",
         "pt_nunca",
-        "pt_dessa",
-        "pt_rotina",
-        "pt_cedo"
+        "pt_da",
+        "pt_rotina"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "ad11569875b9",
+      "rev": 2,
+      "contentHash": "54feb252682e",
       "retired": false
     },
     {
@@ -2427,8 +2432,8 @@
     {
       "exId": "pack_04_pt_pequeno_f.pl_3",
       "lemmaId": "pt_pequeno",
-      "pt": "Vi nuvens pequenas acima da cidade?",
-      "en": "Did I see small clouds above the city?",
+      "pt": "Vi nuvens pequenas acima da cidade.",
+      "en": "I saw small clouds above the city.",
       "answer": "pequenas",
       "subject": "none",
       "person": "pl",
@@ -2464,8 +2469,8 @@
         "pt_cidade"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "fe2bc64906f2",
+      "rev": 2,
+      "contentHash": "e7fd70ad58ed",
       "retired": false
     },
     {
@@ -2870,8 +2875,8 @@
     {
       "exId": "pack_04_pt_nunca_base_1",
       "lemmaId": "pt_nunca",
-      "pt": "Aqui, eu nunca pago esse preço?",
-      "en": "Here, do I never pay that price?",
+      "pt": "Aqui eu nunca pago esse preço.",
+      "en": "I never pay that price here.",
       "answer": "nunca",
       "subject": "none",
       "person": "none",
@@ -2909,8 +2914,8 @@
         "pt_preco"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "5f835a08c3b5",
+      "rev": 2,
+      "contentHash": "c371c2241fdc",
       "retired": false
     },
     {
@@ -3142,8 +3147,8 @@
     {
       "exId": "pack_04_pt_hospital_m.pl_3",
       "lemmaId": "pt_hospital",
-      "pt": "Conheço dois hospitais perto da família.",
-      "en": "I know two hospitals near the family.",
+      "pt": "Conheço dois hospitais perto de casa.",
+      "en": "I know two hospitals near home.",
       "answer": "hospitais",
       "subject": "none",
       "person": "pl",
@@ -3175,19 +3180,19 @@
         "pt_conhecer",
         "pt_dois",
         "pt_perto",
-        "pt_da",
-        "pt_familia"
+        "pt_de",
+        "pt_casa"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "7c9a05d242c1",
+      "rev": 2,
+      "contentHash": "4c5b2b8b24a9",
       "retired": false
     },
     {
       "exId": "pack_04_pt_hospital_m.sg_1",
       "lemmaId": "pt_hospital",
       "pt": "A conta do hospital chegou bem cara.",
-      "en": "The hospital bill arrived very expensive.",
+      "en": "The hospital bill came out really expensive.",
       "answer": "hospital",
       "subject": "none",
       "person": "sg",
@@ -3224,8 +3229,8 @@
         "pt_caro"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "36f43afcfa99",
+      "rev": 2,
+      "contentHash": "ec68019dde2a",
       "retired": false
     },
     {
@@ -3275,8 +3280,8 @@
     {
       "exId": "pack_04_pt_hospital_m.sg_3",
       "lemmaId": "pt_hospital",
-      "pt": "O hospital novo tá sem sinal bom.",
-      "en": "The new hospital has a bad signal.",
+      "pt": "O hospital novo tá sem sinal.",
+      "en": "The new hospital has no signal.",
       "answer": "hospital",
       "subject": "none",
       "person": "sg",
@@ -3309,12 +3314,11 @@
         "pt_novo",
         "pt_estar~ta",
         "pt_sem",
-        "pt_sinal",
-        "pt_bom"
+        "pt_sinal"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "4e6a211694b3",
+      "rev": 2,
+      "contentHash": "1b89a307de71",
       "retired": false
     },
     {
@@ -3631,8 +3635,8 @@
     {
       "exId": "pack_04_pt_rir_inf_4",
       "lemmaId": "pt_rir",
-      "pt": "Ele prefere rir durante o voo longo?",
-      "en": "Does he prefer to laugh during the long flight?",
+      "pt": "Ele prefere rir dos próprios erros.",
+      "en": "He prefers to laugh at his own mistakes.",
       "answer": "rir",
       "subject": "none",
       "person": "inf",
@@ -3652,8 +3656,8 @@
         "rindo"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "dar",
+        "ler"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -3663,14 +3667,12 @@
       "requires": [
         "pt_ele",
         "pt_preferir",
-        "pt_durante",
-        "pt_o",
-        "pt_voar",
-        "pt_longo"
+        "pt_proprio",
+        "pt_erro"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "db764b288f21",
+      "rev": 2,
+      "contentHash": "59c5ad7b381f",
       "retired": false
     },
     {
@@ -3721,8 +3723,8 @@
     {
       "exId": "pack_04_pt_rir_perf.1pl_2",
       "lemmaId": "pt_rir",
-      "pt": "Semana passada nós rimos na cozinha inteira.",
-      "en": "Last week we laughed across the whole kitchen.",
+      "pt": "Semana passada nós rimos muito na cozinha.",
+      "en": "Last week we laughed a lot in the kitchen.",
       "answer": "rimos",
       "subject": "nós",
       "person": "1pl",
@@ -3742,8 +3744,8 @@
         "riem"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "lemos",
+        "vimos"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -3753,22 +3755,22 @@
       "requires": [
         "pt_semana",
         "pt_nos",
+        "pt_muito",
         "pt_na",
-        "pt_cozinha",
-        "pt_inteiro"
+        "pt_cozinha"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "1ac20aea0a78",
+      "rev": 2,
+      "contentHash": "4827110a7725",
       "retired": false
     },
     {
       "exId": "pack_04_pt_rir_perf.1pl_3",
       "lemmaId": "pt_rir",
-      "pt": "Já rimos muito ontem à noite juntos.",
-      "en": "We already laughed a lot together last night.",
+      "pt": "Ontem à noite rimos muito juntos.",
+      "en": "Last night we laughed a lot together.",
       "answer": "rimos",
-      "subject": "nós",
+      "subject": "none",
       "person": "1pl",
       "tense": "perf",
       "slot": "perf.1pl",
@@ -3786,8 +3788,8 @@
         "ri"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "lemos",
+        "demos"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -3795,21 +3797,20 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ja",
-        "pt_muito",
         "pt_ontem",
         "pt_noite",
+        "pt_muito",
         "pt_junto"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "989cbf7e8c42",
+      "rev": 2,
+      "contentHash": "af67deaff476",
       "retired": false
     },
     {
       "exId": "pack_04_pt_rir_perf.1sg_1",
       "lemmaId": "pt_rir",
-      "pt": "Ontem ri muito com meu colega.",
+      "pt": "Ontem eu ri muito com meu colega.",
       "en": "Yesterday I laughed a lot with my colleague.",
       "answer": "ri",
       "subject": "eu",
@@ -3830,8 +3831,8 @@
         "rimos"
       ],
       "distractors": [
-        "ser",
-        "sido"
+        "li",
+        "vi"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -3840,14 +3841,15 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ontem",
+        "pt_eu",
         "pt_muito",
         "pt_com",
         "pt_meu",
         "pt_colega"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "6b9123999aa3",
+      "rev": 2,
+      "contentHash": "cdb1d1940480",
       "retired": false
     },
     {
@@ -4345,8 +4347,8 @@
     {
       "exId": "pack_04_pt_rir_pres.1pl_1",
       "lemmaId": "pt_rir",
-      "pt": "Hoje rimos pouco, temos pressa?",
-      "en": "Today do we laugh little, are we in a hurry?",
+      "pt": "Nós sempre rimos das piadas dele.",
+      "en": "We always laugh at his jokes.",
       "answer": "rimos",
       "subject": "nós",
       "person": "1pl",
@@ -4366,8 +4368,8 @@
         "riram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "vimos",
+        "vamos"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -4375,13 +4377,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
-        "pt_pouco",
-        "pt_ter"
+        "pt_nos",
+        "pt_sempre",
+        "pt_piada",
+        "pt_dele"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d0ae81f40054",
+      "rev": 2,
+      "contentHash": "a90eaaeeb554",
       "retired": false
     },
     {
@@ -5054,7 +5057,7 @@
       "exId": "pack_04_pt_centro_m.sg_2",
       "lemmaId": "pt_centro",
       "pt": "Eles moram lá no centro da cidade.",
-      "en": "They live downtown in the city.",
+      "en": "They live in the city center.",
       "answer": "centro",
       "subject": "none",
       "person": "sg",
@@ -5083,7 +5086,7 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
         "pt_morar",
         "pt_la",
         "pt_no",
@@ -5091,8 +5094,8 @@
         "pt_cidade"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "858e61de457f",
+      "rev": 2,
+      "contentHash": "d92c398f5023",
       "retired": false
     },
     {
@@ -5320,8 +5323,8 @@
     {
       "exId": "pack_04_pt_fogo_m.sg_2",
       "lemmaId": "pt_fogo",
-      "pt": "Eles pagam o seguro contra fogo?",
-      "en": "Do they pay for fire insurance?",
+      "pt": "Eles ficaram perto do fogo na praia.",
+      "en": "They stayed near the fire on the beach.",
       "answer": "fogo",
       "subject": "none",
       "person": "sg",
@@ -5350,22 +5353,23 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
-        "pt_pagar",
-        "pt_o",
-        "pt_segurar",
-        "pt_contra"
+        "pt_ele",
+        "pt_ficar",
+        "pt_perto",
+        "pt_do",
+        "pt_na",
+        "pt_praia"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "0ecffc267778",
+      "rev": 2,
+      "contentHash": "9414ad6909ba",
       "retired": false
     },
     {
       "exId": "pack_04_pt_fogo_m.sg_3",
       "lemmaId": "pt_fogo",
-      "pt": "Você desligou o fogo do fogão cedo.",
-      "en": "You turned off the stove fire early.",
+      "pt": "Você desligou o fogo da panela cedo.",
+      "en": "You turned off the heat under the pot early.",
       "answer": "fogo",
       "subject": "none",
       "person": "sg",
@@ -5397,19 +5401,19 @@
         "pt_voce",
         "pt_desligar",
         "pt_o",
-        "pt_do",
-        "pt_fogao",
+        "pt_da",
+        "pt_panela",
         "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "281880ccc2a8",
+      "rev": 2,
+      "contentHash": "c0544ac8dcc8",
       "retired": false
     },
     {
       "exId": "pack_04_pt_crer_ger_1",
       "lemmaId": "pt_crer",
-      "pt": "Cê tá crendo nessa promessa dele?",
+      "pt": "Você está crendo nessa promessa dele?",
       "en": "Are you believing that promise of his?",
       "answer": "crendo",
       "subject": "none",
@@ -5441,22 +5445,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voce~ce",
-        "pt_estar~ta",
+        "pt_voce",
+        "pt_estar",
         "pt_nessa",
         "pt_promessa",
         "pt_dele"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e17db3b4de75",
+      "rev": 2,
+      "contentHash": "a03ef48d1858",
       "retired": false
     },
     {
       "exId": "pack_04_pt_crer_ger_2",
       "lemmaId": "pt_crer",
-      "pt": "Você tá crendo mesmo nesse horário?",
-      "en": "Are you really believing that schedule?",
+      "pt": "Você está crendo mesmo nessa história?",
+      "en": "Do you really believe that story?",
       "answer": "crendo",
       "subject": "none",
       "person": "ger",
@@ -5488,21 +5492,21 @@
       "grammar_note_en": null,
       "requires": [
         "pt_voce",
-        "pt_estar~ta",
+        "pt_estar",
         "pt_mesmo_adj",
-        "pt_nesse",
-        "pt_horario"
+        "pt_nessa",
+        "pt_historia"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "1cb945c3cc5b",
+      "rev": 2,
+      "contentHash": "3bcb5f3eae1e",
       "retired": false
     },
     {
       "exId": "pack_04_pt_crer_ger_3",
       "lemmaId": "pt_crer",
-      "pt": "Estou crendo que vai chover forte logo.",
-      "en": "I am believing it is going to rain hard soon.",
+      "pt": "Ele está crendo cada vez mais em Deus.",
+      "en": "He is coming to believe in God more and more.",
       "answer": "crendo",
       "subject": "none",
       "person": "ger",
@@ -5534,23 +5538,23 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_ele",
         "pt_estar",
-        "pt_que",
-        "pt_ir",
-        "pt_chover",
-        "pt_forte",
-        "pt_logo"
+        "pt_cada",
+        "pt_vez",
+        "pt_mais",
+        "pt_em"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a7089d16ca40",
+      "rev": 2,
+      "contentHash": "f77c90e161a2",
       "retired": false
     },
     {
       "exId": "pack_04_pt_crer_ger_4",
       "lemmaId": "pt_crer",
-      "pt": "Estou crendo que o prazo sai hoje.",
-      "en": "I am believing that the deadline comes out today.",
+      "pt": "Eles estão crendo nas palavras do pastor.",
+      "en": "They are believing the pastor's words.",
       "answer": "crendo",
       "subject": "none",
       "person": "ger",
@@ -5582,16 +5586,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_ele",
         "pt_estar",
-        "pt_que",
-        "pt_o",
-        "pt_prazo",
-        "pt_sair",
-        "pt_hoje"
+        "pt_nas",
+        "pt_palavra",
+        "pt_do",
+        "pt_pastor"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "7d737679cb80",
+      "rev": 2,
+      "contentHash": "2a5608091485",
       "retired": false
     },
     {
@@ -5645,8 +5649,8 @@
     {
       "exId": "pack_04_pt_crer_inf_2",
       "lemmaId": "pt_crer",
-      "pt": "Aqui, eu devo crer nessa notícia?",
-      "en": "Here, should I believe that news?",
+      "pt": "Eu devo crer nessa notícia?",
+      "en": "Should I believe that news?",
       "answer": "crer",
       "subject": "none",
       "person": "inf",
@@ -5668,8 +5672,8 @@
         "cri"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "sair",
+        "abrir"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -5677,15 +5681,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_aqui",
         "pt_eu",
         "pt_dever",
         "pt_nessa",
         "pt_noticia"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "5ffbdfaa9f45",
+      "rev": 2,
+      "contentHash": "b4b4440b039c",
       "retired": false
     },
     {
@@ -5785,8 +5788,8 @@
     {
       "exId": "pack_04_pt_crer_perf.1pl_1",
       "lemmaId": "pt_crer",
-      "pt": "Ontem cremos na ideia dele sim?",
-      "en": "Yesterday did we really believe his idea?",
+      "pt": "Ontem nós cremos na palavra dele.",
+      "en": "Yesterday we believed his word.",
       "answer": "cremos",
       "subject": "nós",
       "person": "1pl",
@@ -5818,21 +5821,21 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ontem",
+        "pt_nos",
         "pt_na",
-        "pt_ideia",
-        "pt_dele",
-        "pt_sim"
+        "pt_palavra",
+        "pt_dele"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "8936671672f6",
+      "rev": 2,
+      "contentHash": "00ef6c3cbd14",
       "retired": false
     },
     {
       "exId": "pack_04_pt_crer_perf.1pl_2",
       "lemmaId": "pt_crer",
-      "pt": "Semana passada já cremos no sabor bom?",
-      "en": "Last week did we already believe the good taste?",
+      "pt": "Semana passada nós cremos na promessa dele.",
+      "en": "Last week we believed his promise.",
       "answer": "cremos",
       "subject": "nós",
       "person": "1pl",
@@ -5864,21 +5867,21 @@
       "grammar_note_en": null,
       "requires": [
         "pt_semana",
-        "pt_ja",
-        "pt_no",
-        "pt_sabor",
-        "pt_bom"
+        "pt_nos",
+        "pt_na",
+        "pt_promessa",
+        "pt_dele"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "4defdfa9d9ae",
+      "rev": 2,
+      "contentHash": "955b66a84bad",
       "retired": false
     },
     {
       "exId": "pack_04_pt_crer_perf.1pl_3",
       "lemmaId": "pt_crer",
-      "pt": "Já cremos antes na resposta de vocês.",
-      "en": "We already believed your reply before.",
+      "pt": "Antes nós cremos na resposta de vocês.",
+      "en": "Before, we believed your reply.",
       "answer": "cremos",
       "subject": "nós",
       "person": "1pl",
@@ -5909,16 +5912,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ja",
         "pt_antes",
+        "pt_nos",
         "pt_na",
         "pt_resposta",
         "pt_de",
-        "pt_voces"
+        "pt_voce"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "87bfda11276a",
+      "rev": 2,
+      "contentHash": "6439a7825e0b",
       "retired": false
     },
     {
@@ -5970,10 +5973,10 @@
     {
       "exId": "pack_04_pt_crer_perf.1sg_2",
       "lemmaId": "pt_crer",
-      "pt": "Logo cri no valor bom da loja.",
-      "en": "Right away I believed the good store price.",
+      "pt": "Logo cri na promessa da loja.",
+      "en": "I immediately believed the store's promise.",
       "answer": "cri",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "perf",
       "slot": "perf.1sg",
@@ -5993,8 +5996,8 @@
         "crê"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "fui",
+        "pus"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -6003,15 +6006,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_logo",
-        "pt_no",
-        "pt_valor",
-        "pt_bom",
+        "pt_na",
+        "pt_promessa",
         "pt_da",
         "pt_loja"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "04c26a3c11b8",
+      "rev": 2,
+      "contentHash": "dd83f36aa9f5",
       "retired": false
     },
     {
@@ -6204,8 +6206,8 @@
     {
       "exId": "pack_04_pt_crer_perf.3pl_3",
       "lemmaId": "pt_crer",
-      "pt": "Os meninos não creram no jantar pronto.",
-      "en": "The boys did not believe dinner was ready.",
+      "pt": "Os meninos não creram na história do pai.",
+      "en": "The boys did not believe their father's story.",
       "answer": "creram",
       "subject": "none",
       "person": "3pl",
@@ -6239,13 +6241,14 @@
         "pt_o",
         "pt_menino",
         "pt_nao",
-        "pt_no",
-        "pt_jantar",
-        "pt_pronto"
+        "pt_na",
+        "pt_historia",
+        "pt_do",
+        "pt_pai"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "dcba761aa143",
+      "rev": 2,
+      "contentHash": "448e348343c0",
       "retired": false
     },
     {
@@ -6344,10 +6347,10 @@
     {
       "exId": "pack_04_pt_crer_perf.3sg_2",
       "lemmaId": "pt_crer",
-      "pt": "Cê creu naquela história do livro?",
+      "pt": "Você creu naquela história do livro?",
       "en": "Did you believe that story from the book?",
       "answer": "creu",
-      "subject": "none",
+      "subject": "você",
       "person": "3sg",
       "tense": "perf",
       "slot": "perf.3sg",
@@ -6367,8 +6370,8 @@
         "creram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "quis",
+        "teve"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -6376,14 +6379,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voce~ce",
+        "pt_voce",
         "pt_historia",
         "pt_do",
         "pt_livro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "b7f459efd9a5",
+      "rev": 2,
+      "contentHash": "c20269bfaf16",
       "retired": false
     },
     {
@@ -6435,8 +6438,8 @@
     {
       "exId": "pack_04_pt_crer_perf.3sg_4",
       "lemmaId": "pt_crer",
-      "pt": "Você creu rápido na receita nova.",
-      "en": "You quickly believed in the new recipe.",
+      "pt": "Você creu rápido na desculpa dele.",
+      "en": "You quickly believed his excuse.",
       "answer": "creu",
       "subject": "você",
       "person": "3sg",
@@ -6458,8 +6461,8 @@
         "cremos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "teve",
+        "pôde"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -6470,12 +6473,12 @@
         "pt_voce",
         "pt_rapido",
         "pt_na",
-        "pt_receita",
-        "pt_novo"
+        "pt_desculpar",
+        "pt_dele"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "eee548e18f8c",
+      "rev": 2,
+      "contentHash": "32aad80fa85e",
       "retired": false
     },
     {
@@ -7312,8 +7315,8 @@
     {
       "exId": "pack_04_pt_campo_m.sg_1",
       "lemmaId": "pt_campo",
-      "pt": "A gente resolve isso antes do campo.",
-      "en": "We solve that before the countryside trip.",
+      "pt": "A gente vai pro campo no sábado.",
+      "en": "We are going to the countryside on Saturday.",
       "answer": "campo",
       "subject": "none",
       "person": "sg",
@@ -7342,23 +7345,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
-        "pt_resolver",
-        "pt_isso",
-        "pt_antes",
-        "pt_do"
+        "pt_a_gente",
+        "pt_ir",
+        "pt_pro",
+        "pt_no",
+        "pt_sabado"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "87f8aec295b7",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "8e5312f80aa8",
       "retired": false
     },
     {
       "exId": "pack_04_pt_campo_m.sg_2",
       "lemmaId": "pt_campo",
-      "pt": "No domingo, eu ligo lá do campo?",
-      "en": "On Sunday, shall I call from the countryside?",
+      "pt": "No domingo, eu ligo lá do campo.",
+      "en": "On Sunday, I will call from the countryside.",
       "answer": "campo",
       "subject": "none",
       "person": "sg",
@@ -7395,8 +7397,8 @@
         "pt_do"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "9a4065aa9e96",
+      "rev": 2,
+      "contentHash": "1b5b9650dc28",
       "retired": false
     },
     {
@@ -7445,8 +7447,8 @@
     {
       "exId": "pack_04_pt_quarto_adj_f.pl_1",
       "lemmaId": "pt_quarto_adj",
-      "pt": "Nós lemos as quartas mensagens do chefe.",
-      "en": "We read the fourth messages from the boss.",
+      "pt": "Nosso time chegou às quartas de final.",
+      "en": "Our team reached the quarterfinals.",
       "answer": "quartas",
       "subject": "none",
       "person": "pl",
@@ -7475,23 +7477,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nos",
-        "pt_ler",
-        "pt_o",
-        "pt_mensagem",
-        "pt_do",
-        "pt_chefe"
+        "pt_nosso",
+        "pt_time",
+        "pt_chegar",
+        "pt_de",
+        "pt_final"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "aed582155c0d",
+      "rev": 2,
+      "contentHash": "02c020aa548e",
       "retired": false
     },
     {
       "exId": "pack_04_pt_quarto_adj_f.pl_2",
       "lemmaId": "pt_quarto_adj",
-      "pt": "Cê ouviu as quartas músicas do disco?",
-      "en": "Did you hear the fourth songs of the album?",
+      "pt": "As alunas das quartas séries saíram cedo.",
+      "en": "The students from the fourth grades left early.",
       "answer": "quartas",
       "subject": "none",
       "person": "pl",
@@ -7520,23 +7521,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voce~ce",
-        "pt_ouvir",
-        "pt_o",
-        "pt_musica",
-        "pt_do",
-        "pt_disco"
+        "pt_a",
+        "pt_aluno",
+        "pt_serie",
+        "pt_sair",
+        "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "0e9cc2d59a0e",
+      "rev": 2,
+      "contentHash": "1d3b55b84db4",
       "retired": false
     },
     {
       "exId": "pack_04_pt_quarto_adj_f.pl_3",
       "lemmaId": "pt_quarto_adj",
-      "pt": "Eles viram as quartas nuvens de chuva.",
-      "en": "They saw the fourth rain clouds.",
+      "pt": "Assisti às quartas de final ontem.",
+      "en": "I watched the quarterfinals yesterday.",
       "answer": "quartas",
       "subject": "none",
       "person": "pl",
@@ -7565,16 +7565,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
-        "pt_ver",
-        "pt_o",
-        "pt_nuvem",
+        "pt_assistir",
         "pt_de",
-        "pt_chuva"
+        "pt_final",
+        "pt_ontem"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "a25e45735aca",
+      "rev": 2,
+      "contentHash": "fbb6570718ad",
       "retired": false
     },
     {
@@ -7713,8 +7711,8 @@
     {
       "exId": "pack_04_pt_quarto_adj_m.pl_1",
       "lemmaId": "pt_quarto_adj",
-      "pt": "Você conhece os quartos lugares da lista.",
-      "en": "You know the fourth places on the list.",
+      "pt": "Os quartos colocados também ganham medalha?",
+      "en": "Do the fourth-place finishers also get a medal?",
       "answer": "quartos",
       "subject": "none",
       "person": "pl",
@@ -7743,24 +7741,21 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voce",
-        "pt_conhecer",
         "pt_o",
-        "pt_quarto",
-        "pt_lugar",
-        "pt_da",
-        "pt_lista"
+        "pt_tambem",
+        "pt_ganhar",
+        "pt_medalha"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "5ce0f3c83a17",
+      "rev": 2,
+      "contentHash": "1f46bd14c140",
       "retired": false
     },
     {
       "exId": "pack_04_pt_quarto_adj_m.pl_2",
       "lemmaId": "pt_quarto_adj",
-      "pt": "Ele não pegou os quartos papéis do mês.",
-      "en": "He did not get the fourth papers of the month.",
+      "pt": "Ele estudou os quartos capítulos dos dois livros.",
+      "en": "He studied the fourth chapters of both books.",
       "answer": "quartos",
       "subject": "none",
       "person": "pl",
@@ -7790,24 +7785,22 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ele",
-        "pt_nao",
-        "pt_pegar",
+        "pt_estudar",
         "pt_o",
-        "pt_quarto",
-        "pt_papel",
-        "pt_do",
-        "pt_mes"
+        "pt_capitulo",
+        "pt_dois",
+        "pt_livro"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "b6b6d83cd45b",
+      "rev": 2,
+      "contentHash": "4401c1dd8133",
       "retired": false
     },
     {
       "exId": "pack_04_pt_quarto_adj_m.pl_3",
       "lemmaId": "pt_quarto_adj",
-      "pt": "A gente pagou os quartos boletos cedo.",
-      "en": "We paid the fourth bills early.",
+      "pt": "Os quartos anos fazem prova amanhã.",
+      "en": "The fourth-year classes take a test tomorrow.",
       "answer": "quartos",
       "subject": "none",
       "person": "pl",
@@ -7837,15 +7830,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_gente",
-        "pt_pagar",
-        "pt_quarto",
-        "pt_boleto",
-        "pt_cedo"
+        "pt_ano",
+        "pt_fazer",
+        "pt_prova",
+        "pt_amanha"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d270e91e9a57",
+      "rev": 2,
+      "contentHash": "6a93e3a71316",
       "retired": false
     },
     {
@@ -8077,8 +8069,8 @@
     {
       "exId": "pack_04_pt_ainda_base_3",
       "lemmaId": "pt_ainda",
-      "pt": "Hoje, eu ainda tenho reunião?",
-      "en": "Today, do I still have a meeting?",
+      "pt": "Hoje eu ainda tenho reunião.",
+      "en": "Today I still have a meeting.",
       "answer": "ainda",
       "subject": "none",
       "person": "none",
@@ -8113,8 +8105,8 @@
         "pt_reuniao"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "164a84b4ed6f",
+      "rev": 2,
+      "contentHash": "55145f86993d",
       "retired": false
     },
     {
@@ -8165,8 +8157,8 @@
     {
       "exId": "pack_04_pt_cabelo_m.pl_1",
       "lemmaId": "pt_cabelo",
-      "pt": "Cê não secou os cabelos na chuva.",
-      "en": "You did not dry your hair in the rain.",
+      "pt": "Cê não secou os cabelos depois do banho.",
+      "en": "You did not dry your hair after the shower.",
       "answer": "cabelos",
       "subject": "none",
       "person": "pl",
@@ -8199,19 +8191,20 @@
         "pt_nao",
         "pt_secar",
         "pt_o",
-        "pt_na",
-        "pt_chuva"
+        "pt_depois",
+        "pt_do",
+        "pt_banho"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "078185c8ec8f",
+      "rev": 2,
+      "contentHash": "18f3e81f662a",
       "retired": false
     },
     {
       "exId": "pack_04_pt_cabelo_m.pl_2",
       "lemmaId": "pt_cabelo",
-      "pt": "Não encontrei seus cabelos no livro.",
-      "en": "I did not find your hairs in the book.",
+      "pt": "Ela pintou os cabelos de azul.",
+      "en": "She dyed her hair blue.",
       "answer": "cabelos",
       "subject": "none",
       "person": "pl",
@@ -8236,19 +8229,19 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "hairs",
+      "hint_en": "hair (plural)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nao",
-        "pt_encontrar",
-        "pt_seu",
-        "pt_no",
-        "pt_livro"
+        "pt_ela",
+        "pt_pintar",
+        "pt_o",
+        "pt_de",
+        "pt_azul"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "94637006e846",
+      "rev": 2,
+      "contentHash": "795e0933fadc",
       "retired": false
     },
     {
@@ -8656,8 +8649,8 @@
     {
       "exId": "pack_04_pt_caber_inf_2",
       "lemmaId": "pt_caber",
-      "pt": "Nós precisamos caber nessa tela pequena.",
-      "en": "We need to fit on this small screen.",
+      "pt": "Nós precisamos caber todos no carro.",
+      "en": "We all need to fit in the car.",
       "answer": "caber",
       "subject": "none",
       "person": "inf",
@@ -8677,8 +8670,8 @@
         "cabem"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "dizer",
+        "subir"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -8688,20 +8681,20 @@
       "requires": [
         "pt_nos",
         "pt_precisar",
-        "pt_nessa",
-        "pt_tela",
-        "pt_pequeno"
+        "pt_todo",
+        "pt_no",
+        "pt_carro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "03bfb9ce302c",
+      "rev": 2,
+      "contentHash": "66b27ee0dc34",
       "retired": false
     },
     {
       "exId": "pack_04_pt_caber_inf_3",
       "lemmaId": "pt_caber",
-      "pt": "Você deve caber nesse grupo de leitura.",
-      "en": "You ought to fit into this reading group.",
+      "pt": "Você deve caber nesse banco de trás.",
+      "en": "You should fit in that back seat.",
       "answer": "caber",
       "subject": "none",
       "person": "inf",
@@ -8721,8 +8714,8 @@
         "caibo"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "beber",
+        "levar"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -8733,13 +8726,13 @@
         "pt_voce",
         "pt_dever",
         "pt_nesse",
-        "pt_grupo",
+        "pt_banco",
         "pt_de",
-        "pt_leitura"
+        "pt_tras"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "b9936063876f",
+      "rev": 2,
+      "contentHash": "68cc31f4f7bc",
       "retired": false
     },
     {
@@ -8919,8 +8912,8 @@
     {
       "exId": "pack_04_pt_caber_perf.1sg_1",
       "lemmaId": "pt_caber",
-      "pt": "Eu coube naquela cadeira estreita?",
-      "en": "Did I fit in that narrow chair?",
+      "pt": "Eu coube naquela cadeira estreita.",
+      "en": "I fit in that narrow chair.",
       "answer": "coube",
       "subject": "eu",
       "person": "1sg",
@@ -8940,8 +8933,8 @@
         "coubemos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "achei",
+        "lavei"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -8954,14 +8947,14 @@
         "pt_estreito"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "11f81ad56e14",
+      "rev": 2,
+      "contentHash": "455e1c490331",
       "retired": false
     },
     {
       "exId": "pack_04_pt_caber_perf.1sg_2",
       "lemmaId": "pt_caber",
-      "pt": "Ontem não coube no casaco antigo.",
+      "pt": "Ontem eu não coube no casaco antigo.",
       "en": "Yesterday I did not fit into the old coat.",
       "answer": "coube",
       "subject": "eu",
@@ -8982,8 +8975,8 @@
         "coubemos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "levei",
+        "achei"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -8992,21 +8985,22 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ontem",
+        "pt_eu",
         "pt_nao",
         "pt_no",
         "pt_casaco",
         "pt_antigo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "fa0bb7a23290",
+      "rev": 2,
+      "contentHash": "3a090b1e0852",
       "retired": false
     },
     {
       "exId": "pack_04_pt_caber_perf.1sg_3",
       "lemmaId": "pt_caber",
-      "pt": "Eu não coube na fila do cartório.",
-      "en": "I did not fit in the registry line.",
+      "pt": "Eu não coube na foto do grupo.",
+      "en": "I did not fit in the group photo.",
       "answer": "coube",
       "subject": "eu",
       "person": "1sg",
@@ -9026,8 +9020,8 @@
         "couberam"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "achei",
+        "olhei"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -9038,19 +9032,20 @@
         "pt_eu",
         "pt_nao",
         "pt_na",
-        "pt_fila",
-        "pt_do"
+        "pt_foto",
+        "pt_do",
+        "pt_grupo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "db4dbcbaa8ef",
+      "rev": 2,
+      "contentHash": "30189648bb1c",
       "retired": false
     },
     {
       "exId": "pack_04_pt_caber_perf.1sg_4",
       "lemmaId": "pt_caber",
-      "pt": "Eu coube nesse tênis branco na loja?",
-      "en": "Did I fit in these white sneakers at the store?",
+      "pt": "Eu coube no banco de trás.",
+      "en": "I fit in the back seat.",
       "answer": "coube",
       "subject": "eu",
       "person": "1sg",
@@ -9070,8 +9065,8 @@
         "coubemos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "dormi",
+        "perdi"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -9080,22 +9075,21 @@
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
-        "pt_nesse",
-        "pt_tenis",
-        "pt_branco",
-        "pt_na",
-        "pt_loja"
+        "pt_no",
+        "pt_banco",
+        "pt_de",
+        "pt_tras"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "966a59f13b7b",
+      "rev": 2,
+      "contentHash": "1e9fa4721eed",
       "retired": false
     },
     {
       "exId": "pack_04_pt_caber_perf.3pl_1",
       "lemmaId": "pt_caber",
-      "pt": "Vocês couberam todos no ônibus vazio.",
-      "en": "You all fit on the empty bus.",
+      "pt": "Vocês couberam todos no carro do pai.",
+      "en": "You all fit in Dad's car.",
       "answer": "couberam",
       "subject": "vocês",
       "person": "3pl",
@@ -9124,15 +9118,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voces",
-        "pt_todo_adj",
+        "pt_voce",
+        "pt_todo",
         "pt_no",
-        "pt_onibus",
-        "pt_vazio"
+        "pt_carro",
+        "pt_do",
+        "pt_pai"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "62bca1910351",
+      "rev": 2,
+      "contentHash": "f01707827137",
       "retired": false
     },
     {
@@ -9627,8 +9622,8 @@
     {
       "exId": "pack_04_pt_caber_pres.1sg_2",
       "lemmaId": "pt_caber",
-      "pt": "Eu caibo bem no orçamento desse mês.",
-      "en": "I fit nicely within this month's budget.",
+      "pt": "Eu caibo bem nesse sofá.",
+      "en": "I fit well on this sofa.",
       "answer": "caibo",
       "subject": "eu",
       "person": "1sg",
@@ -9648,8 +9643,8 @@
         "caber"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "perco",
+        "ponho"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -9659,14 +9654,12 @@
       "requires": [
         "pt_eu",
         "pt_bem",
-        "pt_no",
-        "pt_orcamento",
-        "pt_dar",
-        "pt_mes"
+        "pt_nesse",
+        "pt_sofa"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "f0f8bfe722ab",
+      "rev": 2,
+      "contentHash": "e0e0678c8323",
       "retired": false
     },
     {
@@ -10027,8 +10020,8 @@
     {
       "exId": "pack_04_pt_caber_pres.3sg_3",
       "lemmaId": "pt_caber",
-      "pt": "A gente cabe naquele ônibus sem pressa.",
-      "en": "We fit on that bus without rushing.",
+      "pt": "A gente cabe naquele carro pequeno?",
+      "en": "Do we fit in that small car?",
       "answer": "cabe",
       "subject": "a gente",
       "person": "3sg",
@@ -10048,8 +10041,8 @@
         "coube"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "ouve",
+        "quer"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -10057,15 +10050,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
+        "pt_a_gente",
         "pt_naquele",
-        "pt_onibus",
-        "pt_sem"
+        "pt_carro",
+        "pt_pequeno"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "7553f7d1c8da",
+      "rev": 2,
+      "contentHash": "15f3b6a5c446",
       "retired": false
     },
     {
@@ -10159,8 +10151,8 @@
     {
       "exId": "pack_04_pt_viagem_f.pl_2",
       "lemmaId": "pt_viagem",
-      "pt": "Canso muito depois de viagens longas?",
-      "en": "Do I get very tired after long trips?",
+      "pt": "Eu canso muito depois de viagens longas.",
+      "en": "I get very tired after long trips.",
       "answer": "viagens",
       "subject": "none",
       "person": "pl",
@@ -10189,6 +10181,7 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_eu",
         "pt_cansar",
         "pt_muito",
         "pt_depois",
@@ -10196,15 +10189,15 @@
         "pt_longo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "51abb5244f51",
+      "rev": 2,
+      "contentHash": "35f52c9fe673",
       "retired": false
     },
     {
       "exId": "pack_04_pt_viagem_f.pl_3",
       "lemmaId": "pt_viagem",
-      "pt": "Gosto de provar comidas em viagens novas.",
-      "en": "I like trying foods on new trips.",
+      "pt": "Gosto de provar comidas novas em viagens.",
+      "en": "I like trying new foods on trips.",
       "answer": "viagens",
       "subject": "none",
       "person": "pl",
@@ -10237,12 +10230,12 @@
         "pt_de",
         "pt_provar",
         "pt_comida",
-        "pt_em",
-        "pt_novo"
+        "pt_novo",
+        "pt_em"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "a8ce750a2ae4",
+      "rev": 2,
+      "contentHash": "1a2b4543c21f",
       "retired": false
     },
     {
@@ -10652,8 +10645,8 @@
     {
       "exId": "pack_04_pt_rapido_m.pl_1",
       "lemmaId": "pt_rapido",
-      "pt": "A gente baixou dois arquivos bem rápidos.",
-      "en": "We downloaded two very fast files.",
+      "pt": "A gente fez dois lanches bem rápidos.",
+      "en": "We had two very quick snacks.",
       "answer": "rápidos",
       "subject": "none",
       "person": "pl",
@@ -10682,15 +10675,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
-        "pt_baixar",
+        "pt_a_gente",
+        "pt_fazer",
         "pt_dois",
+        "pt_lanche",
         "pt_bem"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "4d918498cdba",
+      "rev": 2,
+      "contentHash": "71b136329d41",
       "retired": false
     },
     {
@@ -10786,8 +10779,8 @@
     {
       "exId": "pack_04_pt_rapido_m.sg_1",
       "lemmaId": "pt_rapido",
-      "pt": "Peguei o ônibus mais rápido hoje cedo?",
-      "en": "Did I catch the fastest bus this morning?",
+      "pt": "Peguei o ônibus mais rápido hoje cedo.",
+      "en": "I caught the fastest bus this morning.",
       "answer": "rápido",
       "subject": "none",
       "person": "sg",
@@ -10826,8 +10819,8 @@
         "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "4fd3ff98c522",
+      "rev": 2,
+      "contentHash": "bd3fabcef783",
       "retired": false
     },
     {
@@ -11191,7 +11184,7 @@
       "exId": "pack_04_pt_haver_ger_1",
       "lemmaId": "pt_haver",
       "pt": "Está havendo muita chuva nesta semana.",
-      "en": "There is being a lot of rain this week.",
+      "en": "There has been a lot of rain this week.",
       "answer": "havendo",
       "subject": "none",
       "person": "ger",
@@ -11223,12 +11216,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_estar",
+        "pt_muito",
         "pt_chuva",
         "pt_semana"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "d0d3ff50adca",
+      "rev": 2,
+      "contentHash": "f7421ee81b25",
       "retired": false
     },
     {
@@ -11565,8 +11559,8 @@
     {
       "exId": "pack_04_pt_haver_perf.1pl_1",
       "lemmaId": "pt_haver",
-      "pt": "Ontem saímos cedo e houvemos calma.",
-      "en": "Yesterday we left early and showed calm.",
+      "pt": "Ontem nós houvemos de sair cedo.",
+      "en": "Yesterday we had to leave early.",
       "answer": "houvemos",
       "subject": "nós",
       "person": "1pl",
@@ -11598,14 +11592,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ontem",
+        "pt_nos",
+        "pt_de",
         "pt_sair",
-        "pt_cedo",
-        "pt_e",
-        "pt_calma"
+        "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "83b6881726d6",
+      "rev": 2,
+      "contentHash": "47612979a0d6",
       "retired": false
     },
     {
@@ -11704,10 +11698,10 @@
     {
       "exId": "pack_04_pt_haver_perf.1sg_1",
       "lemmaId": "pt_haver",
-      "pt": "Hoje, eu vi que houve festa lá?",
-      "en": "Today, did I see there was a party there?",
+      "pt": "Hoje eu vi que houve festa lá.",
+      "en": "Today I saw there was a party there.",
       "answer": "houve",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "perf",
       "slot": "perf.1sg",
@@ -11727,8 +11721,8 @@
         "houveram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "perdi",
+        "soube"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -11744,8 +11738,8 @@
         "pt_la"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "915b7bd27d6b",
+      "rev": 2,
+      "contentHash": "9a5bac1d72e9",
       "retired": false
     },
     {
@@ -11938,8 +11932,8 @@
     {
       "exId": "pack_04_pt_haver_perf.3pl_2",
       "lemmaId": "pt_haver",
-      "pt": "Eles não houveram dúvidas naquele dia.",
-      "en": "They did not have doubts that day.",
+      "pt": "Eles houveram de pedir desculpas naquele dia.",
+      "en": "They had to apologize that day.",
       "answer": "houveram",
       "subject": "eles",
       "person": "3pl",
@@ -11970,15 +11964,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
-        "pt_nao",
-        "pt_duvida",
+        "pt_ele",
+        "pt_de",
+        "pt_pedir",
+        "pt_desculpa",
         "pt_naquele",
         "pt_dia"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "d56ee959676f",
+      "rev": 2,
+      "contentHash": "6a7940c19df6",
       "retired": false
     },
     {
@@ -12311,8 +12306,8 @@
     {
       "exId": "pack_04_pt_haver_pres.1pl_2",
       "lemmaId": "pt_haver",
-      "pt": "Pagamos tudo e não havemos de perder.",
-      "en": "We pay everything and we shall not lose.",
+      "pt": "Nós havemos de pagar tudo em dia.",
+      "en": "We shall pay everything on time.",
       "answer": "havemos",
       "subject": "nós",
       "person": "1pl",
@@ -12343,16 +12338,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_nos",
+        "pt_de",
         "pt_pagar",
         "pt_tudo",
-        "pt_e",
-        "pt_nao",
-        "pt_de",
-        "pt_perder"
+        "pt_em",
+        "pt_dia"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "11e89be2e7d4",
+      "rev": 2,
+      "contentHash": "773d969034ca",
       "retired": false
     },
     {
@@ -12921,8 +12916,8 @@
     {
       "exId": "pack_04_pt_haver_pres.3sg_4",
       "lemmaId": "pt_haver",
-      "pt": "Aqui há um médico bom perto.",
-      "en": "Here there is a good doctor nearby.",
+      "pt": "Aqui há um médico muito bom.",
+      "en": "Here there is a very good doctor.",
       "answer": "há",
       "subject": "none",
       "person": "3sg",
@@ -12945,8 +12940,8 @@
         "hão"
       ],
       "distractors": [
-        "ser",
-        "sido"
+        "ri",
+        "vê"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -12957,19 +12952,19 @@
         "pt_aqui",
         "pt_um",
         "pt_medico",
-        "pt_bom",
-        "pt_perto"
+        "pt_muito",
+        "pt_bom"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "832f08500926",
+      "rev": 2,
+      "contentHash": "f5f283e425c0",
       "retired": false
     },
     {
       "exId": "pack_04_pt_namorado_m.pl_1",
       "lemmaId": "pt_namorado",
       "pt": "Vocês dividem as contas entre namorados.",
-      "en": "You all split the bills between boyfriends.",
+      "en": "You two split the bills as a couple.",
       "answer": "namorados",
       "subject": "none",
       "person": "pl",
@@ -12994,18 +12989,18 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "boyfriends",
+      "hint_en": "couple / sweethearts",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voces",
+        "pt_voce",
         "pt_dividir",
-        "pt_o",
+        "pt_a",
         "pt_entrar"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "6f6aa34026bb",
+      "rev": 2,
+      "contentHash": "a7333e405355",
       "retired": false
     },
     {
@@ -13054,8 +13049,8 @@
     {
       "exId": "pack_04_pt_namorado_m.pl_3",
       "lemmaId": "pt_namorado",
-      "pt": "O grupo tem vários namorados legais.",
-      "en": "The group has several cool boyfriends.",
+      "pt": "Minhas amigas têm namorados muito legais.",
+      "en": "My friends have very cool boyfriends.",
       "answer": "namorados",
       "subject": "none",
       "person": "pl",
@@ -13084,15 +13079,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_grupo",
+        "pt_meu",
+        "pt_amigo",
         "pt_ter",
-        "pt_vario",
+        "pt_muito",
         "pt_legal"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "fb454f0b79c8",
+      "rev": 2,
+      "contentHash": "8f1bce15c396",
       "retired": false
     },
     {
@@ -13646,8 +13641,8 @@
     {
       "exId": "pack_04_pt_velho_m.sg_1",
       "lemmaId": "pt_velho",
-      "pt": "Hoje, eu troco esse celular velho?",
-      "en": "Today, am I trading this old cell phone?",
+      "pt": "Hoje eu troco esse celular velho.",
+      "en": "Today I am trading in this old cell phone.",
       "answer": "velho",
       "subject": "none",
       "person": "sg",
@@ -13685,15 +13680,15 @@
         "pt_celular"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d777056cd584",
+      "rev": 2,
+      "contentHash": "397a432e10ab",
       "retired": false
     },
     {
       "exId": "pack_04_pt_velho_m.sg_2",
       "lemmaId": "pt_velho",
-      "pt": "Vendo aquele casaco velho no bar?",
-      "en": "Am I selling that old coat at the bar?",
+      "pt": "Vendi aquele casaco velho na feira.",
+      "en": "I sold that old coat at the market.",
       "answer": "velho",
       "subject": "none",
       "person": "sg",
@@ -13724,15 +13719,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ver",
+        "pt_vender",
         "pt_aquele",
         "pt_casaco",
-        "pt_no",
-        "pt_bar"
+        "pt_na",
+        "pt_feira"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "20c1b7aa8640",
+      "rev": 2,
+      "contentHash": "5df6eb73a5d2",
       "retired": false
     },
     {
@@ -13978,8 +13973,8 @@
     {
       "exId": "pack_04_pt_banco_m.pl_1",
       "lemmaId": "pt_banco",
-      "pt": "Os bancos da praça molharam com chuva.",
-      "en": "The square benches got wet with rain.",
+      "pt": "Os bancos da praça molharam com a chuva.",
+      "en": "The square benches got wet in the rain.",
       "answer": "bancos",
       "subject": "none",
       "person": "pl",
@@ -14016,8 +14011,8 @@
         "pt_chuva"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "41afe319148d",
+      "rev": 2,
+      "contentHash": "ed103e14a985",
       "retired": false
     },
     {
@@ -14603,8 +14598,8 @@
     {
       "exId": "pack_04_pt_doer_perf.3pl_1",
       "lemmaId": "pt_doer",
-      "pt": "Os preços altos doeram na conta deles.",
-      "en": "The high prices hurt their account.",
+      "pt": "Os preços altos doeram no bolso deles.",
+      "en": "The high prices hurt their wallets.",
       "answer": "doeram",
       "subject": "none",
       "person": "3pl",
@@ -14636,13 +14631,13 @@
         "pt_o",
         "pt_preco",
         "pt_alto",
-        "pt_na",
-        "pt_contar",
+        "pt_no",
+        "pt_bolso",
         "pt_dele"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "8a7258e66471",
+      "rev": 2,
+      "contentHash": "093ce9101250",
       "retired": false
     },
     {
@@ -14738,7 +14733,7 @@
       "exId": "pack_04_pt_doer_perf.3pl_4",
       "lemmaId": "pt_doer",
       "pt": "Seus olhos doeram com a luz?",
-      "en": "Wait, your eyes hurt from the light?",
+      "en": "Did your eyes hurt from the light?",
       "answer": "doeram",
       "subject": "none",
       "person": "3pl",
@@ -14773,8 +14768,8 @@
         "pt_o"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a8e3fb177424",
+      "rev": 2,
+      "contentHash": "07605046b477",
       "retired": false
     },
     {
@@ -15178,8 +15173,8 @@
     {
       "exId": "pack_04_pt_doer_pres.3sg_2",
       "lemmaId": "pt_doer",
-      "pt": "Essa fila não dói no corpo.",
-      "en": "This line does not hurt the body.",
+      "pt": "Minha cabeça dói quando fico na fila.",
+      "en": "My head hurts when I stand in line.",
       "answer": "dói",
       "subject": "none",
       "person": "3sg",
@@ -15199,23 +15194,25 @@
         "doeram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "vem",
+        "doa"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "hurts (3sg)",
+      "hint_en": "hurts / aches (3sg)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_fila",
-        "pt_nao",
-        "pt_no",
-        "pt_corpo"
+        "pt_meu",
+        "pt_cabeca",
+        "pt_quando",
+        "pt_ficar",
+        "pt_na",
+        "pt_fila"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "d1ef626576ac",
+      "rev": 2,
+      "contentHash": "7b17631723b1",
       "retired": false
     },
     {
@@ -15266,10 +15263,10 @@
     {
       "exId": "pack_04_pt_doer_pres.3sg_4",
       "lemmaId": "pt_doer",
-      "pt": "Para a gente isso dói na cabeça.",
-      "en": "For us this hurts our head.",
+      "pt": "Para a gente, essa notícia dói muito.",
+      "en": "For us, that news hurts a lot.",
       "answer": "dói",
-      "subject": "a gente",
+      "subject": "none",
       "person": "3sg",
       "tense": "pres",
       "slot": "pres.3sg",
@@ -15287,8 +15284,8 @@
         "doer"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "tem",
+        "doa"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -15296,16 +15293,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_a_gente",
         "pt_para",
-        "pt_o",
-        "pt_gente",
-        "pt_isso",
-        "pt_na",
-        "pt_cabeca"
+        "pt_esse",
+        "pt_noticia",
+        "pt_muito"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e2ce98f1df28",
+      "rev": 2,
+      "contentHash": "d724425495a9",
       "retired": false
     },
     {
@@ -15398,8 +15394,8 @@
     {
       "exId": "pack_04_pt_jantar_m.pl_3",
       "lemmaId": "pt_jantar",
-      "pt": "Mostram os jantares do hotel no jornal.",
-      "en": "They show the hotel dinners in the paper.",
+      "pt": "O jornal mostra os jantares do hotel.",
+      "en": "The newspaper shows the hotel dinners.",
       "answer": "jantares",
       "subject": "none",
       "person": "pl",
@@ -15428,16 +15424,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_mostrar",
         "pt_o",
+        "pt_jornal",
+        "pt_mostrar",
         "pt_do",
-        "pt_hotel",
-        "pt_no",
-        "pt_jornal"
+        "pt_hotel"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "34519be2b30e",
+      "rev": 2,
+      "contentHash": "054794182ea8",
       "retired": false
     },
     {
@@ -15488,8 +15483,8 @@
     {
       "exId": "pack_04_pt_jantar_m.sg_2",
       "lemmaId": "pt_jantar",
-      "pt": "Eles não querem jantar lá em casa.",
-      "en": "Wait, they do not want dinner at home.",
+      "pt": "Eles vêm pro jantar lá em casa.",
+      "en": "They are coming to dinner at our place.",
       "answer": "jantar",
       "subject": "none",
       "person": "sg",
@@ -15518,16 +15513,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
-        "pt_nao",
-        "pt_querer",
+        "pt_ele",
+        "pt_vir",
+        "pt_pro",
         "pt_la",
         "pt_em",
         "pt_casa"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d21483a6602e",
+      "rev": 2,
+      "contentHash": "f34670ec2e10",
       "retired": false
     },
     {
@@ -15984,8 +15979,8 @@
     {
       "exId": "pack_04_pt_caixa_f.sg_1",
       "lemmaId": "pt_caixa",
-      "pt": "Hoje, eu pago aquela caixa lá?",
-      "en": "Today, am I paying for that box there?",
+      "pt": "Eu pego aquela caixa lá pra você.",
+      "en": "I will get that box there for you.",
       "answer": "caixa",
       "subject": "none",
       "person": "sg",
@@ -16014,14 +16009,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
         "pt_eu",
-        "pt_pagar",
-        "pt_la"
+        "pt_pegar",
+        "pt_aquele",
+        "pt_la",
+        "pt_pra",
+        "pt_voce"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "791407ed11e3",
+      "rev": 2,
+      "contentHash": "cca6cb13a9d2",
       "retired": false
     },
     {
@@ -16295,8 +16292,8 @@
     {
       "exId": "pack_04_pt_cair_inf_1",
       "lemmaId": "pt_cair",
-      "pt": "Ela quase vai cair na corrida hoje.",
-      "en": "She is almost going to fall in the race today.",
+      "pt": "Ela pode cair na corrida hoje.",
+      "en": "She might fall in the race today.",
       "answer": "cair",
       "subject": "none",
       "person": "inf",
@@ -16316,8 +16313,8 @@
         "caindo"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "crer",
+        "doer"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -16326,14 +16323,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ela",
-        "pt_quase",
-        "pt_ir",
+        "pt_poder",
         "pt_na",
         "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "52d08cfb6d17",
+      "rev": 2,
+      "contentHash": "f6db826e3fe4",
       "retired": false
     },
     {
@@ -16383,8 +16379,8 @@
     {
       "exId": "pack_04_pt_cair_inf_3",
       "lemmaId": "pt_cair",
-      "pt": "Eles conseguem cair da bicicleta fácil!",
-      "en": "They manage to fall off the bike easily!",
+      "pt": "Eles têm medo de cair da bicicleta.",
+      "en": "They are afraid of falling off the bike.",
       "answer": "cair",
       "subject": "none",
       "person": "inf",
@@ -16404,8 +16400,8 @@
         "caindo"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "doer",
+        "crer"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -16413,15 +16409,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
-        "pt_conseguir",
+        "pt_ele",
+        "pt_ter",
+        "pt_medo",
+        "pt_de",
         "pt_da",
-        "pt_bicicleta",
-        "pt_facil"
+        "pt_bicicleta"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "712821fffabc",
+      "rev": 2,
+      "contentHash": "da8090afacf7",
       "retired": false
     },
     {
@@ -16650,10 +16647,10 @@
     {
       "exId": "pack_04_pt_cair_perf.1sg_2",
       "lemmaId": "pt_cair",
-      "pt": "Falei quando eu caí na esquina.",
-      "en": "I told when I fell at the corner.",
+      "pt": "Contei pra mãe que caí na esquina.",
+      "en": "I told Mom that I fell on the corner.",
       "answer": "caí",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "perf",
       "slot": "perf.1sg",
@@ -16671,8 +16668,8 @@
         "caímos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "dei",
+        "vim"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -16680,24 +16677,25 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_falar",
-        "pt_quando",
-        "pt_eu",
+        "pt_contar",
+        "pt_pra",
+        "pt_mae",
+        "pt_que",
         "pt_na",
         "pt_esquina"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d632ff9c5daf",
+      "rev": 2,
+      "contentHash": "7ece3d4a8bc8",
       "retired": false
     },
     {
       "exId": "pack_04_pt_cair_perf.1sg_3",
       "lemmaId": "pt_cair",
-      "pt": "Notei depois que caí na cozinha.",
-      "en": "I noticed after I fell in the kitchen.",
+      "pt": "Doeu muito quando caí na cozinha.",
+      "en": "It hurt a lot when I fell in the kitchen.",
       "answer": "caí",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "perf",
       "slot": "perf.1sg",
@@ -16715,8 +16713,8 @@
         "caímos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "fui",
+        "pus"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -16724,15 +16722,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_notar",
-        "pt_depois",
-        "pt_que",
+        "pt_doer",
+        "pt_muito",
+        "pt_quando",
         "pt_na",
         "pt_cozinha"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "5b6422975be9",
+      "rev": 2,
+      "contentHash": "5e27f0612c04",
       "retired": false
     },
     {
@@ -16961,8 +16959,8 @@
     {
       "exId": "pack_04_pt_cair_perf.3sg_1",
       "lemmaId": "pt_cair",
-      "pt": "A gente caiu na mesma conta alta.",
-      "en": "We ran into the same high bill.",
+      "pt": "A gente caiu na mesma armadilha.",
+      "en": "We fell into the same trap.",
       "answer": "caiu",
       "subject": "a gente",
       "person": "3sg",
@@ -16982,8 +16980,8 @@
         "caímos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "pôde",
+        "saiu"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -16991,16 +16989,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
+        "pt_a_gente",
         "pt_na",
         "pt_mesmo_adj",
-        "pt_contar",
-        "pt_alto"
+        "pt_armadilha"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "1f40de24aaa5",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "83d1726d5ff0",
       "retired": false
     },
     {
@@ -17183,8 +17179,8 @@
     {
       "exId": "pack_04_pt_cair_pres.1pl_2",
       "lemmaId": "pt_cair",
-      "pt": "Hoje nós caímos no sono bem cedo.",
-      "en": "Today we fall asleep very early.",
+      "pt": "Nós sempre caímos no sono bem cedo.",
+      "en": "We always fall asleep very early.",
       "answer": "caímos",
       "subject": "nós",
       "person": "1pl",
@@ -17213,23 +17209,23 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
         "pt_nos",
+        "pt_sempre",
         "pt_no",
         "pt_sono",
         "pt_bem",
         "pt_cedo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "efe9f221ccd9",
+      "rev": 2,
+      "contentHash": "376f1fdc6065",
       "retired": false
     },
     {
       "exId": "pack_04_pt_cair_pres.1pl_3",
       "lemmaId": "pt_cair",
-      "pt": "Nós nunca caímos naquele erro bobo?",
-      "en": "Do we never fall for that silly mistake?",
+      "pt": "Nós nunca caímos nesse erro bobo.",
+      "en": "We never fall for that silly mistake.",
       "answer": "caímos",
       "subject": "nós",
       "person": "1pl",
@@ -17260,13 +17256,13 @@
       "requires": [
         "pt_nos",
         "pt_nunca",
-        "pt_naquele",
+        "pt_nesse",
         "pt_errar",
         "pt_bobo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "08fd0d66e5c8",
+      "rev": 2,
+      "contentHash": "b70623ce2c09",
       "retired": false
     },
     {
@@ -17713,8 +17709,8 @@
     {
       "exId": "pack_04_pt_cair_pres.3sg_3",
       "lemmaId": "pt_cair",
-      "pt": "A gente nunca cai nessa fila lenta.",
-      "en": "We never fall into that slow line.",
+      "pt": "A gente nunca cai nesse golpe.",
+      "en": "We never fall for that scam.",
       "answer": "cai",
       "subject": "a gente",
       "person": "3sg",
@@ -17734,8 +17730,8 @@
         "caem"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "dói",
+        "crê"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -17743,16 +17739,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
+        "pt_a_gente",
         "pt_nunca",
-        "pt_nessa",
-        "pt_fila",
-        "pt_lento"
+        "pt_nesse",
+        "pt_golpe"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "c1db4355ac0b",
+      "rev": 2,
+      "contentHash": "752ef8c1c744",
       "retired": false
     },
     {
@@ -18705,7 +18699,7 @@
       "exId": "pack_04_pt_muito_base_3",
       "lemmaId": "pt_muito",
       "pt": "Esse boleto veio muito caro mesmo.",
-      "en": "This bill came in very expensive indeed.",
+      "en": "This bill came out really expensive.",
       "answer": "muito",
       "subject": "none",
       "person": "none",
@@ -18743,8 +18737,8 @@
         "pt_mesmo_adj"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "302777c6fb98",
+      "rev": 2,
+      "contentHash": "07669a3cc068",
       "retired": false
     },
     {
@@ -18973,8 +18967,8 @@
     {
       "exId": "pack_04_pt_igreja_f.sg_2",
       "lemmaId": "pt_igreja",
-      "pt": "Hoje, passo pela igreja da praça?",
-      "en": "Today, do I pass by the square's church?",
+      "pt": "Hoje passo pela igreja da praça.",
+      "en": "Today I pass by the church on the square.",
       "answer": "igreja",
       "subject": "none",
       "person": "sg",
@@ -19010,8 +19004,8 @@
         "pt_praca"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "18f85c644f7e",
+      "rev": 2,
+      "contentHash": "9dbbcfca6cf9",
       "retired": false
     },
     {
@@ -19108,8 +19102,8 @@
     {
       "exId": "pack_04_pt_construir_ger_2",
       "lemmaId": "pt_construir",
-      "pt": "Nós estamos construindo uma nova reportagem.",
-      "en": "We are building a new report.",
+      "pt": "Nós estamos construindo uma casa na praia.",
+      "en": "We are building a house on the beach.",
       "answer": "construindo",
       "subject": "none",
       "person": "ger",
@@ -19143,12 +19137,13 @@
         "pt_nos",
         "pt_estar",
         "pt_um",
-        "pt_novo",
-        "pt_reportagem"
+        "pt_casa",
+        "pt_na",
+        "pt_praia"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "ee8b5a4e9e43",
+      "rev": 2,
+      "contentHash": "e318c572e7cf",
       "retired": false
     },
     {
@@ -19390,8 +19385,8 @@
     {
       "exId": "pack_04_pt_construir_inf_4",
       "lemmaId": "pt_construir",
-      "pt": "Ele consegue construir esse texto rápido.",
-      "en": "He manages to build this text quickly.",
+      "pt": "Ele consegue construir uma mesa rápido.",
+      "en": "He can build a table quickly.",
       "answer": "construir",
       "subject": "none",
       "person": "inf",
@@ -19425,13 +19420,13 @@
       "requires": [
         "pt_ele",
         "pt_conseguir",
-        "pt_esse",
-        "pt_texto",
+        "pt_um",
+        "pt_mesa",
         "pt_rapido"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "16e293c0aeae",
+      "rev": 2,
+      "contentHash": "59719f19579c",
       "retired": false
     },
     {
@@ -19622,10 +19617,10 @@
     {
       "exId": "pack_04_pt_construir_perf.1sg_2",
       "lemmaId": "pt_construir",
-      "pt": "Ontem construí toda a lista nova.",
-      "en": "Yesterday I built the whole new list.",
+      "pt": "Ontem construí uma casinha pro cachorro.",
+      "en": "Yesterday I built a little house for the dog.",
       "answer": "construí",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "perf",
       "slot": "perf.1sg",
@@ -19656,14 +19651,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ontem",
-        "pt_todo_adj",
-        "pt_o",
-        "pt_lista",
-        "pt_novo"
+        "pt_um",
+        "pt_casinha",
+        "pt_pro",
+        "pt_cachorro"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "5b8b8912dd85",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "941dccaab8b6",
       "retired": false
     },
     {
@@ -19808,8 +19803,8 @@
     {
       "exId": "pack_04_pt_construir_perf.3pl_2",
       "lemmaId": "pt_construir",
-      "pt": "Vocês construíram um plano pro cartório.",
-      "en": "You all built a plan for the registry office.",
+      "pt": "Vocês construíram um muro no quintal.",
+      "en": "You all built a wall in the backyard.",
       "answer": "construíram",
       "subject": "vocês",
       "person": "3pl",
@@ -19841,14 +19836,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voces",
+        "pt_voce",
         "pt_um",
-        "pt_plano",
-        "pt_pro"
+        "pt_muro",
+        "pt_no",
+        "pt_quintal"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "07618883102f",
+      "rev": 2,
+      "contentHash": "ba807c408235",
       "retired": false
     },
     {
@@ -20177,8 +20173,8 @@
     {
       "exId": "pack_04_pt_construir_pres.1pl_2",
       "lemmaId": "pt_construir",
-      "pt": "Hoje nós construímos o novo plano rápido.",
-      "en": "Today we build the new plan fast.",
+      "pt": "Nós sempre construímos o plano juntos.",
+      "en": "We always build the plan together.",
       "answer": "construímos",
       "subject": "nós",
       "person": "1pl",
@@ -20210,16 +20206,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
         "pt_nos",
+        "pt_sempre",
         "pt_o",
-        "pt_novo",
         "pt_plano",
-        "pt_rapido"
+        "pt_junto"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "55e0d4f0f021",
+      "rev": 2,
+      "contentHash": "7f0bb315199e",
       "retired": false
     },
     {
@@ -20411,8 +20406,8 @@
     {
       "exId": "pack_04_pt_construir_pres.1sg_4",
       "lemmaId": "pt_construir",
-      "pt": "Ela nota que eu não construo pratos.",
-      "en": "She notices that I do not make dishes.",
+      "pt": "Ela nota que eu construo frases curtas.",
+      "en": "She notices that I build short sentences.",
       "answer": "construo",
       "subject": "eu",
       "person": "1sg",
@@ -20448,12 +20443,12 @@
         "pt_notar",
         "pt_que",
         "pt_eu",
-        "pt_nao",
-        "pt_prato"
+        "pt_frase",
+        "pt_curto"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "46bcd695edfb",
+      "rev": 2,
+      "contentHash": "e9f0dd3ce002",
       "retired": false
     },
     {
@@ -21088,8 +21083,8 @@
     {
       "exId": "pack_04_pt_facil_m.pl_1",
       "lemmaId": "pt_facil",
-      "pt": "Nós compramos só ingredientes fáceis hoje?",
-      "en": "Did we only buy easy ingredients today?",
+      "pt": "Nós fizemos só receitas fáceis hoje.",
+      "en": "We only made easy recipes today.",
       "answer": "fáceis",
       "subject": "none",
       "person": "pl",
@@ -21121,14 +21116,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_nos",
-        "pt_comprar",
+        "pt_fazer",
         "pt_so_adj",
-        "pt_ingrediente",
+        "pt_receita",
         "pt_hoje"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "dc4a18c1c239",
+      "rev": 2,
+      "contentHash": "33cfabd1cc71",
       "retired": false
     },
     {
@@ -21228,8 +21223,8 @@
     {
       "exId": "pack_04_pt_facil_m.sg_1",
       "lemmaId": "pt_facil",
-      "pt": "Consegui um jeito fácil de resolver isso?",
-      "en": "Did I find an easy way to solve this?",
+      "pt": "Achei um jeito fácil de resolver isso.",
+      "en": "I found an easy way to solve this.",
       "answer": "fácil",
       "subject": "none",
       "person": "sg",
@@ -21260,7 +21255,7 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_conseguir",
+        "pt_achar",
         "pt_um",
         "pt_jeito",
         "pt_de",
@@ -21268,8 +21263,8 @@
         "pt_isso"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "e604ceb8af09",
+      "rev": 2,
+      "contentHash": "ccbfb176a002",
       "retired": false
     },
     {
@@ -22828,10 +22823,10 @@
     {
       "exId": "pack_04_pt_destruir_pres.1sg_1",
       "lemmaId": "pt_destruir",
-      "pt": "Sempre destruo a senha quando erro muito.",
-      "en": "I always ruin the password when I miss a lot.",
+      "pt": "Sempre destruo os papéis com senha.",
+      "en": "I always destroy papers with passwords.",
       "answer": "destruo",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -22862,14 +22857,13 @@
       "requires": [
         "pt_sempre",
         "pt_o",
-        "pt_senha",
-        "pt_quando",
-        "pt_errar",
-        "pt_muito"
+        "pt_papel",
+        "pt_com",
+        "pt_senha"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "26a78ddf052c",
+      "rev": 2,
+      "contentHash": "1e863cb88786",
       "retired": false
     },
     {
@@ -22921,8 +22915,8 @@
     {
       "exId": "pack_04_pt_destruir_pres.1sg_3",
       "lemmaId": "pt_destruir",
-      "pt": "Acabo e destruo toda a prova errada.",
-      "en": "I finish and destroy all the wrong proof.",
+      "pt": "Eu destruo as cartas antigas depois de ler.",
+      "en": "I destroy old letters after reading them.",
       "answer": "destruo",
       "subject": "eu",
       "person": "1sg",
@@ -22951,15 +22945,17 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_acabar",
-        "pt_e",
-        "pt_todo_adj",
-        "pt_o",
-        "pt_prova"
+        "pt_eu",
+        "pt_a",
+        "pt_carta",
+        "pt_antigo",
+        "pt_depois",
+        "pt_de",
+        "pt_ler"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "11c54952cb0f",
+      "rev": 2,
+      "contentHash": "a6e4b6a6c7d2",
       "retired": false
     },
     {
@@ -24193,8 +24189,8 @@
     {
       "exId": "pack_04_pt_loja_f.pl_3",
       "lemmaId": "pt_loja",
-      "pt": "Agora, vejo muitas lojas fechadas lá?",
-      "en": "Now, do I see many closed stores there?",
+      "pt": "Agora vejo muitas lojas fechadas lá.",
+      "en": "Now I see many closed stores there.",
       "answer": "lojas",
       "subject": "none",
       "person": "pl",
@@ -24225,11 +24221,12 @@
       "requires": [
         "pt_agora",
         "pt_ver",
+        "pt_muito",
         "pt_la"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ab9606cf3a1f",
+      "rev": 2,
+      "contentHash": "a8032a74a557",
       "retired": false
     },
     {
@@ -24776,10 +24773,10 @@
     {
       "exId": "pack_04_pt_puxar_perf.1pl_2",
       "lemmaId": "pt_puxar",
-      "pt": "Já puxamos os preços todos semana passada.",
-      "en": "We already pulled all the prices last week.",
+      "pt": "Semana passada puxamos o sofá pra sala.",
+      "en": "Last week we pulled the sofa into the living room.",
       "answer": "puxamos",
-      "subject": "nós",
+      "subject": "none",
       "person": "1pl",
       "tense": "perf",
       "slot": "perf.1pl",
@@ -24808,15 +24805,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ja",
+        "pt_semana",
         "pt_o",
-        "pt_preco",
-        "pt_todo_adj",
-        "pt_semana"
+        "pt_sofa",
+        "pt_pra",
+        "pt_sala"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "c24b78772f2a",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "04c3bbd079fc",
       "retired": false
     },
     {
@@ -24911,10 +24908,10 @@
     {
       "exId": "pack_04_pt_puxar_perf.1sg_2",
       "lemmaId": "pt_puxar",
-      "pt": "Minha mãe sabe que puxei o carro.",
-      "en": "My mother knows I moved the car out.",
+      "pt": "Minha mãe viu que puxei a cortina.",
+      "en": "My mother saw that I pulled the curtain.",
       "answer": "puxei",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "perf",
       "slot": "perf.1sg",
@@ -24934,8 +24931,8 @@
         "puxamos"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "corri",
+        "olhei"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -24945,14 +24942,14 @@
       "requires": [
         "pt_meu",
         "pt_mae",
-        "pt_saber",
+        "pt_ver",
         "pt_que",
         "pt_o",
-        "pt_carro"
+        "pt_cortina"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "cce309726e64",
+      "rev": 2,
+      "contentHash": "510944cbb36d",
       "retired": false
     },
     {
@@ -25502,8 +25499,8 @@
     {
       "exId": "pack_04_pt_puxar_pres.1pl_3",
       "lemmaId": "pt_puxar",
-      "pt": "Hoje puxamos a janela aberta pro vento.",
-      "en": "Today we pull the window open for wind.",
+      "pt": "Nós sempre puxamos a cortina de manhã.",
+      "en": "We always pull the curtain in the morning.",
       "answer": "puxamos",
       "subject": "nós",
       "person": "1pl",
@@ -25532,15 +25529,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
+        "pt_nos",
+        "pt_sempre",
         "pt_o",
-        "pt_janela",
-        "pt_pro",
-        "pt_vento"
+        "pt_cortina",
+        "pt_de",
+        "pt_manha"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e795757975bd",
+      "rev": 2,
+      "contentHash": "bc6242e50df5",
       "retired": false
     },
     {
@@ -26082,8 +26080,8 @@
     {
       "exId": "pack_04_pt_trabalho_m.pl_1",
       "lemmaId": "pt_trabalho",
-      "pt": "Nós lemos os trabalhos ótimos do jornal.",
-      "en": "We read the great articles in the newspaper.",
+      "pt": "Nós lemos os trabalhos dos alunos.",
+      "en": "We read the students' papers.",
       "answer": "trabalhos",
       "subject": "none",
       "person": "pl",
@@ -26117,13 +26115,11 @@
         "pt_nos",
         "pt_ler",
         "pt_o",
-        "pt_otimo",
-        "pt_do",
-        "pt_jornal"
+        "pt_aluno"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "1168448f02ed",
+      "rev": 2,
+      "contentHash": "5c57e9054da0",
       "retired": false
     },
     {
@@ -26639,8 +26635,8 @@
     {
       "exId": "pack_04_pt_alto_m.pl_1",
       "lemmaId": "pt_alto",
-      "pt": "Ele leu textos em tons altos hoje.",
-      "en": "He read texts in loud tones today.",
+      "pt": "Os prédios altos tapam o sol.",
+      "en": "The tall buildings block the sun.",
       "answer": "altos",
       "subject": "none",
       "person": "pl",
@@ -26667,19 +26663,17 @@
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "loud / high (m.pl)",
+      "hint_en": "tall / high (m.pl)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_ele",
-        "pt_ler",
-        "pt_texto",
-        "pt_em",
-        "pt_hoje"
+        "pt_o",
+        "pt_predio",
+        "pt_sol"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "811986643309",
+      "rev": 2,
+      "contentHash": "979329b5dc09",
       "retired": false
     },
     {
@@ -27632,10 +27626,10 @@
     {
       "exId": "pack_04_pt_empurrar_perf.1pl_3",
       "lemmaId": "pt_empurrar",
-      "pt": "Semana passada não empurramos a geladeira velha?",
-      "en": "Last week did we not push the old fridge?",
+      "pt": "Semana passada empurramos a geladeira velha.",
+      "en": "Last week we pushed the old fridge.",
       "answer": "empurramos",
-      "subject": "nós",
+      "subject": "none",
       "person": "1pl",
       "tense": "perf",
       "slot": "perf.1pl",
@@ -27663,14 +27657,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_semana",
-        "pt_nao",
         "pt_o",
         "pt_geladeira",
         "pt_velho"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "4f478a7f7794",
+      "rev": 2,
+      "contentHash": "cb06c6967e76",
       "retired": false
     },
     {
@@ -28253,8 +28246,8 @@
     {
       "exId": "pack_04_pt_empurrar_pres.1pl_2",
       "lemmaId": "pt_empurrar",
-      "pt": "Hoje nós empurramos todas as caixas grandes.",
-      "en": "Today we push all the big boxes.",
+      "pt": "Nós sempre empurramos as caixas grandes juntos.",
+      "en": "We always push the big boxes together.",
       "answer": "empurramos",
       "subject": "nós",
       "person": "1pl",
@@ -28283,16 +28276,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
         "pt_nos",
-        "pt_todo_adj",
-        "pt_o",
+        "pt_sempre",
+        "pt_a",
         "pt_caixa",
-        "pt_grande"
+        "pt_grande",
+        "pt_junto"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "d9896d00c88f",
+      "rev": 2,
+      "contentHash": "46e4f045d63b",
       "retired": false
     },
     {
@@ -28479,7 +28472,7 @@
       "exId": "pack_04_pt_empurrar_pres.1sg_4",
       "lemmaId": "pt_empurrar",
       "pt": "Eu empurro a cadeira pra você passar.",
-      "en": "I push the chair in so you pass.",
+      "en": "I push the chair in so you can get by.",
       "answer": "empurro",
       "subject": "eu",
       "person": "1sg",
@@ -28516,8 +28509,8 @@
         "pt_passar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "445be303dd3f",
+      "rev": 2,
+      "contentHash": "010aef0e87c1",
       "retired": false
     },
     {
@@ -30470,8 +30463,8 @@
     {
       "exId": "pack_04_pt_pretender_inf_4",
       "lemmaId": "pt_pretender",
-      "pt": "Nós vamos pretender economizar dinheiro este ano.",
-      "en": "We are going to intend to save money this year.",
+      "pt": "Não adianta só pretender economizar dinheiro.",
+      "en": "It is no use just intending to save money.",
       "answer": "pretender",
       "subject": "none",
       "person": "inf",
@@ -30503,16 +30496,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nos",
-        "pt_ir",
+        "pt_nao",
+        "pt_adiantar",
+        "pt_so_adj",
         "pt_economizar",
-        "pt_dinheiro",
-        "pt_este",
-        "pt_ano"
+        "pt_dinheiro"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "8c04499ce5eb",
+      "rev": 2,
+      "contentHash": "76a59c09c797",
       "retired": false
     },
     {
@@ -30611,8 +30603,8 @@
     {
       "exId": "pack_04_pt_pretender_perf.1pl_3",
       "lemmaId": "pt_pretender",
-      "pt": "Antes nós pretendemos comprar tudo lá cedo.",
-      "en": "Before we intended to buy everything there early.",
+      "pt": "Antes nós pretendemos comprar tudo lá.",
+      "en": "Before, we intended to buy everything there.",
       "answer": "pretendemos",
       "subject": "nós",
       "person": "1pl",
@@ -30647,12 +30639,11 @@
         "pt_nos",
         "pt_comprar",
         "pt_tudo",
-        "pt_la",
-        "pt_cedo"
+        "pt_la"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "4532d5ca5d0c",
+      "rev": 2,
+      "contentHash": "341e6e2929e7",
       "retired": false
     },
     {
@@ -31125,7 +31116,7 @@
       "exId": "pack_04_pt_pretender_perf.3sg_3",
       "lemmaId": "pt_pretender",
       "pt": "Cê pretendeu fechar a janela antes?",
-      "en": "Wait, did you intend to close the window earlier?",
+      "en": "Did you intend to close the window earlier?",
       "answer": "pretendeu",
       "subject": "none",
       "person": "3sg",
@@ -31163,8 +31154,8 @@
         "pt_antes"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "3136ffa55db0",
+      "rev": 2,
+      "contentHash": "9c570e639c1e",
       "retired": false
     },
     {
@@ -32191,8 +32182,8 @@
     {
       "exId": "pack_04_pt_local_m.pl_1",
       "lemmaId": "pt_local",
-      "pt": "Nós usamos mercados locais nesse grupo.",
-      "en": "We use local markets in this group.",
+      "pt": "Nós compramos em mercados locais.",
+      "en": "We shop at local markets.",
       "answer": "locais",
       "subject": "none",
       "person": "pl",
@@ -32222,14 +32213,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_nos",
-        "pt_usar",
-        "pt_mercado",
-        "pt_nesse",
-        "pt_grupo"
+        "pt_comprar",
+        "pt_em",
+        "pt_mercado"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a95435babe2c",
+      "rev": 2,
+      "contentHash": "edc646412d1d",
       "retired": false
     },
     {
@@ -33816,8 +33806,8 @@
     {
       "exId": "pack_04_pt_atender_pres.1pl_2",
       "lemmaId": "pt_atender",
-      "pt": "Aqui nós atendemos ligações até cedo?",
-      "en": "Here do we answer calls until early?",
+      "pt": "Aqui nós atendemos ligações até tarde.",
+      "en": "Here we answer calls until late.",
       "answer": "atendemos",
       "subject": "nós",
       "person": "1pl",
@@ -33850,11 +33840,11 @@
         "pt_nos",
         "pt_ligacao",
         "pt_ate",
-        "pt_cedo"
+        "pt_tarde"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "8474bbcbd497",
+      "rev": 2,
+      "contentHash": "6955ff5e714d",
       "retired": false
     },
     {
@@ -34936,7 +34926,7 @@
       "exId": "pack_04_pt_sozinho_f.sg_3",
       "lemmaId": "pt_sozinho",
       "pt": "Você lê melhor sozinha de noite?",
-      "en": "Wait, do you read better alone at night?",
+      "en": "Do you read better alone at night?",
       "answer": "sozinha",
       "subject": "none",
       "person": "sg",
@@ -34972,8 +34962,8 @@
         "pt_noite"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "2bbed706b1ac",
+      "rev": 2,
+      "contentHash": "88730613dcaa",
       "retired": false
     },
     {
@@ -35024,8 +35014,8 @@
     {
       "exId": "pack_04_pt_sozinho_m.pl_2",
       "lemmaId": "pt_sozinho",
-      "pt": "Nós não ficamos sozinhos durante o domingo.",
-      "en": "We do not stay alone during Sunday.",
+      "pt": "Nós não ficamos sozinhos no domingo.",
+      "en": "We did not stay alone on Sunday.",
       "answer": "sozinhos",
       "subject": "none",
       "person": "pl",
@@ -35057,13 +35047,12 @@
         "pt_nos",
         "pt_nao",
         "pt_ficar",
-        "pt_durante",
-        "pt_o",
+        "pt_no",
         "pt_domingo"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "7629c9e1ef60",
+      "rev": 2,
+      "contentHash": "76f6828bdbd6",
       "retired": false
     },
     {
@@ -35113,7 +35102,7 @@
       "exId": "pack_04_pt_sozinho_m.sg_1",
       "lemmaId": "pt_sozinho",
       "pt": "Sexta, não vou sair sozinho pro bar.",
-      "en": "Friday, I am not going out alone to the bar.",
+      "en": "On Friday, I am not going out alone to the bar.",
       "answer": "sozinho",
       "subject": "none",
       "person": "sg",
@@ -35149,9 +35138,9 @@
         "pt_pro",
         "pt_bar"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "6629819d74fb",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "64aa0aa726f6",
       "retired": false
     },
     {
@@ -35520,8 +35509,8 @@
     {
       "exId": "pack_04_pt_bar_m.pl_3",
       "lemmaId": "pt_bar",
-      "pt": "A firma não libera bares no horário.",
-      "en": "The company does not allow pubs during hours.",
+      "pt": "Os bares do centro fecham cedo.",
+      "en": "The pubs downtown close early.",
       "answer": "bares",
       "subject": "none",
       "person": "pl",
@@ -35551,22 +35540,21 @@
       "grammar_note_en": null,
       "requires": [
         "pt_o",
-        "pt_firmar",
-        "pt_nao",
-        "pt_liberar",
-        "pt_no",
-        "pt_horario"
+        "pt_do",
+        "pt_centro",
+        "pt_fechar",
+        "pt_cedo"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "dbcdb1a6f65c",
+      "rev": 2,
+      "contentHash": "1ad8314369c4",
       "retired": false
     },
     {
       "exId": "pack_04_pt_bar_m.sg_1",
       "lemmaId": "pt_bar",
       "pt": "Encontro você no bar da esquina?",
-      "en": "Do I meet you at the corner pub?",
+      "en": "Shall I meet you at the corner pub?",
       "answer": "bar",
       "subject": "none",
       "person": "sg",
@@ -35604,8 +35592,8 @@
         "pt_esquina"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "935a91aa3f07",
+      "rev": 2,
+      "contentHash": "e4791ca7e0a7",
       "retired": false
     },
     {
@@ -35657,7 +35645,7 @@
     {
       "exId": "pack_04_pt_bar_m.sg_3",
       "lemmaId": "pt_bar",
-      "pt": "Eles conhecem o bar novo da empresa.",
+      "pt": "Eles conhecem o bar novo perto da empresa.",
       "en": "They know the new pub near the company.",
       "answer": "bar",
       "subject": "none",
@@ -35689,16 +35677,17 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
         "pt_conhecer",
         "pt_o",
         "pt_novo",
+        "pt_perto",
         "pt_da",
         "pt_empresa"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "996c21ce88a5",
+      "rev": 2,
+      "contentHash": "9a2250b3ec6a",
       "retired": false
     },
     {
@@ -36074,10 +36063,10 @@
     {
       "exId": "pack_04_pt_procurar_perf.1pl_1",
       "lemmaId": "pt_procurar",
-      "pt": "Ontem procuramos nossa tia lá no ponto?",
-      "en": "Yesterday did we look for our aunt at the bus stop?",
+      "pt": "Ontem procuramos nossa tia lá no ponto.",
+      "en": "Yesterday we looked for our aunt at the bus stop.",
       "answer": "procuramos",
-      "subject": "nós",
+      "subject": "none",
       "person": "1pl",
       "tense": "perf",
       "slot": "perf.1pl",
@@ -36112,8 +36101,8 @@
         "pt_no"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "1b9c5d585661",
+      "rev": 2,
+      "contentHash": "73f4e01329ba",
       "retired": false
     },
     {
@@ -36769,8 +36758,8 @@
     {
       "exId": "pack_04_pt_procurar_pres.1pl_1",
       "lemmaId": "pt_procurar",
-      "pt": "Hoje nós procuramos uma casa nova aqui.",
-      "en": "Today we are looking for a new house here.",
+      "pt": "Agora nós procuramos uma casa maior.",
+      "en": "Now we are looking for a bigger house.",
       "answer": "procuramos",
       "subject": "nós",
       "person": "1pl",
@@ -36801,16 +36790,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
+        "pt_agora",
         "pt_nos",
         "pt_um",
         "pt_casa",
-        "pt_novo",
-        "pt_aqui"
+        "pt_maior"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "751a4da5b62c",
+      "rev": 2,
+      "contentHash": "465feb54ee19",
       "retired": false
     },
     {
@@ -36911,10 +36899,10 @@
     {
       "exId": "pack_04_pt_procurar_pres.1sg_1",
       "lemmaId": "pt_procurar",
-      "pt": "Hoje, não procuro treino pesado na academia.",
-      "en": "Today, I am not looking for a heavy workout at the gym.",
+      "pt": "Na academia, procuro um treino mais leve.",
+      "en": "At the gym, I look for a lighter workout.",
       "answer": "procuro",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -36943,25 +36931,25 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
-        "pt_nao",
-        "pt_treinar",
-        "pt_pesar",
         "pt_na",
-        "pt_academia"
+        "pt_academia",
+        "pt_um",
+        "pt_treinar",
+        "pt_mais",
+        "pt_levar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "48914bd20cbc",
+      "rev": 2,
+      "contentHash": "8f3e3bed7783",
       "retired": false
     },
     {
       "exId": "pack_04_pt_procurar_pres.1sg_2",
       "lemmaId": "pt_procurar",
-      "pt": "Às vezes, procuro um bar calmo sábado.",
+      "pt": "Às vezes, procuro um bar calmo no sábado.",
       "en": "Sometimes, I look for a quiet pub on Saturday.",
       "answer": "procuro",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -36994,20 +36982,21 @@
         "pt_um",
         "pt_bar",
         "pt_calmo",
+        "pt_no",
         "pt_sabado"
       ],
       "register_tier": "spoken",
-      "rev": 2,
-      "contentHash": "e7a12857dd56",
+      "rev": 3,
+      "contentHash": "dc343b2f2d24",
       "retired": false
     },
     {
       "exId": "pack_04_pt_procurar_pres.1sg_3",
       "lemmaId": "pt_procurar",
-      "pt": "Não procuro promoções caras no fim do mês.",
-      "en": "I do not look for expensive deals at month end.",
+      "pt": "Sempre procuro promoções no fim do mês.",
+      "en": "I always look for deals at the end of the month.",
       "answer": "procuro",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -37036,17 +37025,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_nao",
+        "pt_sempre",
         "pt_promocao",
-        "pt_caro",
         "pt_no",
         "pt_fim",
         "pt_do",
         "pt_mes"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "87f3e12417ce",
+      "rev": 2,
+      "contentHash": "b8e1a31b0e68",
       "retired": false
     },
     {
@@ -37239,7 +37227,7 @@
       "exId": "pack_04_pt_procurar_pres.3pl_4",
       "lemmaId": "pt_procurar",
       "pt": "Vocês procuram o telefone da nossa avó?",
-      "en": "Wait, are you all looking for our grandma's number?",
+      "en": "Are you all looking for our grandma's number?",
       "answer": "procuram",
       "subject": "vocês",
       "person": "3pl",
@@ -37270,15 +37258,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voces",
+        "pt_voce",
         "pt_o",
         "pt_telefonar",
         "pt_da",
         "pt_avo_noun"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a2be02b778e8",
+      "rev": 2,
+      "contentHash": "dc2cc79a35ba",
       "retired": false
     },
     {
@@ -37331,8 +37319,8 @@
     {
       "exId": "pack_04_pt_procurar_pres.3sg_2",
       "lemmaId": "pt_procurar",
-      "pt": "A gente sempre procura preço menor antes.",
-      "en": "We always look for a lower price first.",
+      "pt": "A gente sempre procura o preço mais baixo.",
+      "en": "We always look for the lowest price.",
       "answer": "procura",
       "subject": "a gente",
       "person": "3sg",
@@ -37363,16 +37351,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
+        "pt_a_gente",
         "pt_sempre",
+        "pt_o",
         "pt_preco",
-        "pt_menor",
-        "pt_antes"
+        "pt_mais",
+        "pt_baixo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "4ede132fe686",
+      "rev": 2,
+      "contentHash": "edb2695a4972",
       "retired": false
     },
     {
@@ -37520,7 +37508,7 @@
     {
       "exId": "pack_04_pt_mercado_m.pl_2",
       "lemmaId": "pt_mercado",
-      "pt": "O bairro não tem mercados abertos tarde.",
+      "pt": "O bairro não tem mercados abertos até tarde.",
       "en": "The neighborhood does not have markets open late.",
       "answer": "mercados",
       "subject": "none",
@@ -37556,11 +37544,12 @@
         "pt_bairro",
         "pt_nao",
         "pt_ter",
+        "pt_ate",
         "pt_tarde"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ee1d3a160a4f",
+      "rev": 2,
+      "contentHash": "8c356ebcb18c",
       "retired": false
     },
     {
@@ -37843,8 +37832,8 @@
     {
       "exId": "pack_04_pt_cachorro_m.pl_3",
       "lemmaId": "pt_cachorro",
-      "pt": "Cedo, não deixei os cachorros na cama.",
-      "en": "Early, I did not leave the dogs on the bed.",
+      "pt": "Hoje cedo, não deixei os cachorros na cama.",
+      "en": "This morning, I did not leave the dogs on the bed.",
       "answer": "cachorros",
       "subject": "none",
       "person": "pl",
@@ -37875,6 +37864,7 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_hoje",
         "pt_cedo",
         "pt_nao",
         "pt_deixar",
@@ -37883,8 +37873,8 @@
         "pt_cama"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "b3efee037369",
+      "rev": 2,
+      "contentHash": "0932bc6db7ea",
       "retired": false
     },
     {
@@ -38075,7 +38065,7 @@
       "exId": "pack_04_pt_cartao_m.pl_2",
       "lemmaId": "pt_cartao",
       "pt": "Você aceita esses cartões de desconto aqui?",
-      "en": "Wait, do you accept these discount cards here?",
+      "en": "Do you accept these discount cards here?",
       "answer": "cartões",
       "subject": "none",
       "person": "pl",
@@ -38106,13 +38096,14 @@
       "requires": [
         "pt_voce",
         "pt_aceitar",
+        "pt_esse",
         "pt_de",
         "pt_desconto",
         "pt_aqui"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "5260c4ab5d26",
+      "rev": 2,
+      "contentHash": "af7a4783528f",
       "retired": false
     },
     {
@@ -38164,7 +38155,7 @@
       "exId": "pack_04_pt_cartao_m.sg_1",
       "lemmaId": "pt_cartao",
       "pt": "Sábado, paguei tudo no cartão novo.",
-      "en": "Saturday, I paid everything with the new card.",
+      "en": "On Saturday, I paid everything with the new card.",
       "answer": "cartão",
       "subject": "none",
       "person": "sg",
@@ -38200,8 +38191,8 @@
         "pt_novo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "ebb64888e214",
+      "rev": 2,
+      "contentHash": "daa3b89a65ab",
       "retired": false
     },
     {
@@ -38621,8 +38612,8 @@
     {
       "exId": "pack_04_pt_suportar_inf_4",
       "lemmaId": "pt_suportar",
-      "pt": "Cê vai suportar esperar mais cinco minutos.",
-      "en": "You will manage to bear waiting five more minutes.",
+      "pt": "Cê vai suportar mais cinco minutos de espera?",
+      "en": "Can you bear five more minutes of waiting?",
       "answer": "suportar",
       "subject": "none",
       "person": "inf",
@@ -38655,14 +38646,15 @@
       "requires": [
         "pt_voce~ce",
         "pt_ir",
-        "pt_esperar",
         "pt_mais",
         "pt_cinco",
-        "pt_minuto"
+        "pt_minuto",
+        "pt_de",
+        "pt_esperar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "f125c995a9dd",
+      "rev": 2,
+      "contentHash": "da6a51746f1b",
       "retired": false
     },
     {
@@ -38760,8 +38752,8 @@
     {
       "exId": "pack_04_pt_suportar_perf.1pl_3",
       "lemmaId": "pt_suportar",
-      "pt": "Nós já suportamos muitas conversas chatas ontem.",
-      "en": "We already put up with many boring talks yesterday.",
+      "pt": "Ontem nós suportamos muitas conversas chatas.",
+      "en": "Yesterday we put up with many boring talks.",
       "answer": "suportamos",
       "subject": "nós",
       "person": "1pl",
@@ -38792,14 +38784,14 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_ontem",
         "pt_nos",
-        "pt_ja",
-        "pt_chato",
-        "pt_ontem"
+        "pt_muito",
+        "pt_chato"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "b0ae9bcf4200",
+      "rev": 2,
+      "contentHash": "9715fbc74aa2",
       "retired": false
     },
     {
@@ -38853,7 +38845,7 @@
       "exId": "pack_04_pt_suportar_perf.1sg_2",
       "lemmaId": "pt_suportar",
       "pt": "Eu não suportei a dor no joelho.",
-      "en": "I did not bear the pain in my knee.",
+      "en": "I could not bear the pain in my knee.",
       "answer": "suportei",
       "subject": "eu",
       "person": "1sg",
@@ -38892,8 +38884,8 @@
         "pt_joelho"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "6842f88a6993",
+      "rev": 2,
+      "contentHash": "de4b689378f2",
       "retired": false
     },
     {
@@ -39315,8 +39307,8 @@
     {
       "exId": "pack_04_pt_suportar_perf.3sg_4",
       "lemmaId": "pt_suportar",
-      "pt": "Minha mãe suportou a viagem bem calma.",
-      "en": "My mother endured the trip very calmly.",
+      "pt": "Minha mãe suportou bem a viagem longa.",
+      "en": "My mother handled the long trip well.",
       "answer": "suportou",
       "subject": "none",
       "person": "3sg",
@@ -39349,21 +39341,21 @@
       "requires": [
         "pt_meu",
         "pt_mae",
+        "pt_bem",
         "pt_o",
         "pt_viagem",
-        "pt_bem",
-        "pt_calma"
+        "pt_longo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e3356952011d",
+      "rev": 2,
+      "contentHash": "ef73ea3d2034",
       "retired": false
     },
     {
       "exId": "pack_04_pt_suportar_pres.1pl_1",
       "lemmaId": "pt_suportar",
-      "pt": "Hoje nós suportamos qualquer erro do sistema.",
-      "en": "Today we tolerate any system error.",
+      "pt": "Nós sempre suportamos os erros do sistema.",
+      "en": "We always put up with system errors.",
       "answer": "suportamos",
       "subject": "nós",
       "person": "1pl",
@@ -39394,23 +39386,23 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
         "pt_nos",
-        "pt_qualquer",
-        "pt_errar",
+        "pt_sempre",
+        "pt_o",
+        "pt_erro",
         "pt_do",
         "pt_sistema"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "427551dc1f4a",
+      "rev": 2,
+      "contentHash": "fb0f6b990eab",
       "retired": false
     },
     {
       "exId": "pack_04_pt_suportar_pres.1pl_2",
       "lemmaId": "pt_suportar",
-      "pt": "Aqui nós suportamos bem as notícias ruins.",
-      "en": "Here we bear the bad news well.",
+      "pt": "Nós sempre suportamos bem as notícias ruins.",
+      "en": "We always handle bad news well.",
       "answer": "suportamos",
       "subject": "nós",
       "person": "1pl",
@@ -39441,25 +39433,25 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_aqui",
         "pt_nos",
+        "pt_sempre",
         "pt_bem",
-        "pt_o",
+        "pt_a",
         "pt_noticia",
         "pt_ruim"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "a9211df35adf",
+      "rev": 2,
+      "contentHash": "6ad305478f41",
       "retired": false
     },
     {
       "exId": "pack_04_pt_suportar_pres.1pl_3",
       "lemmaId": "pt_suportar",
-      "pt": "Sempre suportamos correr forte nessa subida.",
-      "en": "We always endure running hard up that hill.",
+      "pt": "Sempre suportamos bem essa subida forte.",
+      "en": "We always handle this steep hill well.",
       "answer": "suportamos",
-      "subject": "nós",
+      "subject": "none",
       "person": "1pl",
       "tense": "pres",
       "slot": "pres.1pl",
@@ -39489,13 +39481,13 @@
       "grammar_note_en": null,
       "requires": [
         "pt_sempre",
-        "pt_correr",
-        "pt_forte",
-        "pt_nessa"
+        "pt_bem",
+        "pt_esse",
+        "pt_forte"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "8a6d1d18082f",
+      "rev": 2,
+      "contentHash": "6b65fd0e7dae",
       "retired": false
     },
     {
@@ -39547,8 +39539,8 @@
     {
       "exId": "pack_04_pt_suportar_pres.1sg_2",
       "lemmaId": "pt_suportar",
-      "pt": "Eu suporto fácil esse exercício difícil hoje.",
-      "en": "I easily bear this hard exercise today.",
+      "pt": "Eu suporto bem esse exercício difícil.",
+      "en": "I handle this hard exercise well.",
       "answer": "suporto",
       "subject": "eu",
       "person": "1sg",
@@ -39580,15 +39572,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_eu",
-        "pt_facil",
+        "pt_bem",
         "pt_esse",
         "pt_exercicio",
-        "pt_dificil",
-        "pt_hoje"
+        "pt_dificil"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "1e965b1666ff",
+      "rev": 2,
+      "contentHash": "9ba69a1670ae",
       "retired": false
     },
     {
@@ -39641,10 +39632,10 @@
     {
       "exId": "pack_04_pt_suportar_pres.1sg_4",
       "lemmaId": "pt_suportar",
-      "pt": "Como suporto pagar esse preço todo mês?",
-      "en": "How do I put up with paying that price every month?",
+      "pt": "Não suporto pagar esse preço todo mês.",
+      "en": "I cannot stand paying that price every month.",
       "answer": "suporto",
-      "subject": "eu",
+      "subject": "none",
       "person": "1sg",
       "tense": "pres",
       "slot": "pres.1sg",
@@ -39673,7 +39664,7 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_comer",
+        "pt_nao",
         "pt_pagar",
         "pt_esse",
         "pt_preco",
@@ -39681,8 +39672,8 @@
         "pt_mes"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "3c6e66ff9659",
+      "rev": 2,
+      "contentHash": "8f534069b0bd",
       "retired": false
     },
     {
@@ -39733,8 +39724,8 @@
     {
       "exId": "pack_04_pt_suportar_pres.3pl_2",
       "lemmaId": "pt_suportar",
-      "pt": "Vocês suportam ver essas matérias tristes.",
-      "en": "You all bear watching those sad news stories.",
+      "pt": "Vocês suportam ver essas notícias tristes?",
+      "en": "Can you all stand watching these sad news stories?",
       "answer": "suportam",
       "subject": "vocês",
       "person": "3pl",
@@ -39765,21 +39756,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_voces",
+        "pt_voce",
         "pt_ver",
-        "pt_materia",
+        "pt_esse",
+        "pt_noticia",
         "pt_triste"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "2257190bab91",
+      "rev": 2,
+      "contentHash": "2bd7101fd4c0",
       "retired": false
     },
     {
       "exId": "pack_04_pt_suportar_pres.3pl_3",
       "lemmaId": "pt_suportar",
-      "pt": "Eles suportam andar rápido pela loja toda.",
-      "en": "They tolerate walking fast through the whole store.",
+      "pt": "Eles não suportam andar devagar na loja.",
+      "en": "They cannot stand walking slowly in the store.",
       "answer": "suportam",
       "subject": "eles",
       "person": "3pl",
@@ -39810,23 +39802,23 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
+        "pt_nao",
         "pt_andar",
-        "pt_rapido",
-        "pt_pela",
-        "pt_loja",
-        "pt_todo_adj"
+        "pt_devagar",
+        "pt_na",
+        "pt_loja"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "02a0461f7657",
+      "rev": 2,
+      "contentHash": "df6363eec289",
       "retired": false
     },
     {
       "exId": "pack_04_pt_suportar_pres.3pl_4",
       "lemmaId": "pt_suportar",
-      "pt": "Elas suportam bem uma viagem bem longa.",
-      "en": "They endure a very long trip well.",
+      "pt": "Elas suportam bem uma viagem longa.",
+      "en": "They handle a long trip well.",
       "answer": "suportam",
       "subject": "elas",
       "person": "3pl",
@@ -39857,15 +39849,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_elas",
+        "pt_ela",
         "pt_bem",
         "pt_um",
         "pt_viagem",
         "pt_longo"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "680b4d899e1d",
+      "rev": 2,
+      "contentHash": "745f33b2a350",
       "retired": false
     },
     {
@@ -39964,8 +39956,8 @@
     {
       "exId": "pack_04_pt_suportar_pres.3sg_3",
       "lemmaId": "pt_suportar",
-      "pt": "A gente suporta ler textos muito longos.",
-      "en": "We tolerate reading very long texts.",
+      "pt": "A gente não suporta ler textos longos.",
+      "en": "We cannot stand reading long texts.",
       "answer": "suporta",
       "subject": "a gente",
       "person": "3sg",
@@ -39996,16 +39988,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
+        "pt_a_gente",
+        "pt_nao",
         "pt_ler",
         "pt_texto",
-        "pt_muito",
         "pt_longo"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "65e160a8e296",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "ca8846dc7ed7",
       "retired": false
     },
     {
@@ -40593,8 +40584,8 @@
     {
       "exId": "pack_04_pt_zero_base_1",
       "lemmaId": "pt_zero",
-      "pt": "Nós pegamos zero vento na praia ontem.",
-      "en": "We got zero wind at the beach yesterday.",
+      "pt": "Nós tivemos zero problemas na praia ontem.",
+      "en": "We had zero problems at the beach yesterday.",
       "answer": "zero",
       "subject": "none",
       "person": "none",
@@ -40623,15 +40614,15 @@
       "grammar_note_en": null,
       "requires": [
         "pt_nos",
-        "pt_pegar",
-        "pt_vento",
+        "pt_ter",
+        "pt_problema",
         "pt_na",
         "pt_praia",
         "pt_ontem"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "fac9a59dd30c",
+      "rev": 2,
+      "contentHash": "6891bd61a0e6",
       "retired": false
     },
     {
@@ -40940,7 +40931,7 @@
       "exId": "pack_04_pt_barco_m.sg_2",
       "lemmaId": "pt_barco",
       "pt": "Nunca viajei de barco até hoje.",
-      "en": "I have never traveled by boat until today.",
+      "en": "I have never traveled by boat to this day.",
       "answer": "barco",
       "subject": "none",
       "person": "sg",
@@ -40976,8 +40967,8 @@
         "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "da2920b72515",
+      "rev": 2,
+      "contentHash": "aa4f2adc76c0",
       "retired": false
     },
     {
@@ -41028,7 +41019,7 @@
       "exId": "pack_04_pt_ir~foi_base_1",
       "lemmaId": "pt_ir~foi",
       "pt": "A gente foi andar mesmo com chuva.",
-      "en": "We went walking even with rain.",
+      "en": "We went walking even in the rain.",
       "answer": "foi",
       "subject": "none",
       "person": "base",
@@ -41048,8 +41039,8 @@
         "foram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "ter",
+        "cai"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -41057,24 +41048,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
-        "pt_ser",
+        "pt_a_gente",
         "pt_andar",
         "pt_mesmo_adj",
         "pt_com",
         "pt_chuva"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "021017c3fbdc",
+      "rev": 2,
+      "contentHash": "2c90083cb073",
       "retired": false
     },
     {
       "exId": "pack_04_pt_ir~foi_base_2",
       "lemmaId": "pt_ir~foi",
-      "pt": "Pra eles a corrida foi bem fácil.",
-      "en": "For them the race was very easy.",
+      "pt": "Meu pai foi pro trabalho de ônibus.",
+      "en": "My father went to work by bus.",
       "answer": "foi",
       "subject": "none",
       "person": "base",
@@ -41094,25 +41083,25 @@
         "foram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "cai",
+        "leu"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
-      "hint_en": "was (past chunk)",
+      "hint_en": "went (past chunk)",
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_pra",
-        "pt_eles",
-        "pt_o",
-        "pt_ser",
-        "pt_bem",
-        "pt_facil"
+        "pt_meu",
+        "pt_pai",
+        "pt_pro",
+        "pt_trabalhar",
+        "pt_de",
+        "pt_onibus"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "6900054e230c",
+      "rev": 2,
+      "contentHash": "f29d16a1052c",
       "retired": false
     },
     {
@@ -41299,8 +41288,8 @@
     {
       "exId": "pack_04_pt_cinema_m.pl_3",
       "lemmaId": "pt_cinema",
-      "pt": "Neste mês, paguei dois cinemas bem baratos.",
-      "en": "This month, I paid for two very cheap movie theaters.",
+      "pt": "Neste mês, fui a dois cinemas bem baratos.",
+      "en": "This month, I went to two very cheap movie theaters.",
       "answer": "cinemas",
       "subject": "none",
       "person": "pl",
@@ -41331,14 +41320,15 @@
       "requires": [
         "pt_neste",
         "pt_mes",
-        "pt_pagar",
+        "pt_ser",
+        "pt_o",
         "pt_dois",
         "pt_bem",
         "pt_barato"
       ],
       "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "ab8ac8432972",
+      "rev": 2,
+      "contentHash": "c4d19936c7ff",
       "retired": false
     },
     {
@@ -41433,8 +41423,8 @@
     {
       "exId": "pack_04_pt_cinema_m.sg_3",
       "lemmaId": "pt_cinema",
-      "pt": "Vou ao cinema após o treino?",
-      "en": "Am I going to the movie theater after practice?",
+      "pt": "Vou ao cinema depois do treino.",
+      "en": "I am going to the movie theater after practice.",
       "answer": "cinema",
       "subject": "none",
       "person": "sg",
@@ -41465,13 +41455,13 @@
       "requires": [
         "pt_ir",
         "pt_ao",
-        "pt_apos",
-        "pt_o",
+        "pt_depois",
+        "pt_do",
         "pt_treinar"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "cbf73da33a09",
+      "rev": 2,
+      "contentHash": "c92a60127f00",
       "retired": false
     },
     {
@@ -42467,8 +42457,8 @@
     {
       "exId": "pack_04_pt_colega_m.sg_1",
       "lemmaId": "pt_colega",
-      "pt": "Hoje, encontro meu colega antes da chuva?",
-      "en": "Today, do I meet my colleague before the rain?",
+      "pt": "Hoje, encontro meu colega antes do almoço.",
+      "en": "Today, I meet my colleague before lunch.",
       "answer": "colega",
       "subject": "none",
       "person": "sg",
@@ -42503,12 +42493,12 @@
         "pt_encontrar",
         "pt_meu",
         "pt_antes",
-        "pt_da",
-        "pt_chuva"
+        "pt_do",
+        "pt_almoco"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "3cbb79b77545",
+      "rev": 2,
+      "contentHash": "2f755b7b73bb",
       "retired": false
     },
     {
@@ -43087,7 +43077,7 @@
       "exId": "pack_04_pt_ter~tinha_base_2",
       "lemmaId": "pt_ter~tinha",
       "pt": "Antes tinha um aplicativo ótimo pra isso.",
-      "en": "Before I had a great app for that.",
+      "en": "There used to be a great app for that.",
       "answer": "tinha",
       "subject": "none",
       "person": "base",
@@ -43107,8 +43097,8 @@
         "tem"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "caiam",
+        "perco"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -43117,7 +43107,6 @@
       "grammar_note_en": null,
       "requires": [
         "pt_antes",
-        "pt_ter",
         "pt_um",
         "pt_aplicativo",
         "pt_otimo",
@@ -43125,8 +43114,8 @@
         "pt_isso"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "053841691411",
+      "rev": 2,
+      "contentHash": "73ae9dc4480e",
       "retired": false
     },
     {
@@ -43270,7 +43259,7 @@
       "exId": "pack_04_pt_reuniao_f.pl_2",
       "lemmaId": "pt_reuniao",
       "pt": "Sexta, evito reuniões pra descansar mais.",
-      "en": "Friday, I avoid meetings to rest more.",
+      "en": "On Friday, I avoid meetings to rest more.",
       "answer": "reuniões",
       "subject": "none",
       "person": "pl",
@@ -43305,16 +43294,16 @@
         "pt_descansar",
         "pt_mais"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "bc1fec861eb9",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "f68f492067bc",
       "retired": false
     },
     {
       "exId": "pack_04_pt_reuniao_f.pl_3",
       "lemmaId": "pt_reuniao",
-      "pt": "A gente paga menos sem reuniões fora.",
-      "en": "We pay less without outside meetings.",
+      "pt": "A gente teve três reuniões longas hoje.",
+      "en": "We had three long meetings today.",
       "answer": "reuniões",
       "subject": "none",
       "person": "pl",
@@ -43343,15 +43332,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
-        "pt_pagar",
-        "pt_menos",
-        "pt_sem"
+        "pt_a_gente",
+        "pt_ter",
+        "pt_tres",
+        "pt_longo",
+        "pt_hoje"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "96c5f6767208",
+      "rev": 2,
+      "contentHash": "480af4ea2828",
       "retired": false
     },
     {
@@ -43492,7 +43481,7 @@
       "exId": "pack_04_pt_praia_f.pl_1",
       "lemmaId": "pt_praia",
       "pt": "Domingo, sempre visito as praias mais vazias.",
-      "en": "Sunday, I always visit the emptiest beaches.",
+      "en": "On Sunday, I always visit the emptiest beaches.",
       "answer": "praias",
       "subject": "none",
       "person": "pl",
@@ -43524,13 +43513,13 @@
         "pt_domingo",
         "pt_sempre",
         "pt_visitar",
-        "pt_o",
+        "pt_a",
         "pt_mais",
         "pt_vazio"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "697e47f35773",
+      "rev": 2,
+      "contentHash": "98e93a2a8e84",
       "retired": false
     },
     {
@@ -43626,8 +43615,8 @@
     {
       "exId": "pack_04_pt_praia_f.sg_1",
       "lemmaId": "pt_praia",
-      "pt": "Eles não foram pra praia estudar hoje.",
-      "en": "They did not go to the beach to study today.",
+      "pt": "Eles não foram pra praia hoje.",
+      "en": "They did not go to the beach today.",
       "answer": "praia",
       "subject": "none",
       "person": "sg",
@@ -43656,16 +43645,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
         "pt_nao",
         "pt_ser",
         "pt_pra",
-        "pt_estudar",
         "pt_hoje"
       ],
-      "register_tier": "neutral",
-      "rev": 1,
-      "contentHash": "e09c8e8f1825",
+      "register_tier": "spoken",
+      "rev": 2,
+      "contentHash": "0f464a4f4639",
       "retired": false
     },
     {
@@ -44043,7 +44031,7 @@
       "exId": "pack_04_pt_fazer~fez_base_1",
       "lemmaId": "pt_fazer~fez",
       "pt": "Meu primo não fez compras ontem.",
-      "en": "My cousin did not do shopping yesterday.",
+      "en": "My cousin did not go shopping yesterday.",
       "answer": "fez",
       "subject": "none",
       "person": "base",
@@ -44063,8 +44051,8 @@
         "fizeram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "têm",
+        "ler"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -44075,12 +44063,11 @@
         "pt_meu",
         "pt_primo",
         "pt_nao",
-        "pt_fazer",
         "pt_ontem"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "85d7085311ae",
+      "rev": 2,
+      "contentHash": "13f42e907382",
       "retired": false
     },
     {
@@ -44132,8 +44119,8 @@
     {
       "exId": "pack_04_pt_fazer~fez_base_3",
       "lemmaId": "pt_fazer~fez",
-      "pt": "Cedo, ela fez uma viagem bem rápida.",
-      "en": "Early, she took a very fast trip.",
+      "pt": "Hoje cedo, ela fez uma viagem bem rápida.",
+      "en": "This morning, she took a very quick trip.",
       "answer": "fez",
       "subject": "none",
       "person": "base",
@@ -44153,8 +44140,8 @@
         "fizeram"
       ],
       "distractors": [
-        "ser",
-        "sendo"
+        "dar",
+        "vão"
       ],
       "excludeBlindAudio": false,
       "needs_distractors": false,
@@ -44162,17 +44149,17 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_hoje",
         "pt_cedo",
         "pt_ela",
-        "pt_fazer",
         "pt_um",
         "pt_viagem",
         "pt_bem",
         "pt_rapido"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "8169f1a68a37",
+      "rev": 2,
+      "contentHash": "37871c96508f",
       "retired": false
     },
     {
@@ -44537,8 +44524,8 @@
     {
       "exId": "pack_04_pt_mim_base_2",
       "lemmaId": "pt_mim",
-      "pt": "Sábado, meus amigos passaram lá por mim.",
-      "en": "Saturday, my friends stopped by for me.",
+      "pt": "No sábado, meus amigos esperaram por mim.",
+      "en": "On Saturday, my friends waited for me.",
       "answer": "mim",
       "subject": "none",
       "person": "none",
@@ -44567,16 +44554,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_no",
         "pt_sabado",
         "pt_meu",
         "pt_amigo",
-        "pt_passar",
-        "pt_la",
+        "pt_esperar",
         "pt_por"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "22adf644f8d9",
+      "rev": 2,
+      "contentHash": "2ce67dccdff9",
       "retired": false
     },
     {
@@ -44714,8 +44701,8 @@
     {
       "exId": "pack_04_pt_tres_base_2",
       "lemmaId": "pt_tres",
-      "pt": "Chamei meus três irmãos pro jantar?",
-      "en": "Did I invite my three brothers to dinner?",
+      "pt": "Chamei meus três irmãos pro jantar.",
+      "en": "I invited my three brothers to dinner.",
       "answer": "três",
       "subject": "none",
       "person": "none",
@@ -44748,8 +44735,8 @@
         "pt_jantar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "68a0f4bf3042",
+      "rev": 2,
+      "contentHash": "238b17acc2ea",
       "retired": false
     },
     {
@@ -44796,8 +44783,8 @@
     {
       "exId": "pack_04_pt_tres_base_4",
       "lemmaId": "pt_tres",
-      "pt": "Ele não dormiu três horas nessa noite.",
-      "en": "He did not sleep three hours that night.",
+      "pt": "Ele só dormiu três horas essa noite.",
+      "en": "He only slept three hours last night.",
       "answer": "três",
       "subject": "none",
       "person": "none",
@@ -44824,15 +44811,15 @@
       "grammar_note_en": null,
       "requires": [
         "pt_ele",
-        "pt_nao",
+        "pt_so_adj",
         "pt_dormir",
         "pt_hora",
-        "pt_nessa",
+        "pt_esse",
         "pt_noite"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "43b6a5ec05df",
+      "rev": 2,
+      "contentHash": "a56dab4c4ca7",
       "retired": false
     },
     {
@@ -45331,8 +45318,8 @@
     {
       "exId": "pack_04_pt_meu_m.sg_3",
       "lemmaId": "pt_meu",
-      "pt": "Aqui, a gente não usa meu celular.",
-      "en": "Here, we do not use my cell phone.",
+      "pt": "Aqui, a gente usa meu celular pra tudo.",
+      "en": "Here, we use my cell phone for everything.",
       "answer": "meu",
       "subject": "none",
       "person": "none",
@@ -45361,16 +45348,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
+        "pt_a_gente",
         "pt_aqui",
-        "pt_o",
-        "pt_gente",
-        "pt_nao",
         "pt_usar",
-        "pt_celular"
+        "pt_celular",
+        "pt_pra",
+        "pt_tudo"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "e51f816dee88",
+      "rev": 2,
+      "contentHash": "cad0ce322132",
       "retired": false
     },
     {
@@ -46189,8 +46176,8 @@
     {
       "exId": "pack_04_pt_ficar~com_base_3",
       "lemmaId": "pt_ficar~com",
-      "pt": "Hoje, não quero ficar com dor aqui.",
-      "en": "Today, I do not want to end up with pain here.",
+      "pt": "Não quero ficar com dor depois do treino.",
+      "en": "I do not want to end up in pain after practice.",
       "answer": "ficar com",
       "subject": "none",
       "person": "base",
@@ -46216,17 +46203,16 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_hoje",
         "pt_nao",
         "pt_querer",
-        "pt_ficar",
-        "pt_com",
         "pt_dor",
-        "pt_aqui"
+        "pt_depois",
+        "pt_do",
+        "pt_treinar"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "438993652cec",
+      "rev": 2,
+      "contentHash": "02c73068e8fa",
       "retired": false
     },
     {
@@ -46446,7 +46432,7 @@
       "exId": "pack_04_pt_dar~jeito_base_1",
       "lemmaId": "pt_dar~jeito",
       "pt": "Nós vamos dar um jeito nesse boleto.",
-      "en": "We are going to find a way with this bill.",
+      "en": "We are going to sort out this bill.",
       "answer": "dar um jeito",
       "subject": "none",
       "person": "base",
@@ -46476,15 +46462,12 @@
       "requires": [
         "pt_nos",
         "pt_ir",
-        "pt_dar",
-        "pt_um",
-        "pt_jeito",
         "pt_nesse",
         "pt_boleto"
       ],
       "register_tier": "written",
-      "rev": 1,
-      "contentHash": "576938dad4b8",
+      "rev": 2,
+      "contentHash": "b460bc5e4963",
       "retired": false
     },
     {
@@ -46580,7 +46563,7 @@
       "exId": "pack_04_pt_dar~jeito_base_4",
       "lemmaId": "pt_dar~jeito",
       "pt": "Você vai dar um jeito nessa mala?",
-      "en": "Are you going to find a way with that bag?",
+      "en": "Are you going to sort out that bag?",
       "answer": "dar um jeito",
       "subject": "none",
       "person": "base",
@@ -46608,15 +46591,12 @@
       "requires": [
         "pt_voce",
         "pt_ir",
-        "pt_dar",
-        "pt_um",
-        "pt_jeito",
         "pt_nessa",
         "pt_mala"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "2bb836b378d1",
+      "rev": 2,
+      "contentHash": "534699610260",
       "retired": false
     },
     {
@@ -46789,8 +46769,8 @@
     {
       "exId": "pack_04_pt_cinco_base_1",
       "lemmaId": "pt_cinco",
-      "pt": "Eles esperaram cinco dias sem nenhuma nuvem.",
-      "en": "They waited five days without any cloud.",
+      "pt": "Eles esperaram cinco dias pela resposta.",
+      "en": "They waited five days for the answer.",
       "answer": "cinco",
       "subject": "none",
       "person": "none",
@@ -46816,15 +46796,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
         "pt_esperar",
         "pt_dia",
-        "pt_sem",
-        "pt_nuvem"
+        "pt_pela",
+        "pt_resposta"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "6018d1e32d97",
+      "rev": 2,
+      "contentHash": "1c61c9294918",
       "retired": false
     },
     {
@@ -46996,8 +46976,8 @@
     {
       "exId": "pack_04_pt_seis_base_2",
       "lemmaId": "pt_seis",
-      "pt": "Eles não ligaram há seis meses já.",
-      "en": "They have not called for six months already.",
+      "pt": "Eles não ligam há seis meses.",
+      "en": "They have not called in six months.",
       "answer": "seis",
       "subject": "none",
       "person": "none",
@@ -47023,23 +47003,22 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_eles",
+        "pt_ele",
         "pt_nao",
         "pt_ligar",
         "pt_haver",
-        "pt_mes",
-        "pt_ja"
+        "pt_mes"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "3a6858410137",
+      "rev": 2,
+      "contentHash": "4726a5454e84",
       "retired": false
     },
     {
       "exId": "pack_04_pt_seis_base_3",
       "lemmaId": "pt_seis",
-      "pt": "A gente não vê seis nuvens sequer.",
-      "en": "We do not even see six clouds.",
+      "pt": "A gente comprou seis pães pro café.",
+      "en": "We bought six rolls for breakfast.",
       "answer": "seis",
       "subject": "none",
       "person": "none",
@@ -47065,16 +47044,15 @@
       "false_friend_note": null,
       "grammar_note_en": null,
       "requires": [
-        "pt_o",
-        "pt_gente",
-        "pt_nao",
-        "pt_ver",
-        "pt_nuvem",
-        "pt_sequer"
+        "pt_a_gente",
+        "pt_comprar",
+        "pt_pao",
+        "pt_pro",
+        "pt_cafe"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "be335c7de328",
+      "rev": 2,
+      "contentHash": "7dd4e26e7e59",
       "retired": false
     },
     {
@@ -47246,8 +47224,8 @@
     {
       "exId": "pack_04_pt_sete_base_4",
       "lemmaId": "pt_sete",
-      "pt": "Nós não levamos sete bolsas pro mercado.",
-      "en": "We did not take seven bags to the market.",
+      "pt": "Nós levamos sete bolsas pro mercado.",
+      "en": "We took seven bags to the market.",
       "answer": "sete",
       "subject": "none",
       "person": "none",
@@ -47274,15 +47252,14 @@
       "grammar_note_en": null,
       "requires": [
         "pt_nos",
-        "pt_nao",
         "pt_levar",
         "pt_bolsa",
         "pt_pro",
         "pt_mercado"
       ],
       "register_tier": "spoken",
-      "rev": 1,
-      "contentHash": "67f5cc43a782",
+      "rev": 2,
+      "contentHash": "efb7b39dc35f",
       "retired": false
     },
     {

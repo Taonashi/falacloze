@@ -1,0 +1,1769 @@
+{
+  "schema": "3.1",
+  "packId": "pack_39",
+  "version": "2026.11.1",
+  "unitRange": [
+    39,
+    39
+  ],
+  "lemmaIdxRange": [
+    3800,
+    3899
+  ],
+  "requires": [
+    "pack_38"
+  ],
+  "examples": [
+    {
+      "exId": "pack_39_pt_tracar_perf.3sg_1",
+      "lemmaId": "pt_tracar",
+      "pt": "Ele traçou uma linha reta com o lápis.",
+      "en": "He drew a straight line with his pencil.",
+      "answer": "traçou",
+      "subject": "ele",
+      "person": "3sg",
+      "tense": "perf",
+      "slot": "perf.3sg",
+      "cellClass": "perf.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "traçou"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pegou",
+        "teve"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to make a stroke",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ele",
+        "pt_um",
+        "pt_linha",
+        "pt_reto",
+        "pt_com",
+        "pt_o",
+        "pt_lapis"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "781a879af52f",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_beneficiar_cond.3sg_1",
+      "lemmaId": "pt_beneficiar",
+      "pt": "Ela beneficiaria de uma visita.",
+      "en": "She would benefit from a visit.",
+      "answer": "beneficiaria",
+      "subject": "ela",
+      "person": "3sg",
+      "tense": "cond",
+      "slot": "cond.3sg",
+      "cellClass": "cond.1sg=3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "beneficiaria"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisaria",
+        "conheceria"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to benefit, profit",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ela",
+        "pt_de",
+        "pt_um",
+        "pt_visitar"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "a74dd416f57f",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_beneficiar_pres.3pl_1",
+      "lemmaId": "pt_beneficiar",
+      "pt": "Todas as famílias com crianças beneficiam de preços reduzidos.",
+      "en": "All families with children benefit from reduced prices.",
+      "answer": "beneficiam",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "beneficiam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisam",
+        "conhecem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to benefit, profit",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_todo_adj",
+        "pt_o",
+        "pt_familia",
+        "pt_com",
+        "pt_crianca",
+        "pt_de",
+        "pt_preco",
+        "pt_reduzido"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "fa913934140b",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_fracassar_inf_1",
+      "lemmaId": "pt_fracassar",
+      "pt": "Você vai fracassar se não estudar mais.",
+      "en": "You're going to fail if you don't study harder.",
+      "answer": "fracassar",
+      "subject": "none",
+      "person": null,
+      "tense": "inf",
+      "slot": "inf",
+      "cellClass": "inf",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fracassar"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisar",
+        "conhecer"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to fail",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_ir",
+        "pt_se",
+        "pt_nao",
+        "pt_estudar",
+        "pt_mais"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "54417156c14f",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_fracassar_perf.3pl_1",
+      "lemmaId": "pt_fracassar",
+      "pt": "Tentaram explodir a sede do governo, mas fracassaram.",
+      "en": "They tried to blow up the city hall, but they failed.",
+      "answer": "fracassaram",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "perf",
+      "slot": "perf.3pl",
+      "cellClass": "perf.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fracassaram"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisaram",
+        "estiveram"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to fail",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_tentar",
+        "pt_explodir",
+        "pt_o",
+        "pt_do",
+        "pt_governo",
+        "pt_mas"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "93a545cb8dc0",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_decorar_ger_1",
+      "lemmaId": "pt_decorar",
+      "pt": "Estamos decorando a sala de conferências.",
+      "en": "We are decorating the conference room.",
+      "answer": "decorando",
+      "subject": "none",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": "estar+ger",
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "decorando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pegando",
+        "fazendo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to learn by heart",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_estar",
+        "pt_o",
+        "pt_sala",
+        "pt_de",
+        "pt_conferencia"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "6abc9dafe473",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_aconselhar_perf.1sg_1",
+      "lemmaId": "pt_aconselhar",
+      "pt": "Eu o aconselhei a não gastar todo seu dinheiro com comida.",
+      "en": "I advised him not to spend all his money on food.",
+      "answer": "aconselhei",
+      "subject": "eu",
+      "person": "1sg",
+      "tense": "perf",
+      "slot": "perf.1sg",
+      "cellClass": "perf.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "aconselhei"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisei",
+        "consegui"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to advise, counsel",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_o",
+        "pt_nao",
+        "pt_gastar",
+        "pt_todo",
+        "pt_seu",
+        "pt_dinheiro",
+        "pt_com",
+        "pt_comida"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "5b1ef34bd89d",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_aconselhar_perf.3pl_1",
+      "lemmaId": "pt_aconselhar",
+      "pt": "Me aconselharam a estudar francês.",
+      "en": "I was advised to study French.",
+      "answer": "aconselharam",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "perf",
+      "slot": "perf.3pl",
+      "cellClass": "perf.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "aconselharam"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisaram",
+        "conheceram"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to advise, counsel",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_estudar",
+        "pt_frances"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "9c9fbf9a4623",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_duracao_f.sg_1",
+      "lemmaId": "pt_duracao",
+      "pt": "Qual a duração do voo?",
+      "en": "How long is the flight?",
+      "answer": "duração",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "duração"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "gente",
+        "pessoa"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "duration",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_qual",
+        "pt_o",
+        "pt_do",
+        "pt_voar"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "659afa9cecdf",
+      "retired": false,
+      "source_type": "speechling"
+    },
+    {
+      "exId": "pack_39_pt_recorrer_perf.3pl_1",
+      "lemmaId": "pt_recorrer",
+      "pt": "Recorreram a mim na aula de inglês.",
+      "en": "They turned to me in English class.",
+      "answer": "Recorreram",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "perf",
+      "slot": "perf.3pl",
+      "cellClass": "perf.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "Recorreram"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "Quiseram",
+        "Souberam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to have recourse",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_mim",
+        "pt_na",
+        "pt_aula",
+        "pt_de",
+        "pt_ingles"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "ba53af936fc7",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_recorrer_pres.3pl_1",
+      "lemmaId": "pt_recorrer",
+      "pt": "Os cidadãos recorrem aos tribunais em busca de justiça.",
+      "en": "The citizens go to court for justice.",
+      "answer": "recorrem",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "recorrem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "querem",
+        "precisam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to have recourse",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_cidadao",
+        "pt_tribunal",
+        "pt_em",
+        "pt_buscar",
+        "pt_de",
+        "pt_justica"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "849218fd006f",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_extrair_part_1",
+      "lemmaId": "pt_extrair",
+      "pt": "Eu deveria ter extraído meus dentes?",
+      "en": "Should I have my tooth extracted?",
+      "answer": "extraído",
+      "subject": "none",
+      "person": null,
+      "tense": "part",
+      "slot": "part",
+      "cellClass": "part",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "extraído"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "querido",
+        "ficado"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to extract",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_dever",
+        "pt_ter",
+        "pt_meu",
+        "pt_dente"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "10687b9861a9",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_extrair_perf.3pl_1",
+      "lemmaId": "pt_extrair",
+      "pt": "Extraíram o dente dele.",
+      "en": "He had his tooth pulled.",
+      "answer": "Extraíram",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "perf",
+      "slot": "perf.3pl",
+      "cellClass": "perf.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "Extraíram"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "Pegaram",
+        "Tiveram"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to extract",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_dente",
+        "pt_dele"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "1377caa1c855",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_extrair_pres.3sg_1",
+      "lemmaId": "pt_extrair",
+      "pt": "O dentista extrai um dente.",
+      "en": "The dentist extracts a tooth.",
+      "answer": "extrai",
+      "subject": "none",
+      "person": "3sg",
+      "tense": "pres",
+      "slot": "pres.3sg",
+      "cellClass": "pres.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "extrai"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pega",
+        "quer"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to extract",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_dentista",
+        "pt_um",
+        "pt_dente"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "a1c512ac3085",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_fortalecer_perf.3sg_1",
+      "lemmaId": "pt_fortalecer",
+      "pt": "Cada erro me fortaleceu.",
+      "en": "Every mistake made me stronger.",
+      "answer": "fortaleceu",
+      "subject": "none",
+      "person": "3sg",
+      "tense": "perf",
+      "slot": "perf.3sg",
+      "cellClass": "perf.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fortaleceu"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisou",
+        "conheceu"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to strengthen, fortify",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_cada",
+        "pt_errar"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "3f683a893980",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_cumprimentar_perf.1sg_1",
+      "lemmaId": "pt_cumprimentar",
+      "pt": "Cumprimentei os alunos com um aperto de mão.",
+      "en": "I greeted the students with a handshake.",
+      "answer": "Cumprimentei",
+      "subject": "none",
+      "person": "1sg",
+      "tense": "perf",
+      "slot": "perf.1sg",
+      "cellClass": "perf.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "Cumprimentei"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "Apresentei",
+        "Signifiquei"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to greet, salute",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_aluno",
+        "pt_com",
+        "pt_um",
+        "pt_apertar",
+        "pt_de",
+        "pt_mao"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "91df60260cac",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_cumprimentar_perf.3pl_1",
+      "lemmaId": "pt_cumprimentar",
+      "pt": "Os professores cumprimentaram os meninos.",
+      "en": "The teachers greeted the little boys.",
+      "answer": "cumprimentaram",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "perf",
+      "slot": "perf.3pl",
+      "cellClass": "perf.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "cumprimentaram"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "apresentaram",
+        "significaram"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to greet, salute",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_professor",
+        "pt_menino"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "a9f0d969d54d",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_seduzir_ger_1",
+      "lemmaId": "pt_seduzir",
+      "pt": "Quem estava seduzindo quem?",
+      "en": "Who was seducing who?",
+      "answer": "seduzindo",
+      "subject": "none",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": "estar+ger",
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "seduzindo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pegando",
+        "fazendo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to seduce",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_quem",
+        "pt_estar"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "6d03c50fdb0f",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_recrutar_ger_1",
+      "lemmaId": "pt_recrutar",
+      "pt": "O departamento de polícia estava recrutando.",
+      "en": "The police department was recruiting.",
+      "answer": "recrutando",
+      "subject": "none",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": "estar+ger",
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "recrutando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "querendo",
+        "precisando"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to recruit",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_departamento",
+        "pt_de",
+        "pt_policia",
+        "pt_estar"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "3438c87cf877",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_recrutar_perf.3sg_1",
+      "lemmaId": "pt_recrutar",
+      "pt": "Você já recrutou trabalhadores estrangeiros?",
+      "en": "Have you ever recruited foreign workers?",
+      "answer": "recrutou",
+      "subject": "você",
+      "person": "3sg",
+      "tense": "perf",
+      "slot": "perf.3sg",
+      "cellClass": "perf.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "recrutou"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisou",
+        "esteve"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to recruit",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_ja",
+        "pt_trabalhador",
+        "pt_estrangeiro"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "c9246f852b47",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_colher_verb_perf.3sg_1",
+      "lemmaId": "pt_colher_verb",
+      "pt": "Quem colheu todas as uvas?",
+      "en": "Who picked all the grapes?",
+      "answer": "colheu",
+      "subject": "none",
+      "person": "3sg",
+      "tense": "perf",
+      "slot": "perf.3sg",
+      "cellClass": "perf.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "colheu"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pegou",
+        "teve"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to harvest / get",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_quem",
+        "pt_todo_adj",
+        "pt_o",
+        "pt_uva"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "6607bb204026",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_colher_verb_pres.3sg_1",
+      "lemmaId": "pt_colher_verb",
+      "pt": "Você só colhe o que planta.",
+      "en": "You get out only what you put in.",
+      "answer": "colhe",
+      "subject": "você",
+      "person": "3sg",
+      "tense": "pres",
+      "slot": "pres.3sg",
+      "cellClass": "pres.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "colhe"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pega",
+        "tem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to harvest / get",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_so_adj",
+        "pt_o",
+        "pt_que",
+        "pt_planta"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "78352bcdc37d",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_assaltar_perf.3pl_1",
+      "lemmaId": "pt_assaltar",
+      "pt": "Assaltaram a joalheria durante a noite.",
+      "en": "They robbed the jewelry store during the night.",
+      "answer": "Assaltaram",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "perf",
+      "slot": "perf.3pl",
+      "cellClass": "perf.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "Assaltaram"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "Quiseram",
+        "Souberam"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to rob",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_durante",
+        "pt_noite"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "24999230a5fd",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_assaltar_perf.3sg_1",
+      "lemmaId": "pt_assaltar",
+      "pt": "Se ele soubesse quem o assaltou, não contaria.",
+      "en": "If he knew who robbed him, he wouldn't tell.",
+      "answer": "assaltou",
+      "subject": "ele",
+      "person": "3sg",
+      "tense": "perf",
+      "slot": "perf.3sg",
+      "cellClass": "perf.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "assaltou"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisou",
+        "esteve"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to rob",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_se",
+        "pt_ele",
+        "pt_saber",
+        "pt_quem",
+        "pt_o",
+        "pt_nao",
+        "pt_contar"
+      ],
+      "register_tier": "spoken",
+      "rev": 1,
+      "contentHash": "73f29b0d0af5",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_emocionar_perf.3sg_1",
+      "lemmaId": "pt_emocionar",
+      "pt": "O discurso dele nos emocionou.",
+      "en": "His speech moved us.",
+      "answer": "emocionou",
+      "subject": "none",
+      "person": "3sg",
+      "tense": "perf",
+      "slot": "perf.3sg",
+      "cellClass": "perf.3sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "emocionou"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisou",
+        "conheceu"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to thrill",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_discurso",
+        "pt_dele",
+        "pt_nos_pron"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "a5325297ab9f",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_emocionar_pres.1sg_1",
+      "lemmaId": "pt_emocionar",
+      "pt": "Sempre me emociono ao pensar no que ela fará a seguir.",
+      "en": "It always thrills me to think of what she'll do next.",
+      "answer": "emociono",
+      "subject": "none",
+      "person": "1sg",
+      "tense": "pres",
+      "slot": "pres.1sg",
+      "cellClass": "pres.1sg",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "emociono"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "preciso",
+        "conheço"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to thrill",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_sempre",
+        "pt_ao",
+        "pt_pensar",
+        "pt_no",
+        "pt_que",
+        "pt_ela",
+        "pt_o",
+        "pt_seguir"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "dda69712f7a2",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_decorar_ger_rm_1",
+      "lemmaId": "pt_decorar",
+      "pt": "Por que você está decorando este poema?",
+      "en": "Why are you memorizing this poem?",
+      "answer": "decorando",
+      "subject": "none",
+      "person": null,
+      "tense": "ger",
+      "slot": "ger",
+      "cellClass": "ger",
+      "construction": "estar+ger",
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "decorando"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pegando",
+        "fazendo"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to learn by heart",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_por",
+        "pt_que",
+        "pt_voce",
+        "pt_estar",
+        "pt_este",
+        "pt_poema"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "8d5734eae40a",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_fortalecer_pres.3pl_rm_1",
+      "lemmaId": "pt_fortalecer",
+      "pt": "Os abdominais fortalecem os seus abdominais.",
+      "en": "Sit-ups strengthen your abdominals.",
+      "answer": "fortalecem",
+      "subject": "none",
+      "person": "3pl",
+      "tense": "pres",
+      "slot": "pres.3pl",
+      "cellClass": "pres.3pl",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "fortalecem"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "precisam",
+        "conhecem"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to strengthen, fortify",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_seu"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "649f6f23ae90",
+      "retired": false,
+      "source_type": "linguno_catalog_example"
+    },
+    {
+      "exId": "pack_39_pt_utilidade_f.sg_rm_1",
+      "lemmaId": "pt_utilidade",
+      "pt": "Achava que isso poderia ter alguma utilidade.",
+      "en": "I thought it might be of some use.",
+      "answer": "utilidade",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "utilidade"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "família",
+        "cerveja"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "usefulness",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_achar",
+        "pt_que",
+        "pt_isso",
+        "pt_poder",
+        "pt_ter"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "c8a38496db56",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_contanto_base_rm_1",
+      "lemmaId": "pt_contanto",
+      "pt": "Irei contanto que você vá comigo.",
+      "en": "I'll go provided you go with me.",
+      "answer": "contanto",
+      "subject": "none",
+      "person": null,
+      "tense": null,
+      "slot": "base",
+      "cellClass": "base",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "contanto"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "porque",
+        "enquanto"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "conj meaning clue",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_que",
+        "pt_voce",
+        "pt_ir",
+        "pt_comigo"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "538e0140acd9",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_litro_m.pl_rm_1",
+      "lemmaId": "pt_litro",
+      "pt": "Eu bebo três litros de água por dia.",
+      "en": "I drink three liters of water a day.",
+      "answer": "litros",
+      "subject": "none",
+      "person": "pl",
+      "tense": "m",
+      "slot": "m.pl",
+      "cellClass": "m.pl",
+      "construction": null,
+      "inflection": "m.pl",
+      "sense": "core",
+      "accept": [
+        "litros"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "tempos",
+        "dias"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "litre",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_beber",
+        "pt_tres",
+        "pt_de",
+        "pt_agua",
+        "pt_por",
+        "pt_dia"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "2f0625857bfd",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_otimista_m.sg_rm_1",
+      "lemmaId": "pt_otimista",
+      "pt": "Você não parece muito otimista.",
+      "en": "You don't sound very optimistic.",
+      "answer": "otimista",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "otimista"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "branco",
+        "vermelho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "optimistic",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_nao",
+        "pt_parecer",
+        "pt_muito"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "1c86f3261195",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_suficientemente_base_rm_1",
+      "lemmaId": "pt_suficientemente",
+      "pt": "Eu não fui suficientemente inovador.",
+      "en": "I wasn't innovative enough.",
+      "answer": "suficientemente",
+      "subject": "none",
+      "person": null,
+      "tense": null,
+      "slot": "base",
+      "cellClass": "base",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "suficientemente"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "provavelmente",
+        "completamente"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "sufficiently",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_nao",
+        "pt_ser"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "c4ab8034a4ce",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_escravidao_f.sg_rm_1",
+      "lemmaId": "pt_escravidao",
+      "pt": "Lincoln era contra a escravidão.",
+      "en": "Lincoln was opposed to slavery.",
+      "answer": "escravidão",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "escravidão"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "manteiga",
+        "camiseta"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "slavery",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ser",
+        "pt_contra",
+        "pt_o"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "8be6e39317ed",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_arrependimento_m.pl_rm_1",
+      "lemmaId": "pt_arrependimento",
+      "pt": "Eu não tenho muitos arrependimentos.",
+      "en": "I don't have many regrets.",
+      "answer": "arrependimentos",
+      "subject": "none",
+      "person": "pl",
+      "tense": "m",
+      "slot": "m.pl",
+      "cellClass": "m.pl",
+      "construction": null,
+      "inflection": "m.pl",
+      "sense": "core",
+      "accept": [
+        "arrependimentos"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "departamentos",
+        "relacionamentos"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "regret",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_eu",
+        "pt_nao",
+        "pt_ter"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "3d6f7a5a5ebd",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_seduzir_inf_rm_1",
+      "lemmaId": "pt_seduzir",
+      "pt": "Você não pode me seduzir.",
+      "en": "You can't tempt me.",
+      "answer": "seduzir",
+      "subject": "none",
+      "person": null,
+      "tense": "inf",
+      "slot": "inf",
+      "cellClass": "inf",
+      "construction": null,
+      "inflection": null,
+      "sense": "core",
+      "accept": [
+        "seduzir"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pegar",
+        "fazer"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "to seduce",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_nao",
+        "pt_poder"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "915672a3dabc",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_objecao_f.sg_rm_1",
+      "lemmaId": "pt_objecao",
+      "pt": "Não faço nenhuma objeção ao que você quer fazer.",
+      "en": "I have no objection to what you want to do.",
+      "answer": "objeção",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "objeção"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "gente",
+        "pessoa"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "objection",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_nao",
+        "pt_fazer",
+        "pt_ao",
+        "pt_que",
+        "pt_voce",
+        "pt_querer"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "ea82315162a2",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_racional_m.sg_rm_1",
+      "lemmaId": "pt_racional",
+      "pt": "Você não está sendo racional.",
+      "en": "You're not being rational.",
+      "answer": "racional",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "racional"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "branco",
+        "vermelho"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "rational",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_nao",
+        "pt_estar",
+        "pt_ser"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "afe4b94748f7",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_intensidade_f.sg_rm_1",
+      "lemmaId": "pt_intensidade",
+      "pt": "Qual foi a intensidade do terremoto?",
+      "en": "How strong was the earthquake?",
+      "answer": "intensidade",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "intensidade"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "geladeira",
+        "bicicleta"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "intensity",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_qual",
+        "pt_ser",
+        "pt_o",
+        "pt_do",
+        "pt_terremoto"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "963a8ea712d7",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_trigo_m.sg_rm_1",
+      "lemmaId": "pt_trigo",
+      "pt": "O pão é feito de trigo.",
+      "en": "Bread is made from wheat.",
+      "answer": "trigo",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "trigo"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "tempo",
+        "dia"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "wheat",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o",
+        "pt_pao",
+        "pt_ser",
+        "pt_fazer",
+        "pt_de"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "23c74955d3ae",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_percurso_m.sg_rm_1",
+      "lemmaId": "pt_percurso",
+      "pt": "É um percurso de obstáculos bem desafiador.",
+      "en": "This is a very challenging obstacle course.",
+      "answer": "percurso",
+      "subject": "none",
+      "person": "sg",
+      "tense": "m",
+      "slot": "m.sg",
+      "cellClass": "m.sg",
+      "construction": null,
+      "inflection": "m.sg",
+      "sense": "core",
+      "accept": [
+        "percurso"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "marido",
+        "coração"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "course, route",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_ser",
+        "pt_um",
+        "pt_de",
+        "pt_obstaculo",
+        "pt_bem"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "7169b37e8297",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_ignorancia_f.sg_rm_1",
+      "lemmaId": "pt_ignorancia",
+      "pt": "Você deveria se envergonhar da sua ignorância.",
+      "en": "You should be ashamed of your ignorance.",
+      "answer": "ignorância",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "ignorância"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "manteiga",
+        "camiseta"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "ignorance",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_voce",
+        "pt_dever",
+        "pt_se",
+        "pt_envergonhar",
+        "pt_da",
+        "pt_seu"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "7f072c629dc6",
+      "retired": false,
+      "source_type": "lingvist"
+    },
+    {
+      "exId": "pack_39_pt_rebeliao_f.sg_rm_1",
+      "lemmaId": "pt_rebeliao",
+      "pt": "Os agitadores fomentavam a rebelião.",
+      "en": "The agitators instigated the rebellion.",
+      "answer": "rebelião",
+      "subject": "none",
+      "person": "sg",
+      "tense": "f",
+      "slot": "f.sg",
+      "cellClass": "f.sg",
+      "construction": null,
+      "inflection": "f.sg",
+      "sense": "core",
+      "accept": [
+        "rebelião"
+      ],
+      "alt_valid": [],
+      "plausible_wrong": [],
+      "distractors": [
+        "pessoa",
+        "família"
+      ],
+      "excludeBlindAudio": false,
+      "needs_distractors": false,
+      "hint_en": "rebellion",
+      "false_friend_note": null,
+      "grammar_note_en": null,
+      "requires": [
+        "pt_o"
+      ],
+      "register_tier": "neutral",
+      "rev": 1,
+      "contentHash": "585f60060414",
+      "retired": false,
+      "source_type": "lingvist"
+    }
+  ]
+}

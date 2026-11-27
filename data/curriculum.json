@@ -14,8 +14,11 @@
         500
       ],
       "targetDensity": {
-        "word": "5 ex/word",
-        "verb": "9-10 ex/verb"
+        "word": "4 ex/word",
+        "verb": "7 regular / 10 irregular ex/verb",
+        "nonVerb": 4,
+        "regularVerb": 7,
+        "irregularVerb": 10
       }
     },
     {
@@ -30,8 +33,11 @@
         1500
       ],
       "targetDensity": {
-        "word": "3-4 ex/word",
-        "verb": "6-8 ex/verb"
+        "word": "3 ex/word",
+        "verb": "4 regular / 6 irregular ex/verb",
+        "nonVerb": 3,
+        "regularVerb": 4,
+        "irregularVerb": 6
       }
     },
     {
@@ -46,8 +52,11 @@
         3000
       ],
       "targetDensity": {
-        "word": "2-3 ex/word",
-        "verb": "4-6 ex/verb"
+        "word": "2 ex/word",
+        "verb": "3 regular / 4 irregular ex/verb",
+        "nonVerb": 2,
+        "regularVerb": 3,
+        "irregularVerb": 4
       }
     },
     {
@@ -62,8 +71,11 @@
         5000
       ],
       "targetDensity": {
-        "word": "2-3 ex/word",
-        "verb": "4-6 ex/verb"
+        "word": "1 ex/word",
+        "verb": "2 regular / 3 irregular ex/verb",
+        "nonVerb": 1,
+        "regularVerb": 2,
+        "irregularVerb": 3
       }
     }
   ],
@@ -30666,7 +30678,7 @@
       ],
       "minWords": 4,
       "maxWords": 11,
-      "maxChars": 80
+      "maxChars": 110
     },
     "conversational": {
       "units": [
@@ -30675,7 +30687,7 @@
       ],
       "minWords": 5,
       "maxWords": 13,
-      "maxChars": 80
+      "maxChars": 130
     },
     "fluency": {
       "units": [
@@ -30684,12 +30696,52 @@
       ],
       "minWords": 5,
       "maxWords": 15,
-      "maxChars": 80
+      "maxChars": 130
     },
     "global": {
       "hardMaxWords": 16,
-      "hardMaxChars": 80,
+      "hardMaxChars": 130,
       "subjunctiveMinWords": 6
+    },
+    "bySourceType": {
+      "corpus": [
+        {
+          "units": [
+            1,
+            10
+          ],
+          "minWords": 3,
+          "maxWords": 7,
+          "maxChars": 80
+        },
+        {
+          "units": [
+            11,
+            25
+          ],
+          "minWords": 4,
+          "maxWords": 10,
+          "maxChars": 110
+        },
+        {
+          "units": [
+            26,
+            50
+          ],
+          "minWords": 4,
+          "maxWords": 12,
+          "maxChars": 130
+        }
+      ],
+      "llm_generated": {
+        "units": [
+          1,
+          50
+        ],
+        "minWords": 3,
+        "maxWords": 6,
+        "maxChars": 80
+      }
     }
   },
   "styleGuide": {
